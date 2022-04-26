@@ -1,0 +1,21 @@
+title: Azurescape
+cves: null
+affectedPlatforms:
+  - Azure
+affectedServices:
+  - Azure Container Instances (ACI)
+severity: critical
+discoveredBy: Yuval Avrahami, Palo Alto
+disclosedAt: 2021/09/09
+exploitabilityPeriod: Until 2021/08/31
+knownITWExploitation: No
+summary: |
+  Cross-account container escape in Azure, by which a malicious Azure user could have 
+  executed code on other users' containers and steal customer secrets and images deployed to the platform.
+manualRemediation: |
+  Revoke any privileged credentials that were deployed to the platform
+  before 20210831, and check access logs for irregularities
+detectionMethods: null
+contributer: https://github.com/0xdabbad00/
+references:
+  - https://unit42.paloaltonetworks.com/azure-container-instances/

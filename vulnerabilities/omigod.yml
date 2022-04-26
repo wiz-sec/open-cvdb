@@ -1,0 +1,33 @@
+title: OMIGOD
+cves: 
+  - CVE-2021-38647
+  - CVE-2021-38648
+  - CVE-2021-38645
+  - CVE-2021-38649
+affectedPlatforms:
+  - Azure
+affectedServices:
+  - Azure Automation
+  - Azure Automatic Update
+  - Azure Operations Management
+  - Suite (OMS)
+  - Azure Log Analytics
+  - Azure Configuration Management
+  - Azure Diagnostics
+  - Azure Container Insights
+severity: critical
+discoveredBy: Nir Ohfeld, Wiz.io
+disclosedAt: 2021/06/01
+exploitabilityPeriod: Until 2021/09/08
+knownITWExploitation: No
+summary: |
+  Azure forces the install of an open-source agent called OMI (short for Open
+  Management Infrastructure) on Linux VMs, which contained four vulnerabilities that
+  would allow PE or grant root RCE via web request. This impacted thousands of Azure
+  customers and millions of endpoints.
+manualRemediation: None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00/
+references:
+  - https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution/
+
