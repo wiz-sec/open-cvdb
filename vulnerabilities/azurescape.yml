@@ -1,9 +1,11 @@
 title: Azurescape
+slug: azurescape
 cves: null
 affectedPlatforms:
   - Azure
 affectedServices:
   - Azure Container Instances (ACI)
+image: https://wallpapercave.com/wp/wp3734322.jpg
 severity: critical
 discoveredBy: Yuval Avrahami, Palo Alto
 disclosedAt: 2021/09/09

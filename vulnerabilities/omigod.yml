@@ -1,9 +1,11 @@
 title: OMIGOD
+slug: omigod
 cves: 
   - CVE-2021-38647
   - CVE-2021-38648
   - CVE-2021-38645
   - CVE-2021-38649
+image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/omigod-8.png
 affectedPlatforms:
   - Azure
 affectedServices:
