@@ -7,7 +7,11 @@ affectedServices:
   - Azure Container Instances (ACI)
 image: https://wallpapercave.com/wp/wp3734322.jpg
 severity: critical
-discoveredBy: Yuval Avrahami, Palo Alto
+discoveredBy: 
+  name: Yuval Avrahami
+  org: Palo Alto
+  domain: https://www.paloaltonetworks.com/
+  twitter: yuval_avrahami
 disclosedAt: 2021/09/09
 exploitabilityPeriod: Until 2021/08/31
 knownITWExploitation: No
