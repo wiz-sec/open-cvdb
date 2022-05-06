@@ -1,0 +1,22 @@
+title: Azure ExtraReplica: Cross-account database vulnerability in Azure PostgreSQL
+slug: extrareplica
+cves: null
+affectedPlatforms:
+  - Azure
+affectedServices:
+  - Azure Flexible PostgreSQL
+image: 
+severity: critical
+discoveredBy: Sagi Tzadik, Nir Ohfeld, Shir Tamari, and Ronen Shustin from Wiz.io
+disclosedAt: 2022/01/11
+exploitabilityPeriod: Until 2022/01/14
+knownITWExploitation: No
+summary: |
+    Read access to other customer's Azure Database for PostgreSQL Flexible Server
+manualRemediation: |
+    No Action Required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00/
+references:
+  - https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/
+  - https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution
