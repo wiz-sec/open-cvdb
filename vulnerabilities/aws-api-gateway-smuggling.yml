@@ -1,0 +1,21 @@
+title: AWS API Gateway HTTP header smuggling
+slug: aws-api-gatewat-smuggling
+cves: 
+affectedPlatforms:
+  - AWS
+affectedServices:
+  - AWS API Gateway
+image: 
+severity: low
+discoveredBy:  Daniel Thatcher, intruder.io
+disclosedAt: 2022/11/10
+exploitabilityPeriod: Until 2021/11/10
+knownITWExploitation: No
+summary: |
+     A flaw in AWS API Gateway enabled hiding HTTP request headers. Tampering with HTTP requests visibility enabled bypassing IP restrictions, cache poisoning and request smuggling.
+manualRemediation: |
+    No Actrion Reuired 
+detectionMethods: null
+contributer: https://github.com/a10ns/
+references:
+  -https://www.intruder.io/research/practical-http-header-smuggling
