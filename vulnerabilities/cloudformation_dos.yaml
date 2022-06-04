@@ -1,0 +1,26 @@
+title: CloudFormation denial of service (in a single account)
+slug: cloudformation_dos
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- CloudFormation
+image: null
+severity: Low
+discoveredBy:
+  name: Ian McKay
+  org: null
+  domain: null
+  twitter: https://twitter.com/iann0036
+disclosedAt: 2020/09/01
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An attacker with the ability to create CloudFormation stacks could cause
+  a denial-of-service on some CloudFormation actions within a single AWS account.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/Rami McCarthy
+references:
+- https://onecloudplease.com/blog/security-september-fun-with-fncidr

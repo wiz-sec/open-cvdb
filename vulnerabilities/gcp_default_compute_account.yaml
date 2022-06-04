@@ -1,0 +1,25 @@
+title: GCP Default compute account is project Editor
+slug: gcp_default_compute_account
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices: null
+image: null
+severity: Medium
+discoveredBy: null
+disclosedAt: null
+exploitabilityPeriod: null Since the creation of GCP
+knownITWExploitation: false
+summary: |
+  When the compute API is enabled on a GCP Project, the default compute account
+  is created. This account gets the primitive role Editor assigned by default, which
+  allows for a wide variety of privilege excalation and resource abuse in the project.
+  Especially, all new VMs created inherit this permissions by default. This issue
+  is arguably a technical decision by GCP, but the documents advise customers to
+  undo this.
+manualRemediation: |
+  Remove these permissions, it can be done via an organization policy
+detectionMethods: null
+contributer: https://github.com/louisdurufle
+references:
+- https://cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts#disable_service_account_default_grants

@@ -1,0 +1,24 @@
+title: Log4Shell Hot Patch Vulnerable to Container Escape and Privilege Escalation
+slug: log4shell_hotpatch
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: High
+discoveredBy:
+  name: Yuval Avrahami
+  org: Palo Alto
+  domain: https://www.paloaltonetworks.com/
+  twitter: null
+disclosedAt: 2021/12/14
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  AWS's hotpatch for Log4shell patched the RCE but enabled a container escape.
+manualRemediation: |
+ 'https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/;
+  https://aws.amazon.com/security/security-bulletins/AWS-2022-006/
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references: null

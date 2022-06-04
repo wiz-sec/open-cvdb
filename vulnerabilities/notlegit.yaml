@@ -1,0 +1,23 @@
+title: Azure NotLegit
+slug: notlegit
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices: null
+image: null
+severity: High
+discoveredBy:
+  name: Shir Tamari
+  org: Wiz
+  domain: https://www.wiz.io/
+  twitter: null
+disclosedAt: 2021/12/21
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: null
+manualRemediation: |
+  Remove these permissions, it can be done via an organization policy
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://www.wiz.io/blog/azure-app-service-source-code-leak/

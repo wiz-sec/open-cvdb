@@ -1,0 +1,24 @@
+title: Encryption SDK issues
+slug: encryption_sdk_issues
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: Low
+discoveredBy:
+  name: Thai Duong (thaidn)
+  org: Google
+  domain: null
+  twitter: https://twitter.com/XorNinja
+disclosedAt: 2020/09/28
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: null
+manualRemediation: | 
+  Update SDK
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://twitter.com/XorNinja/status/1310587707605659649
+- https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html

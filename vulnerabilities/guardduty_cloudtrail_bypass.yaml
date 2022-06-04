@@ -1,0 +1,27 @@
+title: GuardDuty detection bypass via cloudtrail
+slug: guardduty_cloudtrail_bypass
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- GuardDuty
+image: null
+severity: Low
+discoveredBy:
+  name: Spencer Gietzen
+  org: Rhino Security
+  domain: https://rhinosecuritylabs.com/
+  twitter: null
+disclosedAt: 2020/04/23
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: | 
+GuardDuty detects CloudTrail being disabled, but did not detect if you
+filtered out all events from CloudTrail, resulting in defenders having no logs
+to review. Require privileged access in victim account, resulting in limited visibility.
+manualRemediation: |
+Setup detections independent of GuardDuty
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass
