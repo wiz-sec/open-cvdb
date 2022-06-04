@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - GCP
 affectedServices: null
-image: null
+image: https://assets.website-files.com/6207f5adfd8e615d3d70498b/6239e2f458c48918ab0602dd_GCP%20-%20comp%20blue.png
 severity: Medium
 discoveredBy: null
 disclosedAt: null
