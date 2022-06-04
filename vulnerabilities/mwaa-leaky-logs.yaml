@@ -1,0 +1,32 @@
+title: MWAA logs leak tokens and hostnames
+slug: mwaa-leaky-logs
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- MWAA
+image: null
+severity: Low
+discoveredBy:
+  name: Ben Reser
+  org: Vibes
+  domain: https://www.vibes.com/
+  twitter: https://twitter.com/BenReser
+disclosedAt: 2022/05/11
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Two API calls used by Amazon Managed Workflows for Apache Airflow (MWAA)
+  to convert AWS IAM credentials into tokens that can be used to login to Airflow
+  (CreateCliToken and CreateWebLoginToken) were logging the tokens to Cloudtrail.
+  The event included the hostname for the airflow server, so everything required
+  to login to Airflow was in the event. However, the issue was largely mitigated
+  by the fact that the tokens are only valid for 60 seconds and CloudTrail delivers
+  logs on average about every 15 minutes, so the chance of recieving a valid token
+  were low.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://twitter.com/BenReser/status/1531710736719695872

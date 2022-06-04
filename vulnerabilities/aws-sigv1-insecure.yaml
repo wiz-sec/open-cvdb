@@ -1,0 +1,27 @@
+title: Signature version 1 (SigV1) is insecure
+slug: aws-sigv1-insecure
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: Medium
+discoveredBy:
+  name: Colin Percival
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: null
+exploitabilityPeriod: null until December 18th, 2008
+knownITWExploitation: false
+summary: |
+  When making authenticated API requests to AWS, the requests must be signed
+  with your AWS access key. The initial signing algorithm, SigV1, was vulnerable
+  to collisions. A person-in-the-middle attack would be able to modify signed requests
+  via specially constructed collisions.
+manualRemediation: |
+  None required, SigV1 is deprecated at this point
+detectionMethods: null
+contributer: https://github.com/ramimac
+references:
+- http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html

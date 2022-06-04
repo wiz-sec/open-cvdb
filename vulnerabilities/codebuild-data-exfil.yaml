@@ -1,0 +1,24 @@
+title: Codebuild data exfil
+slug: codebuild-data-exfil
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: Low
+discoveredBy:
+  name: Aidan Steele
+  org: null
+  domain: null
+  twitter: https://www.twitter.com/__steele
+disclosedAt: 2022/02/04
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  AWS VPC data exfiltration using CodeBuild
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/ramimac
+references:
+- https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html

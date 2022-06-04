@@ -1,0 +1,25 @@
+title: Azure AD Information Disclosure
+slug: azure-info-disclosure
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices: null
+image: null
+severity: Low
+discoveredBy:
+  name: null
+  org: Secureworks
+  domain: https://www.secureworks.com/
+  twitter: null
+disclosedAt: 2022/04/05
+exploitabilityPeriod: null
+knownITWExploitation: 'No'
+summary: |
+  APIs can access internal information of any organization that uses Azure
+  AD. Collected details included licensing information, mailbox information, and
+  directory synchronization status
+manualRemediation: null
+detectionMethods: null
+contributer: https://github.com/ramimac
+references:
+- https://www.secureworks.com/research/azure-active-directory-exposes-internal-information

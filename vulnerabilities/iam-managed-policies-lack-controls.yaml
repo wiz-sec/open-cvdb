@@ -1,0 +1,24 @@
+title: Lack of internal change controls for IAM managed policies
+slug: iam-managed-policies-lack-controls
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: Low
+discoveredBy: null
+disclosedAt: 2020/10/15
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Repeated examples of AWS releasing or changing IAM policies they obviously 
+  shouldn''t have (CheesepuffsServiceRolePolicy, AWSServiceRoleForThorInternalDevPolicy,
+  AWSCodeArtifactReadOnlyAccess.json, AmazonCirrusGammaRoleForInstaller). The worst
+  being the ReadOnlyAccess policy having almost all privileges removed and unexpected
+  ones added.
+manualRemediation: | 
+  None required
+detectionMethods: null
+contributer: https://github.com/Rami McCarthy
+references:
+- https://twitter.com/__steele/status/1316909785607012352
