@@ -1,0 +1,27 @@
+title: Identification of privileges without being logged by CloudTrail
+slug: privilege-identification-cloudtrail
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- CloudTrail
+image: null
+severity: Low
+discoveredBy:
+  name: Nick Frichette
+  org: null
+  domain: null
+  twitter: https://twitter.com/Frichette-n
+disclosedAt: 2020/09/02
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An attacker could figure out what privileges they have in a victim account,
+  without being logged in CloudTrail. It took AWS over 273 days to fix this.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://frichetten.com/blog/aws-api-enum-vuln/
+- https://github.com/Frichetten/aws-stealth-perm-enum
