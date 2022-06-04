@@ -1,0 +1,28 @@
+title: Synlapse
+slug: synlapse
+cves:
+- CVE-2022-29972
+affectedPlatforms:
+- Azure
+affectedServices:
+- Synapse Analytics
+- Data Factory
+image: null
+severity: Critical
+discoveredBy:
+  name: Tzah Pahima
+  org: Orca Security
+  domain: https://orca.security/
+  twitter: null
+disclosedAt: 2022/01/04
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Azure Synapse Analytics and Azure Data Factory, cross-tenant access
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://orca.security/resources/blog/azure-synapse-analytics-security-advisory/
+- https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/

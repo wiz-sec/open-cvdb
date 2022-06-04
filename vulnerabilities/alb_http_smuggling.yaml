@@ -1,0 +1,26 @@
+title: ALB HTTP request smuggling
+slug: alb_http_smuggling
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- ALB
+image: null
+severity: Medium
+discoveredBy:
+  name: James Kettle (Portswigger), Arkadiy Tetelman (Chime)
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: 2019/10/04
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  ALBs found vulnerable to HTTP request smuggling (desync attack).
+manualRemediation: |
+  Configure setting on your ALBs
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://twitter.com/arkadiyt/status/1180174359840862209
+- https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#load-balancer-attributes

@@ -1,0 +1,27 @@
+title: AssumeRole vendor issues with confused deputy
+slug: assumerole_confused_deputy
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: null
+severity: Medium
+discoveredBy:
+  name: Daniel Grzelak
+  org: Atlassian
+  domain: https://www.atlassian.com/
+  twitter: null
+disclosedAt: 2016/11/16
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Vendors may allow customers to access the data of other customers. Although
+  this is a misconfiguration on the vendors side, AWS could add mitigations to
+  prevent and detect this issue.
+manualRemediation: |
+  Audit your vendor roles
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://www.youtube.com/watch?v=8ZXRw4Ry3mQ
+- https://www.praetorian.com/blog/aws-iam-assume-role-vulnerabilities/
