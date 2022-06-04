@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - ELB
-image: null
+image: https://miro.medium.com/max/1400/1*P3WFK0x8rKzCuMClaaDGWw.jpeg
 severity: null
 discoveredBy:
   name: Andrea Brancaleoni
