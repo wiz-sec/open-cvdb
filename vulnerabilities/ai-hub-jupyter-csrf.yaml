@@ -5,7 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - AI Hub Jupyter Notebook
-image: null
+image: https://jupyter.org/assets/homepage/hublogo.svg
 severity: Medium
 discoveredBy:
   name: s1r1us
