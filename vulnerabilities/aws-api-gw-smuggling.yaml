@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - API Gateway
-image: null
+image: https://assets.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701c9830b35ef_smugglers-p-1600.png
 severity: Low
 discoveredBy:
   name: Daniel Thatcher
