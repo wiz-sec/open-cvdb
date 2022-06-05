@@ -3,7 +3,7 @@
 This website reflects the current state of data stored in our [GitHub repository](https://github.com/wiz-sec/open-cvdb). To contribute a new issue or suggest an edit to an existing one, please add a commit and our maintainers will review it for merging within a few days (but usually sooner).
 
 Please make sure that your contributions match our [criteria](http://cloudvulndb.org/about) for inclusion, and follow these guidelines:
-1.  Wrriten in the [CVDB YAML](http://cloudvulndb.org/sample.yaml) format.
+1.  Written in the [CVDB YAML](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) format. 
 2.	Include public references (as URLs).
 3.	Give credit.
 4.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
