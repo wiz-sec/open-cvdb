@@ -28,8 +28,14 @@ This project was built on the foundations of Scott Piper’s [“Cloud Service P
 * [Scott Piper](https://twitter.com/0xdabbad00)
 * [Amitai Cohen](https://twitter.com/amitaico)
 * [Alon Schindel](https://twitter.com/41thexplorer)
-
+ 
 ## Related Efforts
 -	[CSA Global Security Database](https://globalsecuritydatabase.org/)
 -	[Cloud Security Notification Framework](https://onug.net/blog/multi-cloud-security-gets-a-decorator/)
 
+## Contact us
+* Join our [Slack group](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-1a0av8bb6-gbR5NE97f0MDP3TCf7kgKQ)
+* [Email us](mailto:cloudvulndb@gmail.com)
+
+## Sponsorship 
+This site is kindly sponsored by [Wiz](https://wiz.io). Its content is contributed by the cloud security community and for the cloud security community.
