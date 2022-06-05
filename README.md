@@ -1,7 +1,7 @@
-# The Open Cloud Vulnerability & Security Issue Database
+# The Open Cloud Vulnerability & Security Issue Database ☁️⚠️
 An open project to enumerate all known cloud vulnerabilities and CSP security issues
 
-**The vulnerability data in this GitHub repository is automatically derived to [cloudvulndb.org](https://cloudvulndb.org/)**
+`The vulnerability data in this GitHub repository is automatically derived to [cloudvulndb.org](https://cloudvulndb.org/)`
 
 ### Background
 Security bugs in Cloud services tend to [fall between the cracks](https://www.wiz.io/blog/security-industry-call-to-action-we-need-a-cloud-vulnerability-database/), as they don’t fit well into the current shared responsibility model of cloud security. Remediation often requires a joint effort between both the CSP and their customers.
