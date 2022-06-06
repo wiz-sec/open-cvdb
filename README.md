@@ -10,4 +10,11 @@ There is currently no universal standard for cloud vulnerability enumeration –
 Our goal is to pave the way for a centralized cloud vulnerability database, by cataloging CSP security mistakes and listing the exact steps CSP customers can take to detect or prevent these issues in their own environments.
 We believe this project can prove the utility of a cloud VDB, bring more transparency into these issues, and ultimately make the cloud even more secure.
 
+### Contribution guidelines
 
+Please make sure that your contributions match our [criteria](http://cloudvulndb.org/about) for inclusion, and follow these guidelines:
+1.  Written in the [CVDB YAML](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) format. 
+2.	Include public references (as URLs).
+3.	Give credit.
+4.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
+5.	Provide clear and detailed descriptions of the issue.
