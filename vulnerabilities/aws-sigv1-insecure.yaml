@@ -12,7 +12,7 @@ discoveredBy:
   domain: null
   twitter: null
 disclosedAt: null
-exploitabilityPeriod: null until December 18th, 2008
+exploitabilityPeriod: until December 18th, 2008
 knownITWExploitation: false
 summary: |
   When making authenticated API requests to AWS, the requests must be signed
