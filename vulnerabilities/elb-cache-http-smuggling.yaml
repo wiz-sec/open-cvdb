@@ -5,17 +5,22 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - ELB
-image: https://miro.medium.com/max/1400/1*P3WFK0x8rKzCuMClaaDGWw.jpeg
-severity: null
+image: https://pbs.twimg.com/media/FS-NXYeWYAI4B3t?format=jpg&name=medium
+severity: medium
 discoveredBy:
   name: Andrea Brancaleoni
   org: Brave
   domain: https://brave.com/
   twitter: https://twitter.com/nJoyneer
-disclosedAt: 2022/05/17
-exploitabilityPeriod: null
+disclosedAt: 2021/01/24
+exploitabilityPeriod: Fixed on 2022/01/29
 knownITWExploitation: false
-summary: null
+summary: |
+  While testing rate-limiter protection, The reseacher noticed that when forcing HTTP/1 requests and injecting 
+  a space after `X-Forwarded-For` he was able to override this specific header, letting him impersonate any IP.
+  Any internal header could have beem overriden, also the one that should not be exposed/forwarded by the
+  client, such as `CloudFront-Viewer-Country-Region` or any other `CloudFront` enhanced header. 
+  This special security issue was affecting all AWS users with that a specific setting enabled.
 manualRemediation: null
 detectionMethods: null
 contributer: https://github.com/mhgeay
