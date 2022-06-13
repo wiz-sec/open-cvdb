@@ -1,4 +1,4 @@
-title: Admin access to Azure's Red Hat Update Infrastructure
+title: Public admin access to Azure's Red Hat Update Infrastructure
 slug: admin-azure-rh-update-infrastructure
 cves: null
 affectedPlatforms:
@@ -15,8 +15,9 @@ disclosedAt: 11/26/2016
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  obtaining admin access to Azure's Red Hat Update Infrastructure which supplies
-  all the packages for all Red Hat Enterprise Linux instances booted from the Azure marketplace.
+  Full administrative access to the Azure Red Hat Enterprise Linux Appliance REST API was publicly exposed.
+  It allowed malicious actors uploading packages that would be acquired by client virtual machines on their next yum update. 
+  The vulnerable infrastructure supplies all the packages for all Red Hat Enterprise Linux instances booted from the Azure marketplace.
 manualRemediation: |
   None required
 detectionMethods: null
