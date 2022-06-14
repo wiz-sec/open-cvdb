@@ -2,7 +2,6 @@
 An open project to list all publicly known cloud vulnerabilities and CSP security issues
 
 > Changes and additions to this GitHub repository are automatically reflected at [cloudvulndb.org](https://cloudvulndb.org/).
-> ![cloudvulndb.org is automatically updated according to changes made to this repository.](webscheme.png)
 
 ### Background
 Security bugs in Cloud services tend to [fall between the cracks](https://www.wiz.io/blog/security-industry-call-to-action-we-need-a-cloud-vulnerability-database/), as they don’t fit well into the current [shared responsibility model](https://cloudsecurityalliance.org/blog/2020/08/26/shared-responsibility-model-explained/) of cloud security. As a result, remediation often requires a joint effort between both the CSP and their customers.
@@ -16,6 +15,9 @@ We believe this project can prove the utility of a cloud vulnerability database 
 This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 3rd, 2022, all content included here originally appeared in that repository.
 
 ### Contribution guidelines
+
+To contribute a new issue or suggest an edit to an existing one, please add a commit and our maintainers will review it for merging within a few days (but usually sooner). The changes will then automatically be reflected at [cloudvulndb.org](https://cloudvulndb.org/).
+<p align="center"><img width="40%" align="center" src="https://github.com/wiz-sec/open-cvdb/blob/main/webscheme.png" alt="cloudvulndb.org is automatically updated according to changes made to this repository" class="center"></p>
 
 Please make sure that your contributions match our [criteria](http://cloudvulndb.org/about) for inclusion, and follow these guidelines:
 1.  Use the [CVDB YAML](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) format. 
