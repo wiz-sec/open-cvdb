@@ -1,0 +1,25 @@
+title: Autopilot node compromise via allowlisted workload masquerade
+slug: gke-autopilot-allowlist
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices: Autopilot
+image: https://www.svgrepo.com/show/376321/google-gke.svg
+severity: Medium
+discoveredBy:
+  name: Yuval Avrahami
+  org: Palo Alto
+  domain: https://unit42.paloaltonetworks.com/
+  twitter: https://twitter.com/yuvalavra
+disclosedAt: 08/03/2022
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Unit 42 researchers disclosed several vulnerabilities and attack techniques in GKE Autopilot to Google, the root cause being insufficient verification of allowlisted workload image names. 
+  An attacker with permissions to create a pod could have abused these vulnerabilities to (1) escape their pod and compromise the underlying node, (2) escalate privileges and become full cluster administrators, 
+  and (3) covertly persist administrative access through backdoors that are completely invisible to cluster operators.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references: https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/
