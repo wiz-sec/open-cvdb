@@ -1,9 +1,11 @@
-title: Cognito User Group Spoofing
+title: Cognito User Group spoofing
 slug: cognito-user-group-spoofing
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices: Cognito, Amazon API Gateway
+affectedServices:
+- Cognito
+- Amazon API Gateway
 image: https://www.drupal.org/files/project-images/553dbabbd287c26ca83aef42.jpg
 severity: Low
 discoveredBy:
