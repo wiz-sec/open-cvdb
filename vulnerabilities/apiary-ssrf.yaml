@@ -1,5 +1,5 @@
-title: Oracle SSRF with Apiary
-slug: oracle-ssrf
+title: Oracle Apiary SSRF
+slug: apiary-ssrf
 cves: null
 affectedPlatforms:
 - Oracle
@@ -7,16 +7,16 @@ affectedServices: Apiary
 image: https://static.apiary.io/assets/v6Zkz37_.png
 severity: Low
 discoveredBy:
-  name: null
-  org: Orca
+  name: Lidor Ben Shitrit
+  org: Orca Security
   domain: https://orca.security/
   twitter: null
 disclosedAt: 08/02/2022
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  By misusing the Apiary web service, a remote attacker is able to retrieve sensitive information from various endpoints and use it to gain
-  more access and sensitive data of other hosts in the same environment.
+  By misusing the Apiary web service and taking advantge of Apiary's use of IMDSv1, a remote attacker is able to retrieve sensitive information
+  from various endpoints and use it to gain more access and sensitive data of other hosts in the same environment.
 manualRemediation: |
   None required
 detectionMethods: null
