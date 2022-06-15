@@ -18,11 +18,14 @@ disclosedAt: 2022/01/04
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Azure Synapse Analytics and Azure Data Factory, cross-tenant access
+  Azure Synapse Analytics and Azure Data Factory were vulnerable to cross-tenant access and code execution.
+  This was made possible via a combination of (1) a shell injection RCE vulnerability in the integration runtime,
+  (2) credentials for multiple customers stored on a shared host and (3) an insecure management server API.
 manualRemediation: |
   None required
 detectionMethods: null
 contributer: https://github.com/0xdabbad00
 references:
 - https://orca.security/resources/blog/azure-synapse-analytics-security-advisory/
+- https://orca.security/resources/blog/synlapse-critical-azure-synapse-analytics-service-vulnerability/
 - https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/
