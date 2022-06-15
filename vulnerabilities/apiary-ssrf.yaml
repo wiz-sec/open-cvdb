@@ -15,7 +15,7 @@ disclosedAt: 08/02/2022
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  By misusing the Apiary web service and taking advantge of Apiary's use of IMDSv1, a remote attacker is able to retrieve sensitive information
+  By misusing the Apiary web service and taking advantage of Apiary's use of IMDSv1, a remote attacker is able to retrieve sensitive information
   from various endpoints and use it to gain more access and sensitive data of other hosts in the same environment.
 manualRemediation: |
   None required
