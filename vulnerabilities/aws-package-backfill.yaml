@@ -25,4 +25,4 @@ manualRemediation: null
 detectionMethods: null
 contributer: https://github.com/0xdabbad00
 references:
-- https://www.whitesourcesoftware.com/resources/blog/aws-targeted-by-a-package-backfill-attack/
+- https://www.mend.io/resources/blog/aws-targeted-by-a-package-backfill-attack/
