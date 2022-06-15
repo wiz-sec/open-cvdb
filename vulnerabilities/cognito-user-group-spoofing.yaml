@@ -1,9 +1,9 @@
-title: Cognito User Group Spoofing on AWS
+title: Cognito User Group Spoofing
 slug: cognito-user-group-spoofing
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices: Amazon Cognito, Amazon API Gateway
+affectedServices: Cognito, Amazon API Gateway
 image: https://www.drupal.org/files/project-images/553dbabbd287c26ca83aef42.jpg
 severity: Low
 discoveredBy:
@@ -18,8 +18,10 @@ summary: |
   Opsmorph dicovered an improper access control vulnerability in authorization logic common in applications built on AWS. The vulnerability means a user 
   with permission to create a new Cognito User Group could fool authorization checks into thinking that the user is in any other existing Cognito User 
   Group in the same User Pool, referred to as user group spoofing. 
-  When API Gateway is secured with a Cognito User Pool Authorizer it concatenates group names from the identity token into a comma separated string and, 
-  as Cognito also permits commas in the group names, this was an ambiguous representation of the groups a user was in that provided an opportunity for injection type attack.
+  When API Gateway is secured with a Cognito User Pool Authorizer it concatenates group names from the identity token into a comma separated string, 
+  and as Cognito also permits commas in the group names, this was an ambiguous representation of the groups a user was in that provided an opportunity 
+  for injection type attack. AWS have since fixed the Cognito User Pool Authorizer so that it now escapes special characters when parsing the groups claim
+  of the token.
 manualRemediation: |
   None required
 detectionMethods: null
