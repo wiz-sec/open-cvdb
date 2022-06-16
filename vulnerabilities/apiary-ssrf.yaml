@@ -3,7 +3,8 @@ slug: apiary-ssrf
 cves: null
 affectedPlatforms:
 - Oracle
-affectedServices: Apiary
+affectedServices:
+- Apiary
 image: https://static.apiary.io/assets/v6Zkz37_.png
 severity: Low
 discoveredBy:
@@ -15,8 +16,9 @@ disclosedAt: 2022/02/08
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  By misusing the Apiary web service and taking advantage of Apiary's use of IMDSv1, a remote attacker is able to retrieve sensitive information
-  from various endpoints and use it to gain more access and sensitive data of other hosts in the same environment.
+  By misusing the Apiary web service and taking advantage of Apiary's use of IMDSv1,
+  a remote attacker is able to retrieve sensitive information from various endpoints
+  and use it to gain more access and sensitive data of other hosts in the same environment.
 manualRemediation: |
   None required
 detectionMethods: null
