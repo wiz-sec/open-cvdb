@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
-- CosmosDB
+- Cosmos DB
 image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/chaosdb-0.jpeg
 severity: Critical
 discoveredBy:
@@ -16,10 +16,11 @@ disclosedAt: 2021/08/09
 exploitabilityPeriod: 2017 - 2021
 knownITWExploitation: false
 summary: |
-  All CosmosDB customer data compromised. Series of mistakes by Azure shows
-  systemic lack of security best practices.
+   Azure's Cosmos DB database service was vulnerable to remote account takeover.
+   Any Azure user could gain full admin access to other customers' Cosmos DB instances without authorization.
+   The vulnerability had a trivial exploit that doesn't require any previous access to the target environment.
 manualRemediation: |
-  Regenerate primary read/write key
+  Regenerate primary read/write key.
 detectionMethods: null
 contributer: https://github.com/0xdabbad00
 references:
