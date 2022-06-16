@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - MWAA
-image: https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2021/05/amazon-managed-workflows-for-apache-airflow-960x504.png
+image: https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg
 severity: Low
 discoveredBy:
   name: Ben Reser
