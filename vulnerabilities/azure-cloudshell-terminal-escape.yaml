@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Cloudshell
-image: https://d1.awsstatic.com/products/cloudshell/Site-Merch_AWS-Cloudshell_Hero-BG.c12b4f1f0099e91cbf1dd0b7efbdf53e8e6a8f84.png
+image: https://n3x0.com/wp-content/uploads/2020/10/researchers-find-vulnerabilities-in-microsoft-azure-cloud-service.jpg
 severity: Medium
 discoveredBy:
   name: Felix Wilhelm
