@@ -16,7 +16,9 @@ disclosedAt: 2022/01/11
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Read access to other customer's Azure Database for PostgreSQL Flexible Server
+  A chain of critical vulnerabilities was discovered in Azure Database for PostgreSQL Flexible Server,
+  allowing unauthorized read access to other customers’ PostgreSQL databases, thus bypassing tenant isolation.
+  If exploited, a malicious actor could have replicated and gained read access to Azure PostgreSQL Flexible Server customer databases.
 manualRemediation: |
   None required
 detectionMethods: null
