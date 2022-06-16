@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://freesvg.org/img/box-cartone.png
+image: https://images.pexels.com/photos/4498122/pexels-photo-4498122.jpeg
 severity: Medium
 discoveredBy:
   name: null
