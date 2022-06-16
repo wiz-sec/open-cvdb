@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices: Traffic Manager
-image: null
+image: https://images.pexels.com/photos/186537/pexels-photo-186537.jpeg
 severity: Low
 discoveredBy:
   name: Patrick Hudak
