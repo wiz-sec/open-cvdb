@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://images.pexels.com/photos/4518638/pexels-photo-4518638.jpeg
 severity: High
 discoveredBy:
   name: Yuval Avrahami
