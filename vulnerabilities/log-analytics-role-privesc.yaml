@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Log Analytics
-image: https://images.pexels.com/photos/761535/pexels-photo-761535.jpeg
+image: https://images.pexels.com/photos/761535/pexels-photo-761535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: Medium
 discoveredBy:
   name: Karl Fosaaen
