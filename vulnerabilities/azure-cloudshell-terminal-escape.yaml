@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Cloudshell
-image: null
+image: https://d1.awsstatic.com/products/cloudshell/Site-Merch_AWS-Cloudshell_Hero-BG.c12b4f1f0099e91cbf1dd0b7efbdf53e8e6a8f84.png
 severity: Medium
 discoveredBy:
   name: Felix Wilhelm
