@@ -26,6 +26,13 @@ We consider the following cases to be out of scope of this project:
 ## History
 This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 3rd, 2022, all content included here originally appeared in that repository.
 
+## Next Steps
+Besides continuing to document newly discovered cloud vulnerabilities and security issues, we would also like to achieve the following:
+1. Reach consensus on definitions for severity (e.g., what makes a cloud vulnerability critical?).
+2. Differentiate between closed vs. ongoing security issues, and bring more attention to ongoing issues.
+3. Calculate exploitability periods for each issue.
+4. List detection methods for every issue, where possible.
+
 ## Project Maintainers
 * [Scott Piper](https://twitter.com/0xdabbad00)
 * [Amitai Cohen](https://twitter.com/amitaico)
