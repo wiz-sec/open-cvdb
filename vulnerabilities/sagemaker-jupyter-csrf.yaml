@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - SageMaker Jupyter Notebook
-image: null
+image: https://www.inawisdom.com/wp-content/uploads/2018/06/SageMaker_Icon_Large.jpg
 severity: Medium
 discoveredBy:
   name: Gafnit Amiga
