@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - CosmosDB
-image: null
+image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/chaosdb-0.jpeg
 severity: Critical
 discoveredBy:
   name: Nir Ohfeld, Sagi Tzadik
