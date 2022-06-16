@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Automation Service
-image: null
+image: https://orca.security/wp-content/uploads/2022/03/Featured-Tile_Azure-Automation-Vulnerability.jpg
 severity: Critical
 discoveredBy:
   name: Yanir Tsarimi
