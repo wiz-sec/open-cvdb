@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg
 severity: Low
 discoveredBy:
   name: ' Ryan Gerstenkorn'
