@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Lightsail
-image: null
+image: https://d1.awsstatic.com/photoheaders/image-header_Amazon_DynamoDB.5b1d087a67c364bea1caac1aac4061f97b5a5ac5.jpg
 severity: Medium
 discoveredBy:
   name: Scott Piper
