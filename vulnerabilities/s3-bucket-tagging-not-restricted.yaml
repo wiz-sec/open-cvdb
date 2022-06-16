@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - S3
-image: null
+image: https://d1.awsstatic.com/s3-pdp-redesign/ImgHead_S3_2021.0613d5edcb509e3d5be1278b7475a190c410984a.jpg
 severity: Low
 discoveredBy:
   name: Ian Mckay
@@ -17,7 +17,7 @@ exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Lack of the privilege s3:PutBucketTagging did not restrict the ability
-  to tag S3 buckets
+  to tag S3 buckets.
 manualRemediation: |
   None required
 detectionMethods: null
