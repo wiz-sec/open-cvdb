@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - ALB
-image: null
+image: https://d1.awsstatic.com/Products/product-name/Images/img-header_Amazon_Elastic_Load_Balancing.c508b03e305a0e2e638a3e07cef2497f6069f2d4.jpg
 severity: Medium
 discoveredBy:
   name: James Kettle (Portswigger), Arkadiy Tetelman (Chime)
