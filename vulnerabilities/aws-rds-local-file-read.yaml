@@ -16,7 +16,9 @@ disclosedAt: 2021/12/09
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Able to read local files on the host of the RDS, found AWS creds.
+  A vulnerability was discovered in the Aurora PostgreSQL log_fdw extension
+  for Amazon Relational Database Service (RDS), allowing an attacker to read
+  files on the EC2 host and obtain credentials for an internal AWS service.
 manualRemediation: |
   None required
 detectionMethods: null
