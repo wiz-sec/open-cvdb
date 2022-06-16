@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Glue
-image: null
+image: https://images.unsplash.com/photo-1536786724684-63545518d243
 severity: Critical
 discoveredBy:
   name: Yanir Tsarimi
