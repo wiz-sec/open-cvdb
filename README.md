@@ -26,3 +26,7 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 4.	Give the issue a descriptive and non-generic title.
 5.	Give proper credit to the researchers involved in the discovery.
 6.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
+
+## Contact Us
+* Join our [Slack group](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-1a0av8bb6-gbR5NE97f0MDP3TCf7kgKQ)
+* [Email us](mailto:cloudvulndb@gmail.com)
