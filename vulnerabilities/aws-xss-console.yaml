@@ -1,10 +1,10 @@
-title: XSS in web console
+title: ElasticBeanstalk XSS in web console
 slug: aws-xss-console
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://images.pexels.com/photos/7125651/pexels-photo-7125651.jpeg
 severity: Low
 discoveredBy:
   name: Nick Frichette
