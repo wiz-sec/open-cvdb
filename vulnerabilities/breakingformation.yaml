@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CloudFormation
-image: null
+image: https://images.pexels.com/photos/51359/airshow-fighter-jets-aerobatic-fighter-51359.jpeg
 severity: Critical
 discoveredBy:
   name: Tzah Pahima
