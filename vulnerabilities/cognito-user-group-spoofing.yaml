@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Cognito
 - Amazon API Gateway
-image: https://www.drupal.org/files/project-images/553dbabbd287c26ca83aef42.jpg
+image: https://d1.awsstatic.com/products/Cognito/SmashingIdeasAssets/01_heroes/landingpage/AWS_Cognito_SI_LP_Hero-w-SquidInk.f9a733d0e41647e4e11d5e20a8480fd593c3dff2.jpeg
 severity: Low
 discoveredBy:
   name: null
