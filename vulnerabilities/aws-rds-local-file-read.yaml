@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - RDS
-image: https://7903508.fs1.hubspotusercontent-na1.net/hub/7903508/hubfs/Group%2084%20%281%29.png?width=1040&name=Group%2084%20%281%29.png
+image: https://d1.awsstatic.com/logos/rds/ImgHead_RDS_2021.342f49b453ba17561a5aed200f4cad66b7f0a246.jpg
 severity: High
 discoveredBy:
   name: Gafnit Amiga
