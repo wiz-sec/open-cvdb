@@ -1,10 +1,10 @@
-title: Overprivileged AWS Support IAM Role Policy
+title: Overprivileged AWS support IAM role policy
 slug: overprivileged-aws-support-iam
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://images.pexels.com/photos/5697262/pexels-photo-5697262.jpeg
 severity: Medium
 discoveredBy:
   name: Scott Piper
@@ -15,11 +15,11 @@ disclosedAt: 2021/12/22
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  AWS added `s3:getObject` action to `AWSSupportServiceRolePolicy` IAM Policy
-  used by AWS Support teams.
+  AWS added an excessive s3:getObject permission to AWSSupportServiceRolePolicy
+  IAM policy used by AWS Support teams, and removed it a day later.
 manualRemediation: |
-  Use KMS-CMK for bucket encryption, Use Least privilege on resources
-  policies (Buckets)
+  None required, though best practice would be to use KMS-CMK for bucket
+  encryption and minimize privileges in resource policies.
 detectionMethods: null
 contributer: https://github.com/z0ph
 references:
