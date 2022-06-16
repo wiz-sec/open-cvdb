@@ -2,7 +2,7 @@ title: Oracle Apiary SSRF
 slug: apiary-ssrf
 cves: null
 affectedPlatforms:
-- Oracle
+- OCI
 affectedServices:
 - Apiary
 image: https://static.apiary.io/assets/v6Zkz37_.png
