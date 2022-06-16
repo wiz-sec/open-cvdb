@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices: null
-image: https://upload.wikimedia.org/wikipedia/commons/d/d8/Red_Hat_logo.svg
+image: https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
 severity: Low
 discoveredBy:
   name: Ian Duffy
