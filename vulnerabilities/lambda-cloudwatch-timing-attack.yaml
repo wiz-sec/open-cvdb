@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Lambda
 - CloudWatch Synthetics
-image: null
+image: https://onecloudplease.com/images/posts/canary.jpg
 severity: Low
 discoveredBy:
   name: Ian McKay
