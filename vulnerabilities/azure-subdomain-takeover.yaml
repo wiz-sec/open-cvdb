@@ -1,4 +1,4 @@
-title: Subdomain takeover using Azure
+title: Subdomain takeover via Azure Traffic Manager
 slug: azure-subdomain-takeover
 cves: null
 affectedPlatforms:
