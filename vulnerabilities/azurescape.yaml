@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - ACI
-image: null
+image: https://images.pexels.com/photos/845265/pexels-photo-845265.jpeg
 severity: Critical
 discoveredBy:
   name: Yuval Avrahami
