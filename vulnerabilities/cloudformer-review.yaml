@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CloudFormer
-image: null
+image: https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg
 severity: Low
 discoveredBy:
   name: Karim El-Melhaoui
