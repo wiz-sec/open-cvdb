@@ -1,6 +1,10 @@
 title: OMIGOD
 slug: omigod
-cves: null
+cves:
+- CVE-2021-38647
+- CVE-2021-38648
+- CVE-2021-38645
+- CVE-2021-38649
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -16,10 +20,12 @@ disclosedAt: 2021/09/14
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Azure forces the install of an agent on Linux VMs, which contained a vuln
-  that would grant root RCE if an attacker could send a web request to them
+  Azure forces the install of an agent on Linux VMs, which contained a vulnerability
+  that would grant root RCE if an attacker could send a web request to them. Initially,
+  Microsoft did not update the agent automatically, and so customers had to patch manually,
+  but a few days later they began patching some services remotely.
 manualRemediation: |
-  None required, client needed to be auto-updated
+  None required, client needed to be auto-updated.
 detectionMethods: null
 contributer: https://github.com/0xdabbad00
 references:
