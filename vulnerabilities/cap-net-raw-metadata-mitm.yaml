@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - GKE
-image: null
+image: https://images.pexels.com/photos/762679/pexels-photo-762679.jpeg
 severity: Medium
 discoveredBy:
   name: Etienne Champetier
