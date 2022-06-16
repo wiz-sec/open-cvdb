@@ -15,7 +15,13 @@ disclosedAt: 2022/02/04
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  AWS VPC data exfiltration using CodeBuild
+  When customers attach a CodeBuild project to their VPC, CodeBuild’s build container
+  will apply the same network routing rules as defined in the customer’s VPC Security Group.
+  However, CodeBuild EC2 hosts retained Internet connectivity via AWS's own VPC, thus allowing
+  an attacker to bypass any custom VPC rules the customer had set up, and use CodeBuild for
+  data exfiltration from the targeted environment. AWS later updated the CodeBuild service
+  to block all outbound network access for newly created CodeBuild projects which contain a
+  customer-defined VPC configuration.
 manualRemediation: |
   None required
 detectionMethods: null
