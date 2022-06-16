@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CloudTrail
-image: null
+image: https://d1.awsstatic.com/product-marketing/CloudTrail/ImgHead_Cloud-Trail_2021.226f9f29987cf5b5898cd68d32b92efe100fd25d.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette
