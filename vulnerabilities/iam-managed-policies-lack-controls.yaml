@@ -4,16 +4,16 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://d1.awsstatic.com/Products/product-name/Images/ImgHead_Generic_B2.643d561e48f5121a6320802cb5607c959adb8a4d.jpg
 severity: Low
 discoveredBy: null
 disclosedAt: 2020/10/15
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Repeated examples of AWS releasing or changing IAM policies they obviously 
-  shouldn''t have (CheesepuffsServiceRolePolicy, AWSServiceRoleForThorInternalDevPolicy,
-  AWSCodeArtifactReadOnlyAccess.json, AmazonCirrusGammaRoleForInstaller). The worst
+  AWS have released or changed managed IAM policies in unexpected and insecure ways.
+  Examples include: CheesepuffsServiceRolePolicy, AWSServiceRoleForThorInternalDevPolicy,
+  AWSCodeArtifactReadOnlyAccess.json, AmazonCirrusGammaRoleForInstaller. The worst
   being the ReadOnlyAccess policy having almost all privileges removed and unexpected
   ones added.
 manualRemediation: | 
