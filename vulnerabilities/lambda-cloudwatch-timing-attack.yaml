@@ -16,14 +16,11 @@ discoveredBy:
 disclosedAt: 2020/09/15
 exploitabilityPeriod: null
 knownITWExploitation: false
-summary: 'Ability to violate the immutability of Lambda versions via a timing attack
-
-  against CloudWatch Synthetics.
-
-  '
-manualRemediation: 'None required
-
-  '
+summary: |
+  The immutability of Lambda versions could be violated via a timing attack
+  against CloudWatch Synthetics canaries.
+manualRemediation: |
+  None required
 detectionMethods: null
 contributer: https://github.com/ramimac
 references:
