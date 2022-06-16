@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - GCP
 affectedServices: null
-image: null
+image: https://www.gstatic.com/devrel-devsite/prod/ve6ddf5bcead12ab16e41f3889a7fb0a07adddfafd7d99eb46840573a68200f4e/cloud/images/social-icon-google-cloud-1200-630.png
 severity: Low
 discoveredBy:
   name: Jonathan Rault
