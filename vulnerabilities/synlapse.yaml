@@ -7,7 +7,7 @@ affectedPlatforms:
 affectedServices:
 - Synapse Analytics
 - Data Factory
-image: null
+image: https://m7a3i4k5.rocketcdn.me/wp-content/uploads/2022/06/Blog-Graphics_Featured-Tile_Azure-SynLapse-Vulnerability.jpg
 severity: Critical
 discoveredBy:
   name: Tzah Pahima
