@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Automation Service
-image: https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg
+image: https://images.unsplash.com/photo-1651491602333-fea83f1d9107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Critical
 discoveredBy:
   name: Yanir Tsarimi
