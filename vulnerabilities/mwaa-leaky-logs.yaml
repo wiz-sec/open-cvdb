@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - MWAA
-image: https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg
+image: https://cdn.pixabay.com/photo/2020/12/24/14/15/leaking-tap-5857559_960_720.jpg
 severity: Low
 discoveredBy:
   name: Ben Reser
