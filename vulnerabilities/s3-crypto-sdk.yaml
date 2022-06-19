@@ -7,7 +7,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - S3
-image: https://d1.awsstatic.com/s3-pdp-redesign/ImgHead_S3_2021.0613d5edcb509e3d5be1278b7475a190c410984a.jpg
+image: https://images.pexels.com/photos/160773/sandbox-children-child-sand-160773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: Low
 discoveredBy:
   name: Sophie Schmieg
