@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://d1.awsstatic.com/developer-tools/ImgHead_AWS-CodeBuild.b0de80b5eee6e84fd52289ec330acae278570691.jpg
+image: https://images.unsplash.com/photo-1631106256072-54c89defe828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Low
 discoveredBy:
   name: Aidan Steele
