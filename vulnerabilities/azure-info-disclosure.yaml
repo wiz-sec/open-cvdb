@@ -1,4 +1,4 @@
-title: Azure AD Information Disclosure
+title: Azure AD information disclosure via undocumented APIs
 slug: azure-info-disclosure
 cves: null
 affectedPlatforms:
@@ -15,9 +15,9 @@ disclosedAt: 2022/04/05
 exploitabilityPeriod: null
 knownITWExploitation: 'No'
 summary: |
-  APIs can access internal information of any organization that uses Azure
-  AD. Collected details included licensing information, mailbox information, and
-  directory synchronization status
+  Undocumented Azure AD APIs could allow access to internal information of any organization
+  that uses Azure AD. Collected details included licensing information, mailbox information, and
+  directory synchronization status.
 manualRemediation: null
 detectionMethods: null
 contributer: https://github.com/ramimac
