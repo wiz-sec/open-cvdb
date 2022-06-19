@@ -3,7 +3,7 @@
 ## The Open Cloud Vulnerability & Security Issue Database Launch
 *June 28, 2022*
 
-In the past year witnessed an increasing number of cloud vulnerabilites published by major cloud service providers. Security bugs in Cloud services tend to [fall between the cracks](https://www.wiz.io/blog/security-industry-call-to-action-we-need-a-cloud-vulnerability-database/), as they don’t fit well into the current shared responsibility model of cloud security. As a result, remediation often requires a joint effort between both the CSP and their customers.
+In the past year we witnessed an increasing number of cloud vulnerabilites published by major cloud service providers. Security bugs in Cloud services tend to [fall between the cracks](https://www.wiz.io/blog/security-industry-call-to-action-we-need-a-cloud-vulnerability-database/), as they don’t fit well into the current shared responsibility model of cloud security. As a result, remediation often requires a joint effort between both the CSP and their customers.
 
 There is currently no universal standard for cloud vulnerability enumeration – CSPs rarely issue CVEs for security mistakes discovered in their services, there are no industry conventions for assessing severity, no proper notification channels and no unified tracking mechanism. In most cases, CSPs respond quickly to fix the security issue on their side but the lack of standratiztion leaves many cloud customers vulnerable and unaware to the issues and their environemts. 
 
