@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - MWAA
-image: https://cdn.pixabay.com/photo/2020/12/24/14/15/leaking-tap-5857559_960_720.jpg
+image: https://images.pexels.com/photos/675987/machine-mill-industry-steam-675987.jpeg
 severity: Low
 discoveredBy:
   name: Ben Reser
