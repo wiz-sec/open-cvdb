@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices: null
-image: https://n3x0.com/wp-content/uploads/2020/10/researchers-find-vulnerabilities-in-microsoft-azure-cloud-service.jpg
+image: https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Low
 discoveredBy:
   name: null
