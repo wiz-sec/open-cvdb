@@ -1,9 +1,10 @@
-title: Privilege escalation and file poisoning in Azure's Synapse Analytics
+title: Privilege escalation and file poisoning in Synapse Analytics
 slug: synapse-pwnalytics
 cves: null
 affectedPlatforms:
 - Azure
-affectedServices: Synapse Analytics
+affectedServices:
+- Synapse Analytics
 image: https://symbols.getvecta.com/stencil_74/153_azuresynapseanalytics.ac7019d882.svg
 severity: Medium
 discoveredBy:
@@ -11,16 +12,19 @@ discoveredBy:
   org: Tenable 
   domain: https://www.tenable.com/
   twitter: null
-disclosedAt: 08/06/2022
-exploitabilityPeriod: until 01/06/2022
+disclosedAt: 2022/03/10
+exploitabilityPeriod: Until June 1st, 2022
 knownITWExploitation: false
 summary: |
-  Tenable Research has discovered a privilege escalation flaw that allows a user to escalate privileges to that 
-  of the root user within the context of a Spark VM. They have also discovered a flaw that allows a user to poison 
-  the hosts file on all nodes in their Spark pool, which allows one to redirect subsets of traffic and snoop on 
+  Tenable Research discovered a privilege escalation flaw that allows a user to escalate privileges to that 
+  of the root user within the context of a Spark VM. They also discovered a seperate flaw that allows a user to poison 
+  the hosts file on all nodes in their Spark pool, which would allow an attacker to redirect subsets of traffic and snoop on 
   services users generally do not have access to.
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: null
-references: https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291
+contributer: https://github.com/mer-b
+references:
+- https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291
+- https://www.tenable.com/security/research/tra-2022-19
+- https://www.tenable.com/security/research/tra-2022-20
