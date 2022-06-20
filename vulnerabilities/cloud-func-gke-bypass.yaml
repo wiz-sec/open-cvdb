@@ -1,0 +1,27 @@
+title: GKE Authorized Networks bypass via Cloud Functions
+slug: cloud-func-gke-bypass
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- GKE
+image: https://cdn.pixabay.com/photo/2019/09/04/13/00/steering-wheel-4451548_1280.jpg
+severity: Medium
+discoveredBy:
+  name: Peter Collins
+  org: null
+  domain: null
+  twitter: https://twitter.com/itspeterc
+disclosedAt: 2022/03/09
+exploitabilityPeriod: ongoing
+knownITWExploitation: false
+summary: |
+  Executing Cloud Functions in any project and in any organization allows bypassing the GKE Authorized Networks (aka Kubernetes 
+  control plane firewalls) of a cluster in a different project or organization.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/mer-b
+references:
+- https://cloud.google.com/blog/products/identity-security/updates-coming-for-authorized-networks-and-cloud-runfunctions-on-gke
+- https://twitter.com/itspeterc/status/1534205155914264576
