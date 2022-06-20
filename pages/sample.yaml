@@ -1,6 +1,7 @@
 title: 
 slug: 
 cves: 
+- 
 affectedPlatforms:
 - 
 affectedServices:
@@ -12,12 +13,14 @@ discoveredBy:
   org: 
   domain: 
   twitter: 
-disclosedAt: 
+disclosedAt: YYYY/mm/dd
 exploitabilityPeriod: 
 knownITWExploitation: 
-summary: 
-manualRemediation: 
+summary: |
+  
+manualRemediation: |
+  
 detectionMethods: 
-contributer: 
+contributer: https://github.com/[username]
 references:
 - 
