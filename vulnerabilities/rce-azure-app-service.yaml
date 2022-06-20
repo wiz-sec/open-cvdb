@@ -1,0 +1,27 @@
+title: Azure's App Service RCE
+slug: rce-azure-app-service
+cves: 
+- CVE-2019-1372
+affectedPlatforms:
+- Azure
+affectedServices:
+- App Service
+image: https://connectoricons-prod.azureedge.net/releases/v1.0.1567/1.0.1567.2748/azureappservice/icon.png
+severity: Critical
+discoveredBy:
+  name: Ronen Shustin
+  org: Check Point
+  domain: https://research.checkpoint.com/
+  twitter: https://twitter.com/ronenshh
+disclosedAt: 27/06/2019
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A Vulnerability in App Service could allow an unprivileged function run by the user to execute code in the 
+  context of NT AUTHORITY\system thereby escaping the Sandbox. This Vulnerability allowed cross-account access 
+  when using Free/Shared tier.
+manualRemediation: |
+  Azure Cloud - N/A, Azure Stack / Windows Azure Pack Web Sites V2 - Manual Update
+detectionMethods: null
+contributer: https://github.com/r0nen
+references: https://research.checkpoint.com/2020/remote-cloud-execution-critical-vulnerabilities-in-azure-cloud-infrastructure-part-ii/
