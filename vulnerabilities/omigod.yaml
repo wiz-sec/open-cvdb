@@ -9,7 +9,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - OMI
-image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/omigod-8.png
+image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/omigod-0.jpeg
 severity: Critical
 discoveredBy:
   name: Nir Ohfeld
