@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://images.pexels.com/photos/7125651/pexels-photo-7125651.jpeg
+image: https://images.pexels.com/photos/768093/pexels-photo-768093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
   name: Nick Frichette
