@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Synapse Analytics
-image: https://symbols.getvecta.com/stencil_74/153_azuresynapseanalytics.ac7019d882.svg
+image: https://cdn.pixabay.com/photo/2016/06/26/23/47/poison-1481596_1280.jpg
 severity: Medium
 discoveredBy:
   name: null
