@@ -1,0 +1,27 @@
+title: Azure Cloud Shell and Azure Container Instances Container Breakout
+slug: azure-cloud-shell-and-container-instance-lpe
+cves: 
+- null
+affectedPlatforms:
+- Azure
+affectedServices:
+- null
+image: https://www.wizbrand.com/tutorials/wp-content/uploads/2021/09/cloud-shell.png
+severity: High
+discoveredBy:
+  name: Chen Cohen
+  org: null
+  domain: null
+  twitter: https://twitter.com/chencococococo
+disclosedAt: 20/01/2020
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Local privilege escalation on Azure Cloud Shell, and any container in Azure Container Instance through the 
+  kubelet API.
+manualRemediation: |
+  
+detectionMethods: null
+contributer: https://github.com/yuvalavra
+references:
+- https://hencohen10.medium.com/i-own-your-cloud-shell-taking-over-azure-cloud-shell-kubernetes-cluster-through-unsecured-558621519cf9
