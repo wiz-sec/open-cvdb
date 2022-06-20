@@ -14,7 +14,7 @@ discoveredBy:
   domain: null
   twitter: https://twitter.com/chencococococo
 disclosedAt: 20/01/2020
-exploitabilityPeriod: null
+exploitabilityPeriod: until 30/01/2020
 knownITWExploitation: null
 summary: |
   Local privilege escalation on Azure Cloud Shell, and any container in Azure Container Instance through the 
