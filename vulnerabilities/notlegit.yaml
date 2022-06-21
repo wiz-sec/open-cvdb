@@ -10,7 +10,7 @@ discoveredBy:
   name: Shir Tamari
   org: Wiz
   domain: https://www.wiz.io/
-  twitter: null
+  twitter: https://twitter.com/shirtamari
 disclosedAt: 2021/12/21
 exploitabilityPeriod: Sept 2017 - Dec 2021
 knownITWExploitation: false
