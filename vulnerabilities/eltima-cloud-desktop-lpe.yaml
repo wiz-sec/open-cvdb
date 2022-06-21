@@ -1,0 +1,56 @@
+title: LPE vulnerability in Eltima (3rd-party cloud desktop driver)
+slug: eltima-cloud-desktop-lpe
+cves:
+- CVE-2021-42972
+- CVE-2021-42973
+- CVE-2021-42976
+- CVE-2021-42977
+- CVE-2021-42979
+- CVE-2021-42980
+- CVE-2021-42983
+- CVE-2021-42986
+- CVE-2021-42987
+- CVE-2021-42988
+- CVE-2021-42990
+- CVE-2021-42993
+- CVE-2021-42994
+- CVE-2021-42996
+- CVE-2021-43000
+- CVE-2021-43002
+- CVE-2021-43003
+- CVE-2021-43006
+- CVE-2021-43637
+- CVE-2021-43638
+- CVE-2021-42681
+- CVE-2021-42682
+- CVE-2021-42683
+- CVE-2021-42685
+- CVE-2021-42686
+- CVE-2021-42687
+- CVE-2021-42688
+affectedPlatforms:
+- AWS
+affectedServices:
+- WorkSpaces
+image: https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: High
+discoveredBy:
+  name: Kasif Dekel
+  org: SentinelOne
+  domain: https://www.sentinelone.com/
+  twitter: https://twitter.com/kasifdekel
+disclosedAt: 2021/07/12
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Several cloud desktop solutions rely on a 3rd-party library called Eltima SDK to provide
+  USB over Ethernet capabilities, to allow users to connect and share local devices such as
+  webcams. SentinelLabs discovered vulnerabilities in Eltima drivers, including proprietary
+  versions used by several cloud services (among them AWS Workspaces), that would allow
+  unprivileged users to escalate privileges to kernel mode.
+manualRemediation: |
+  AWS Workspaces users must manually update if they have either AutoStop WorkSpaces
+  with maintenance disabled or AlwaysOn WorkSpaces with OS updates disabled.
+detectionMethods: null
+contributer: https://github.com/kasif-dekel
+references: https://www.sentinelone.com/labs/usb-over-ethernet-multiple-privilege-escalation-vulnerabilities-in-aws-and-other-major-cloud-services/
