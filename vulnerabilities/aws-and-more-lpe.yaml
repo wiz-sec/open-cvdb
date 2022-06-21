@@ -1,0 +1,24 @@
+title: Multiple Cloud Providers (Including Amazon AWS) Local Privilege Escalation
+slug: aws-and-more-lpe
+cves: CVE-2021-42972, CVE-2021-42973, CVE-2021-42976, CVE-2021-42977, CVE-2021-42979, CVE-2021-42980, CVE-2021-42983, CVE-2021-42986, CVE-2021-42987, CVE-2021-42988, CVE-2021-42990, CVE-2021-42993, CVE-2021-42994, CVE-2021-42996, CVE-2021-43000, CVE-2021-43002, CVE-2021-43003, CVE-2021-43006, CVE-2021-43637, CVE-2021-43638, CVE-2021-42681, CVE-2021-42682, CVE-2021-42683, CVE-2021-42685, CVE-2021-42686, CVE-2021-42687, CVE-2021-42688
+affectedPlatforms:
+- AWS
+affectedServices:
+- null
+image: https://images.pexels.com/photos/157517/pexels-photo-157517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: High
+discoveredBy:
+  name: Kasif Dekel
+  org: SentinelOne
+  domain: https://www.sentinelone.com/
+  twitter: https://twitter.com/kasifdekel
+disclosedAt: 12/07/2021
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A Vulnerability in 3rd party library used by several cloud providers could allow an unprivileged users to escalate privileges to kernel mode.
+manualRemediation: |
+  Install patched software
+detectionMethods: null
+contributer: https://github.com/kasif-dekel
+references: https://www.sentinelone.com/labs/usb-over-ethernet-multiple-privilege-escalation-vulnerabilities-in-aws-and-other-major-cloud-services/
