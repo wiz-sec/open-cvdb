@@ -1,0 +1,26 @@
+title: SSRF in Google Cloud Monitoring
+slug: ssrf-in-google-cloud-monitoring
+cves: 
+- null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Monitoring
+image: https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/cloud/images/social-icon-google-cloud-1200-630.png
+severity: Medium
+discoveredBy:
+  name: David Nechuta
+  org: null
+  domain: https://nechudav.blogspot.com/
+  twitter: https://twitter.com/david_nechuta
+disclosedAt: 2020/06
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  An SSRF bug in Google Cloud Monitoring's uptime check feature could have been used to leak the authentication token of the service account used for these checks.
+manualRemediation: |
+  
+detectionMethods: 
+contributer: https://github.com/0xdabbad00
+references:
+- https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html
