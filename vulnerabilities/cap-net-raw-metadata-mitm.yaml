@@ -1,10 +1,12 @@
-title: GCP and GKE `CAP_NET_RAW` metadata service MITM root privilege escalation
+title: GKE and EKS CAP_NET_RAW metadata service MITM root privilege escalation
 slug: cap-net-raw-metadata-mitm
 cves: null
 affectedPlatforms:
 - Azure
+- AWS
 affectedServices:
 - GKE
+- EKS
 image: https://images.pexels.com/photos/762679/pexels-photo-762679.jpeg
 severity: Medium
 discoveredBy:
@@ -16,12 +18,12 @@ disclosedAt: 2020/06/15
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  An attacker gaining access to a hostNetwork=true container with CAP_NET_RAW
+  An attacker with access to a hostNetwork=true container with CAP_NET_RAW
   capability can listen to all the traffic going through the host and inject arbitrary
   traffic, allowing to tamper with most unencrypted traffic (HTTP, DNS, DHCP, ...),
   and disrupt encrypted traffic. In GKE the host queries the metadata service at
-  `http://169.254.169.254` to get information, including the authorized ssh keys.
-  By manipulating the metadata service responses, injecting our own ssh key, it
+  http://169[.]254.169.254 to get information, including the authorized SSH keys.
+  By manipulating the metadata service responses and injecting our own SSH key, it
   is possible to gain root privilege on the host.
 manualRemediation: |
   None required
