@@ -1,7 +1,6 @@
 title: GKE gVisor sandbox escape
 slug: gke-gvisor-sandbox-escape
-cves: 
-- null
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
