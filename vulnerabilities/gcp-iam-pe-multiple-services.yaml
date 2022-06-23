@@ -9,7 +9,7 @@ affectedServices:
 - Dataproc
 - Dataprep
 - Data Fusion
-image: https://cdn.pixabay.com/photo/2016/12/25/18/24/man-1930522_1280.jpg
+image: https://cdn.pixabay.com/photo/2019/08/20/07/55/escalator-4418051_1280.jpg
 severity: High
 discoveredBy:
   name: Allison Donovan, Dylan Ayrey
