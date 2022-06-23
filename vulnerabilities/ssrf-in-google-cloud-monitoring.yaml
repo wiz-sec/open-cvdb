@@ -6,7 +6,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Google Cloud Monitoring
-image: https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/cloud/images/social-icon-google-cloud-1200-630.png
+image: https://cdn.pixabay.com/photo/2017/12/13/18/03/cloud-3017392_1280.png
 severity: Medium
 discoveredBy:
   name: David Nechuta
