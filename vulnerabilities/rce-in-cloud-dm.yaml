@@ -1,7 +1,6 @@
 title: RCE in Google Cloud Deployment Manager
 slug: rce-in-cloud-dm
-cves: 
-- null
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
