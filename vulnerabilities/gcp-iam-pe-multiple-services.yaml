@@ -9,7 +9,7 @@ affectedServices:
 - Dataproc
 - Dataprep
 - Data Fusion
-image: https://files.slack.com/files-pri/TSYNK6AJ3-F03LSH50ZN1/image.png
+image: https://media.istockphoto.com/photos/wooden-stairs-picture-id1262959028?k=20&m=1262959028&s=612x612&w=0&h=YbSf-ETGnbVAWQTrK-dlmrTz15VZRvSG_NNKKUxpBhg=
 severity: High
 discoveredBy:
   name: Allison Donovan, Dylan Ayrey
