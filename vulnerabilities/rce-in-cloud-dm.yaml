@@ -5,19 +5,20 @@ cves:
 affectedPlatforms:
 - GCP
 affectedServices:
-- null
-image: https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/cloud/images/social-icon-google-cloud-1200-630.png
+- Cloud Deployment Manager
+image: https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80
 severity: High
 discoveredBy:
   name: Ezequiel Pereira
   org: null
   domain: https://www.ezequiel.tech/
-  twitter: null
-disclosedAt: 20202/05/07
+  twitter: https://twitter.com/epereiralopez
+disclosedAt: 2020/05/07
 exploitabilityPeriod: until 2020/05/20
 knownITWExploitation: null
 summary: |
-  An RCE in Google Cloud Deployment Manager could have allowed an attacker to make requests to internal Google services, authenticated as a privileged service account.
+  An RCE in Google Cloud Deployment Manager could have allowed an attacker to make
+  requests to internal Google services, authenticated as a privileged service account.
 manualRemediation: |
   
 detectionMethods: null
