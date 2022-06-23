@@ -6,7 +6,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - GKE
-image: https://digital.ai/sites/default/files/pictures/styles/maxwidth_300/public/pt_logos/google-gke.png
+image: https://cdn.pixabay.com/photo/2016/08/10/14/07/sandbox-1583289_1280.jpg
 severity: Medium
 discoveredBy:
   name: Bastien Chatelard
