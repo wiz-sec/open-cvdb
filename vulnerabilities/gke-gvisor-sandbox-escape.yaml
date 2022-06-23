@@ -1,0 +1,26 @@
+title: GKE gVisor sandbox escape
+slug: gke-gvisor-sandbox-escape
+cves: 
+- null
+affectedPlatforms:
+- GCP
+affectedServices:
+- GKE
+image: https://cdn.pixabay.com/photo/2016/08/10/14/07/sandbox-1583289_1280.jpg
+severity: Medium
+discoveredBy:
+  name: Bastien Chatelard
+  org: Koyeb
+  domain: https://www.koyeb.com/
+  twitter: https://twitter.com/bchatelard
+disclosedAt: 2020/12/30
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A bug in the GKE gVisor sandbox's network policy implementation allowed access to the Google Compute Engine metadata API.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/0xdabbad00
+references:
+- https://www.koyeb.com/blog/escaping-gke-gvisor-sandboxing-using-metadata
