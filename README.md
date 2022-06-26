@@ -12,7 +12,7 @@ Our goal in this project is to pave the way for a centralized cloud vulnerabilit
 
 We believe this project can prove the utility of a cloud vulnerability database (VDB), bring more transparency into these issues, and ultimately make the cloud even more secure.
 
-This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 3rd, 2022, all content included here originally appeared in that repository.
+This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 28th, 2022, all content included here originally appeared in that repository.
 
 ### Contribution guidelines
 
