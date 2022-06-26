@@ -24,7 +24,7 @@ We consider the following cases to be out of scope of this project:
 -	CSP customer security incidents
 
 ## History
-This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 3rd, 2022, all content included here originally appeared in that repository.
+This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 28th, 2022, all content included here originally appeared in that repository.
 
 ## Next Steps
 Besides continuing to document newly discovered cloud vulnerabilities and security issues, we would also like to achieve the following:
