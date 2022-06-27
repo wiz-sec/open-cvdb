@@ -1,7 +1,6 @@
 title: GCP Cloudshell Vulnerabilities
 slug: gcp-cloudshell-bugs
-cves: 
-- null
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -13,17 +12,21 @@ discoveredBy:
   org: Offensi
   domain: https://offensi.com/
   twitter: https://twitter.com/wtm_offensi
-disclosedAt: 2019/07
-exploitabilityPeriod: until 2019/07
+disclosedAt: 2020/03/11
+exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  Wouter ter Maat discovered 10 vulnerabilities in Google's Cloudshell, that can allow an attacker to access
-  all the resources in the victims environment. 
+  Wouter ter Maat discovered 9 vulnerabilities in GCP Cloudshell that could
+  allow an attacker to access resources in another customer's environment. 
 manualRemediation: |
-  null
+  None required
 detectionMethods: null
 contributer: https://github.com/korniko98
 references:
 - https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-introduction/
+- https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-1/
+- https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-2/
+- https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-3/
+- https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-4/
 - https://www.youtube.com/watch?v=J2icGMocQds
 - https://security.googleblog.com/2020/03/announcing-our-first-gcp-vrp-prize.html
