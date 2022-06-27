@@ -18,7 +18,7 @@ discoveredBy:
   twitter: null
 disclosedAt: 2021/09/14
 exploitabilityPeriod: null
-knownITWExploitation: True
+knownITWExploitation: true
 summary: |
   Azure forces the install of an agent on Linux VMs, which contained a vulnerability
   that would grant root RCE if an attacker could send a web request to them. Initially,
