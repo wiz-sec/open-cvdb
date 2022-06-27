@@ -14,7 +14,7 @@ discoveredBy:
   name: Chris Moberly
   org: null
   domain: null
-  twitter: https://twitter.com/init_string
+  twitter: init_string
 disclosedAt: 2020/06/04
 exploitabilityPeriod: until June 2020
 knownITWExploitation: null
