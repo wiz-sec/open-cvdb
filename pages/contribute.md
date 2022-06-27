@@ -1,4 +1,4 @@
-## How to contribute?
+# How to contribute?
 
 This website reflects the current state of data stored in our [GitHub repository](https://github.com/wiz-sec/open-cvdb). To contribute a new issue or suggest an edit to an existing one, please add a commit and our maintainers will review it for merging within a few days (but usually sooner).
 
