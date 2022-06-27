@@ -4,13 +4,13 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg
+image: https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
-  name: ' Ryan Gerstenkorn'
+  name: Ryan Gerstenkorn
   org: null
   domain: null
-  twitter: https://twitter.com/Ryan_Jarv/
+  twitter: Ryan_Jarv
 disclosedAt: 2020/10/19
 exploitabilityPeriod: null
 knownITWExploitation: false
