@@ -19,6 +19,7 @@ We define the following criteria for inclusion in this database:
 Examples include:
 -	Security issues in default misconfigurations
 -	Vulnerabilities in CSP-provided client software
+
 We consider the following cases to be out of scope of this project:
 -	CSP security incidents with no security impact on customers
 -	Security issues about which there is no publicly available information
