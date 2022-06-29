@@ -20,7 +20,7 @@ manualRemediation: |
   Review your DNS zones and identify CNAME records that are dangling or have been taken over.
   For further recommendations, review Microsoft's article on subdomain takeovers (linked in references).
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://0xpatrik.com/subdomain-takeover-starbucks-ii/
 - https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover

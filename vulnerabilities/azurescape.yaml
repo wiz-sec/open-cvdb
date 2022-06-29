@@ -21,6 +21,6 @@ manualRemediation: |
   Revoking any privileged credentials that were deployed to the
   platform before Aug. 31, 2021, and checking their access logs for irregularities.
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://unit42.paloaltonetworks.com/azure-container-instances/

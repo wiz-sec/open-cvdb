@@ -21,6 +21,6 @@ summary: |
 manualRemediation: |
   Roll access keys
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://summitroute.com/blog/2021/08/05/lightsail-object-storage-concerns-part-1/

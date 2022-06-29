@@ -21,7 +21,7 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/RyanJarv/EC2FakeImds
 - https://blog.ryanjarv.sh/2020/10/19/imds-persistence.html

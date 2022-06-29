@@ -27,6 +27,6 @@ summary: |
 manualRemediation: |
   None required, client needed to be auto-updated.
 detectionMethods: OMI version < 1.6.8.1
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution

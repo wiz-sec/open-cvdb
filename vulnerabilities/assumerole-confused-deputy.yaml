@@ -21,7 +21,7 @@ summary: |
 manualRemediation: |
   Audit your vendor roles
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://www.youtube.com/watch?v=8ZXRw4Ry3mQ
 - https://www.praetorian.com/blog/aws-iam-assume-role-vulnerabilities/

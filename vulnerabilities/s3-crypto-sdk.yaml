@@ -21,7 +21,7 @@ summary: null
 manualRemediation: |
   Update SDK
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/SchmiegSophie/status/1292930639772004352
 - https://github.com/google/security-research/security/advisories/GHSA-76wf-9vgp-pj7w

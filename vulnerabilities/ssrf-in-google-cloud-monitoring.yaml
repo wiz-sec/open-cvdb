@@ -21,6 +21,6 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: 
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html

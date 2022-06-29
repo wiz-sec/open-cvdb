@@ -20,6 +20,6 @@ summary: |
 manualRemediation: |
   Remove these permissions - this can be done via an organization policy.
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://www.wiz.io/blog/azure-app-service-source-code-leak/

@@ -22,7 +22,7 @@ summary: |
 manualRemediation: |
   Regenerate primary read/write key.
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://chaosdb.wiz.io/
 - https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases

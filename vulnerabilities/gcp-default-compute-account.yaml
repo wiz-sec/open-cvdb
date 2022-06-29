@@ -20,6 +20,6 @@ summary: |
 manualRemediation: |
   Remove these permissions, it can be done via an organization policy
 detectionMethods: null
-contributer: https://github.com/louisdurufle
+contributor: https://github.com/louisdurufle
 references:
 - https://cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts#disable_service_account_default_grants

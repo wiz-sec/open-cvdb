@@ -21,5 +21,5 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references: https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/

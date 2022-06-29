@@ -20,7 +20,7 @@ summary: |
 manualRemediation: |
   Configure setting on your ALBs
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/arkadiyt/status/1180174359840862209
 - https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#load-balancer-attributes
