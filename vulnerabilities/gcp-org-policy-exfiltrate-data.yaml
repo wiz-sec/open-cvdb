@@ -22,6 +22,6 @@ summary: |
 manualRemediation: | 
   Review denied logs in the defender project, because it was also logged there.
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://trustoncloud.com/exfiltrate-data-from-your-super-secure-google-cloud-project-using-the-security-control-built-to-prevent-it/

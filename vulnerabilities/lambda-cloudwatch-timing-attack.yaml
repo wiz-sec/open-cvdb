@@ -22,6 +22,6 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/ramimac
+contributor: https://github.com/ramimac
 references:
 - https://onecloudplease.com/blog/security-september-racing-against-cloudwatch-synthetics-canaries

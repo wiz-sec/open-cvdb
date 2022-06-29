@@ -24,6 +24,6 @@ manualRemediation: |
   this would not have prevented the leakage of API credentials, it would have reduced
   the blast radius.
 detectionMethods: null
-contributer: https://github.com/christophetd
+contributor: https://github.com/christophetd
 references:
 - https://orca.security/resources/blog/autowarp-microsoft-azure-automation-service-vulnerability/

@@ -22,6 +22,6 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/a10ns
+contributor: https://github.com/a10ns
 references:
 - https://www.intruder.io/research/practical-http-header-smuggling
