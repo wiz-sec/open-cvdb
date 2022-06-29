@@ -22,6 +22,6 @@ summary: |
 manualRemediation: |
   Setup detections independent of GuardDuty
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass

@@ -20,6 +20,6 @@ summary: |
   directory synchronization status.
 manualRemediation: null
 detectionMethods: null
-contributer: https://github.com/ramimac
+contributor: https://github.com/ramimac
 references:
 - https://www.secureworks.com/research/azure-active-directory-exposes-internal-information

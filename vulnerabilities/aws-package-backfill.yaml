@@ -23,6 +23,6 @@ summary: |
   on these packages, this would have led to a dependency confusion attack.
 manualRemediation: null
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://www.mend.io/resources/blog/aws-targeted-by-a-package-backfill-attack/

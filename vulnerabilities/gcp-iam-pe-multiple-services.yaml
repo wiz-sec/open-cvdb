@@ -28,6 +28,6 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html

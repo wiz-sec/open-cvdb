@@ -18,7 +18,7 @@ summary: null
 manualRemediation: | 
   Update SDK
 detectionMethods: null
-contributer: https://github.com/0xdabbad00
+contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/XorNinja/status/1310587707605659649
 - https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html
