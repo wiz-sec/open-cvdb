@@ -1,7 +1,7 @@
 title: FabricScape (CVE-2022-30137) - Azure Service Fabric privilege escalation
 slug: CVE-2022-30137
 cves:
-- CVE-2022-30137
+- cve-2022-30137
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -17,14 +17,20 @@ disclosedAt: 2022/06/14
 exploitabilityPeriod: until 2022/05/24
 knownITWExploitation: false
 summary: |
-  A vulnerability in Service Fabric (SF allows Linux containers to escalate their privileges in order to gain root privileges on the node, and then compromise all of the nodes in the cluster. The vulnerability could be exploited on containers that are configured to have runtime access, which is granted by default to every container.
-  Though the bug exists in both the Windows and Linux versions, it is only exploitable on Linux.
+  A vulnerability in Service Fabric (SF allows Linux containers to escalate their privileges in
+  order to gain root privileges on the node, and then compromise all of the nodes in the cluster.
+  The vulnerability could be exploited on containers that are configured to have runtime access,
+  which is granted by default to every container. Though the bug exists in both the Windows and
+  Linux versions, it is only exploitable on Linux.
 manualRemediation: |
-  Users can check their current Service Fabric version by navigating to their Service Fabric cluster in the Azure console and then clicking on "Fabric upgrades".
-  If the Fabric upgrade mode is configured to "Automatic", the cluster will be updated automatically to the latest secure version.
-  If Fabric upgrade mode is configured to "Manual", customers must update it manually to the latest version (9.0.1035.1 or higher).
+  Users can check their current Service Fabric version by navigating to their Service Fabric
+  cluster in the Azure console and then clicking on "Fabric upgrades".
+  If the Fabric upgrade mode is configured to "Automatic", the cluster will be updated automatically
+  to the latest secure version. If Fabric upgrade mode is configured to "Manual",
+  customers must update it manually to the latest version (9.0.1035.1 or higher).
 detectionMethods: Linux Service Fabric runtime < 9.0.1035.1
 contributor: https://github.com/leszekgrzegorek
 references:
 - https://unit42.paloaltonetworks.com/fabricscape-cve-2022-30137/
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-30137
+- https://msrc-blog.microsoft.com/2022/06/28/azure-service-fabric-privilege-escalation-from-containerized-workloads-on-linux/
