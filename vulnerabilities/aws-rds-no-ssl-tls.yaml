@@ -13,7 +13,7 @@ discoveredBy:
   domain: https://kloudle.com/
   twitter: riyazwalikar
 disclosedAt: 2021/12/26
-exploitabilityPeriod: null
+exploitabilityPeriod: Ongoing
 knownITWExploitation: false
 summary: |
   The AWS RDS service does not enable secure transport layer security by default, allowing clients to connect insecurely.
