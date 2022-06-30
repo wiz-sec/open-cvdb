@@ -1,0 +1,29 @@
+title: Google Cloud Armor does not warn about 8KB packet inspection limitation
+slug: gcp-8kb-bypass
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Armor
+image: null
+severity: Medium
+discoveredBy:
+  name: Karan Saini and Riyaz Walikar 
+  org: null
+  domain: null
+  twitter: 
+  - riyazwalikar
+  - squeal
+  - kloudleinc
+disclosedAt: Unknown
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  During policy creation, Cloud Armor does not warn users of an inspection limitation for HTTP POST requests with a body size exceeding 8 KB. Customers are not shown a prompt or notice when configuring Cloud Armor rules from within the web UI, and can only find a reference to the 8 KB limit in a nondescript notice included in the [docs for Armor](https://cloud.google.com/armor/docs/security-policy-overview)
+manualRemediation: |
+  A separate rule can be added in Advanced mode - `int(request.headers["content-length"]) >= 8192`, with 502, 403, or 404 HTTP response status in return.
+detectionMethods: null
+contributer: Kloudle Inc.
+references:
+- https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
+- https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
