@@ -24,7 +24,7 @@ manualRemediation: |
   other than ensuring clients connect to these database types only within the VPC. In general, ensure that
   RDS database instances without SSL/TLS enabled are not exposed over public networks.
 detectionMethods: null
-contributer: https://github.com/riyazwalikar
+contributor: https://github.com/riyazwalikar
 references:
 - https://kloudle.com/blog/aws-rds-does-not-force-clients-to-connect-using-a-secure-transport-layer
 - https://kloudle.com/academy/fixing-the-default-insecure-network-connection-option-for-rds-instances
