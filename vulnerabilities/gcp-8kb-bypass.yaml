@@ -26,7 +26,7 @@ manualRemediation: |
   A custom rule can be added in Advanced mode - `int(request.headers["content-length"]) >= 8192`,
   with 502, 403, or 404 HTTP response status in return.
 detectionMethods: null
-contributer: https://github.com/riyazwalikar
+contributor: https://github.com/riyazwalikar
 references:
 - https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
 - https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
