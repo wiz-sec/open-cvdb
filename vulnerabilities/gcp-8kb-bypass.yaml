@@ -13,7 +13,7 @@ discoveredBy:
   domain: https://kloudle.com/
   twitter: null
 disclosedAt: 2022/02/24
-exploitabilityPeriod: null
+exploitabilityPeriod: Ongoing
 knownITWExploitation: false
 summary: |
   Cloud Armor has a documented limitation of 8 KB as the maximum size of web
