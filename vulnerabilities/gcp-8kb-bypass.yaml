@@ -1,0 +1,32 @@
+title: Google Cloud Armor packet size bypass
+slug: gcp-8kb-bypass
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Armor
+image: https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: Medium
+discoveredBy:
+  name: Karan Saini, Riyaz Walikar
+  org: Kloudle
+  domain: https://kloudle.com/
+  twitter: null
+disclosedAt: 2022/02/24
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Cloud Armor has a documented limitation of 8 KB as the maximum size of web
+  request that it will inspect. The default behavior of Cloud Armor in this case can allow
+  oversized malicious requests to bypass Cloud Armor and directly reach an underlying application.
+  Morevoer, Cloud Armor does not warn users of this limitation during policy creation
+  or when configuring rules from within the web UI, and can only find a reference to
+  the 8 KB limit in the [Cloud Armor documentation](https://cloud.google.com/armor/docs/security-policy-overview).
+manualRemediation: |
+  A custom rule can be added in Advanced mode - `int(request.headers["content-length"]) >= 8192`,
+  with 502, 403, or 404 HTTP response status in return.
+detectionMethods: null
+contributer: https://github.com/riyazwalikar
+references:
+- https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
+- https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
