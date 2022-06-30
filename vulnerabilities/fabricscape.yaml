@@ -1,0 +1,27 @@
+title: Microsoft Service Fabric Container Elevation of Privilege Vulnerability
+slug: FabricScape
+cves:
+- CVE-2022-30137
+affectedPlatforms:
+- Azure
+affectedServices:
+- Service Fabric
+image: https://unit42.paloaltonetworks.com/wp-content/uploads/2022/06/Unit42-blog-2by1-characters-r4d1-2020_Container-v3.png
+severity: Important
+discoveredBy:
+  name: Aviv Sasson
+  org: Palo Alto Networks Unit42
+  domain: unit42.paloaltonetworks.com
+  twitter: null
+disclosedAt: 2022/06/14
+exploitabilityPeriod: until 2022/06/14
+knownITWExploitation: no
+summary: |
+  The vulnerability allows Linux containers to escalate their privileges in order to gain root privileges on the node, and then compromise all of the nodes in the cluster. The vulnerability could be exploited on containers that are configured to have runtime access, which is granted by default to every container.
+manualRemediation: |
+  Not needed
+detectionMethods:
+contributor: https://github.com/leszekgrzegorek
+references:
+- https://unit42.paloaltonetworks.com/fabricscape-cve-2022-30137/
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-30137
