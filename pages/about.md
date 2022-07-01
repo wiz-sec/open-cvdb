@@ -45,7 +45,7 @@ Besides continuing to document newly discovered cloud vulnerabilities and securi
 -	[Cloud Security Notification Framework](https://onug.net/blog/multi-cloud-security-gets-a-decorator/)
 
 ### Contact Us
-* Join our [Slack group](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-1a0av8bb6-gbR5NE97f0MDP3TCf7kgKQ)
+* Join our [Slack group](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-y38smqmo-V~d4hEr_stQErVCNx1OkMA)
 * [Email us](mailto:cloudvulndb@gmail.com)
 
 ### Sponsorship 
