@@ -13,7 +13,7 @@ discoveredBy:
   org: Palo Alto Networks
   domain: https://unit42.paloaltonetworks.com
   twitter: null
-disclosedAt: 2022/06/20
+disclosedAt: 2022/06/29
 exploitabilityPeriod: until 2022/05/24
 knownITWExploitation: false
 summary: |
