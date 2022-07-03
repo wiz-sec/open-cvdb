@@ -1,0 +1,26 @@
+title: Terms and conditions allow sharing customer data
+slug: terms-conditions-customer-data
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- null
+image: https://cdn.pixabay.com/photo/2022/02/13/02/01/terms-7010195_1280.jpg
+severity: null
+discoveredBy:
+  name: Ben Bridts
+  org: null
+  domain: null
+  twitter: https://twitter.com/benbridts
+disclosedAt: 2020/07/08
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Use of the AI services on AWS allows customer data to be moved outside of the regions it is used in and potentially shared with third-parties. 
+  Note: This issue is out of our usual criteria, but is included in the DB for historic reasons.  
+manualRemediation: |
+  Opt out via Organization AI opt-out policy: https://summitroute.com/blog/2021/01/06/opting_out_of_aws_ai_data_usage/ 
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://twitter.com/benbridts/status/1280934515305824256
