@@ -1,0 +1,23 @@
+title: AWS SOC 2 type 2 failure (Fall 2021)
+slug: aws-fall-2021-soc2
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: https://images.unsplash.com/photo-1566563634870-d566ab58a4df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+severity: null
+discoveredBy: null
+disclosedAt: 2021/11/15
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Information about this issue is under NDA, but AWS customers can read about it on page 98 of the report,
+  which is available for download through AWS Artifact.
+  Note: This issue is outside the scope of this database's usual criteria for inclusion, but has
+  been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://aws.amazon.com/blogs/security/fall-2021-soc-reports-now-available-with-141-services-in-scope/

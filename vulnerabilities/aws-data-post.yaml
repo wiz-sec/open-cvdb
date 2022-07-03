@@ -1,0 +1,28 @@
+title: AWS uploaded sensitive data to public Github bucket
+slug: aws-data-post
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices: null
+image: https://images.unsplash.com/photo-1526636355180-fe37f8ce86cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+severity: null
+discoveredBy:
+  name: null
+  org: Upguard
+  domain: https://www.upguard.com/
+  twitter: null
+disclosedAt: 2020/01/13
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  An AWS employee pushed sensitive data to a public github bucket, including customer information and credentials.
+  Note: This issue is outside the scope of this database's usual criteria for inclusion,
+  but has been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://www.upguard.com/breaches/identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more 
+- https://www.theregister.com/2020/01/23/aws_engineer_credentials_github/
+- https://github.com/SummitRoute/csp_security_mistakes/issues/17 
