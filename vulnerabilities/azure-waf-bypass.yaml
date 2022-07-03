@@ -1,28 +1,30 @@
-title: Azure WAF Managed Rule Set Bypass
+title: Azure WAF managed rule set globbing pattern bypass
 slug: azure-waf-bypass
 cves: null
-- 
 affectedPlatforms:
 - Azure
 affectedServices:
-- Azure WAF CRS 3.2 
-image: https://miro.medium.com/max/1400/1*eulqyvUY36J18tEwCHskFA.png
+- Azure WAF
+image: https://images.pexels.com/photos/1662298/pexels-photo-1662298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy: 
   name: Divyanshu Shukla
   org: null
-  domain: justm0rph3u5.medium.com
+  domain: https://justm0rph3u5.medium.com
   twitter: justm0rph3u5
 disclosedAt: 2022/06/29
 exploitabilityPeriod: until July 16th, 2021
-knownITWExploitation: 
+knownITWExploitation: false
 summary: |
-  Azure WAF with OWASP 3.2 Managed Rule Set and below of the firewall was vulnerable to command injection bypass using globbing patterns by which it was possible to execute system commands just using the standard wildcard question mark "?" syntax.
+  Azure Web Application Firewall (WAF) with OWASP 3.2 managed rule set and below was
+  vulnerable to command injection bypass using globbing patterns (incorporating the
+  wildcard "?" in command syntax). For example, while attepting access to "/etc/passwd"
+  would be blocked, a command targeting "/et?/passwo?d" would be allowed.
 manualRemediation: |
   None required
-  
-detectionMethods: 
+detectionMethods: null
 contributer: https://github.com/justmorpheus
 references:
 - https://medium.com/secjuice/waf-evasion-techniques-718026d693d8
 - https://medium.com/bugbountywriteup/module-1-introduction-pentesting-bypassing-cloud-waf-fun-profit-75f315951aa8
+- https://twitter.com/justm0rph3u5/status/1542943538857799680
