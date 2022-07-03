@@ -1,10 +1,9 @@
-title: AWS employee posts data to public Github bucket
+title: AWS employee posted data to public Github bucket
 slug: aws-data-post
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices:
-- null
+affectedServices: null
 image: https://images.unsplash.com/photo-1526636355180-fe37f8ce86cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
 severity: null
 discoveredBy:
@@ -16,7 +15,9 @@ disclosedAt: 2020/01/13
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  An AWS employee pushed data to a public github bucket. Note: This issue is out of our usual criteria, but is included in the DB for historic reasons.  
+  An AWS employee pushed sensitive data to a public github bucket, including customer information and credentials.
+  Note: This issue is outside the scope of this database's usual criteria for inclusion,
+  but has been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.
 manualRemediation: |
   None required
 detectionMethods: null
