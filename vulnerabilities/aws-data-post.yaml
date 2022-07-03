@@ -1,4 +1,4 @@
-title: AWS employee posted data to public Github bucket
+title: AWS uploaded sensitive data to public Github bucket
 slug: aws-data-post
 cves: null
 affectedPlatforms:
