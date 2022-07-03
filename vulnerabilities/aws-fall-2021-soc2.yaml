@@ -1,0 +1,25 @@
+title: AWS Fall 2021, SOC 2 Type 2 failure
+slug: aws-fall-2021-soc2
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- null
+image: https://cdn.pixabay.com/photo/2019/08/29/15/24/odd-socks-4439226_1280.jpg
+severity: null
+discoveredBy:
+  name: null
+  domain: null
+  twitter: null
+disclosedAt: 2021/11/15
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Information is under NDA, but anyone with an AWS account can read it on page 98. Note: This issue is out of our usual criteria, 
+  but is included in the DB for historic reasons.
+manualRemediation: |
+  None required 
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://aws.amazon.com/blogs/security/fall-2021-soc-reports-now-available-with-141-services-in-scope/?sc_channel=sm&sc_campaign=AWSSecurity_Blog&sc_publisher=TWITTER&sc_country=Security&sc_geo=GLOBAL&sc_outcome=awareness&trk=AWSSecurity_Blog_TWITTER

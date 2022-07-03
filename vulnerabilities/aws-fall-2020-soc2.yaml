@@ -1,0 +1,25 @@
+title: Fall 2020, SOC 2 Type 2 failure
+slug: aws-fall-2020-soc2
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- null
+image: https://cdn.pixabay.com/photo/2016/07/04/04/32/sock-1495920_1280.jpg
+severity: null
+discoveredBy:
+  name: null
+  domain: null
+  twitter: null
+disclosedAt: 2020/12/20
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Information is under NDA, but anyone with an AWS account can read it on page 120 and 121. Note: This issue is out of our usual criteria, 
+  but is included in the DB for historic reasons.
+manualRemediation: |
+  None required 
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://aws.amazon.com/about-aws/whats-new/2020/12/aws-artifact-compliance-documents-easy-download-share/
