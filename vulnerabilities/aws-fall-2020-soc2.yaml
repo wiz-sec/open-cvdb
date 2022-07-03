@@ -20,4 +20,4 @@ manualRemediation: |
 detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
-- https://aws.amazon.com/about-aws/whats-new/2020/12/aws-artifact-compliance-documents-easy-download-share/
+- https://aws.amazon.com/blogs/security/fall-2020-soc-reports-now-available-with-124-services-in-scope/
