@@ -1,22 +1,21 @@
-title: ElasticBeanstalk XSS in web console
+title: Elastic Beanstalk - XSS in Web Console
 slug: aws-xss-console
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices: null
+affectedServices: AWS Management Console
 image: https://images.pexels.com/photos/768093/pexels-photo-768093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
   name: Nick Frichette
   org: null
-  domain: null
+  domain: https://frichetten.com/
   twitter: Frichette_n
-disclosedAt: 2021/06/03
-exploitabilityPeriod: null
+disclosedAt: 2021/03/13
+exploitabilityPeriod: March 2021 - June 2021
 knownITWExploitation: false
 summary: |
-  If an attacker can launch elasticbeanstalk in the victim environment and
-  get a victim to view a page in the web console, they can get XSS.
+  An adversary could gain access to IAM credentials in a victim's account, and make an API request to Elastic Beanstalk (even if they didn't have the proper IAM permissions). This request would be displayed in the management console in the Elastic Beanstalk section. Due to improper sanitization, an attacker could insert an XSS payload that would execute in a victim's browser.
 manualRemediation: |
   None required
 detectionMethods: null
