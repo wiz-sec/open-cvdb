@@ -1,0 +1,27 @@
+title: Recon on Account ID of a bucket using Amazon S3
+slug: aws-s3-recon-account-id-of-bucket
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- S3
+image: https://d1.awsstatic.com/Products/product-name/Images/ImgHead_Generic_B2.643d561e48f5121a6320802cb5607c959adb8a4d.jpg
+severity: Low
+discoveredBy:
+  name: Jonathan Rault
+  org: TrustOnCloud
+  domain: https://trustoncloud.com/
+  twitter: jo_n_go
+disclosedAt: 2020/07/27
+exploitabilityPeriod: until 2022/07/08 or earlier
+knownITWExploitation: false
+summary: |
+  Using CloudTrail S3 data events, it was possible to know the AWS account ID of
+  any existing S3 bucket by calling any S3 API, get denied, and look at the value in the resource
+  key in the CloudTrail event.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/jon-trust
+references:
+- https://github.com/trustoncloud/threatmodel-for-aws-s3
