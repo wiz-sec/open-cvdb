@@ -1,4 +1,4 @@
-title: Identification of privileges without being logged by CloudTrail
+title: Enumeration of Privileges Without Being Logged to CloudTrail
 slug: privilege-identification-cloudtrail
 cves: null
 affectedPlatforms:
@@ -10,14 +10,13 @@ severity: Low
 discoveredBy:
   name: Nick Frichette
   org: null
-  domain: null
-  twitter: Frichette-n
+  domain: https://frichetten.com/
+  twitter: Frichette_n
 disclosedAt: 2020/09/02
-exploitabilityPeriod: null
+exploitabilityPeriod: until 2021/05/18
 knownITWExploitation: false
 summary: |
-  An attacker could figure out what privileges they have in a victim account,
-  without being logged in CloudTrail. It took AWS over 273 days to fix this.
+  An attacker who gained access to IAM credentials could enumerate a subset of the privileges they had access to without logging to CloudTrail. This would allow them to perform the typically noisy permission enumeration process undetected.
 manualRemediation: |
   None required
 detectionMethods: null
