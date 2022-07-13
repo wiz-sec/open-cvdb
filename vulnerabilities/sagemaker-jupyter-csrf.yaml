@@ -18,9 +18,7 @@ knownITWExploitation: false
 summary: |
   AWS SageMaker Notebook server lacked a check of the Origin header that
   led to a CSRF vulnerability. An attacker could have read sensitive data and execute
-  arbitrary actions in customer environments. This issue is identical to [GCP''s
-  issue](https://github.com/SummitRoute/csp_security_mistakes#gcp-ai-hub-jupyter-notebook-instance-csrf)
-  from a year earlier.
+  arbitrary actions in customer environments. The exact same issue existed in GCP previously.
 manualRemediation: |
   None required
 detectionMethods: null
