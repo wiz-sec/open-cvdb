@@ -5,13 +5,13 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - AI Hub Jupyter Notebook
-image: https://jupyter.org/assets/homepage/hublogo.svg
+image: https://www.gstatic.com/aihub/lockup.svg
 severity: Medium
 discoveredBy:
   name: s1r1us
   org: null
-  domain: null
-  twitter: null
+  domain: https://blog.s1r1us.ninja/
+  twitter: S1r1u5_
 disclosedAt: 2020/03/10
 exploitabilityPeriod: null
 knownITWExploitation: false
