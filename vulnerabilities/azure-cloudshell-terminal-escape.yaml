@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Cloudshell
-image: https://n3x0.com/wp-content/uploads/2020/10/researchers-find-vulnerabilities-in-microsoft-azure-cloud-service.jpg
+image: https://azurecomcdn.azureedge.net/cvt-7d12cb554a538170e8ffd3f464d6d95301d16aeeecba8d10775a17b0cdc5f7a2/svg/cloud-shell.svg
 severity: Medium
 discoveredBy:
   name: Felix Wilhelm
