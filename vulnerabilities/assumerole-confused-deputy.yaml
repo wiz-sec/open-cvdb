@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://images.unsplash.com/photo-1536258988771-e87178795771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+image: https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png
 severity: Medium
 discoveredBy:
   name: Daniel Grzelak
