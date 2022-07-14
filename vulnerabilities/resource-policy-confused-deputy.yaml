@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://cdn.pixabay.com/photo/2021/05/21/14/36/mountains-6271255_960_720.png
+image: https://cdn.pixabay.com/photo/2021/09/24/11/29/cowboy-6652332_960_720.png
 severity: Low
 discoveredBy:
   name: Dan Peebles
