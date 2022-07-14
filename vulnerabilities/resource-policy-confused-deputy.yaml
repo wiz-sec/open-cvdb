@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://images.unsplash.com/photo-1536258988771-e87178795771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+image: https://cdn.pixabay.com/photo/2021/05/21/14/36/mountains-6271255_960_720.png
 severity: Low
 discoveredBy:
   name: Dan Peebles
@@ -12,7 +12,7 @@ discoveredBy:
   domain: https://www.bridgewater.com/
   twitter: null
 disclosedAt: 2018/11/28
-exploitabilityPeriod: null
+exploitabilityPeriod: until February 2021
 knownITWExploitation: false
 summary: |
   Resource policies lacked a way of restricting service access to only your
@@ -21,7 +21,7 @@ summary: |
   in 2018, this issue did not gain enough attention to be fixed until Shir Tamari
   and Ami Luttwak from Wiz presented it at Black Hat 2021.
 manualRemediation: |
-  Update vulnerable IAM policies (add scoping condition)
+  Update existing vulnerable IAM policies by adding scoping condition.
 detectionMethods: null
 contributor: https://github.com/a10ns
 references:
