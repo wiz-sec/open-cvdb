@@ -1,0 +1,25 @@
+title: AWS SSM agent local privilege escelation
+slug: aws-ssm-lpe
+cves: CVE-2022-29527
+affectedPlatforms:
+- AWS
+affectedServices: SSM
+image: https://cdn.pixabay.com/photo/2020/02/03/08/59/escalator-4815107_1280.jpg
+severity: High
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: 2022/04
+exploitabilityPeriod: until 2022/04/04
+knownITWExploitation: false
+summary: |
+  Amazon AWS amazon-ssm-agent before 3.1.1208 creates a world-writable sudoers file, which allows local attackers to inject Sudo rules and escalate privileges to root.
+manualRemediation: |
+  Update your AWS SSM to the patched version - 3.1.1208
+detectionMethods: null
+contributor: null
+references:
+- https://github.com/advisories/GHSA-87pw-p9qx-p46w
+- https://github.com/aws/amazon-ssm-agent/releases/tag/3.1.1208.0
