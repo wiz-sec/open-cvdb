@@ -24,4 +24,5 @@ manualRemediation: |
 detectionMethods: null
 contributor: https://github.com/jon-trust
 references:
+- https://twitter.com/trustoncloud/status/1549004083578544129
 - https://github.com/trustoncloud/threatmodel-for-aws-s3
