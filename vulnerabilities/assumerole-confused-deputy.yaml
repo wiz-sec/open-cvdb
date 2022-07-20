@@ -1,4 +1,4 @@
-title: AssumeRole vendor issues with confused deputy
+title: 3rd party vendor confused deputy via AssumeRole
 slug: assumerole-confused-deputy
 cves: null
 affectedPlatforms:
@@ -12,14 +12,16 @@ discoveredBy:
   domain: https://www.atlassian.com/
   twitter: null
 disclosedAt: 2016/11/16
-exploitabilityPeriod: null
+exploitabilityPeriod: ongoing
 knownITWExploitation: false
 summary: |
-  Vendors may allow customers to access the data of other customers. Although
-  this is a misconfiguration on the vendors side, AWS could add mitigations to
-  prevent and detect this issue.
+  3rd party vendors can (and sometimes do) incorrectly implement sts:ExternalId in their
+  AWS role trust policies, leading to confused deputy issues. These misconfigurations could
+  allow customers to access other customers' data. Although vendors are responsible for
+  ensuring their own configurations are correct, AWS could theoretically add mitigations
+  to prevent and detect this issue.
 manualRemediation: |
-  Audit your vendor roles
+  Audit your vendor roles.
 detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
