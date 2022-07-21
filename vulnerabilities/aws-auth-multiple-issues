@@ -20,7 +20,7 @@ summary: |
   through the AWS IAM Authenticator for Kubernetes (aws-iam-authenticator). Multiple issues
   were identified in the authenticator that could have allowed exploitation, namely (1) a
   lax regular expression used to verify presigned URLs; (2) HTTP client redirect follow
-  (due to using Goland HTTP client in its default configuration); (3) use of the URL.Query
+  (due to using Golang HTTP client in its default configuration); (3) use of the Golang URL.Query
   function (which silently drops parameters that Go considers invalid, rather than raising
   an error and rejecting invalid tokens); and (4) no verification that the cluster uses Go
   versions newer than 1.12 (as older versions are vulnerable to request smuggling).
