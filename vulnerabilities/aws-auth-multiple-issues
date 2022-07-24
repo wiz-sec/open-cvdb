@@ -1,0 +1,33 @@
+title: Multiple issues in AWS IAM Authenticator for Kubernetes
+slug: aws-auth-multiple-issues
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- EKS
+image: https://cdn.pixabay.com/photo/2017/02/19/23/10/finger-2081169_1280.jpg
+severity: Low
+discoveredBy:
+  name: Felix Wilhelm
+  org: Google
+  domain: null
+  twitter: _fel1x
+disclosedAt: 15/07/2020
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Amazon Elastic Kubernetes Service (EKS) uses IAM to provide authentication to the cluster
+  through the AWS IAM Authenticator for Kubernetes (aws-iam-authenticator). Multiple issues
+  were identified in the authenticator that could have allowed exploitation, namely (1) a
+  lax regular expression used to verify presigned URLs; (2) HTTP client redirect follow
+  (due to using Golang HTTP client in its default configuration); (3) use of the Golang URL.Query
+  function (which silently drops parameters that Go considers invalid, rather than raising
+  an error and rejecting invalid tokens); and (4) no verification that the cluster uses Go
+  versions newer than 1.12 (as older versions are vulnerable to request smuggling).
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://bugs.chromium.org/p/project-zero/issues/detail?id=2066
+- https://github.com/kubernetes-sigs/aws-iam-authenticator/pull/341
