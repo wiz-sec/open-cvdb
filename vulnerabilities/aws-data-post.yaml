@@ -11,7 +11,8 @@ discoveredBy:
   org: Upguard
   domain: https://www.upguard.com/
   twitter: null
-disclosedAt: 2020/01/13
+publicationDate: 2020/01/23
+disclosedAt: 2020/01/23
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |

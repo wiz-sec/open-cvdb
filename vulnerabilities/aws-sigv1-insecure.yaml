@@ -11,6 +11,7 @@ discoveredBy:
   org: null
   domain: null
   twitter: null
+publicationDate: 2008/12/18
 disclosedAt: null
 exploitabilityPeriod: until December 18th, 2008
 knownITWExploitation: false

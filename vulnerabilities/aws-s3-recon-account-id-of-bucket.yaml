@@ -12,6 +12,7 @@ discoveredBy:
   org: TrustOnCloud
   domain: https://trustoncloud.com/
   twitter: jo_n_go
+publicationDate: 2020/07/27
 disclosedAt: 2020/07/27
 exploitabilityPeriod: until 2022/07/08
 knownITWExploitation: false
