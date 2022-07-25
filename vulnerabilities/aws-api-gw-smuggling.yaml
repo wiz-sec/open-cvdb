@@ -12,7 +12,7 @@ discoveredBy:
   org: intruder
   domain: https://www.intruder.io/
   twitter: null
-publicationDate: 2021/11/10
+publishedAt: 2021/11/10
 disclosedAt: 2021/11/10
 exploitabilityPeriod: null
 knownITWExploitation: false

@@ -11,7 +11,7 @@ discoveredBy:
   org: null
   domain: https://frichetten.com/
   twitter: Frichette_n
-publicationDate: 2021/06/03
+publishedAt: 2021/06/03
 disclosedAt: 2021/03/13
 exploitabilityPeriod: March 2021 - June 2021
 knownITWExploitation: false

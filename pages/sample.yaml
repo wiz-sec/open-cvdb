@@ -13,7 +13,7 @@ discoveredBy:
   org: 
   domain: 
   twitter: 
-publicationDate: YYYY/mm/dd
+publishedAt: YYYY/mm/dd
 disclosedAt: YYYY/mm/dd
 exploitabilityPeriod: 
 knownITWExploitation: 

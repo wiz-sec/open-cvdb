@@ -11,7 +11,7 @@ discoveredBy:
   org: Secureworks
   domain: https://www.secureworks.com/
   twitter: null
-publicationDate: 2022/04/05
+publishedAt: 2022/04/05
 disclosedAt: 2022/04/05
 exploitabilityPeriod: null
 knownITWExploitation: 'No'

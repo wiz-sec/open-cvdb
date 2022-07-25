@@ -16,7 +16,7 @@ discoveredBy:
   domain: null
   twitter: init_string
 disclosedAt: 2020/06/04
-publicationDate: 2021/03/17
+publishedAt: 2021/03/17
 exploitabilityPeriod: until June 2020
 knownITWExploitation: null
 summary: |

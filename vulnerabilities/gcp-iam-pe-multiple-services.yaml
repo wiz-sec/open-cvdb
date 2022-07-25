@@ -17,7 +17,7 @@ discoveredBy:
   domain: https://security.love/
   twitter: null
 disclosedAt: 2019/06/03
-publicationDate: 2020/11/22
+publishedAt: 2020/11/22
 exploitabilityPeriod: Ongoing, partially fixed on June 2020
 knownITWExploitation: null
 summary: |

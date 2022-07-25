@@ -11,7 +11,7 @@ discoveredBy:
   org: Atlassian
   domain: https://www.atlassian.com/
   twitter: null
-publicationDate: 2016/11/16
+publishedAt: 2016/11/16
 disclosedAt: 2016/11/16
 exploitabilityPeriod: ongoing
 knownITWExploitation: false

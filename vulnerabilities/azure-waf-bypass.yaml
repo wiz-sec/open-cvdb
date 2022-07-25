@@ -12,7 +12,7 @@ discoveredBy:
   org: null
   domain: https://justm0rph3u5.medium.com
   twitter: justm0rph3u5
-publicationDate: 2022/07/01
+publishedAt: 2022/07/01
 disclosedAt: 2021/06/24
 exploitabilityPeriod: until July 16th, 2021
 knownITWExploitation: false

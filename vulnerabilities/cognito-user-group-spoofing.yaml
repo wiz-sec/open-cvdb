@@ -13,7 +13,7 @@ discoveredBy:
   org: opsmorph
   domain: https://www.opsmorph.com/
   twitter: https://twitter.com/opsmorph
-publicationDate: 2022/02/15
+publishedAt: 2022/02/15
 disclosedAt: 2022/02/15
 exploitabilityPeriod: null
 knownITWExploitation: false
