@@ -8,6 +8,7 @@ image: https://assets.website-files.com/6207f5adfd8e615d3d70498b/6239e2f458c4891
 severity: Medium
 discoveredBy: null
 disclosedAt: null
+publicationDate: null
 exploitabilityPeriod: Since the creation of GCP
 knownITWExploitation: false
 summary: |

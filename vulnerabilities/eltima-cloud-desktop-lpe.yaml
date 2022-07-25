@@ -39,7 +39,8 @@ discoveredBy:
   org: SentinelOne
   domain: https://www.sentinelone.com/
   twitter: https://twitter.com/kasifdekel
-disclosedAt: 2021/07/12
+disclosedAt: 2021/05/02
+publicationDate: 2021/12/07
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
