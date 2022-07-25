@@ -13,6 +13,7 @@ discoveredBy:
   domain: https://www.tenable.com/
   twitter: null
 disclosedAt: 2022/03/10
+publicationDate: 2022/06/13
 exploitabilityPeriod: Until June 1st, 2022
 knownITWExploitation: false
 summary: |

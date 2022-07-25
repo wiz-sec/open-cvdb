@@ -12,7 +12,8 @@ discoveredBy:
   org: NetSPI
   domain: https://www.netspi.com/
   twitter: null
-disclosedAt: 2021/09/13
+disclosedAt: 2020/10/15
+publicationDate: 2021/09/13
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |

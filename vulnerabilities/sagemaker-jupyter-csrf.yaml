@@ -12,7 +12,8 @@ discoveredBy:
   org: Lightspin
   domain: https://www.lightspin.io/
   twitter: null
-disclosedAt: 2021/12/02
+disclosedAt:
+publicationDate: 2022/12/02
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |

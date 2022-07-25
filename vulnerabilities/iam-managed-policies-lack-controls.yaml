@@ -8,6 +8,7 @@ image: https://d1.awsstatic.com/Products/product-name/Images/ImgHead_Generic_B2.
 severity: Low
 discoveredBy: null
 disclosedAt: 2020/10/15
+publicationDate: 2020/10/15
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
@@ -19,6 +20,6 @@ summary: |
 manualRemediation: | 
   None required
 detectionMethods: null
-contributor: https://github.com/Rami McCarthy
+contributor: https://github.com/Rami_McCarthy
 references:
 - https://twitter.com/__steele/status/1316909785607012352
