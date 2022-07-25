@@ -1,5 +1,14 @@
 # Announcements 
 
+### July 2022 Updates
+*July 25, 2022*
+
+* [RSS feed](https://www.cloudvulndb.org/rss/feed.xml) is available 🗞
+* 10 vulnerabilities added by 5+ contributors ⚠️ 
+* CVDB [YAML format](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) now contains publication date field 📆 
+* Search engine fixed 🔍
+* Laptop stickers available at fwd:cloudsec 2022, AWS re:inforce 2022 & BlackHat 2022
+
 ### The Open Cloud Vulnerability & Security Issue Database Launch
 *June 28, 2022*
 
