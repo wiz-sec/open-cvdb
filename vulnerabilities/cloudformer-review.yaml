@@ -12,11 +12,12 @@ discoveredBy:
   org: null
   domain: null
   twitter: KarimMelhaoui
+publicationDate: 2020/09/25
 disclosedAt: 2020/09/25
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Audit of AWS open-source project identifies so many issues AWS takes it down
+  An audit of an AWS open-source project identified a great deal of issues, and as a result AWS made the decision to take it down.
 manualRemediation: | 
   None required
 detectionMethods: null
