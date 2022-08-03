@@ -27,6 +27,9 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 5.	Give proper credit to the researchers involved in the discovery.
 6.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
 
+
 ### Contact Us
 * Join our [Slack group](https://bit.ly/cloudVuln)
 * [Email us](mailto:cloudvulndb@gmail.com)
+
+To learn more about the Open CVDB and cloud vulnerabilites, [watch](https://www.youtube.com/watch?v=KwDo6KG76_c&list=PLCPCP1pNWD7N2SPaz4cmuS27xutaf32jy&index=11&ab_channel=fwd%3Acloudsec) the project maintainers talk at fwd:cloudsec 2022
