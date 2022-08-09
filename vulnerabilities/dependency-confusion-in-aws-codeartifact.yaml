@@ -1,0 +1,27 @@
+title: Dependency confusion in AWS CodeArtifact
+slug: dependency-confusion-in-aws-codeartifact
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- CodeArtifact
+image: https://cdn.pixabay.com/photo/2015/01/16/11/19/monument-601312_1280.jpg
+severity: Medium
+discoveredBy:
+  name: Ignacio Dominguez
+  org: Zego
+  domain: https://medium.com/@ignacio.dominguez
+  twitter: null
+publishedAt: 2022/07/14
+disclosedAt: 2021/10/29
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  AWS CodeArtifact was susceptible to Dependency Confusion - publication of malicious packages to a public repository with the name of an organisation’s internal package. 
+manualRemediation: |
+  No manual remediation necessary.
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d
+- https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
