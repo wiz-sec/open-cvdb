@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CodeArtifact
-image: https://cdn.pixabay.com/photo/2015/01/16/11/19/monument-601312_1280.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/images/dependency_confusion_in_AWS_CodeArtifact.jpg
 severity: Medium
 discoveredBy:
   name: Ignacio Dominguez
@@ -17,11 +17,15 @@ disclosedAt: 2021/10/29
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  AWS CodeArtifact was susceptible to Dependency Confusion - publication of malicious packages to a public repository with the name of an organisation’s internal package. 
+  AWS CodeArtifact was susceptible to dependency confusion / substitution (i.e, publication of a
+  malicious package to a public repository with the same name as an organization’s internal package).
+  AWS fixed this issue by adding package origin controls, allowing users to limit how versions of a
+  given package can be added to a CodeArtifact repository.
 manualRemediation: |
-  No manual remediation necessary.
+  None required
 detectionMethods: null
-contributor: https://github.com/korniko98
+contributor: https://github.com/mer-b
 references:
 - https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d
 - https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
+- https://docs.aws.amazon.com/codeartifact/latest/ug/package-origin-controls.html
