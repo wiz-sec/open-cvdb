@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices: null
-image: https://www.wiz.io/blog/content/images/size/w2000/2021/12/NotLegit-post-by-Wiz.png
+image: https://www.datocms-assets.com/75231/1659931538-notlegit-post-by-wiz.png
 severity: High
 discoveredBy:
   name: Shir Tamari
