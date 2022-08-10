@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CodeArtifact
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/images/dependency_confusion_in_AWS_CodeArtifact.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dependency_confusion_in_AWS_CodeArtifact.jpg
 severity: Medium
 discoveredBy:
   name: Ignacio Dominguez
