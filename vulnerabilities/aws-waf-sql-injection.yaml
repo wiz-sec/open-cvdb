@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - AWS WAF
-image: https://images.pexels.com/photos/4210551/pexels-photo-4210551.jpeg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-wafs-dangerous-defaults.jpg
 severity: Medium
 discoveredBy:
   name: Osama Elnaggar
@@ -13,13 +13,13 @@ discoveredBy:
   domain: https://osamaelnaggar.com/
   twitter: https://twitter.com/securityfu
 publishedAt: 2021/10/03
-disclosedAt: 2021/09
+disclosedAt: 2021/09/03
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  AWS WAF using the Core Rules set allowed SQL injection. In AWS WAF only the first 8 KB (8,192 bytes) of the request body are forwarded to AWS WAF for inspection. Prior to publication, the AWS Managed rules allowed requests up to 10 KB.
-  An attacker could send a request larger than 8 KB, and smaller than 10 KB, with malicious payload after 8,192 bytes, and pass the WAFs inspection. 
-  In response AWS reduced the size limit to 8 KB. 
+  AWS WAF using the Core Rules set allowed SQL injection. In AWS WAF only the first 8 KB (8,192 bytes) of the request body are forwarded to AWS WAF for inspection, but AWS Managed rules allowed requests up to 10 KB.
+  An attacker could send a request larger than 8 KB but smaller than 10 KB, with a malicious payload located after the first 8,192 bytes, and thereby pass the WAFs inspection. 
+  To fix this issue, AWS reduced the request size limit to 8 KB.
 manualRemediation: |
   None required
 detectionMethods: null
