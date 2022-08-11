@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Database for PostgreSQL
-image: https://www.wiz.io/blog/content/images/size/w2000/2022/05/New-Replica.png
+image: https://www.datocms-assets.com/75231/1659934983-new-replica.png
 severity: Critical
 discoveredBy:
   name: Sagi Tzadik, Nir Ohfeld, Shir Tamari, Ronen Shustin
