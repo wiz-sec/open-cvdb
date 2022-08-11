@@ -1,24 +1,27 @@
-title: Escalating from Logic App Contributor to Root Owner in Azure
+title: Logic Apps privilege escalation to root
 slug: azure-logic-app-contributor-escalation-to-root-owner
 cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
-- Azure Logic App
-image: https://cdn.pixabay.com/photo/2014/02/28/08/17/root-276636_1280.jpg
+- Azure Logic Apps
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_logic_app_privilege_escalation.jpg
 severity: Medium
 discoveredBy:
   name: Josh Magri
-  org: null
+  org: NetSPI
   domain: https://www.netspi.com/
-  twitter: null
+  twitter: passthehashbrwn
 publishedAt: 2022/03/09
 disclosedAt: 2022/03/01
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Having Contributor access to an Azure Resource Manager (ARM) API Connection would allow you to create arbitrary role assignments as the connected user. 
+  Azure Logic Apps use API Connections to authenticate actions to services. Having Contributor access to
+  an Azure Resource Manager (ARM) API Connection would allow someone to create arbitrary role assignments as the connected user.
   This was supposed to be limited to actions at the Resource Group level, but an attacker could escape to the Subscription or Root level with a path traversal payload.
+  The root cause of this behavior was that such a payload would meet the Swagger API definition,
+  and it would be resolved by the server, resulting in a request to an unintended scope.
 manualRemediation: |
   None required
 detectionMethods: null
