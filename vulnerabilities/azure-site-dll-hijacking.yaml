@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Site Recovery
-image: https://images.pexels.com/photos/2337789/pexels-photo-2337789.jpeg
+image: https://files.slack.com/files-pri/TSYNK6AJ3-F03TZV8PUJC/b70b80cc-e5b2-4d02-9445-eb157dd6c06e_progress_image_99.webp
 severity: High
 discoveredBy: 
   name: James Sebree
