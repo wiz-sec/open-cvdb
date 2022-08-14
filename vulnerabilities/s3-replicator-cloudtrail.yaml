@@ -30,3 +30,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 references: 
 - https://www.vectra.ai/blogpost/abusing-the-replicator-silently-exfiltrating-data-with-the-aws-s3-replication-service
+- https://www.youtube.com/watch?v=9lvLboXE9tw
