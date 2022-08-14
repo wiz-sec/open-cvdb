@@ -8,7 +8,7 @@ affectedServices:
 image: https://www.datocms-assets.com/75231/1660205465-postgresql-blog.png?dpr=0.50&fm=webp
 severity: Medium
 discoveredBy:
-  name: Shir Tamari, Nir Ohfeld, Sagi Tzadik
+  name: Shir Tamari, Nir Ohfeld, Sagi Tzadik, Ronen Shustin
   org: Wiz.io
   domain: https://www.wiz.io/
   twitter: null
@@ -19,8 +19,8 @@ knownITWExploitation: false
 summary: |
   GCP introduced a modification to the PostgreSQL engine allowing the role assigned to the
   tenant (cloudsqlsuperuser) to arbitrarily change the ownership of a table to any user
-  or role in the database. Thus, an attacker could (1) create a new table, and (2) create
-  an index function with a malicious payload, (3) change the table owner to GCP’s superuser
+  or role in the database. Thus, an attacker could (1) create a new table, (2) create an
+  index function with a malicious payload, and (3) change the table owner to GCP’s superuser
   role (cloudsqladmin). Next, by initiating an ANALYZE command, the malicious function is
   executed with GCP’s superuser high privileges. Then, an attacker could gain local privilege
   escalation to root using a symlink attack, and finally, having gained CAP_NET_ADMIN and
