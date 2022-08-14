@@ -17,12 +17,14 @@ publishedAt: 2020/04/23
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: | 
-  GuardDuty detects CloudTrail being disabled, but did not detect if you
-  filtered out all events from CloudTrail, resulting in defenders having no logs
-  to review. Require privileged access in victim account, resulting in limited visibility.
+  GuardDuty detected CloudTrail being outright disabled, but did not detect if an attacker with the
+  necessary permissions filtered out all events from CloudTrail via PutEventSelectors, resulting in
+  defenders having no logs to review. AWS fixed this issue by adding a GuardDuty detection that
+  triggers if PutEventSelectors is used to disable all event types.
 manualRemediation: |
-  Setup detections independent of GuardDuty
+  As a safety measure, set up additional detections independent of GuardDuty.
 detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass
+- https://twitter.com/0xdabbad00/status/1258909131605307393
