@@ -1,0 +1,33 @@
+title: Cloud SQL escape to host
+slug: cloudsql-escape
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud SQL
+image: https://www.datocms-assets.com/75231/1660205465-postgresql-blog.png?dpr=0.50&fm=webp
+severity: Medium
+discoveredBy:
+  name: Shir Tamari, Nir Ohfeld, Sagi Tzadik
+  org: Wiz.io
+  domain: https://www.wiz.io/
+  twitter: null
+publishedAt: 2022/08/11
+disclosedAt: 2022/01/11
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  GCP introduced a modification to the PostgreSQL engine allowing the role assigned to the
+  tenant (cloudsqlsuperuser) to arbitrarily change the ownership of a table to any user
+  or role in the database. Thus, an attacker could (1) create a new table, and (2) create
+  an index function with a malicious payload, (3) change the table owner to GCP’s superuser
+  role (cloudsqladmin). Next, by initiating an ANALYZE command, the malicious function is
+  executed with GCP’s superuser high privileges. Then, an attacker could gain local privilege
+  escalation to root using a symlink attack, and finally, having gained CAP_NET_ADMIN and
+  CAP_NET_RAW capabilities, escape their container.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities
