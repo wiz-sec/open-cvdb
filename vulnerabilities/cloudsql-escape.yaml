@@ -24,7 +24,9 @@ summary: |
   role (cloudsqladmin). Next, by initiating an ANALYZE command, the malicious function is
   executed with GCP’s superuser high privileges. Then, an attacker could gain local privilege
   escalation to root using a symlink attack, and finally, having gained CAP_NET_ADMIN and
-  CAP_NET_RAW capabilities, escape their container.
+  CAP_NET_RAW capabilities, escape their container via TCP injection of a fake configuration
+  response from the metadata service containing an attacker-controlled SSH key (this is only
+  possible due to the fact that communication with GCP's metadata service is unencrypted and unsigned).
 manualRemediation: |
   None required
 detectionMethods: null
