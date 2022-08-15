@@ -1,0 +1,34 @@
+title: AWS Allowed IAM Privilege Escalation via Undocumented Codestar API
+slug: aws-codestar-privilege-escalation
+cves: null
+affectedPlatforms:
+  - AWS
+affectedServices: null
+image: https://d2kspx2x29brck.cloudfront.net/1200x675/filters:format(webp)/img/iea/y5wWkZZlwX/what-is-a-neutron-star-1.jpg
+severity: High
+discoveredBy:
+  name: null
+  org: Rhino Security Labs
+  domain: rhinosecuritylabs.com
+  twitter: RhinoSecurity
+publishedAt: 2019/06/08
+disclosedAt: 2019/03/19
+exploitabilityPeriod: ongoing
+knownITWExploitation: false
+summary: |
+  The AWS Codestar service had an undocumented API - codestar:CreateProjectFromTemplate - that allowed 
+  users with broadly-scoped Codestar permissions to create a Codestar project. As part of the creation 
+  process, AWS would create a new CodeStarWorker IAM policy & attach it to the user making the call. 
+  This policy granted full access to over 50 AWS services, including iam:AttachRolePolicy & iam:PutRolePolicy, 
+  allowing the holder to escalate to full administrator access. AWS issued a patch after disclosure to remove 
+  the majority of access granted by the CodeStarWorker policy, but this is still a viable escalation path if 
+  there are other misconfigurations in the environment
+manualRemediation: |
+  If not using the codestar service, ensure that the “aws-codestar-service-role” is removed from all your accounts. 
+  Apply principle of least privilege to all codestar-related resources to ensure the codestar:CreateProjectFromTemplate 
+  action is only granted when absolutely neceessary. Implement monitoring on any users with access to the 
+  codestar:CreateProject and iam:PassRole actions to detect any escalation attempts
+detectionMethods: null
+contributor: https://github.com/blakedunson
+references:
+  - https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/
