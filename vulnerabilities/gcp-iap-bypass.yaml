@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - GCP
 affectedServices: null
-image: https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
+image: https://github.com/wiz-sec/open-cvdb/main/images/identity_aware_proxy.jpg
 severity: Medium
 discoveredBy:
   name: Unknown
