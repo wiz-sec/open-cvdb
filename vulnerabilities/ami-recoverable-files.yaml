@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/AWS_Simple_Icons_Compute_Amazon_EC2_AMI.svg/1200px-AWS_Simple_Icons_Compute_Amazon_EC2_AMI.svg.png
+image: https://github.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg
 severity: Low
 discoveredBy:
   name: Marco Balduzzi, Jonas Zaddach, Davide Balzarotti, Engin Kirda, Sergio Loureiro
