@@ -1,10 +1,11 @@
-title: Encryption SDK issues
+title: Encryption SDK vulnerabilities
 slug: encryption-sdk-issues
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices: null
-image: null
+affectedServices:
+- KMS
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
 severity: Low
 discoveredBy:
   name: Thai Duong (thaidn)
@@ -15,9 +16,14 @@ disclosedAt: 2020/09/28
 publishedAt: 2020/09/28
 exploitabilityPeriod: null
 knownITWExploitation: false
-summary: null
+summary: |
+  AWS KMS and all versions of AWS Encryption SDKs prior to version 2.0.0 were susceptible to
+  information leakage (an attacker could create ciphertexts that would leak the user’s AWS account ID,
+  encryption context, user agent, and IP address upon decryption), ciphertext forgery (an attacker could
+  create ciphertexts that were accepted by other users) and lack of robustness (an attacker could create
+  ciphertexts that decrypt to different plaintexts for different users).
 manualRemediation: | 
-  Update SDK
+  Update the SDK to the latest secure version.
 detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
