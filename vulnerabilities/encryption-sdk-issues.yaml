@@ -1,9 +1,10 @@
-title: Encryption SDK issues
+title: Encryption SDK vulnerabilities
 slug: encryption-sdk-issues
 cves: null
 affectedPlatforms:
 - AWS
-affectedServices: null
+affectedServices:
+- KMS
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
 severity: Low
 discoveredBy:
