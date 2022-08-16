@@ -1,4 +1,4 @@
-title: Bypasses in IAM policies and over-privileged
+title: Bypassable and overly-privileged IAM policies
 slug: iam-policies-bypass-overprivileged
 cves: null
 affectedPlatforms:
@@ -17,9 +17,9 @@ exploitabilityPeriod: null
 knownITWExploitation: false
 summary: | 
   AWS has previously provided managed policies or guidance in documentation
-  for policies with mistakes that allow the policies to by bypassed. Additionally,
-  some policies are over-privileged. Date of disclouse is for the first issue of
-  this type, references provide other examples by various individuals.
+  for policies with mistakes that allow them to be bypassed. Additionally,
+  some policies are over-privileged. Date of disclosure is for the first issue of
+  this type, while references provide other examples by various individuals.
 manualRemediation: |
   Review the policies provided by AWS
 detectionMethods: null
