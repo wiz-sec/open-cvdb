@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: null
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bypassing_policies_and_overly_privileged.jpg
 severity: Medium
 discoveredBy:
   name: Multiple findings
