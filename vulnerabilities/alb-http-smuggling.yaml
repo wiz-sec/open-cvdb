@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - ALB
-image: https://d1.awsstatic.com/Products/product-name/Images/img-header_Amazon_Elastic_Load_Balancing.c508b03e305a0e2e638a3e07cef2497f6069f2d4.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/load_balancer_request_smuggling.jpg
 severity: Medium
 discoveredBy:
   name: James Kettle (Portswigger), Arkadiy Tetelman (Chime)
