@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - CloudFormation
-image: null
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/cloudformation-dos.jpg
 severity: Low
 discoveredBy:
   name: Ian McKay
