@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - GuardDuty
-image: https://d1.awsstatic.com/product-marketing/CloudTrail/ImgHead_Cloud-Trail_2021.226f9f29987cf5b5898cd68d32b92efe100fd25d.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/guard_duty_detection_bypass.jpg
 severity: Low
 discoveredBy:
   name: Spencer Gietzen
