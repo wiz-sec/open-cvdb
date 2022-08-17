@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - GuardDuty
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/guard_duty_detection_bypass.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/guard_duty_detection_bypass.jpg
 severity: Low
 discoveredBy:
   name: Spencer Gietzen

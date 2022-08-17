@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - ALB
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/load_balancer_request_smuggling.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/load_balancer_request_smuggling.jpg
 severity: Medium
 discoveredBy:
   name: James Kettle (Portswigger), Arkadiy Tetelman (Chime)

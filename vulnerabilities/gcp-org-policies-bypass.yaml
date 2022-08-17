@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - GCP
 affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/organization_bypass.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/organization_bypass.jpg
 severity: Medium
 discoveredBy:
   name: Kat Traxler
