@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - AWS
 affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/policy_changed_in_unexpected_and_insecure_ways.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/policy_changed_in_unexpected_and_insecure_ways.jpg
 severity: Low
 discoveredBy: null
 disclosedAt: 2020/10/15
