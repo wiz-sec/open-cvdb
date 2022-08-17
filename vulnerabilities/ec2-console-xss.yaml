@@ -5,7 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - EC2
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg/1200px-AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg.png
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/adding-images/images/script_elastic_compute_console.jpg
 severity: Low
 discoveredBy:
   name: Johann Rehberger
