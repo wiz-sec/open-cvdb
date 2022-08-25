@@ -25,4 +25,5 @@ detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://orca.security/resources/blog/aws-cloudformation-vulnerability/
+- https://orca.security/resources/blog/breakingformation-technical-vulnerability-walkthrough/
 - https://aws.amazon.com/security/security-bulletins/AWS-2022-001/
