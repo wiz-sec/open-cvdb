@@ -19,7 +19,7 @@ disclosedAt: 2022/01/11
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  GCP introduced a modification to the PostgreSQL engine allowing the role assigned to the
+  In GCP's case, they introduced a modification to the Cloud SQL's PostgreSQL engine allowing the role assigned to the
   tenant (cloudsqlsuperuser) to arbitrarily change the ownership of a table to any user
   or role in the database. Thus, an attacker could (1) create a new table, (2) create an
   index function with a malicious payload, and (3) change the table owner to GCP’s superuser
@@ -29,6 +29,7 @@ summary: |
   CAP_NET_RAW capabilities, escape their container via TCP injection of a fake configuration
   response from the metadata service containing an attacker-controlled SSH key (this is only
   possible due to the fact that communication with GCP's metadata service is unencrypted and unsigned).
+  A similar bug existed in Azure Database for PostgreSQL, and was part of ExtraReplica's vulnerability chain.
 manualRemediation: |
   None required
 detectionMethods: null
