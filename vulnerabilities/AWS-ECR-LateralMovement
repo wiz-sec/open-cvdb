@@ -1,0 +1,34 @@
+title: Abusing Container Registry for lateral movement
+slug: abusing-ecr
+cves:
+  - null
+affectedPlatforms:
+  - AWS
+  - GCP
+affectedServices:
+  - null
+image:
+severity: high
+discoveredBy:
+  name: Roi Halawi
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2022/08/04
+disclosedAt: 2022/08/04
+exploitabilityPeriod: null
+knownITWExploitation:
+summary: |
+Lateral Movement through AWS ECR - https://medium.com/p/47534ad61729
+Using ECR permissions you can easily distribute a backdoor to production servers, developer's laptops, or CI/CD pipelines and own the environment by gaining privileged permissions.
+Container imgae scanning will not help to detect backdoor in the container image.
+manualRemediation: |
+ - Least privileges — external facing apps should not have write access or wildcard (*) permissions on ECR
+ - Secure CI/CD pipelines — Protect from any unauthorized access to source code repos or build tools.
+ - Use docker custom security profiles like AppArmor, Seccomp
+ - Audit and monitor access and actions on ECR using AWS CloudTrail
+ - Enforce signing of docker images (see: https://github.com/notaryproject/notary)
+detectionMethods:
+contributor: https://github.com/RoiSec
+references:
+  - https://medium.com/p/47534ad61729
