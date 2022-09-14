@@ -9,8 +9,8 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/lake_admi
 severity: High
 discoveredBy:
   name: Ian McKay
-  org: Kablamo
-  domain: https://www.kablamo.com.au/
+  org: null
+  domain: null
   twitter: iann0036
 publishedAt: 2019/08/15
 disclosedAt: 2019/08/15
