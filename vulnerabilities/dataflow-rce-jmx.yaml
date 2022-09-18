@@ -25,7 +25,7 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/korniko98
+contributor: https://github.com/korniko98
 references:
 - https://mbrancato.github.io/2021/12/28/rce-dataflow.html
 - https://portswigger.net/daily-swig/google-showers-top-cloud-security-researchers-with-kudos-and-cash

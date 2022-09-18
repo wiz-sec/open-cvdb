@@ -24,7 +24,7 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributer: https://github.com/justmorpheus
+contributor: https://github.com/justmorpheus
 references:
 - https://medium.com/secjuice/waf-evasion-techniques-718026d693d8
 - https://medium.com/bugbountywriteup/module-1-introduction-pentesting-bypassing-cloud-waf-fun-profit-75f315951aa8
