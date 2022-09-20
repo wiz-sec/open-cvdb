@@ -1,0 +1,26 @@
+title: AttachMe
+slug: attachme
+cves: null
+affectedPlatforms:
+- OCI
+affectedServices:
+- OCI Volumes
+image: null
+severity: Critical 
+discoveredBy:
+  name: Elad Gabay
+  org: Wiz
+  domain: https://wiz.io/
+  twitter: @eladgabay_
+publishedAt: 2022/09/20
+disclosedAt: 2022/06/09
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Any unattached storage volume, or attached storage volumes allowing multi-attachment, could have been read from or written to as long as an attacker had its Oracle Cloud Identifier (OCID), allowing sensitive data to be exfiltrated or more destructive attacks to be initiated by executable file manipulation.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/nirohfeld
+references:
+- https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
