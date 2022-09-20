@@ -5,11 +5,12 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Cloud Shell
+- Container Instances
 image: https://images.pexels.com/photos/157517/pexels-photo-157517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: High
 discoveredBy:
   name: Chen Cohen
-  org: null
+  org: eBay
   domain: null
   twitter: chencococococo
 publishedAt: 2021/02/15
@@ -17,8 +18,15 @@ disclosedAt: 2020/01/20
 exploitabilityPeriod: until January 30th, 2020
 knownITWExploitation: null
 summary: |
-  Azure Cloud Shell was vulnerable to local privilege escalation (LPE),
-  as was any container in Azure Container Instance, via the kubelet API.
+  An attacker could gain root privileges on their Azure Cloud Shell container,
+  escape from the container, and then gain root privileges on the underlying node,
+  the root cause being an insecure kubelet port (10250), among other cluster misconfigurations.
+  Once they could access the node filesystem, an attacker could extract kubelet API
+  credentials which allowed listing all pods and nodes in the cluster, including
+  those belonging to other tenants. Moreover, an attacker could bypass RBAC policies
+  in the cluster by deploying a pod with the "NodeSelector" flag, and thereby escalate
+  their privileges to root on other tenants' containers (the same issue affected
+  Azure Container Instances).
 manualRemediation: |
   None required
 detectionMethods: null
