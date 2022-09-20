@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Cloud Shell
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-cloudshell-injection.jpg
-severity: Medium
+severity: High
 discoveredBy:
   name: Gafnit Amiga
   org: Lightspin
