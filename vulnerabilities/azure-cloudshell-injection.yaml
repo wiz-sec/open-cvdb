@@ -1,0 +1,26 @@
+title: Azure Cloud Shell Command Injection Stealing User’s Access Tokens
+slug: azure-cloudshell-injection
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Cloud Shell
+image: null
+severity: Low 
+discoveredBy:
+  name: Gafnit Amiga
+  org: Lightspin
+  domain: https://lightspin.io/
+  twitter: @gafnitav
+publishedAt: 2022/09/20
+disclosedAt: 2022/08/20
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An issue in Azure Cloud Shell allowed an attacker to take over Azure Cloud Shell trusted domain and leverage it to inject and execute commands in other users’ terminals. Using the executed code, it was possible to access the Metadata service attached to the terminal and obtaine the user’s access token. This access token provides an attacker the Azure permissions of the victim user and enables them to perform operations on its behalf.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens
