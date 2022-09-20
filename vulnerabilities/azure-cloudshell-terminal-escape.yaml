@@ -1,4 +1,4 @@
-title: Cloudshell terminal escape
+title: Azure Cloud Shell terminal escape
 slug: azure-cloudshell-terminal-escape
 cves: null
 affectedPlatforms:
@@ -18,7 +18,7 @@ exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   If attacker controlled data is viewed in Cloudshell it could have led to
-  code execution.
+  code execution. This exact same issue was later discovered in AWS as well.
 manualRemediation: |
   None required
 detectionMethods: null
