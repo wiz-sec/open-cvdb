@@ -1,0 +1,30 @@
+title: Azure Cloud Shell access token theft
+slug: azure-cloudshell-injection
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Cloud Shell
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-cloudshell-injection.jpg
+severity: Medium
+discoveredBy:
+  name: Gafnit Amiga
+  org: Lightspin
+  domain: https://lightspin.io/
+  twitter: @gafnitav
+publishedAt: 2022/09/20
+disclosedAt: 2022/08/20
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An issue in Azure Cloud Shell could have allowed an attacker to take over
+  an Azure App Service domain and leverage it to inject and execute
+  commands in other tenants' terminals if they navigated to the domain while
+  logged into their account. Using this method, an attacker could query the
+  Azure IMDS on other tenants' behalf and thereby obtain their access tokens.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens
