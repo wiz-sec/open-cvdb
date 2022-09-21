@@ -6,7 +6,7 @@ An open project to list all publicly known cloud vulnerabilities and CSP securit
 ### Background
 Security bugs in Cloud services tend to [fall between the cracks](https://www.wiz.io/blog/security-industry-call-to-action-we-need-a-cloud-vulnerability-database/), as they don’t fit well into the current [shared responsibility model](https://cloudsecurityalliance.org/blog/2020/08/26/shared-responsibility-model-explained/) of cloud security. As a result, remediation often requires a joint effort between both the CSP and their customers.
 
-There is currently no universal standard for cloud vulnerability enumeration – CSPs rarely issue CVEs for security mistakes discovered in their services, there are no industry conventions for assessing severity, no proper notification channels and no unified tracking mechanism – this leads to a great deal of inefficiency and confusion.
+There is currently no universal standard for cloud vulnerability enumeration – CSPs [rarely](https://www.cve.org/Media/News/item/blog/2022/09/13/Dispelling-the-Myth-CVE-ID) issue CVEs for security mistakes discovered in their services, there are no industry conventions for assessing severity, no proper notification channels and no unified tracking mechanism – this leads to a great deal of inefficiency and confusion.
 
 Our goal in this project is to pave the way for a centralized cloud vulnerability database, by cataloging CSP security mistakes and listing the exact steps CSP customers can take to detect or prevent these issues in their own environments.
 
@@ -31,5 +31,6 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 ### Contact Us
 * Join our [Slack group](https://bit.ly/cloudVuln)
 * [Email us](mailto:cloudvulndb@gmail.com)
+* Add [requests](https://github.com/wiz-sec/open-cvdb/issues/new/choose) for bugfixes or new features
 
-To learn more about the Open CVDB and cloud vulnerabilities, [watch](https://www.youtube.com/watch?v=KwDo6KG76_c&list=PLCPCP1pNWD7N2SPaz4cmuS27xutaf32jy&index=11&ab_channel=fwd%3Acloudsec) the project maintainers talk at fwd:cloudsec 2022
+To learn more about this project and the challenges surrounding cloud vulnerabilities, watch the talk we gave at fwd:cloudsec 2022 ([recording](https://www.youtube.com/watch?v=KwDo6KG76_c&list=PLCPCP1pNWD7N2SPaz4cmuS27xutaf32jy&index=11&ab_channel=fwd%3Acloudsec), [slides](https://pretalx.com/media/fwd-cloudsec-2022/submissions/YJBJPK/resources/cloudvulndb_fwd_jLR2QM9.pdf)).
