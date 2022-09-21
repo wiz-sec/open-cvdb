@@ -19,7 +19,7 @@ knownITWExploitation: false
 summary: |
   Azure Web Application Firewall (WAF) with OWASP 3.2 managed rule set and below was
   vulnerable to command injection bypass using globbing patterns (incorporating the
-  wildcard "?" in command syntax). For example, while attepting access to "/etc/passwd"
+  wildcard "?" in command syntax). For example, while attempting access to "/etc/passwd"
   would be blocked, a command targeting "/et?/passwo?d" would be allowed.
 manualRemediation: |
   None required
