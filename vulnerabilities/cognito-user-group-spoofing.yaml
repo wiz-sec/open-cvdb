@@ -18,7 +18,7 @@ disclosedAt: 2022/02/15
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  Opsmorph dicovered an improper access control vulnerability in authorization logic common in applications built on AWS. The vulnerability means a user 
+  Opsmorph discovered an improper access control vulnerability in authorization logic common in applications built on AWS. The vulnerability means a user 
   with permission to create a new Cognito User Group could fool authorization checks into thinking that the user is in any other existing Cognito User 
   Group in the same User Pool, referred to as user group spoofing. 
   When API Gateway is secured with a Cognito User Pool Authorizer it concatenates group names from the identity token into a comma separated string, 
