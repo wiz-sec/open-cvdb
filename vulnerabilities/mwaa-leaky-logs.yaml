@@ -23,7 +23,7 @@ summary: |
   The event included the hostname for the airflow server, so everything required
   to login to Airflow was in the event. However, the issue was largely mitigated
   by the fact that the tokens are only valid for 60 seconds and CloudTrail delivers
-  logs on average about every 15 minutes, so the chance of recieving a valid token
+  logs on average about every 15 minutes, so the chance of receiving a valid token
   were low.
 manualRemediation: |
   None required

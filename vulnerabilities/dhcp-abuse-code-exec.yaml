@@ -17,7 +17,7 @@ exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Under certain conditions, an attacker can flood DHCP packets to the victim
-  VM, allowing it to impersonate the Metadata server, and grant themself SSH access.
+  VM, allowing it to impersonate the Metadata server, and grant themselves SSH access.
 manualRemediation: |
   None required
 detectionMethods: null

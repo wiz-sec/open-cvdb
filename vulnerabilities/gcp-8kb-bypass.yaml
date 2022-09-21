@@ -20,7 +20,7 @@ summary: |
   Cloud Armor has a documented limitation of 8 KB as the maximum size of web
   request that it will inspect. The default behavior of Cloud Armor in this case can allow
   oversized malicious requests to bypass Cloud Armor and directly reach an underlying application.
-  Morevoer, Cloud Armor does not warn users of this limitation during policy creation
+  Moreover, Cloud Armor does not warn users of this limitation during policy creation
   or when configuring rules from within the web UI, and can only find a reference to
   the 8 KB limit in the [Cloud Armor documentation](https://cloud.google.com/armor/docs/security-policy-overview).
 manualRemediation: |
