@@ -17,7 +17,7 @@ publishedAt: 2022/05/17
 exploitabilityPeriod: Fixed on 2022/01/29
 knownITWExploitation: false
 summary: |
-  While testing rate-limiter protection, The reseacher noticed that when forcing HTTP/1 requests and injecting 
+  While testing rate-limiter protection, The researcher noticed that when forcing HTTP/1 requests and injecting 
   a space after `X-Forwarded-For` he was able to override this specific header, letting him impersonate any IP.
   Any internal header could have beem overridden, also the one that should not be exposed/forwarded by the
   client, such as `CloudFront-Viewer-Country-Region` or any other `CloudFront` enhanced header. 
