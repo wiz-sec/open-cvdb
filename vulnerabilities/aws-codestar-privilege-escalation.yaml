@@ -27,7 +27,7 @@ summary: |
 manualRemediation: |
   If not using the CodeStar service, ensure that the “aws-codestar-service-role” is removed from all your accounts. 
   Apply principle of least privilege to all CodeStar-related resources to ensure the codestar:CreateProjectFromTemplate 
-  permission is only granted when absolutely neceessary. Implement monitoring on any users with access to the 
+  permission is only granted when absolutely necessary. Implement monitoring on any users with access to the 
   codestar:CreateProject and iam:PassRole actions to detect potential escalation attempts.
 detectionMethods: null
 contributor: https://github.com/blakedunson
