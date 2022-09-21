@@ -1,0 +1,28 @@
+title: AttachMe
+slug: attachme
+cves: null
+affectedPlatforms:
+- OCI
+affectedServices:
+- BlockVolumes
+image: https://www.datocms-assets.com/75231/1663648486-attachme-social-cars.png
+severity: Critical
+discoveredBy:
+  name: Elad Gabay
+  org: Wiz
+  domain: https://www.wiz.io/
+  twitter: https://twitter.com/wiz_io
+publishedAt: 2022/09/20
+disclosedAt: 2022/06/09
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Attackers could gain read/write privileges to storage volumes across tenant boundaries. The attacker
+  required knowledge of the victim's unique volume ID (OCID), and the volume needed to be either in an
+  unattached state or have attachment sharing enabled
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/gabetocci
+references:
+- https://www.wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
