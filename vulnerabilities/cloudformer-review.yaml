@@ -9,8 +9,8 @@ image: https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg
 severity: Low
 discoveredBy:
   name: Karim El-Melhaoui
-  org: null
-  domain: null
+  org: O3 Cyber
+  domain: blog.karims.cloud
   twitter: KarimMelhaoui
 publishedAt: 2020/09/25
 disclosedAt: 2020/09/25
