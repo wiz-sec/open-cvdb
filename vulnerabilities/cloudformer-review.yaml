@@ -10,7 +10,7 @@ severity: Low
 discoveredBy:
   name: Karim El-Melhaoui
   org: O3 Cyber
-  domain: blog.karims.cloud
+  domain: https://blog.karims.cloud
   twitter: KarimMelhaoui
 publishedAt: 2020/09/25
 disclosedAt: 2020/09/25
