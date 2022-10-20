@@ -10,3 +10,11 @@ exploitability
 Kubernetes
 ITW
 cvdb
+blog
+cloudapp
+CSTI
+Deployer
+fabrixss
+msrc
+SFX
+SFXv
