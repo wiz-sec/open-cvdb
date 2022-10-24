@@ -18,3 +18,7 @@ fabrixss
 msrc
 SFX
 SFXv
+email
+emails
+misconfigured
+misconfiguration
