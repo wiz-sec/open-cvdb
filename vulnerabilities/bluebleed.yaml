@@ -1,0 +1,25 @@
+title: BlueBleed
+slug: bluebleed
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices: null
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bluebleed.jpg
+severity: Medium
+discoveredBy: 
+  name: null
+  org: SOCRadar
+  domain: https://socradar.io/
+  twitter: null
+publishedAt: 2022/10/19
+disclosedAt: 2022/09/24
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  In September 22', SOCRadar discovered an insecure public Azure blob storage owned by Microsoft (olyympusv2.blob.core.windows[.]net). This blob storage was used for storing emails and other documents from interactions with their customers (such as contracts and purchase orders). In total, the blob storage contained 2.4TB of data with information concerning thousands of Microsoft customers across dozens of countries, dated between 2017 and August 22'. Following disclosure, Microsoft reconfigured it to be private. According to Microsoft, they found no indication customer accounts or systems were compromised, and directly notified affected customers.
+manualRemediation: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://msrc-blog.microsoft.com/2022/10/19/investigation-regarding-misconfigured-microsoft-storage-location-2/
+- https://socradar.io/sensitive-data-of-65000-entities-in-111-countries-leaked-due-to-a-single-misconfigured-data-bucket/
+- https://socradar.io/details-on-the-largest-b2b-leak-bluebleed/
