@@ -5,7 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices: null
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bluebleed.jpg
-severity: Medium
+severity: null
 discoveredBy: 
   name: null
   org: SOCRadar
