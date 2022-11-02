@@ -1,0 +1,36 @@
+title: CosMiss
+slug: cosmiss
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Cosmos DB
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cosmiss.jpg
+severity: Medium
+discoveredBy: 
+  name: Lidor Ben Shitrit, Roee Sagi
+  org: Orca Security
+  domain: https://orca.security/
+  twitter: null
+publishedAt: 2022/11/01
+disclosedAt: 2022/10/04
+exploitabilityPeriod: 2022/08/12 - 2022/10/06
+knownITWExploitation: false
+summary: |
+  Cosmos DB notebooks lacked an authentication check, meaning that if an attacker
+  somehow had prior knowledge of a notebook’s temporary ‘forwardingId’ (a 128bit
+  cryptographically random GUID assigned to a short-lived workspace that expires
+  after an hour), they could gain full permissions on the notebook, including
+  read and write access and the ability to modify the file system of the
+  container running the notebook. These permissions would suffice for an
+  attacker to obtain remote code execution (RCE) in the notebook container.
+  However, this would not allow an attacker to execute notebooks, automatically
+  save notebooks in the victim’s (optionally) connected GitHub repository, or
+  access data in the Cosmos DB account. Following disclosure, Cosmos DB notebooks
+  now require an authorization token in the request header before allowing access.
+manualRemediation: |
+  None required.
+contributor: https://github.com/korniko98
+references:
+- https://msrc-blog.microsoft.com/2022/11/01/microsoft-mitigates-vulnerability-in-jupyter-notebooks-for-azure-cosmos-db/
+- https://orca.security/resources/blog/cosmiss-vulnerability-azure-cosmos-db/
