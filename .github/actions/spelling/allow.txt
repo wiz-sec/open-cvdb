@@ -22,3 +22,5 @@ email
 emails
 misconfigured
 misconfiguration
+RCE
+jupyter
