@@ -1,11 +1,11 @@
-title: AWS AppSync Confused Deputy via ServiceRoleArn
+title: AWS AppSync confused deputy via ServiceRoleArn
 slug: aws-appsync-confused-deputy
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - AppSync
-image: https://datadog-securitylabs.imgix.net/img/appsync-vulnerability-disclosure/hero.png?h=712&auto=format&dpr=2
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/appsync-confused-deputy.jpg
 severity: High
 discoveredBy:
   name: Nick Frichette
@@ -14,10 +14,14 @@ discoveredBy:
   twitter: frichette_n
 publishedAt: 2022/11/21
 disclosedAt: 2022/09/01
-exploitabilityPeriod: Before September 6, 2022
+exploitabilityPeriod: Until 2022/09/06
 knownITWExploitation: false
 summary: |
-  Prior to September 6, 2022, the AWS AppSync service could be coerced to assume arbitrary roles which trusted the AppSync service. This was due to insufficient validation of a serviceRoleArn parameter, allowing an attacker to specify roles in other accounts. With this vulnerability, an adversary could invoke arbitrary AWS API calls with the compromised role.
+  Prior to September 6, 2022, the AWS AppSync service could be coerced
+  to assume arbitrary roles which trusted the AppSync service. This was
+  due to insufficient validation of a serviceRoleArn parameter, allowing
+  an attacker to specify roles in other accounts. With this vulnerability,
+  an adversary could invoke arbitrary AWS API calls with the compromised role.
 manualRemediation: |
   None required 
 detectionMethods: Suspicious calls from roles assumed by the AppSync service.
