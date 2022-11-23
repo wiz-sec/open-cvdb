@@ -17,11 +17,12 @@ disclosedAt: 2022/09/01
 exploitabilityPeriod: Until 2022/09/06
 knownITWExploitation: false
 summary: |
-  Prior to September 6, 2022, the AWS AppSync service could be coerced
-  to assume arbitrary roles which trusted the AppSync service. This was
-  due to insufficient validation of a serviceRoleArn parameter, allowing
-  an attacker to specify roles in other accounts. With this vulnerability,
-  an adversary could invoke arbitrary AWS API calls with the compromised role.
+  The AWS AppSync service could be coerced to assume arbitrary roles in
+  other customers' accounts which trusted the AppSync service. This was
+  due to insufficient validation of a serviceRoleArn parameter (caused by
+  a case-sensitivity parsing issue). With this vulnerability, if an adversary
+  knew the ARN of the role associated with AppSync in the target account,
+  they could use it invoke arbitrary AWS API calls.
 manualRemediation: |
   None required 
 detectionMethods: Suspicious calls from roles assumed by the AppSync service.
