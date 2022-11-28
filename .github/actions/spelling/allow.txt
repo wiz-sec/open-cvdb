@@ -24,3 +24,5 @@ misconfigured
 misconfiguration
 RCE
 jupyter
+devops
+subdomain
