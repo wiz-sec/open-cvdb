@@ -1,0 +1,34 @@
+title: Hell's Keychain
+slug: hellskeychain
+cves: null
+affectedPlatforms:
+- IBM
+affectedServices:
+- IBM Cloud Databases
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/hellskeychain.jpg
+severity: Critical 
+discoveredBy:
+  name: Ronen Shustin, Shir Tamari
+  org: Wiz
+  domain: https://wiz.io/
+  twitter: null
+publishedAt: 2022/12/01
+disclosedAt: 2022/08/25
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  IBM Cloud Databases for PostgreSQL was vulnerable to an attack sequence
+  comprised of PostgreSQL privilege escalation via SQL Injection and chaining
+  of three secrets scattered in the service environment (a K8s service account
+  token, a private container registry password, and CI/CD server credentials),
+  which were abusable due to overly permissive network access to internal build
+  servers. A malicious actor could have exploited this vulnerability to remotely
+  execute code in other customers’ environments in order to read and modify data
+  stored in their PostgreSQL databases.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://www.wiz.io/blog/hells-keychain-supply-chain-attack-in-ibm-cloud-databases-for-postgresql
+- https://www.ibm.com/support/pages/node/6842111
