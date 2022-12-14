@@ -2,9 +2,9 @@ title: ECR Public vulnerability in undocumented API
 slug: public-ecr-undocumented-api
 cves: null
 affectedPlatforms:
-- AWS
+  - AWS
 affectedServices:
-- ECR Public
+  - ECR Public
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/public-ecr-undocumented-api.jpg
 severity: Critical
 discoveredBy:
@@ -28,5 +28,5 @@ manualRemediation: |
 detectionMethods: null
 contributor: https://github.com/guycoldham
 references:
-- https://blog.lightspin.io/aws-ecr-public-vulnerability
-- https://aws.amazon.com/security/security-bulletins/AWS-2022-010/
+  - https://blog.lightspin.io/aws-ecr-public-vulnerability
+  - https://aws.amazon.com/security/security-bulletins/AWS-2022-010/
