@@ -1,0 +1,32 @@
+title: ECR Public vulnerability in undocumented API
+slug: public-ecr-undocumented-api
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- ECR Public
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/public-ecr-undocumented-api.jpg
+severity: Critical
+discoveredBy:
+  name: Gafnit Amiga
+  org: Lightspin
+  domain: https://www.lightspin.io/
+  twitter: gafnitav
+publishedAt: 2022/11/15
+disclosedAt: 2022/12/13
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability in Elastic Container Registry (ECR) Public could have allowed a
+  malicious actor to delete, update, or create ECR Public images, layers, or tags
+  in registries and repositories belonging to any other AWS account, by abusing
+  undocumented API calls. A malicious actor could have exploited this to delete
+  any or all images in the Amazon ECR Public Gallery or update the content of any
+  existing image to inject malicious code on any machine that would pull and run it.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/guycoldham
+references:
+- https://blog.lightspin.io/aws-ecr-public-vulnerability
+- https://aws.amazon.com/security/security-bulletins/AWS-2022-010/
