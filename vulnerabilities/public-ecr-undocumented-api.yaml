@@ -12,8 +12,8 @@ discoveredBy:
   org: Lightspin
   domain: https://www.lightspin.io/
   twitter: gafnitav
-publishedAt: 2022/11/15
-disclosedAt: 2022/12/13
+publishedAt: 2022/12/13
+disclosedAt: 2022/11/15
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
