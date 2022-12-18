@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Azure Serverless Functions
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-func-escape.jpg
-severity: High
+severity: Medium
 discoveredBy:
   name: Aviv Sasson, Daniel Prizmant
   org: Palo Alto
