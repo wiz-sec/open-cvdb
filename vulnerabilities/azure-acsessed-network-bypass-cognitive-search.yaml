@@ -1,0 +1,27 @@
+title: ACSESSED: Cross-tenant network bypass in Azure Cognitive Search
+slug: azure-acsessed-network-bypass-cognitive-search
+cves: 
+- 
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Cognitive Search
+image: 
+severity: Important
+discoveredBy:
+  name: Emilien Socchi
+  org: mnemonic
+  domain: mnemonic.io
+  twitter: emiliensocchi
+publishedAt: 2022/12/22
+disclosedAt: 2022/02/23
+exploitabilityPeriod: 
+knownITWExploitation: 
+summary: |
+  The vulnerability, dubbed “ACSESSED”, consisted of a cross-tenant network bypass, allowing anyone with the right amount of information to access data located in private instances of Azure Cognitive Search (ACS) from any tenant and location.
+manualRemediation: |
+  
+detectionMethods: 
+contributor: https://github.com/techbrunch
+references:
+- https://www.mnemonic.io/resources/blog/acsessed-cross-tenant-network-bypass-in-azure-cognitive-search/
