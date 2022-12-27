@@ -1,0 +1,28 @@
+title: ACSESSED
+slug: acsessed
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Cognitive Search
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/network-bypass-cognitive-search.jpg
+severity: Medium
+discoveredBy:
+  name: Emilien Socchi
+  org: mnemonic
+  domain: mnemonic.io
+  twitter: emiliensocchi
+publishedAt: 2022/12/22
+disclosedAt: 2022/02/23
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Azure Cognitive Search (ACS) is a full-text search engine service.
+  A new non-default feature allowed for a network control to bypassed, permitting an attacker to submit search queries to any other tenant's network-isolated ACS instance. However, abusing this required a valid API key 
+  to access the data plane of the target, along with a number of pieces of information about the target environment (such as the subscription ID and the name of the index to query).
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/techbrunch
+references:
+- https://www.mnemonic.io/resources/blog/acsessed-cross-tenant-network-bypass-in-azure-cognitive-search/
