@@ -1,5 +1,5 @@
-title: ACSESSED: Cross-tenant network bypass in Azure Cognitive Search
-slug: network-bypass-cognitive-search
+title: ACSESSED
+slug: acsessed
 cves: null
 affectedPlatforms:
 - Azure
@@ -17,8 +17,9 @@ disclosedAt: 2022/02/23
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  A new non-default feature in Azure Cognitive Search allowed for a network control to bypassed. Abusing this requires a valid API key 
-  to access the data plane of the target, along with a number of pieces of information about the target environment.
+  Azure Cognitive Search (ACS) is a full-text search engine service.
+  A new non-default feature allowed for a network control to bypassed, permitting an attacker to submit search queries to any other tenant's network-isolated ACS instance. However, abusing this required a valid API key 
+  to access the data plane of the target, along with a number of pieces of information about the target environment (such as the subscription ID and the name of the index to query).
 manualRemediation: |
   None required
 detectionMethods: null
