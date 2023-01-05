@@ -24,12 +24,14 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 2.	Include public references (as URLs).
 3.	Provide a clear and detailed description of the issue.
 4.	Give the issue a descriptive and non-generic title.
-5.	Give proper credit to the researchers involved in the discovery.
-6.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
+5.	Assign the issue an estimated severity and/or rate it using the [Piercing Index](https://github.com/piercing-index/cloud-vulnerabilities).
+6.	Give proper credit to the researchers involved in the discovery.
+7.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
 
 
 ### Contact Us
 * Join our [Slack group](https://bit.ly/cloudVuln)
+* Follow us on [Twitter](https://twitter.com/cloudvulndb), [LinkedIn](https://www.linkedin.com/company/cloudvulndb/) and [Mastodon](https://infosec.exchange/@cloudvulndb)
 * [Email us](mailto:cloudvulndb@gmail.com)
 * Add [requests](https://github.com/wiz-sec/open-cvdb/issues/new/choose) for bugfixes or new features
 

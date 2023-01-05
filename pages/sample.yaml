@@ -6,8 +6,9 @@ affectedPlatforms:
 - 
 affectedServices:
 - 
-image: 
-severity: 
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/[slug].jpg
+severity: [critical / high / medium / low / null]
+piercingIndexVector: {version: [version], A1: [A1], A2: [A2], etc.} (optional)
 discoveredBy:
   name: 
   org: 
@@ -15,13 +16,13 @@ discoveredBy:
   twitter: 
 publishedAt: YYYY/mm/dd
 disclosedAt: YYYY/mm/dd
-exploitabilityPeriod: 
-knownITWExploitation: 
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   
 manualRemediation: |
-  
-detectionMethods: 
-contributor: https://github.com/[username]
+  None required
+detectionMethods: null
+contributor: https://github.com/[your_username]
 references:
-- 
+- (at least one)

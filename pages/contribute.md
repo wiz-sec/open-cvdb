@@ -7,8 +7,9 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 2.	Include public references (as URLs).
 3.	Provide a clear and detailed description of the issue.
 4.	Give the issue a descriptive and non-generic title.
-5.	Give proper credit to the researchers involved in the discovery.
-6.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
+5.	Assign the issue an estimated severity and/or rate it using the [Piercing Index](https://github.com/piercing-index/cloud-vulnerabilities).
+6.	Give proper credit to the researchers involved in the discovery.
+7.	Use respectful language (avoid disparaging CSPs, vendors or researchers).
 
 Please note that this database only includes information about publicly known issues and is not an appropriate venue for initial disclosure. Therefore, please refrain from using this platform to publish non-public information, and reach out to the relevant CSP or vendor instead.
 
