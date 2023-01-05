@@ -7,6 +7,7 @@ affectedServices:
 - SageMaker Jupyter Notebook
 image: https://www.inawisdom.com/wp-content/uploads/2018/06/SageMaker_Icon_Large.jpg
 severity: Medium
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Gafnit Amiga
   org: Lightspin
