@@ -7,6 +7,7 @@ affectedServices:
 - ACI
 image: https://images.pexels.com/photos/845265/pexels-photo-845265.jpeg
 severity: Critical
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Yuval Avrahami
   org: Palo Alto
