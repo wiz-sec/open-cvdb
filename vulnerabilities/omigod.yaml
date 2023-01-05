@@ -11,6 +11,7 @@ affectedServices:
 - OMI
 image: https://www.datocms-assets.com/75231/1659892020-omigod-8.png
 severity: Critical
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.0, A8: 1.1}
 discoveredBy:
   name: Nir Ohfeld
   org: Wiz
