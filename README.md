@@ -36,3 +36,5 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 * Add [requests](https://github.com/wiz-sec/open-cvdb/issues/new/choose) for bugfixes or new features
 
 To learn more about this project and the challenges surrounding cloud vulnerabilities, watch the talk we gave at fwd:cloudsec 2022 ([recording](https://www.youtube.com/watch?v=KwDo6KG76_c&list=PLCPCP1pNWD7N2SPaz4cmuS27xutaf32jy&index=11&ab_channel=fwd%3Acloudsec), [slides](https://pretalx.com/media/fwd-cloudsec-2022/submissions/YJBJPK/resources/cloudvulndb_fwd_jLR2QM9.pdf)).
+
+![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
