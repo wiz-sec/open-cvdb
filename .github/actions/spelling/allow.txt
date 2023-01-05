@@ -27,3 +27,17 @@ jupyter
 devops
 subdomain
 serverless
+bugfixes
+cloudsec
+cloudsecurityalliance
+cloudvulndb
+CSPs
+globalsecuritydatabase
+gmail
+infosec
+linkedin
+mailto
+misconfigurations
+pretalx
+webscheme
+youtube
