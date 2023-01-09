@@ -7,6 +7,7 @@ affectedServices:
 - AppSync
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/appsync-confused-deputy.jpg
 severity: High
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Nick Frichette
   org: Datadog
