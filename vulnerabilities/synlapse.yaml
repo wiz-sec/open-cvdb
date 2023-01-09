@@ -9,6 +9,7 @@ affectedServices:
 - Data Factory
 image: https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Critical
+piercingIndexVector: {version: 1.5, A1: 22, A2: 1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Tzah Pahima
   org: Orca Security

@@ -7,6 +7,7 @@ affectedServices:
 - Cosmos DB
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cosmiss.jpg
 severity: Medium
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 0.7, A8: 1.1}
 discoveredBy: 
   name: Lidor Ben Shitrit, Roee Sagi
   org: Orca Security

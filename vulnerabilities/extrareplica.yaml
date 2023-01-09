@@ -7,6 +7,7 @@ affectedServices:
 - Database for PostgreSQL
 image: https://www.datocms-assets.com/75231/1659934983-new-replica.png
 severity: Critical
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.0, A8: 1.1}
 discoveredBy:
   name: Sagi Tzadik, Nir Ohfeld, Shir Tamari, Ronen Shustin
   org: Wiz
