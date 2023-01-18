@@ -1,0 +1,28 @@
+title: AWS CloudTrail bypass for specific IAM actions
+slug: aws-iamadmin-cloudtrail-bypass
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- IAM
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-iamadmin-cloudtrail-bypass.jpg
+severity: Medium
+discoveredBy:
+  name: Nick Frichette
+  org: Datadog
+  domain: https://securitylabs.datadoghq.com/
+  twitter: frichette_n
+publishedAt: 2023/01/17
+disclosedAt: 2022/03/10
+exploitabilityPeriod: Until 2022/10/24
+knownITWExploitation: false
+summary: |
+  Through an undocumented API service called 'iamadmin', attackers could invoke any of 13 read-only IAM actions without the activity being being logged to CloudTrail.
+  These actions included listing group policies (iam:ListGroupPolicies), listing access keys (iam:ListAccessKeys), retrieving information about a role (iam:GetRole), and more.
+  This could have enabled adversaries to perform enumeration and reconnaissance activity undetected after gaining a foothold in a victim AWS environment.
+manualRemediation: |
+  None required 
+detectionMethods: null
+contributor: https://github.com/frichetten
+references:
+- https://securitylabs.datadoghq.com/articles/iamadmin-cloudtrail-bypass/
