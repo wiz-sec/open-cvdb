@@ -1,0 +1,40 @@
+title: Multiple SSRF vulnerablities in Azure services
+slug: azure_multiple_ssrf
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Machine Learning Service
+- Azure API Management Service
+- Azure Functions
+- Azure Digital Twins Explorer
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_multiple_ssrf.jpg
+severity: Low
+discoveredBy:
+  name: Lidor Ben Shitrit
+  org: Orca Security
+  domain: https://orca.security/
+  twitter: null
+publishedAt: 2023/01/17
+disclosedAt: 2022/10/08
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  SSRF vulnerabilities were discovered in four Azure services: unauthenticated SSRF in
+  Azure Digital Twins Explorer and Azure Functions, and authenticated SSRF in Azure API
+  Management Service and Azure Machine Learning Service. All four vulnerabilities were
+  full (non-blind) SSRF. The impact of these vulnerabilities was limited: while they
+  would have allowed an adversary to scan local ports and find new services, endpoints,
+  and files; they would not have allowed them to access metadata, connect to internal
+  services, access unauthorized data, or obtain cross-tenant access.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://orca.security/resources/blog/ssrf-vulnerabilities-in-four-azure-services/
+- https://msrc-blog.microsoft.com/2023/01/17/microsoft-resolves-four-ssrf-vulnerabilities-in-azure-cloud-services/
+- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-digital-twins/
+- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-functions-app/
+- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-api-management/
+- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-machine-learning/
