@@ -8,7 +8,7 @@ affectedServices:
 - Azure App Service
 - Azure Logic Apps
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/emojideploy.jpg
-severity: Critical
+severity: High
 discoveredBy:
   name: Liv Matan
   org: Ermetic
