@@ -33,6 +33,6 @@ summary: |
 manualRemediation: |
   None required
 detectionMethods: null
-contributor: https://github.com/techbrunch
+contributor: https://github.com/korniko98
 references:
 - https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/
