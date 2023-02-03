@@ -13,4 +13,4 @@ Please make sure that your contributions match our [criteria](http://cloudvulndb
 
 Please note that this database only includes information about publicly known issues and is not an appropriate venue for initial disclosure. Therefore, please refrain from using this platform to publish non-public information, and reach out to the relevant CSP or vendor instead.
 
-Feel free to join the discussion about cloud vulnerability enumeration on [Slack](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-1a0av8bb6-gbR5NE97f0MDP3TCf7kgKQ).
+Feel free to join the discussion about cloud vulnerability enumeration on [Slack](https://join.slack.com/t/cloud-cve-db/shared_invite/zt-y38smqmo-V~d4hEr_stQErVCNx1OkMA).
