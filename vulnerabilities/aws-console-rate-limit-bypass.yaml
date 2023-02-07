@@ -1,0 +1,32 @@
+title: aws-console-rate-limit-bypass
+slug: AWS Console rate limit bypass
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS Console
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-console-rate-limit-bypass.jpg
+severity: Medium
+discoveredBy:
+  name: Christophe Tafani-Dereeper
+  org: Datadog
+  domain: securitylabs.datadoghq.com
+  twitter: christophetd
+publishedAt: 2023/02/06
+disclosedAt: 2022/12/07
+exploitabilityPeriod: Until January 26th, 2023
+knownITWExploitation: false
+summary: |
+  AWS applies a rate limit to authentication requests made to the AWS Console
+  in an effort to prevent brute-force and credential stuffing attacks. However,
+  a weakness was discovered in the AWS Console authentication flow that allowed
+  a partial bypass of this rate limit by pausing for 5 seconds every 30 attempts.
+  This would enable an attacker to continuously attempt more than 280 passwords
+  per minute (4.6 per second) against IAM users, which could have resulted in
+  account compromise of users without MFA enabled.
+manualRemediation: |
+  None required
+detectionMethods: Detect potential brute-force behavior using the CloudTrail ConsoleLogin event.
+contributor: https://github.com/korniko98
+references:
+- https://securitylabs.datadoghq.com/articles/aws-console-rate-limit-bypass/
