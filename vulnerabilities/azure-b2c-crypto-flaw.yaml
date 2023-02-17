@@ -1,0 +1,30 @@
+title: Azure AD B2C cryptographic flaw allowing account compromise
+slug: azure-b2c-crypto-flaw
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- AD B2C
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-b2c-crypto-flaw.jpg
+severity: Critical
+piercingIndexVector: {version: 1.5, A1: 22, A2: 1, A7: 1, A8: 1.1}
+discoveredBy:
+  name: John Novak
+  org: Praetorian
+  domain: https://www.praetorian.com
+  twitter: jwnovak
+publishedAt: 2023/02/15
+disclosedAt: 2021/03/01
+exploitabilityPeriod: Until December 22'
+knownITWExploitation: false
+summary: |
+  Azure Active Directory B2C service (AD B2C) mistakenly implemented RSA encryption using the public part of the key pair instead of the private one.
+  This cryptographic flaw could have allowed an unauthenticated attacker to craft an OAuth refresh token for any AD B2C user account if they knew their public key.
+  Moreover, every AD B2C user's public key was recoverable through an unrelated vulnerability (though RSA encryption should not rely on public key secrecy regardless).
+  An attacker could redeem this refresh token for a session token, thereby gaining access to the victim account as if they had logged in through a legitimate login flow.
+manualRemediation: |
+  None required, but AD B2C tenant administrators should perform a key rotation and/or switch to symmetric cryptography (e.g., AES).
+detectionMethods: null
+contributor: https://github.com/jnovak-praetorian
+references:
+- https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/
