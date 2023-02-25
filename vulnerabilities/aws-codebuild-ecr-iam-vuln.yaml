@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - AWS CodeBuild
 - AWS ECR
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/[slug].jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-codebuild-ecr-iam-vuln.jpg
 severity:  medium 
 piercingIndexVector: {version: 1.5, A3: 1, A4: 1, A5: 1.05, A6: 6, A7: 1.1, A8: 1.1}
 discoveredBy:
