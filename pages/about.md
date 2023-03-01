@@ -22,7 +22,6 @@ Examples include:
 
 We consider the following cases to be out of scope of this project:
 -	Cloud vulnerabilities or security issues about which there is no publicly available information
--	CSP security incidents with no security impact on customers
 -	CSP customer security incidents
 
 ### History
