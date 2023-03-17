@@ -1,0 +1,26 @@
+title: Alibaba WAF 3.0 wildcard bypass
+slug: alibaba-waf-bypass
+cves: null
+affectedPlatforms:
+- Alibaba
+affectedServices:
+- Alibaba WAF
+image: https://images.pexels.com/photos/672111/pexels-photo-672111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+severity: Medium
+discoveredBy: 
+  name: Divyanshu Shukla
+  org: null
+  domain: https://justm0rph3u5.medium.com
+  twitter: justm0rph3u5
+disclosedAt: 2023/03/18
+exploitabilityPeriod: until Nov 10th, 2022
+knownITWExploitation: false
+summary: |
+  Alibaba WAF 3.0 was tested against a known vulnerable application for command injection, with all 1,462 built-in rules enabled. It was possible to bypass WAF using a wildcard payload, “?”, i.e. /???/??t%20/???/??ss?? ~ /bin/cat /etc/passwd.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributer: https://github.com/justmorpheus
+references:
+- https://medium.com/secjuice/waf-evasion-techniques-718026d693d8
+- https://justm0rph3u5.medium.com/alibaba-cloud-waf-command-injection-bypass-via-wildcard-payload-in-all-1-462-built-in-rule-set-989b75db6e2f
