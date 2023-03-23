@@ -1,11 +1,11 @@
-title: Lack of CloudTrail Logging in AWS Control Tower
+title: Partial CloudTrail logging in AWS Control Tower
 slug: aws-control-tower-lack-of-cloudtrail-logging
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - Control Tower
-image: <fill in please> 
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-control-tower-lack-of-cloudtrail-logging.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette
@@ -17,7 +17,11 @@ disclosedAt: 2023/01/30
 exploitabilityPeriod: Until 2023/02/13
 knownITWExploitation: false
 summary: |
-  AWS Control Tower was not properly logging to CloudTrail when API calls failed due to a lack of permissions.
+  AWS Control Tower was not properly logging to CloudTrail when API calls
+  failed due to a lack of permissions. This could have enabled adversaries
+  to remain undetected after gaining a foothold in a victim AWS environment,
+  since any unsuccessful API calls would not be logged, which might include
+  enumeration of privileges.
 manualRemediation: |
   None required
 detectionMethods: null
