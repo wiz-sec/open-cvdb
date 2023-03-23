@@ -1,4 +1,4 @@
-title: AWS CodeBuild default ECR IAM policy vulnerability
+title: Overprivileged CodeBuild default ECR IAM policy
 slug: aws-codebuild-ecr-iam-vuln
 cves: null
 affectedPlatforms:
