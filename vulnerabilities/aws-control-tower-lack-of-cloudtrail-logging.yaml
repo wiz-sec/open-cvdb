@@ -18,10 +18,10 @@ exploitabilityPeriod: Until 2023/02/13
 knownITWExploitation: false
 summary: |
   AWS Control Tower was not properly logging to CloudTrail when API calls
-  failed due to a lack of permissions. This could have enabled adversaries
-  to remain undetected after gaining a foothold in a victim AWS environment,
-  since any unsuccessful API calls would not be logged, which might include
-  enumeration of privileges.
+  failed due to a lack of permissions. This could have helped an adversary
+  with existing access to a victim AWS environment avoid detection while
+  enumerating privileges, since any unsuccessful API calls would not
+  generate "access denied" log entries.
 manualRemediation: |
   None required
 detectionMethods: null
