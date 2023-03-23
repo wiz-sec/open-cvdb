@@ -1,12 +1,12 @@
-title: AWS CloudTrail bypass for Service Catalog
+title: CloudTrail bypass for AWS Service Catalog
 slug: aws-service-catalog-cloudtrail-bypass
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - Service Catalog
-image: <fill in please>
-severity: Low
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-service-catalog-cloudtrail-bypass.jpg
+severity: Medium
 discoveredBy:
   name: Nick Frichette
   org: Datadog
@@ -17,7 +17,10 @@ disclosedAt: 2023/01/30
 exploitabilityPeriod: Until 2023/02/07
 knownITWExploitation: false
 summary: |
-  Due to an exposed development endpoint, it was possible to bypass CloudTrail logging for both read and write API actions for the Service Catalog service. This could have enabled adversaries to alter Service Catalog resources undetected after gaining a foothold in a victim AWS environment.
+  Due to an exposed development endpoint, it was possible to bypass CloudTrail
+  logging for both read and write API actions for the Service Catalog service.
+  This could have enabled adversaries to alter Service Catalog resources undetected
+  after gaining a foothold in a victim AWS environment.
 manualRemediation: |
   None required
 detectionMethods: null
