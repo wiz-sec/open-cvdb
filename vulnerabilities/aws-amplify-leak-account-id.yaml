@@ -1,0 +1,30 @@
+title: Leak Account ID for AWS Amplify App
+slug: aws-amplify-leak-account-id
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- Amplify
+image: <please fill in>
+severity: Low
+discoveredBy:
+  name: Nick Frichette
+  org: Nick Frichette
+  domain: https://frichetten.com/
+  twitter: frichette_n
+publishedAt: 2023/03/27
+disclosedAt: 2023/03/13
+exploitabilityPeriod: Until 2023/03/24
+knownITWExploitation: false
+summary: |
+  The action amplify:GetDistributionDetails did not properly validate the calling 
+  identity during invocation and as a result would return the AWS account ID associated 
+  with any Amplify app ID, and in some cases, CloudFront domains associated with 
+  Amplify apps.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/frichetten
+references:
+- https://frichetten.com/blog/undocumented-amplify-api-leak-account-id/
+- https://github.com/Frichetten/appID-2-acctID
