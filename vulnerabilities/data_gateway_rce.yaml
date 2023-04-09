@@ -4,7 +4,7 @@ cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
-- Cognitive Search
+- On-premises data gateway
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/data_gateway_rce.jpg
 severity: Critical
 discoveredBy:
