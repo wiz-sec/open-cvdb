@@ -41,3 +41,6 @@ misconfigurations
 pretalx
 webscheme
 youtube
+deserialization
+netspi
+rce

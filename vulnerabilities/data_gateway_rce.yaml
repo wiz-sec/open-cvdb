@@ -1,0 +1,31 @@
+title: Azure on-premises data gateway cross-tenant access
+slug: data_gateway_rce
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- On-premises data gateway
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/data_gateway_rce.jpg
+severity: Critical
+discoveredBy:
+  name: Nick Landers
+  org: NetSPI
+  domain: netspi.com
+  twitter: monoxgas
+publishedAt: 2023/03/30
+disclosedAt: 2022/09/30
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Azure on-premises data gateway allows data transfer between an on-prem customer network and
+  several Azure cloud services, and also enables a connected agent installed locally in an
+  on-prem network to perform certain actions remotely. NetSPI discovered a deserialization
+  issue in Microsoft Power Platform connectors that lead to RCE on several Azure backend
+  servers that processed call backs from on-premises data gateways, effectively allowing
+  unauthorized cross-tenant access.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://www.netspi.com/blog/technical/vulnerability-research/azure-service-bus-power-platform/
