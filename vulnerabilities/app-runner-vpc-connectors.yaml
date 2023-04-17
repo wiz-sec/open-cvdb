@@ -1,11 +1,11 @@
-title: AWS App Runner Cross-Tenant Information Leak (ListVpcConnectorsForAccount)
-slug: aws-app-runner-list-vpc-connectors-for-account
+title: App Runner cross-tenant VPC connectors info leak
+slug: app-runner-vpc-connectors
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - App Runner
-image: <Please Fill In>
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-vpc-connectors.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette
