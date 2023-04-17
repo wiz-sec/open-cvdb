@@ -1,11 +1,11 @@
-title: AWS App Runner Cross-Tenant Information Leak (ListObservabilityConfigurationsForAccount)
-slug: aws-app-runner-list-observability-configurations-for-account
+title: App Runner cross-tenant observability config info leak
+slug: app-runner-observability
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - App Runner
-image: <Please Fill In>
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-observability.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette
@@ -19,7 +19,7 @@ knownITWExploitation: false
 summary: |
   The API action ListObservabilityConfigurationsForAccount did not properly validate the 
   "AccountId" parameter that was passed to it. As a result, any account ID could be provided 
-  and the API would return the information for that account. This would like minor information
+  and the API would return the information for that account. This would leak minor information
   about the observability configuration for App Runner in the account.
 manualRemediation: |
   None required
