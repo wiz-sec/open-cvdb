@@ -9,10 +9,10 @@ affectedServices:
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/brokensesame.jpg
 severity: Critical
 discoveredBy:
-  name: Ronen Shustin
+  name: Ronen Shustin, Shir Tamari
   org: Wiz
   domain: https://www.wiz.io/
-  twitter: ronenshh
+  twitter: null
 publishedAt: 2023/04/19
 disclosedAt: 2022/12/04
 exploitabilityPeriod: null
