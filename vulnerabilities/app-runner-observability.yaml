@@ -9,7 +9,7 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runne
 severity: Low
 discoveredBy:
   name: Nick Frichette
-  org: Nick Frichette
+  org: null
   domain: https://frichetten.com
   twitter: frichette_n
 publishedAt: 2023/04/03
