@@ -48,3 +48,6 @@ aad
 sdk
 secureworks
 xxe
+Alibaba
+Apsara
+PostgreSQL
