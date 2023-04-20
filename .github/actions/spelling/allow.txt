@@ -44,3 +44,7 @@ youtube
 deserialization
 netspi
 rce
+aad
+sdk
+secureworks
+xxe
