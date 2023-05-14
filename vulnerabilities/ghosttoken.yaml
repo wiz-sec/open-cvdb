@@ -1,4 +1,4 @@
-title: ACSESSED
+title: GhostToken
 slug: ghosttoken
 cves: null
 affectedPlatforms:
@@ -12,16 +12,17 @@ discoveredBy:
   org: Astrix Security
   domain: astrix.security
   twitter: https://twitter.com/AstrixSecurity
-publishedAt: 2022/04/21
+publishedAt: 2023/04/21
 disclosedAt: 2022/06/19
 exploitabilityPeriod: until 2023/04/07
 knownITWExploitation: false
 summary: |
-  The Google Marketplace is the place where users can find and install third-party applications that are integrated with Google Workspace.
-  The way GCP project enters a "pending deletion" state when deleted, could allow threat actors to make a malicious application to be invisible and unremovable.
-  This could allow attackers access to sensitive information such as private Gmail correspondences, personal files and planned events within the the victim's google account.
+  Google users can find and install third-party OAuth applications from Google Marketplace that are integrated with Google Workspace.
+  Each OAuth application client in Google is associated with a GCP project.
+  A bug in the way a GCP project enters a "pending deletion" state when deleted, could have allowed threat actors to make a malicious application invisible and unremovable from the user's account.
+  This could have allowed attackers access to sensitive information such as private Gmail correspondences, personal files and planned events within the the victim's google account, as well as any GCP resources they had access to.
 manualRemediation: |
-  It is recommended that users go to the "Apps with access to you account" page and verify that they are familiar with all authorized third-party apps, and that each has the minimal needed permissions.
+  It is recommended that Google users go to the "Apps with access to you account" page and verify that they are familiar with all authorized third-party apps, and that each has the minimal needed permissions.
 detectionMethods: null
 contributor: https://github.com/danielleaminov16
 references:
