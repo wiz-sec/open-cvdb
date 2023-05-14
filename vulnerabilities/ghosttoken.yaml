@@ -18,11 +18,15 @@ exploitabilityPeriod: until 2023/04/07
 knownITWExploitation: false
 summary: |
   Google users can find and install third-party OAuth applications from Google Marketplace that are integrated with Google Workspace.
-  Each OAuth application client in Google is associated with a GCP project.
-  A bug in the way a GCP project enters a "pending deletion" state when deleted, could have allowed threat actors to make a malicious application invisible and unremovable from the user's account.
-  This could have allowed attackers access to sensitive information such as private Gmail correspondences, personal files and planned events within the the victim's google account, as well as any GCP resources they had access to.
+  Each OAuth application client in Google is associated with a GCP project. A bug in the way a GCP project enters a "pending deletion"
+  state when deleted, could have allowed threat actors to make a malicious application invisible and unremovable from the user's account.
+  If an attacker had managed to install an application in an account (e.g., through a phishing attack), they could have exploited this
+  vulnerability to hide their activity from the target user. Depending on the permissions of the malicious application, the attacker
+  could have silently gained access to sensitive information such as private Gmail correspondences, personal files and planned events
+  within the the victim's google account, as well as any GCP resources the user had access to.
 manualRemediation: |
-  It is recommended that Google users go to the "Apps with access to you account" page and verify that they are familiar with all authorized third-party apps, and that each has the minimal needed permissions.
+  It is recommended that Google users go to the "Apps with access to you account" page and verify that they are familiar
+  with all authorized third-party apps, and that each has the minimal needed permissions.
 detectionMethods: null
 contributor: https://github.com/danielleaminov16
 references:
