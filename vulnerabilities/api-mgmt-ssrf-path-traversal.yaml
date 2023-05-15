@@ -1,0 +1,38 @@
+title: API Management SSRF and path traversal vulnerabilities
+slug: api-mgmt-ssrf-path-traversal
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure API Management
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/api-mgmt-ssrf-path-traversal.jpg
+severity: High
+discoveredBy:
+  name: Liv Matan
+  org: Ermetic
+  domain: ermetic.com
+  twitter: terminatorLM
+publishedAt: 2023/05/04
+disclosedAt: 2022/12/21
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Azure API Management is an API gateway service meant to help organizations to create, manage, secure,
+  and monitor APIs across all of their environments. Researchers found three high severity vulnerabilities
+  in the service, two of which are SSRF (Server Side Request Forgery) vulnerabilities, and the third is a
+  path traversal bug. The SSRF flaws affected the Azure API Management CORS proxy (which handles schema
+  retrieval) and hosting proxy (which routes API requests to the correct server). An attacker successful
+  in exploiting each of these SSRF vulnerabilities could fake requests from these legitimate servers and
+  thereby gain access to internal Azure services. However, the researchers did not determine the effective
+  impact of this access level, and it's therefore possible that Azure had security measures in place which
+  would have blocked further lateral movement. The path-traversal vulnerability allowed for an unrestricted
+  file upload to the Azure developer portal server. The portal's authenticated mode allows users to upload
+  static files and images to be displayed within the portal website, but this vulnerability could have allowed
+  an attacker to upload code instead, and then potentially execute it on the server itself.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://ermetic.com/blog/azure/when-good-apis-go-bad-uncovering-3-azure-api-management-vulnerabilities/
+- https://twitter.com/terminatorLM/status/1654110442082516992
