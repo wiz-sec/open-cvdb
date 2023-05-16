@@ -1,8 +1,8 @@
 # How to contribute?
 
-This website reflects the current state of data stored in our [GitHub repository](https://github.com/wiz-sec/open-cvdb). To contribute a new issue or suggest an edit to an existing one, please add a commit and our maintainers will review it for merging within a few days (but usually sooner).
+This website reflects the current state of data stored in our [GitHub repository](https://github.com/wiz-sec/open-cvdb). To contribute information about missing cloud vulnerabilities and security issues, you can either use our [contribution form](https://github.com/wiz-sec/open-cvdb/issues/new?assignees=&labels=addition&projects=&template=contribution-template.md&title=%5BContribution%5D+Add+security+issue+or+vulnerability) or create a pull request and our maintainers will review your suggestion within a few days (but usually sooner). Please make sure that your contributions match our [criteria for inclusion](http://cloudvulndb.org/about).
 
-Please make sure that your contributions match our [criteria](http://cloudvulndb.org/about) for inclusion, and follow these guidelines:
+When creating a pull request, please adhere to the following guidelines:
 1.  Use the [CVDB YAML](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) format. 
 2.	Include public references (as URLs).
 3.	Provide a clear and detailed description of the issue.
