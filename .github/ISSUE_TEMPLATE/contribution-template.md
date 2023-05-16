@@ -1,7 +1,7 @@
 ---
 name: Contribution template
 about: Contribute information about a missing cloud security issue or vulnerability
-title: ''
+title: '[Contribution] Add security issue or vulnerability'
 labels: addition
 assignees: ''
 
