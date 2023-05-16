@@ -16,10 +16,11 @@ This project was built on the foundations of [Scott Piper](https://twitter.com/0
 
 ### Contribution guidelines
 
-To contribute a new issue or suggest an edit to an existing one, please add a commit and our maintainers will review it for merging within a few days (but usually sooner). The changes will then automatically be reflected at [cloudvulndb.org](https://cloudvulndb.org/).
+To contribute information about missing cloud vulnerabilities and security issues, you can either use our [contribution form](https://github.com/wiz-sec/open-cvdb/issues/new?assignees=&labels=addition&projects=&template=contribution-template.md&title=%5BContribution%5D+Add+security+issue+or+vulnerability) or create a pull request and our maintainers will review your suggestion within a few days (but usually sooner). The changes will then automatically be reflected at [cloudvulndb.org](https://cloudvulndb.org/). Please make sure that your contributions match our [criteria for inclusion](http://cloudvulndb.org/about).
+
 <p align="center"><img width="40%" align="center" src="https://github.com/wiz-sec/open-cvdb/blob/main/webscheme.png" alt="cloudvulndb.org is automatically updated according to changes made to this repository" class="center"></p>
 
-Please make sure that your contributions match our [criteria](http://cloudvulndb.org/about) for inclusion, and follow these guidelines:
+When creating a pull request, please adhere to the following guidelines:
 1.  Use the [CVDB YAML](https://github.com/wiz-sec/open-cvdb/blob/main/pages/sample.yaml) format. 
 2.	Include public references (as URLs).
 3.	Provide a clear and detailed description of the issue.
