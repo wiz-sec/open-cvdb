@@ -18,7 +18,7 @@ disclosedAt: 2023/02/13
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  Multiple vulnerabilities discovered in GCP's Cloud SQL service could be abused
+  A vulnerability discovered in GCP's Cloud SQL service could be abused
   to eventually result in complete control of the database engine 
   and access to the host OS. An attacker could have accessed sensitive files in 
   the host OS, listed files and sensitive paths, read passwords, and extracted secrets 
