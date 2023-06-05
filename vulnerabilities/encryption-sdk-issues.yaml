@@ -1,6 +1,6 @@
 title: Encryption SDK vulnerabilities
 slug: encryption-sdk-issues
-cves: null
+cves: CVE-2020-8897
 affectedPlatforms:
 - AWS
 affectedServices:
