@@ -1,4 +1,4 @@
-title: Cloud SQL privilege escalation
+title: Cloud SQL for SQL Server privilege escalation
 slug: cloudsql-privesc
 cves: null
 affectedPlatforms:
@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Cloud SQL
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-privesc.jpg
-severity: high
+severity: low
 piercingIndexVector: null
 discoveredBy:
   name: null
@@ -18,19 +18,17 @@ disclosedAt: 2023/02/13
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  A vulnerability discovered in GCP's Cloud SQL service could be abused
-  to result in complete control of the database engine and access to the
-  host OS. An attacker could have listed and accessed files in the host OS,
-  including any secrets on the machine, as well as gaining access to service
-  agents. However, it is unclear from the report if this level of access could
-  have allowed lateral movement within the Cloud SQL service or grant cross-tenant
-  access to other customers' data. The root cause of this vulnerability is also
-  unclear, though it allowed a series of privilege escalations, initially granting
-  the default sqlserver user access to a GCP admin role, and then the sysadmin role,
-  effectively granting a potential threat actor full access to the SQL server.
+  A vulnerability in GCP's Cloud SQL for SQL Server service allowed customer
+  administrator accounts to create triggers in the tempdb database and use
+  those to gain sysadmin privileges in the instance. This access gives complete
+  control of the database engine and access to the host OS. An attacker could have
+  listed and accessed files in the host OS, including any secrets on the machine,
+  as well as gaining access to service agents. The reporters did not disclose any
+  lateral movement and Google stated in their security bulletin it was not possible.
 manualRemediation: |
   None required
 detectionMethods: null
 contributor: https://github.com/jacks-reid
 references:
 - https://www.dig.security/post/gcp-cloudsql-vulnerability-leads-to-internal-container-access-and-data-exposure
+- https://cloud.google.com/sql/docs/security-bulletins#gcp-2023-007
