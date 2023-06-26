@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Directory Service
-# image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
-image: null
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
 severity: medium
 piercingIndexVector: {version: 1.5, A3: 1, A4: 1, A5: 1, A6: 6, A7: 1.1, A8: 0,7}
 discoveredBy:
@@ -20,9 +19,9 @@ exploitabilityPeriod: Until 2023-04-24
 knownITWExploitation: false
 summary: |
   AWS Directory Service didn't check the iam:PassRole permissions when using the
-  EnableRoleAccess action. This could be used for privilege escalation by an
+  EnableRoleAccess action. This could have been used for privilege escalation by an
   authenticated user with sufficient permissions (ds:EnableRoleAccess), if the
-  role has a trust policy that allows use by Directory Service.
+  role had a trust policy that allowed use by Directory Service.
 manualRemediation: |
   None required
 detectionMethods: |
