@@ -1,0 +1,37 @@
+title: XSS in Azure Bastion and Container Registry
+slug: bastion-container-reg-xss
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Bastion
+- Azure Container Registry
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bastion-container-reg-xss.jpg
+severity: High
+discoveredBy:
+  name: Lidor Ben Shitrit
+  org: Orca Security
+  domain: orca.security
+  twitter: null
+publishedAt: 2023/06/14
+disclosedAt: 2023/04/13
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Orca discovered vulnerabilities in Azure Bastion and Azure Container Registry
+  that could have enabled an attacker to achieve Cross-Site Scripting (XSS) by
+  using iframe postMessages. The vulnerabilities allowed embedding of endpoints
+  within remote attacker-controlled servers using the iframe tag, thereby granting
+  unauthorized access to the victim’s session in the affected service if they
+  were tricked into navigating to an attacker-controlled website. The root cause
+  was that certain web pages in the Bastion and Container Registry customer-facing
+  portals allowed embedding of iframes in remote servers, meaning they were not
+  using mitigations such as the X-Frame-Options header or the frame-ancestors
+  directive in a Content Security Policy (CSP), which would have prevented these issues.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://orca.security/resources/blog/examining-two-xss-vulnerabilities-in-azure-services/
+- https://msrc.microsoft.com/blog/2023/06/microsoft-mitigates-set-of-cross-site-scripting-xss-vulnerabilities-in-azure-bastion-and-azure-container-registry/
