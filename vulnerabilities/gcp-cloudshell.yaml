@@ -1,0 +1,28 @@
+title: Google Cloud Shell Command Injection
+slug: gcp-cloudshell-command-injection
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Shell
+image: amitai-add-pls
+severity: Low
+discoveredBy:
+  name: Bugra Eskici
+  org: Secureworks
+  domain: null
+  twitter: https://twitter.com/bugraeskici
+publishedAt: 2022/08/10
+disclosedAt: 2022/01/28
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability in Cloud Shell that enables command injection and remote shell access. By manipulating the "project" parameter, the researcher discovered an 
+  unencoded Python script execution flaw. Exploiting this flaw, they injected a command to display the contents of the "/etc/passwd" file, 
+  successfully executing arbitrary commands and obtaining remote shell access.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://bugra.ninja/posts/cloudshell-command-injection/
