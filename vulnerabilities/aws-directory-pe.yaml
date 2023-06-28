@@ -1,0 +1,29 @@
+title: Logic Apps privilege escalation to root
+slug: aws-directory-pe
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS Directory Service
+image: amitai please add
+severity: Medium
+discoveredBy:
+  name: Ben Bridts
+  org: Cloudar
+  domain: https://cloudar.be/
+  twitter: https://twitter.com/benbridts
+publishedAt: 2023/06/07
+disclosedAt: 2022/04/07
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  When configuring an AWS service to use an IAM role on ones behalf, it is necessary to have the iam:PassRole permission in addition to the permissions required 
+  to configure and/or use the service.Due to a bug, AWS Directory Service didn’t verify the presence of those permissions when assigning users or groups to 
+  an existing IAM role. This allowed users with the ds:EnableRoleAccess permission to assign users to any role in their account that has a trust 
+  relationship with AWS Directory service.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://cloudar.be/awsblog/spotted-privilege-escalation-in-aws-directory-service/
