@@ -1,0 +1,27 @@
+title: RCE vulnerability in Azure Pipelines
+slug: azure-pipeline-rce
+cves: CVE-2023-21553
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Pipelines
+image: amitai please add
+severity: High
+discoveredBy:
+  name: Nadav Noy
+  org: Legit Security
+  domain: https://www.legitsecurity.com/
+  twitter: null
+publishedAt: 2023/03/30
+disclosedAt: 2022/09/05
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Legit Security found a vulnerability in Azure Pipelines that allows an attacker to execute malicious code in a context of a pipeline workflow, 
+  which allows attackers to gain sensitive secrets, move laterally in the organization, and initiate supply chain attacks.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://www.legitsecurity.com/blog/remote-code-execution-vulnerability-in-azure-pipelines-can-lead-to-software-supply-chain-attack
