@@ -9,7 +9,7 @@ image: amitai-add-pls
 severity: Low
 discoveredBy:
   name: Bugra Eskici
-  org: Secureworks
+  org: null
   domain: null
   twitter: https://twitter.com/bugraeskici
 publishedAt: 2022/08/10
