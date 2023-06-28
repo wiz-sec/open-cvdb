@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Google Cloud Shell
 image: amitai-add-pls
-severity: Low
+severity: Medium
 discoveredBy:
   name: Bugra Eskici
   org: null
