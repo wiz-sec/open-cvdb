@@ -1,4 +1,4 @@
-title: Vulnerabilities in legacy Azure App Service APIs
+title: Azure App Services takeover via legacy API
 slug: azure-mgmt-api-rce
 cves: null
 affectedPlatforms:
