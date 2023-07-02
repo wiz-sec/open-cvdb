@@ -1,0 +1,27 @@
+title: IAM Supporting Multiple MFA Devices
+slug: iam-multiple-mfa
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS IAM
+image: amitai pls add
+severity: Low
+discoveredBy:
+  name: Justin Moorcroft
+  org: MWR CyberSec
+  domain: https://www.mwrcybersec.com/
+  twitter: null
+disclosedAt: 2023/01/19
+publishedAt: 2023/04/25
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An AWS-recommended IAM policy that enforces MFA on access keys could have been bypassed because multiple MFA devices were supported.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/0xdabbad00
+references:
+- https://www.mwrcybersec.com/when-mfa-becomes-sfa
+- https://aws.amazon.com/security/security-bulletins/AWS-2023-001/
