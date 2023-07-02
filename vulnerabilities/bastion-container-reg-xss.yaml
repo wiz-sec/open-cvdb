@@ -8,6 +8,7 @@ affectedServices:
 - Azure Container Registry
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bastion-container-reg-xss.jpg
 severity: High
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
