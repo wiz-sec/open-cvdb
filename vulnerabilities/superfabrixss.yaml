@@ -1,4 +1,4 @@
-title: MFA enforcement IAM policy bypass
+title: Super FabriXss XSS vulnerability in Azure Service Fabric Explorer
 slug: superfabrixss
 cves: CVE-2023-23383
 affectedPlatforms:
