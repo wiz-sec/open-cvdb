@@ -1,23 +1,28 @@
-title: IAM Supporting Multiple MFA Devices
+title: MFA enforcement IAM policy bypass
 slug: iam-multiple-mfa
 cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
 - AWS IAM
-image: amitai pls add
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/iam-multiple-mfa.jpg
 severity: Low
 discoveredBy:
   name: Justin Moorcroft
   org: MWR CyberSec
   domain: https://www.mwrcybersec.com/
-  twitter: null
+  twitter: MoorcroftJustin
 disclosedAt: 2023/01/19
 publishedAt: 2023/04/25
-exploitabilityPeriod: null
+exploitabilityPeriod: November 2022 until April 2023
 knownITWExploitation: false
 summary: |
-  An AWS-recommended IAM policy that enforces MFA on access keys could have been bypassed because multiple MFA devices were supported.
+  An AWS-recommended IAM policy that enforced MFA on access keys could have been bypassed
+  due to a change implemented by AWS in November 2022 that allowed IAM users to assign
+  multiple MFA devices to their account. Prior to this change, an attacker that had compromised
+  credentials could not create and assign a new MFA device to bypass the MFA requirement as they
+  would need to first deactivate the user’s existing MFA device. Organisations using SSO which
+  enforces MFA, either via an external IdP or AWS SSO, were not affected by this issue.
 manualRemediation: |
   None required
 detectionMethods: null
