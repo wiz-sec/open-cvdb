@@ -27,8 +27,17 @@ summary: |
   Microsoft did not update the agent automatically, and so customers had to patch manually,
   but a few days later they began patching some services remotely.
 manualRemediation: |
-  None required, client needed to be auto-updated.
+  Customers must update vulnerable extensions for their cloud and on-premises deployments. 
+  New VMs in a region are protected from these vulnerabilities as they are created. 
+  For cloud deployments, Microsoft has deployed the updates to extensions across Azure regions. 
+  The automatic extension updates were transparently patched without a reboot. 
+  Where possible, customers should ensure that automatic extension updates are enabled.
 detectionMethods: OMI version < 1.6.8.1
 contributor: https://github.com/0xdabbad00
 references:
 - https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38647
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38648
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38645
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38649
+- https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
