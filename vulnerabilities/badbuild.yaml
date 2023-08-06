@@ -22,7 +22,7 @@ summary: |
   environment and had permission to create a new Cloud Build instance (cloudbuild.builds.create)
   or permission to directly impersonate the Cloud Build default service account (which is highly
   privileged by design and therefore considered to be a known privilege escalation vector in GCP).
-  An attacker could then potentially use this information in order to better faciliate lateral movement,
+  An attacker could then potentially use this information in order to better facilitate lateral movement,
   privilege escalation or a supply chain attack by other means. This issue was due to excessive
   permissions granted to the default service account created by Cloud Build, particularly access to
   audit logs containing all project permissions (logging.privateLogEntries.list).
