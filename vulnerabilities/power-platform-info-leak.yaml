@@ -1,0 +1,38 @@
+title: Power Platform Custom Code information disclosure
+slug: power-platform-info-leak
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Power Platform
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/power-platform-info-leak.jpg
+severity: High
+discoveredBy:
+  name: Evan Grant
+  org: Tenable
+  domain: tenable.com
+  twitter: null
+publishedAt: 2023/08/04
+disclosedAt: 2023/03/30
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability in Power Platform could lead to unauthorized access to Custom
+  Code functions used for custom connectors, thereby allowing cross-tenant information
+  disclosure of secrets or other sensitive information if these were embedded in a
+  Custom Code function. The issue occurred as a result of insufficient access control
+  to Azure Function hosts, which are launched as part of the creation and operation of
+  custom connectors in Microsoft’s Power Platform. An attacker who determined the
+  hostname of the Azure Function associated with the custom connector could interact
+  with the function without authentication. Microsoft fixed the issue by requiring Azure
+  Function keys for accessing the Function hosts and their HTTP trigger. An initial fix
+  was deployed (on June 7th, 2023), but customers using affected Custom Code in a "soft
+  deleted state" (part of a data recovery mechanism) remained vulnerable until a later
+  fix was applied (on August 2nd, 2023).
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://msrc.microsoft.com/blog/2023/08/microsoft-mitigates-power-platform-custom-code-information-disclosure-vulnerability/
+- https://www.tenable.com/security/research/tra-2023-25

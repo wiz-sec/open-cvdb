@@ -1,0 +1,35 @@
+title: Bad.Build
+slug: badbuild
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Build
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/badbuild.jpg
+severity: Low
+discoveredBy:
+  name: Roi Nisimi
+  org: Orca Security
+  domain: orca.security
+  twitter: null
+publishedAt: 2023/07/18
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An information disclosure vulnerability in the Google Cloud Build service could have
+  allowed an attacker to view sensitive logs if they had gained prior access to a GCP
+  environment and had permission to create a new Cloud Build instance (cloudbuild.builds.create)
+  or permission to directly impersonate the Cloud Build default service account (which is highly
+  privileged by design and therefore considered to be a known privilege escalation vector in GCP).
+  An attacker could then potentially use this information in order to better facilitate lateral movement,
+  privilege escalation or a supply chain attack by other means. This issue was due to excessive
+  permissions granted to the default service account created by Cloud Build, particularly access to
+  audit logs containing all project permissions (logging.privateLogEntries.list).
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://cloud.google.com/build/docs/security-bulletins#GCP-2023-013
+- https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/
