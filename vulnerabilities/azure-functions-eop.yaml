@@ -1,0 +1,32 @@
+title: Azure Function Apps privilege escalation
+slug: azure-functions-eop
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Function Apps
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-functions-eop.jpg
+severity: High
+discoveredBy:
+  name: Karl Fosaaen
+  org: NetSPI
+  domain: https://www.netspi.com/
+  twitter: kfosaaen
+publishedAt: 2023/03/23
+disclosedAt: 2022/08/02
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+ Undocumented APIs used by the Azure Function Apps Portal could have allowed an attacker with existing
+ access to a Reader role on a Function App to escalate their privileges and gain write permissions
+ through arbitrary file reads on Function App containers. For Windows containers, this would only
+ grant an attacker the ability to extract ASP.NET encryption keys (the impact of which remains unclear),
+ but for Linux containers it would have allowed an attacker to read environmental variables containing
+ information that ultimately granted access to Function master keys. This in turn would have allowed
+ overwriting Function App code and gaining remote code execution within the container.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-function-apps/
