@@ -1,5 +1,13 @@
 # Announcements 
 
+### September 2023 Updates
+*September 03, 2023*
+
+* New website logo 🖼️
+* 137 total vulnerabilities and security issues added by 24 contributors (65 added since website launch) ⚠️
+* New tag system allows searching for issues with specific severities in each CSP 🏷️
+* [RSS feed](https://www.cloudvulndb.org/rss/feed.xml) is now ordered by publication date 🗞
+
 ### July 2022 Updates
 *July 25, 2022*
 
