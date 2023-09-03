@@ -5,7 +5,7 @@
 
 * New website logo 🖼️
 * 137 total vulnerabilities and security issues added by 24 contributors (65 added since website launch) ⚠️
-* New tag system allows searching for issues with specific severities in each CSP 🏷️
+* [New tag system](https://www.cloudvulndb.org/results?tags=Azure,High) allows searching for issues with specific severities in each CSP 🏷️
 * [RSS feed](https://www.cloudvulndb.org/rss/feed.xml) is now ordered by publication date 🗞
 * [New template](https://github.com/wiz-sec/open-cvdb/issues/new?assignees=&labels=addition&projects=&template=contribution-template.md&title=%5BContribution%5D+Add+security+issue+or+vulnerability) for simple contribution of information about a vulnerability or security issue 🐛
 
