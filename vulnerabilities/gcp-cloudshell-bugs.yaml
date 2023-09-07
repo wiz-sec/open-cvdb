@@ -1,0 +1,28 @@
+title: Bugs in GCP Cloudshell
+slug: gcp-cloudshell-bugs
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- GCP Cloudshell
+image: amitai
+severity: Medium
+discoveredBy: 
+  name: Obmi
+  org: null
+  domain: https://obmiblog.blogspot.com/ 
+  twitter: null
+publishedAt: 2022/12/26
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Three flaws in GCP Cloudshell: The first is an XSS vulnerability through the `uri` parameter in the file uploading feature. The second is CSRF 
+  in file uploading, and the third is stored XSS in the Markdown Viewer as well as OAuth token hijacking.
+manualRemediation: |
+  null
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://obmiblog.blogspot.com/2022/12/gcp-2022-few-bugs-in-google-cloud-shell.html 
+- https://security.googleblog.com/2023/06/google-cloud-awards-313337-in-2022-vrp.html
