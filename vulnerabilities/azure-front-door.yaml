@@ -1,0 +1,27 @@
+title: Client-side Desync in Azure Front Door
+slug: azure-front-door
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Front Door
+image: amitai
+severity: Medium
+discoveredBy: 
+  name: Jeti
+  org: null
+  domain: https://blog.jeti.pw/
+  twitter: https://twitter.com/0xJeti
+publishedAt: 2023/06/27
+disclosedAt: 2023/05/08
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A client-side Desync vulnerability was discovered in one of Microsoft Azure's CDN solutions known as Front Door. Exploiting this vulnerability could
+  also allow "universal" XSS.  
+manualRemediation: |
+  null
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://blog.jeti.pw/posts/knocking-on-the-front-door/
