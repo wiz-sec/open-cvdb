@@ -1,0 +1,28 @@
+title: Simple Notification Service SigningCertUrl Improper Validation
+slug: sns-signingcerturl-improper-validation
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- Amazon Simple Notification Service
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/sns-signingcerturl-improper-validation.jpg
+severity: Low
+discoveredBy:
+  name: Eugene Lim
+  org: null
+  domain: spaceraccoon.dev
+  twitter: spaceraccoonsec
+publishedAt: 2022/08/19
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Amazon SNS' signature validation in the official SDK relied on a weak regex. 
+  The `sns` S3 bucket was publicly readable and writeable, allowing an attacker to
+  forge messages to any official SDK SNS validator user.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://spaceraccoon.dev/exploiting-improper-validation-amazon-simple-notification-service/
