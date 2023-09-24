@@ -1,0 +1,34 @@
+title: "Open In" Google Cloud Shell command injection
+slug: gcp-cloudshell-open-in-command-injection
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Shell
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gcp-cloudshell-command-injection.jpg
+severity: Medium
+discoveredBy:
+  name: Ademar Nowasky Junior
+  org: null
+  domain: null
+  twitter: nowaskyjr
+publishedAt: 2022/12
+disclosedAt: 2022/01
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability was discovered in Cloud Shell that enabled command injection and remote shell access.
+  The "Open in Cloud Shell" functionality allowed a user to provide both the "git_repo" and "go_get_repo" parameters.
+  In that case, an attacker could have supplied a "trusted" repository as "git_repo" and
+  an arbitrary command in the "go_get_repo" parameter. The command would then be executed in 
+  a trusted environment where it is possible to access the user's home directory and
+  to perform API calls using the users credentials. However, the impact of this is unclear,
+  as an attacker would seemingly only be able to gain such a remote shell on their own instance. Phishing
+  could be used to try and coerce a user into running a command that exposed their credentials to the
+  attacker.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://docs.google.com/document/d/1-TTCS6fS6kvFUkoJmX4Udr-czQ79lSUVXiWsiAED_bs
