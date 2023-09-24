@@ -19,9 +19,11 @@ knownITWExploitation: null
 summary: |
   An SSRF bug in Google Cloud Monitoring's uptime check feature could have been
   used to leak the authentication token of the service account used for these checks.
+  The issue was resolved but later bypassed by Omar Espino (@omespino), requiring another fix.
 manualRemediation: |
   None required
 detectionMethods: 
 contributor: https://github.com/0xdabbad00
 references:
 - https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html
+- https://omespino.com/write-up-google-vrp-n-a-ssrf-bypass-with-quadzero-in-google-cloud-monitoring/
