@@ -1,0 +1,30 @@
+title: Azure Front Door client-side desync
+slug: azure-front-door-desync
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Front Door
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-front-door-desync.jpg
+severity: Medium
+discoveredBy: 
+  name: Jeti
+  org: null
+  domain: https://blog.jeti.pw/
+  twitter: 0xJeti
+publishedAt: 2023/06/27
+disclosedAt: 2023/05/08
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A client-side desync vulnerability was discovered in Front Door, one of Azure's CDN solutions,
+  caused by mishandling of the 'Content-Length' header in HTTP requests. Exploiting this vulnerability
+  would most likely require user interaction through social engineering (such as clicking on a malicious
+  link), but could allow an attacker to steal session cookies or forge responses to victim requests.
+manualRemediation: |
+  null
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://blog.jeti.pw/posts/knocking-on-the-front-door/
+- https://portswigger.net/research/browser-powered-desync-attacks
