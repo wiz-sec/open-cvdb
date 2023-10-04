@@ -1,0 +1,31 @@
+title: GCP Cloudshell Cross-Site WebSocket Hijacking (CSWSH)
+slug: gcp-cloudshell-cswsh
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- GCP Cloudshell
+image: https://images.unsplash.com/photo-1543789289-2fcb1e565eb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80
+severity: Low
+discoveredBy: 
+  name: Psi
+  org: null
+  domain: ψ.fun
+  twitter: null
+publishedAt: 2020/03/11
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Google Cloudshell leveraged websockets without validating that the origin matched the current instance host.
+  An attacker could therefore host a CSWSH attack on a Cloudshell instance they own, disabling authentication via 
+  access to the underlying VM. They could then start the OAuth process with a spoofed host header, using
+  phishing to get the target Cloud Shell user into following a redirection link, completing the OAuth process
+  and ending in successful CSWSH, which would allow the attacker to hijack the target user's requests.
+manualRemediation: |
+  null
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://ψ.fun/i/yvpMj
+- https://security.googleblog.com/2020/03/announcing-our-first-gcp-vrp-prize.html
