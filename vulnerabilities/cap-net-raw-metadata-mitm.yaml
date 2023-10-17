@@ -2,7 +2,7 @@ title: GKE and EKS CAP_NET_RAW metadata service MITM root privilege escalation
 slug: cap-net-raw-metadata-mitm
 cves: null
 affectedPlatforms:
-- Azure
+- GCP
 - AWS
 affectedServices:
 - GKE
