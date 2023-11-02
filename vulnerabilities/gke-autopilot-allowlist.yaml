@@ -23,4 +23,7 @@ manualRemediation: |
   None required
 detectionMethods: null
 contributor: https://github.com/0xdabbad00
-references: https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/
+references:
+- https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/
+- https://cloud.google.com/support/bulletins#gcp-2022-009
+- https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2022-009
