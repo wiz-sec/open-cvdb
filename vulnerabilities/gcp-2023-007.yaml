@@ -1,12 +1,12 @@
-title: Privilege escalation in GCP Cloud SQL via tempdb
-slug: gcp-cloudsql-tempdb-privesc
+title: Privilege escalation in GCP Cloud SQL
+slug: gcp-2023-007
 cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud SQL
-image: https://images.unsplash.com/photo-1595742446666-c51b9fee49c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVtcG9yYXJ5fGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
-severity: High
+image: https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=2036&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
 discoveredBy:
   name: null
   org: null
@@ -17,7 +17,7 @@ publishedAt: 2023/06/02
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  A vulnerability was recently discovered in Cloud SQL for SQL Server
+  A vulnerability was discovered in Cloud SQL for SQL Server
   that allowed customer administrator accounts to create triggers 
   in the tempdb database and use those to gain sysadmin privileges in the instance. 
   The sysadmin privileges would give the attacker access to system databases
