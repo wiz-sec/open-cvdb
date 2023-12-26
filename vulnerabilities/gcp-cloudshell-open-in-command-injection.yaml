@@ -12,20 +12,20 @@ discoveredBy:
   org: null
   domain: null
   twitter: nowaskyjr
-publishedAt: 2022/12
-disclosedAt: 2022/01
-exploitabilityPeriod: null
+publishedAt: 2021/12/28
+disclosedAt: null
+exploitabilityPeriod: Until 2021/01/23
 knownITWExploitation: false
 summary: |
   A vulnerability was discovered in Cloud Shell that enabled command injection and remote shell access.
-  The "Open in Cloud Shell" functionality allowed a user to provide both the "git_repo" and "go_get_repo" parameters.
-  In that case, an attacker could have supplied a "trusted" repository as "git_repo" and
-  an arbitrary command in the "go_get_repo" parameter. The command would then be executed in 
-  a trusted environment where it is possible to access the user's home directory and
-  to perform API calls using the users credentials. However, the impact of this is unclear,
-  as an attacker would seemingly only be able to gain such a remote shell on their own instance. Phishing
-  could be used to try and coerce a user into running a command that exposed their credentials to the
-  attacker.
+  The "Open in Cloud Shell" functionality allowed a user to provide values for both the "git_repo" and "go_get_repo" parameters,
+  which would clone the target repo in the user's environment. While "git_repo" was validated against a list of trusted repos,
+  "go_get_repo" was not. Therefore, an attacker could have supplied a trusted repository as "git_repo" and
+  an arbitrary command in the "go_get_repo" parameter. The command would then be executed in a trusted environment where it is
+  possible to access the user's home directory and to perform API calls using the user's credentials. However, the impact of this is unclear,
+  as an attacker would seemingly only be able to gain such a remote shell on their own instance. In theory, phishing
+  could be used to try and coerce a user into running a command that exposed their credentials to the attacker.
+  Google mitigated this issue by preventing users from being able to provide both parameters at once.
 manualRemediation: |
   None required
 detectionMethods: null
