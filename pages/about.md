@@ -17,12 +17,14 @@ We define the following criteria for inclusion in this database:
 4.	And required remediation actions on either side of the shared responsibility model.
 
 Examples include:
--	Security issues in default misconfigurations
+- Security issues affecting CSP-managed services
+-	Default misconfigurations of CSP-managed services
 -	Vulnerabilities in CSP-provided client software
 
 We consider the following cases to be out of scope of this project:
 -	Cloud vulnerabilities or security issues about which there is no publicly available information
 -	CSP customer security incidents
+-	WAF bypass vulnerabilities
 
 ### History
 This project was built on the foundations of [Scott Piper](https://twitter.com/0xdabbad00)’s [“Cloud Service Provider security mistakes”](https://github.com/SummitRoute/csp_security_mistakes), and as of June 28th, 2022, all content included here originally appeared in that repository.
