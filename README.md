@@ -8,7 +8,7 @@ Security bugs in Cloud services tend to [fall between the cracks](https://www.wi
 
 There is currently no universal standard for cloud vulnerability enumeration – CSPs [rarely](https://www.cve.org/Media/News/item/blog/2022/09/13/Dispelling-the-Myth-CVE-ID) issue CVEs for security mistakes discovered in their services, there are no industry conventions for assessing severity, no proper notification channels and no unified tracking mechanism – this leads to a great deal of inefficiency and confusion.
 
-Our goal in this project is to pave the way for a centralized cloud vulnerability database, by cataloging CSP security mistakes and listing the exact steps CSP customers can take to detect or prevent these issues in their own environments.
+Our goal in this project is to pave the way for a centralized cloud vulnerability database, by cataloging CSP security mistakes and listing the exact steps CSP customers can take to detect or prevent these issues in their own environments. 
 
 We believe this project can prove the utility of a cloud vulnerability database (VDB), bring more transparency into these issues, and ultimately make the cloud even more secure.
 
