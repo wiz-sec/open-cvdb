@@ -1,5 +1,5 @@
-title: Azure Pipelines Agent repo poisoning
-slug: pipelines-agent-poison
+title: Azure Pipelines Agent poisoned pipeline execution
+slug: pipelines-agent-ppe
 cves: null
 affectedPlatforms:
 - Azure
