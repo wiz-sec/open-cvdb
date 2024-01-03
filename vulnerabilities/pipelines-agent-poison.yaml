@@ -1,5 +1,5 @@
-title: Azure Pipelines Agent repository shell injection
-slug: pipelines-agent-inject
+title: Azure Pipelines Agent repo poisoning
+slug: pipelines-agent-poison
 cves: null
 affectedPlatforms:
 - Azure
@@ -20,9 +20,9 @@ summary: |
   Azure Pipelines and GitHub Actions allow deployment of runners and agents using VM images sourced from a GitHub-managed
   repository (github.com/actions/runner-images). This repo was misconfigured to use self-hosted runners insecurely,
   in a way that could have allowed a malicious external contributor (i.e., anyone who had previously had at least one PR
-  approved and merged in the repo) to achieve code execution on runners in the repo. This in turn could have theoretically
-  allowed an attacker to modify the source code of the images, and thereby conduct a supply chain attack against Pipelines
-  and Actions customers.
+  approved and merged in the repo) to poison the repository and achieve code execution on runners in the repo. This in turn
+  could have theoretically allowed an attacker to modify the source code of the images, and thereby conduct a supply chain
+  attack against Pipelines and Actions customers.
 manualRemediation: |
   None required
 detectionMethods: null
