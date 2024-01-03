@@ -1,0 +1,31 @@
+title: Azure Pipelines Agent repo misconfiguration
+slug: runner-supply-chain
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Pipelines
+image: https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=3200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: High
+discoveredBy:
+  name: Adnan Khan
+  org: null
+  domain: adnanthekhan.com
+  twitter: adnanthekhan
+publishedAt: 2023/12/20
+disclosedAt: 2023/07/22
+exploitabilityPeriod: Until 2023/07/26
+knownITWExploitation: false
+summary: |
+  Azure Pipelines and GitHub Actions allow deployment of runners and agents using VM images sourced from a GitHub-managed
+  repository (github.com/actions/runner-images). This repo was misconfigured to use self-hosted runners insecurely,
+  in a way that could have allowed a malicious external contributor (i.e., anyone who had previously had at least one PR
+  approved and merged in the repo) to achieve code execution on runners in the repo. This in turn could have theoretically
+  allowed an attacker to modify the source code of the images, and thereby conduct a supply chain attack against Pipelines
+  and Actions customers.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/
