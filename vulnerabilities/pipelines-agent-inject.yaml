@@ -1,5 +1,5 @@
-title: Azure Pipelines Agent repo misconfiguration
-slug: runner-supply-chain
+title: Azure Pipelines Agent repository shell injection
+slug: pipelines-agent-inject
 cves: null
 affectedPlatforms:
 - Azure
