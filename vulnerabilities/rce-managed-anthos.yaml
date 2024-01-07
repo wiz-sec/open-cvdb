@@ -1,0 +1,31 @@
+title: RCE in Managed Anthos Service Mesh control plane
+slug: rce-managed-anthos
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Istio Control Plane 
+- Anthos Service Mesh
+image: https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=2036&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
+discoveredBy:
+  name: Anthony Weems
+  org: Google
+  domain: https://lf.lc/
+  twitter: https://twitter.com/amlweems
+disclosedAt: 2021/10/15
+publishedAt: 2021/10/26
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A researcher discovered a vulnerability enabling remote code execution within the Istio control plane. Exploiting this vulnerability necessitates elevated access
+  privileges within the Kubernetes cluster where Istio operates. Under typical circumstances, this vulnerability would pose a low or informational risk. 
+  Yet, within a managed Istio environment, the risk escalates. To illustrate, the researcher focused on Google-managed Anthos Service Mesh (ASM). 
+  ASM operates the Istio control plane within a Google-managed project, utilizing a per-product per-project service account (P4SA) for authentication within the user's GKE cluster. 
+  Ultimately, this vulnerability leads to remote code execution within the managed ASM control plane.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://lf.lc/vrp/203177829/
