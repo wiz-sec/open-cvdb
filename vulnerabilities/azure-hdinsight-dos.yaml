@@ -1,0 +1,30 @@
+title: Azure HDInsight Privilege Escalations and Denial of Service Vulnerabilities
+slug: azure-hdinsight-dos
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- HDInsight
+image: amitai
+severity: Medium
+discoveredBy:
+  name: Lidor Ben Shitrit
+  org: Orca Security
+  domain: https://orca.security/
+  twitter: null
+disclosedAt: null
+publishedAt: 2024/02/06
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+ CVE-2023-36419 and CVE-2023-38156 are high severity privilege escalation vulnerabilities in Azure HDinsight. The root cause of the vulnerabilities
+ are flaws in third-party services Apache Oozie and Apache Ambari, respectively, and they could allow an authenticated attacker with HDI cluster access to gain
+ cluster administrator privileges and perform any resource service management operation. The vulnerabilities were patched in the October 2023 security update of Azure HDinsight.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/korniko98
+references:
+- https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/#h-case-2-azure-hdinsight-apache-ambari-jdbc-injection-elevation-of-privileges
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36419
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38156
