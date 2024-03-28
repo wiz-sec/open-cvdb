@@ -1,0 +1,29 @@
+title: Privilege Escalation Vulnerability in Azure Site Recovery Services
+slug: azure-site-recovery-pe
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Site Recovery
+image: AMITAI
+severity: High
+discoveredBy:
+  name: Joshua Murrell
+  org: NetSPI
+  domain: https://www.netspi.com/
+  twitter: null
+publishedAt: 2024/02/13
+disclosedAt: 2024/01/09
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Researchers discovered that the ASR service, when enabled, uses an Automation Account with a System-Assigned Managed Identity to manage Site Recovery extensions on Virtual Machines (VMs). 
+  This setup is crucial for updating and managing the Site Recovery extensions. The Runbook (a set of scripts for managing extensions), executed by the Automation Account, had its job output visible to users. 
+  This output mistakenly included a cleartext Management-scoped Access Token for the System-Assigned Managed Identity, which possesses the Contributor role over the entire Azure subscription. Lower-privileged user roles, who could access the Automation Account's job output, 
+  could see and use this Access Token. This access allowed these users to impersonate the Managed Identity, thereby elevating their privileges to that of a Contributor for the whole subscription, including the ability to execute commands on VMs as `NT Authority\\SYSTEM`.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://www.netspi.com/blog/technical/cloud-penetration-testing/elevating-privileges-with-azure-site-recovery-services/
