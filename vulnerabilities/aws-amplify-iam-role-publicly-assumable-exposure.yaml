@@ -1,0 +1,33 @@
+title: AWS Amplify IAM role publicly assumable exposure
+slug: aws-amplify-iam-role-publicly-assumable-exposure
+cves: CVE-2024-28056
+affectedPlatforms:
+  - AWS
+affectedServices:
+  - Amplify
+  - Cognito
+image: 
+severity: Critical
+discoveredBy:
+  name: Nick Frichette
+  org: Datadog
+  domain: https://securitylabs.datadoghq.com/
+  twitter: frichette_n
+publishedAt: 2024/04/15
+disclosedAt: 2024/01/09
+exploitabilityPeriod: Between July 2018 and January 2024
+knownITWExploitation: false
+summary: |
+  The AWS Amplify service was found to be misconfiguring IAM roles associated 
+  with Amplify projects. This misconfiguration caused these roles to be assumable 
+  by any other AWS account. Both the Amplify Studio and the Amplify CLI 
+  exhibited this behavior. 
+manualRemediation: |
+  None required 
+detectionMethods: |
+  Review CloudTrail logs for suspicious sts:AssumeRoleWithWebIdentity API calls in which 
+  the identity pool ID is not owned by an identity pool in the same account.
+contributor: https://github.com/frichetten
+references:
+- https://securitylabs.datadoghq.com/articles/amplified-exposure-how-aws-flaws-made-amplify-iam-roles-vulnerable-to-takeover/
+- https://aws.amazon.com/security/security-bulletins/AWS-2024-003/
