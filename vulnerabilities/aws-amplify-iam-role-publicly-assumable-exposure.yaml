@@ -8,6 +8,7 @@ affectedServices:
   - Cognito
 image: https://images.unsplash.com/photo-1615297658577-dc5cec88e81a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Critical
+piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 1.0}
 discoveredBy:
   name: Nick Frichette
   org: Datadog
@@ -23,7 +24,9 @@ summary: |
   by any other AWS account. Both the Amplify Studio and the Amplify CLI 
   exhibited this behavior. Any Amplify project created using the Amplify CLI
   built between July 3, 2018 and August 8, 2019 had IAM roles that were assumable by
-  anyone in the world. AWS mitigated this vulnerability through backend changes to
+  anyone in the world. The same was true if the authentication component was removed
+  from an Amplify project using the Amplify CLI or Amplify Studio built between
+  August 2019 and January 2024. AWS mitigated this vulnerability through backend changes to
   STS and IAM, and also released a patch for the Amplify CLI to ensure that newly
   created roles are properly configured in accordance with these changes.
 manualRemediation: |
