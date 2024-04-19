@@ -1,0 +1,34 @@
+title: AWS IAM Trust Policy Condition Evaluation Bug
+slug: aws-iam-trust-policy-condition-evaluation-bug
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- IAM
+- STS
+image: https://plus.unsplash.com/premium_photo-1683275025932-70afaa30c3d5?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Low
+discoveredBy:
+  name: null
+  org: Stedi
+  domain: https://www.stedi.com
+  twitter: null
+publishedAt: 2024/04/09
+disclosedAt: 2023/06/20
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Tag variable names affected whether trust policy conditions were evaluated correctly.
+  If the request tag referenced a principal tag called MemberRole in the JWT token, and 
+  the IAM role referenced a resource tag with the same variable name, the condition was
+  always evaluated as true, regardless of whether the tag's values actually matched. Only
+  role trust policies that used a variable substitution for both the request tag and the
+  resource tag in the policy statement resulted in the policy evaluating incorrectly. The 
+  issue impacted statements within IAM boundary policies and SCP policies that contained 
+  the same pattern of STS role assumption with tag-based conditions.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://www.stedi.com/blog/stedi-discovered-an-aws-access-vulnerability
