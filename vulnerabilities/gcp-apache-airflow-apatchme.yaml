@@ -1,0 +1,37 @@
+title: Google Composer Stored XSS
+slug: gcp-apache-airflow-apatchme
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Composer
+image: https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
+discoveredBy:
+  name: Liv Matan
+  org: Tenable (Ermetic)
+  domain: https://www.tenable.com
+  twitter: terminatorLM
+disclosedAt: 2023/11/02
+publishedAt: 2023/11/02
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  The Task instance details page in the Google Composer UI
+  was vulnerable to a stored XSS, as it was not patched against 
+  CVE-2023-29247. Authenticated threat actors can use ApatchMe to
+  store their JavaScript payload in the victim's managed Apache
+  Airflow and run JavaScript on behalf of the victim (who can be
+  an admin or other user with more permissions than the threat actor,
+  leading to privilege escalation). With JavaScript, threat actors can
+  run any operation in the session that the victim could — edit tasks,
+  read jobs, job runs, read plugins and configurations, list connections,
+  add variables and more.
+manualRemediation: |
+  Users should take steps to update their Cloud Composer versions 
+  to 2.4.2 or later. 
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
+- https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
