@@ -1,0 +1,27 @@
+title: AWS ElasticSearch Index Name Leakage
+slug: aws-es-index-name-leak
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS ElasticSearch
+image: https://images.unsplash.com/photo-1569235186275-626cb53b83ce?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
+discoveredBy:
+  name: Scott Piper
+  org: Duo Security
+  domain: null
+  twitter: 0xdabbad00
+publishedAt: 2018/05/15
+disclosedAt: 2018/01/30
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Even for the AWS-managed ElasticSearch clusters that had not been made public,
+  their index names could be learned.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://duo.com/blog/beyond-s3-exposed-resources-on-aws
