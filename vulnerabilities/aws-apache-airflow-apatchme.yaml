@@ -1,6 +1,6 @@
 title: AWS Amazon Managed Workflows for Apache Airflow Stored XSS
 slug: mwaa-apatchme
-cves: null
+cves: CVE-2023-29247
 affectedPlatforms:
 - AWS
 affectedServices:

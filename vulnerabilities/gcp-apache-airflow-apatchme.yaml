@@ -1,6 +1,6 @@
 title: Google Composer Stored XSS
 slug: gcp-apache-airflow-apatchme
-cves: null
+cves: CVE-2023-29247
 affectedPlatforms:
 - GCP
 affectedServices:
