@@ -1,0 +1,35 @@
+title: Authentication bypass in Auth0
+slug: authentication-bypass-in-auth0
+cves: 
+- null
+affectedPlatforms:
+- Auth0
+affectedServices:
+- Auth0 by Okta
+# Please generate one. :)
+image: none
+severity: high
+piercingIndexVector: none
+discoveredBy:
+  name: Laban Sköllermark
+  org: Sentor Managed Security Services
+  domain: sentorsecurity.com
+  twitter: @LabanSkoller
+publishedAt: 2023/10/23
+disclosedAt: 2023/07/22
+# Can't find a definition of this.
+exploitabilityPeriod: null
+# Can't find a definition of this.
+knownITWExploitation: null
+summary: |
+  In certain usage scenarios of Auth0, the vulnerability let an attacker impersonate any victim in an Auth0 customer’s system,
+  simply by knowing the victim’s email address. It was possible to make Auth0 sign JWTs cross-tenant for users who did not exist.
+  The vulnerability was found in their Preview environment which might be configured differently than their production environment.
+  Auth0 have only acknowledged receipt of the vulnerability report and not confirmed any assumptions.
+  They have since then changed the behavior of their system so that this vulnerability is no longer present.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/LabanSkollerSentor
+references:
+- https://sentorsecurity.com/blog/vulnerability-disclosure-authentication-bypass-in-auth0/
