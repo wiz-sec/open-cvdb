@@ -1,0 +1,40 @@
+title: Session fixation in Auth0's "Cross Origin Authentication"
+slug: session-fixation-in-auth0
+cves: 
+- null
+affectedPlatforms:
+- Auth0
+affectedServices:
+- Auth0 by Okta
+# Please generate one. :)
+image: none
+severity: medium
+piercingIndexVector: none
+discoveredBy:
+  name: Laban Sköllermark
+  org: Sentor Managed Security Services
+  domain: sentorsecurity.com
+  twitter: @LabanSkoller
+publishedAt: 2023/10/18
+disclosedAt: 2023/07/10
+# Can't find a definition of this.
+exploitabilityPeriod: null
+# Can't find a definition of this.
+knownITWExploitation: null
+summary: |
+  An attacker could hijack a victim's account if there was a Cross-Site Scripting (XSS) vulnerability
+  in another subdomain of the application using Auth0, or on any *.auth0.com subdomain,
+  and the victim could be lured to that site.
+  Another possibility for exploitation was if the attacker could gain a Meddler-in-The-Middle (MiTM)
+  position on a network to manipulate plaintext HTTP traffic for a victim.
+  The domain auth0.com was not HSTS preloaded.
+  A customer of Auth0 was required to enable a non-default feature called "Cross Origin Authentication"
+  in order to be vulnerable to this session fixation.
+  Auth0 confirmed the vulnerability on day #11 of the coordinated disclosure window and said on day #58
+  (the 6th of September 2023), that they had mitigated the vulnerability.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/LabanSkollerSentor
+references:
+- https://sentorsecurity.com/blog/vulnerability-disclosure-session-fixation-in-auth0/
