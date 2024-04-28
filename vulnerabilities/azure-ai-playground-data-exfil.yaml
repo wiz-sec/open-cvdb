@@ -23,7 +23,7 @@ summary: |
   data by rendering hyperlinks. However, the severity of this issue is low,
   as there were no integrations that could pull remote content. This means
   Indirect Prompt Injection was not possible, and it would require the victim to copy
-  the malicious prompt from elsewhere.
+  the malicious prompt from elsewhere. A similar issue affected GCP Vertex AI.
 manualRemediation: |
   None required
 detectionMethods: null
