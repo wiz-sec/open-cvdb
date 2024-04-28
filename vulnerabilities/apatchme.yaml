@@ -27,11 +27,8 @@ summary: |
   is able to run — edit tasks, read jobs, run jobs, read plugins and configurations, 
   list connections, add variables and more.
 manualRemediation: |
-  AWS users should update their instances via the AWS Console by selecting
-  the affected environment and then selecting Edit->Next->Next->Save to
-  ensure that their current Airflow version has the latest security fixes.
-  GCP users should take steps to update their Cloud Composer versions 
-  to 2.4.2 or later.
+  AWS users should update their instances via the AWS Console.
+  GCP users should take steps to update their Cloud Composer versions to 2.4.2 or later.
 detectionMethods: null
 contributor: https://github.com/ramimac
 references:
