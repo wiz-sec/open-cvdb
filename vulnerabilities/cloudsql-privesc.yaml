@@ -6,25 +6,28 @@ affectedPlatforms:
 affectedServices:
 - Cloud SQL
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-privesc.jpg
-severity: low
+severity: high
 piercingIndexVector: null
 discoveredBy:
   name: null
   org: Dig
-  domain: https://www.dig.security/
+  domain: dig.security
   twitter: null
 publishedAt: 2023/05/24
 disclosedAt: 2023/02/13
 exploitabilityPeriod: null
 knownITWExploitation: null
 summary: |
-  A vulnerability in GCP's Cloud SQL for SQL Server service allowed customer
+  A vulnerability discovered in GCP's Cloud SQL service allowed customer
   administrator accounts to create triggers in the tempdb database and use
-  those to gain sysadmin privileges in the instance. This access gives complete
-  control of the database engine and access to the host OS. An attacker could have
-  listed and accessed files in the host OS, including any secrets on the machine,
-  as well as gaining access to service agents. The reporters did not disclose any
-  lateral movement and Google stated in their security bulletin it was not possible.
+  those to gain sysadmin privileges in the instance. This could be abused
+  to result in complete control of the database engine and access to the
+  host OS. An attacker could have listed and accessed files in the host OS,
+  including any secrets on the machine, as well as gaining access to service
+  agents. However, it is unclear from the report if this level of access could
+  have allowed lateral movement within the Cloud SQL service or grant cross-tenant
+  access to other customers' data. The reporters did not disclose any lateral movement
+  and Google stated in their security bulletin that it was not possible.
 manualRemediation: |
   None required
 detectionMethods: null
