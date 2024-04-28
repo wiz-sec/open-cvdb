@@ -1,0 +1,32 @@
+title: Azure AI Playground data exfiltration
+slug: azure-ai-playground-data-exfil
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- AI Playground
+image: https://images.unsplash.com/photo-1709788938317-7e8d523b3a9a?w=1500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhlaWZ8ZW58MHx8MHx8fDA%3D
+severity: Low
+discoveredBy:
+  name: Johann Rehberger
+  org: null
+  domain: https://embracethered.com
+  twitter: wunderwuzzi23
+publishedAt: 2023/10/19
+disclosedAt: 2023/09/29
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  In Azure AI Playground, a Prompt Injection attack could cause an LLM to return markdown tags. 
+  This would have allowed an adversary whose data makes it into the chat context
+  (e.g., via an uploaded file) to achieve exfiltration of the victim’s 
+  data by rendering hyperlinks. However, the severity of this issue is low,
+  as there were no integrations that could pull remote content. This means
+  Indirect Prompt Injection was not possible, and it would require the victim to copy
+  the malicious prompt from elsewhere. A similar issue affected GCP Vertex AI.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
