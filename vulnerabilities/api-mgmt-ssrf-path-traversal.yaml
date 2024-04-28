@@ -20,7 +20,7 @@ summary: |
   Azure API Management is an API gateway service meant to help organizations to create, manage, secure,
   and monitor APIs across all of their environments. Researchers found three high severity vulnerabilities
   in the service, two of which are SSRF (Server Side Request Forgery) vulnerabilities, and the third is a
-  path traversal bug. The SSRF flaws affected the Azure API Management CORS proxy (which handles schema
+  path traversal bug. The SSRF issues affected the Azure API Management CORS proxy (which handles schema
   retrieval) and hosting proxy (which routes API requests to the correct server). An attacker successful
   in exploiting each of these SSRF vulnerabilities could fake requests from these legitimate servers and
   thereby gain access to internal Azure services. However, the researchers did not determine the effective
