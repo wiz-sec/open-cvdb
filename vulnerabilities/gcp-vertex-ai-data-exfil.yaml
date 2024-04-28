@@ -1,10 +1,10 @@
-title: Vertex AI Generative AI Studio data exfiltration
+title: Vertex AI Studio data exfiltration
 slug: gcp-vertex-ai-data-exfil
 cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
-- Vertex AI Generative AI Studio
+- Vertex AI Studio
 image: https://images.unsplash.com/photo-1532303517831-241791b20fb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Low
 discoveredBy:
@@ -17,7 +17,7 @@ disclosedAt: 2023/08/30
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-  In Vertex AI Generative AI Studio, a Prompt Injection attack could cause the LLM to return
+  In Vertex AI Studio, a Prompt Injection attack could cause the LLM to return
   markdown tags. This could have allowed an adversary whose data makes it into
   the chat context (e.g., via an uploaded file) to achieve
   exfiltration of the victim’s data by rendering hyperlinks. However, the severity of this issue is low,
