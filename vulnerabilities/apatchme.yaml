@@ -1,0 +1,39 @@
+title: ApatchMe
+slug: apatchme
+cves: CVE-2023-29247
+affectedPlatforms:
+- AWS, GCP
+affectedServices:
+- MWAA, Composer
+image: https://images.unsplash.com/photo-1564979045531-fa386a275b27?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
+discoveredBy:
+  name: Liv Matan
+  org: Tenable (Ermetic)
+  domain: tenable.com
+  twitter: terminatorLM
+disclosedAt: 2023/11/02
+publishedAt: 2023/11/02
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Amazon Managed Workflows for Apache Airflow (MWAA) and the Task instance details
+  page in the Google Composer UI were not patched against CVE-2023-29247 (Stored XSS).
+  This meant that post-authentication, a threat actor could have exploited this
+  to store their JavaScript payload in the victim's managed Apache Airflow instance
+  and run JavaScript on behalf of the victim (who could be an admin or another
+  user with higher permissions than the threat actor, thereby leading to privilege escalation).
+  With JavaScript, threat actors could have run any operation in the session that the victim
+  is able to run — edit tasks, read jobs, run jobs, read plugins and configurations, 
+  list connections, add variables and more.
+manualRemediation: |
+  AWS users should update their instances via the AWS Console by selecting
+  the affected environment and then selecting Edit->Next->Next->Save to
+  ensure that their current Airflow version has the latest security fixes.
+  GCP users should take steps to update their Cloud Composer versions 
+  to 2.4.2 or later.
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
+- https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
