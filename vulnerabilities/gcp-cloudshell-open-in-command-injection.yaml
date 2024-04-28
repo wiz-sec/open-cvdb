@@ -1,10 +1,10 @@
-title: Open In Google Cloud Shell command injection
+title: Google Cloud Shell command injection
 slug: gcp-cloudshell-open-in-command-injection
 cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
-- Google Cloud Shell
+- Cloud Shell
 image: https://images.unsplash.com/photo-1541427914209-ef891bee99fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80
 severity: Medium
 discoveredBy:
