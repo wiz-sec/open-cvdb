@@ -1,26 +1,27 @@
-title: GraphNinja: Microsoft Graph Logging Bypass
+title: GraphNinja
 slug: graph-ninja
 cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
 - Microsoft Graph
-image: amitai!
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/graph-ninja.jpg
 severity: Medium
 discoveredBy:
   name: Nyx Geek
   org: TrustedSec
-  domain: https://trustedsec.com/
-  twitter: https://twitter.com/nyxgeek
+  domain: trustedsec.com
+  twitter: nyxgeek
 publishedAt: 2024/04/29
 disclosedAt: null
-exploitabilityPeriod: 2023/06 - 2024/03
+exploitabilityPeriod: June 2023 - March 2024
 knownITWExploitation: false
 summary: |
-  From June 2023 to March 2024, a vulnerability in Microsoft Graph allowed attackers to conduct password-spray attacks without detection. 
-  The issue, labeled internally as VULN-107279, involved altering the authentication endpoint from a common one to that of an unrelated tenant, 
-  thereby avoiding the appearance of logon attempts in the victim's logs. Although this technique could reveal valid user credentials through verbose error messages, 
-  actual successful logons using these credentials would still be recorded in logs. Microsoft classified this vulnerability as low severity and did not issue a CVE.
+  A vulnerability in Microsoft Graph allowed attackers to conduct password-spray attacks without detection.
+  The issue involved switching the 'common' authentication endpoint with that of an unrelated tenant,
+  thereby avoiding the appearance of logon attempts in the victim's logs.
+  This technique could allow attackers to validate user credentials through verbose error messages, 
+  but actual successful logons using these credentials would still be recorded in the victims' logs (regardless of endpoint).
 manualRemediation: |
   None required
 detectionMethods: null
