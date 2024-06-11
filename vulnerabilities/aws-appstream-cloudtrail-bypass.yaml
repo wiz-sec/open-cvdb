@@ -1,5 +1,5 @@
-title: AWS AppStream Cloudtrail Bypassed
-slug: aws-appstream-cloudtrail-bypassed
+title: AWS AppStream Cloudtrail Bypass
+slug: aws-appstream-cloudtrail-bypass
 cves: null
 affectedPlatforms:
 - AWS
@@ -25,4 +25,4 @@ manualRemediation: |
 detectionMethods: null
 contributor: https://github.com/ramimac
 references:
-- https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream#signoff-notes
+- https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream
