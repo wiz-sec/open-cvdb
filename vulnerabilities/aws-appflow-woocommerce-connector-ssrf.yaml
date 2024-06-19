@@ -1,0 +1,30 @@
+title: AWS AppFlow WooCommerce SSRF
+slug: aws-appflow-woocommerce-ssrf
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- AppFlow
+image: https://images.unsplash.com/photo-1482685945432-29a7abf2f466?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
+discoveredBy:
+  name: null
+  org: Ronin
+  domain: https://ronin.ae
+  twitter: null
+publishedAt: 2023/11/06
+disclosedAt: 2023/06/21
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  The AppFlow WooCommerce connector allowed specification of a full URL.
+  The connector included details of response content when the URL
+  offered an unexpected response. This means you could make arbitrary
+  GET requests to any URL from the WooCommerce connector, and view the 
+  response content. The response in the error was truncated to 500 characters.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+- https://ronin.ae/news/amazon-appflow-vulnerabilities/
