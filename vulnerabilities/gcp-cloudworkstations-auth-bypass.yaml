@@ -1,0 +1,27 @@
+title: Bypassing authorization in Google Cloud Workstations
+slug: gcp-cloudworkstations-auth-bypass
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Workstations
+- Cloud Shell
+image: https://cdn.pixabay.com/photo/2019/08/20/07/55/escalator-4418051_1280.jpg
+severity: High
+discoveredBy:
+  name: Sivanesh Ashok, Sreeram KL
+  org: null
+  domain: https://blog.geekycat.in
+  twitter: kl_sree, sivaneshashok
+disclosedAt: 2022/11/19
+publishedAt: 2023/01/13
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  Several vulnerabilities were present in how Google Cloud Shell (ssh.cloud.google.com) handled OAuth credentials. These included an open-redirect vulnerability, where attackers could redirect users to malicious sites to capture their credentials, and a validation bypass that allowed tokens to be submitted to user-defined URIs, circumventing normal security checks. Additionally, Google Cloud Workstations did not correctly tie the state parameter to the session that generated it, which allowed valid state parameters to be reused across different sessions and users. Combined, these issues created a scenario where credentials to Google Cloud Workstations were susceptible to phishing attacks.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/KatTraxler
+references:
+- https://blog.stazot.com/auth-bypass-in-google-cloud-workstations/
