@@ -1,0 +1,29 @@
+title: CloudImposer: Code execution vulnerability in Google Cloud Composer
+slug: cloudimposer-gcp
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Composer
+image: https://images.unsplash.com/photo-1681276504729-0306eda98642?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: High
+discoveredBy:
+  name: Liv Matan
+  org: Tenable
+  domain: tenable.com
+  twitter: terminatorLM
+disclosedAt: null
+publishedAt: 2024/09/16
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Researchers discovered a vulnerability, CloudImposer, which could have allowed attackers to exploit Google Cloud Platform (GCP) services (App Engine, Cloud Functions, Cloud Composer)
+  through a supply chain attack called dependency confusion. This attack could have compromised millions of users by introducing malicious packages into Google Cloud Composer, 
+  a managed service for Apache Airflow. The vulnerability stemmed from Google's risky recommendation to use the --extra-index-url argument when installing private Python packages, 
+  leading to potential code execution on internal Google servers. The issue was fixed by Google.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://www.tenable.com/blog/cloudimposer-executing-code-on-millions-of-google-servers-with-a-single-malicious-package
