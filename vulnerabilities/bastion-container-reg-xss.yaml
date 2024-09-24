@@ -1,22 +1,23 @@
 title: XSS in Azure Bastion and Container Registry
 slug: bastion-container-reg-xss
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Bastion
 - Azure Container Registry
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bastion-container-reg-xss.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bastion-container-reg-xss.jpg
 severity: High
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
   domain: orca.security
-  twitter: null
+  twitter:
 publishedAt: 2023/06/14
 disclosedAt: 2023/04/13
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Orca discovered vulnerabilities in Azure Bastion and Azure Container Registry
@@ -31,8 +32,9 @@ summary: |
   directive in a Content Security Policy (CSP), which would have prevented these issues.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://orca.security/resources/blog/examining-two-xss-vulnerabilities-in-azure-services/
 - https://msrc.microsoft.com/blog/2023/06/microsoft-mitigates-set-of-cross-site-scripting-xss-vulnerabilities-in-azure-bastion-and-azure-container-registry/
+entryStatus: Finalized

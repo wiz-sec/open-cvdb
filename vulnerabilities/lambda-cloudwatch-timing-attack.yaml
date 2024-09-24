@@ -1,6 +1,6 @@
 title: Timing attack with Lambda and CloudWatch Synthetics
 slug: lambda-cloudwatch-timing-attack
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -10,19 +10,20 @@ image: https://onecloudplease.com/images/posts/canary.jpg
 severity: Low
 discoveredBy:
   name: Ian Mckay
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: iann0036
 disclosedAt: 2020/09/15
 publishedAt: 2020/09/15
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   The immutability of Lambda versions could be violated via a timing attack
   against CloudWatch Synthetics canaries.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/ramimac
 references:
 - https://onecloudplease.com/blog/security-september-racing-against-cloudwatch-synthetics-canaries
+entryStatus: Finalized

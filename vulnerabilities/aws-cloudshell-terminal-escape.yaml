@@ -1,28 +1,30 @@
 title: AWS CloudShell terminal escape
 slug: aws-cloudshell-terminal-escape
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - Cloudshell
-image: https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/12/15/Site-Merch_AWS-Cloudshell_SocialMedia_2.png
+image: 
+  https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/12/15/Site-Merch_AWS-Cloudshell_SocialMedia_2.png
 severity: Medium
 discoveredBy:
   name: Felix Wilhelm
   org: Google
-  domain: null
+  domain:
   twitter: _fel1x
 publishedAt: 2021/03/10
 disclosedAt: 2021/02/08
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   If attacker controlled data is viewed in Cloudshell it could have led to
   code execution. This exact same issue existed in Azure previously.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://bugs.chromium.org/p/project-zero/issues/detail?id=2154
 - https://twitter.com/_fel1x/status/1391712232380194818
+entryStatus: Finalized

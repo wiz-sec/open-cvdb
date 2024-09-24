@@ -1,6 +1,6 @@
 title: nOAuth
 slug: noauth
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -8,13 +8,13 @@ affectedServices:
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/noauth.jpg
 severity: Medium
 discoveredBy:
-  name: null
+  name:
   org: Descope
   domain: descope.com
-  twitter: null
+  twitter:
 publishedAt: 2023/06/20
 disclosedAt: 2023/04/11
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Descope identified a possible misconfiguration in Azure AD which could lead to misuse of the "Log in with Microsoft"
@@ -26,8 +26,9 @@ summary: |
   domain owners for most applications.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://msrc.microsoft.com/blog/2023/06/potential-risk-of-privilege-escalation-in-azure-ad-applications/
 - https://www.descope.com/blog/post/noauth
+entryStatus: Finalized

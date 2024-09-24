@@ -1,15 +1,16 @@
 title: Enumeration of Privileges Without Being Logged to CloudTrail
 slug: privilege-identification-cloudtrail
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - CloudTrail
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/going_through_permissions.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/going_through_permissions.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette
-  org: null
+  org:
   domain: https://frichetten.com/
   twitter: Frichette_n
 disclosedAt: 2020/09/02
@@ -20,8 +21,9 @@ summary: |
   An attacker who gained access to IAM credentials could enumerate a subset of the privileges they had access to without logging to CloudTrail. This would allow them to perform the typically noisy permission enumeration process undetected.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://frichetten.com/blog/aws-api-enum-vuln/
 - https://github.com/Frichetten/aws-stealth-perm-enum
+entryStatus: Finalized

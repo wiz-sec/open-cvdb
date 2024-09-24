@@ -1,20 +1,21 @@
 title: Lake Formation data lake admin override
 slug: lake_admin_override
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - Lake Formation
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/lake_admin_override.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/lake_admin_override.jpg
 severity: High
 discoveredBy:
   name: Ian Mckay
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: iann0036
 publishedAt: 2019/08/15
 disclosedAt: 2019/08/15
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Shortly after Lake Formation was made generally available, a bug was discovered
@@ -28,8 +29,9 @@ summary: |
   suspicious activity. Following disclosure, AWS fixed the bug.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://twitter.com/iann0036/status/1161871038336028672
 - https://pastebin.com/jfPtSp3a
+entryStatus: Finalized

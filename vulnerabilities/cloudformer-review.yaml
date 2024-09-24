@@ -1,6 +1,6 @@
 title: CloudFormer review
 slug: cloudformer-review
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -14,13 +14,14 @@ discoveredBy:
   twitter: KarimMelhaoui
 publishedAt: 2020/09/25
 disclosedAt: 2020/09/25
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   An audit of an AWS open-source project identified a great deal of issues, and as a result AWS made the decision to take it down.
-manualRemediation: | 
+manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://blog.karims.cloud/2020/09/25/cloudformer-review-part-1.html
+entryStatus: Finalized

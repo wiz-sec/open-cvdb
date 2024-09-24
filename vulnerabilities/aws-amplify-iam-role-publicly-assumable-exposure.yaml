@@ -2,11 +2,12 @@ title: AWS Amplify IAM role publicly assumable exposure
 slug: aws-amplify-iam-role-publicly-assumable-exposure
 cves: CVE-2024-28056
 affectedPlatforms:
-  - AWS
+- AWS
 affectedServices:
-  - Amplify
-  - Cognito
-image: https://images.unsplash.com/photo-1615297658577-dc5cec88e81a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+- Amplify
+- Cognito
+image: 
+  https://images.unsplash.com/photo-1615297658577-dc5cec88e81a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Critical
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 1.0}
 discoveredBy:
@@ -39,3 +40,4 @@ contributor: https://github.com/frichetten
 references:
 - https://securitylabs.datadoghq.com/articles/amplified-exposure-how-aws-flaws-made-amplify-iam-roles-vulnerable-to-takeover/
 - https://aws.amazon.com/security/security-bulletins/AWS-2024-003/
+entryStatus: Finalized

@@ -7,7 +7,7 @@ cves:
 - CVE-2022-0071
 affectedPlatforms:
 - AWS
-affectedServices: null
+affectedServices:
 image: https://images.pexels.com/photos/4518638/pexels-photo-4518638.jpeg
 severity: High
 discoveredBy:
@@ -17,14 +17,15 @@ discoveredBy:
   twitter: https://twitter.com/yuvalavra
 disclosedAt: 2021/12/14
 publishedAt: 2022/04/19
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   AWS's hotpatches for Log4shell worked as intended but introduced new container escape vulnerabilities.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/
 - https://aws.amazon.com/security/security-bulletins/AWS-2022-006/
+entryStatus: Finalized

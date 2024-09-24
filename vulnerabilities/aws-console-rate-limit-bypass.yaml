@@ -1,11 +1,12 @@
 title: AWS Console rate limit bypass
 slug: aws-console-rate-limit-bypass
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - AWS Console
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-console-rate-limit-bypass.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-console-rate-limit-bypass.jpg
 severity: Medium
 discoveredBy:
   name: Christophe Tafani-Dereeper
@@ -26,7 +27,9 @@ summary: |
   account compromise of users without MFA enabled.
 manualRemediation: |
   None required
-detectionMethods: Detect potential brute-force behavior using the CloudTrail ConsoleLogin event.
+detectionMethods: Detect potential brute-force behavior using the CloudTrail ConsoleLogin
+  event.
 contributor: https://github.com/korniko98
 references:
 - https://securitylabs.datadoghq.com/articles/aws-console-rate-limit-bypass/
+entryStatus: Finalized

@@ -1,19 +1,20 @@
 title: Route table modification to imitate metadata service
 slug: aws-route-table-modify
-cves: null
+cves:
 affectedPlatforms:
 - AWS
-affectedServices: null
-image: https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+affectedServices:
+image: 
+  https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
   name: Ryan Gerstenkorn
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: Ryan_Jarv
 publishedAt: 2020/10/19
 disclosedAt: 2020/10/19
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   An attacker with sufficient privileges in AWS to modify the route table
@@ -21,8 +22,9 @@ summary: |
   an attacker controlled bootup script to EC2s to move laterally.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/RyanJarv/EC2FakeImds
 - https://blog.ryanjarv.sh/2020/10/19/imds-persistence.html
+entryStatus: Finalized

@@ -1,22 +1,23 @@
 title: Azure Cloud Shell and Container Instances breakout
 slug: azure-cloud-shell-and-container-instance-lpe
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Cloud Shell
 - Container Instances
-image: https://images.pexels.com/photos/157517/pexels-photo-157517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: 
+  https://images.pexels.com/photos/157517/pexels-photo-157517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: High
 discoveredBy:
   name: Chen Cohen
   org: eBay
-  domain: null
+  domain:
   twitter: chencococococo
 publishedAt: 2021/02/15
 disclosedAt: 2020/01/20
 exploitabilityPeriod: until January 30th, 2020
-knownITWExploitation: null
+knownITWExploitation:
 summary: |
   An attacker could gain root privileges on their Azure Cloud Shell container,
   escape from the container, and then gain root privileges on the underlying node,
@@ -29,7 +30,8 @@ summary: |
   Azure Container Instances).
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/yuvalavra
 references:
 - https://hencohen10.medium.com/i-own-your-cloud-shell-taking-over-azure-cloud-shell-kubernetes-cluster-through-unsecured-558621519cf9
+entryStatus: Finalized

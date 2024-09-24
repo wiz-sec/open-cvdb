@@ -1,6 +1,6 @@
 title: CosMiss
 slug: cosmiss
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -8,11 +8,11 @@ affectedServices:
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cosmiss.jpg
 severity: Medium
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 0.7, A8: 1.1}
-discoveredBy: 
+discoveredBy:
   name: Lidor Ben Shitrit, Roee Sagi
   org: Orca Security
   domain: https://orca.security/
-  twitter: null
+  twitter:
 publishedAt: 2022/11/01
 disclosedAt: 2022/10/04
 exploitabilityPeriod: 2022/08/12 - 2022/10/06
@@ -35,3 +35,4 @@ contributor: https://github.com/korniko98
 references:
 - https://msrc-blog.microsoft.com/2022/11/01/microsoft-mitigates-vulnerability-in-jupyter-notebooks-for-azure-cosmos-db/
 - https://orca.security/resources/blog/cosmiss-vulnerability-azure-cosmos-db/
+entryStatus: Finalized

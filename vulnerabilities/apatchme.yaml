@@ -7,7 +7,8 @@ affectedPlatforms:
 affectedServices:
 - MWAA
 - Composer
-image: https://images.unsplash.com/photo-1564979045531-fa386a275b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+image: 
+  https://images.unsplash.com/photo-1564979045531-fa386a275b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
 severity: Medium
 discoveredBy:
   name: Liv Matan
@@ -16,7 +17,7 @@ discoveredBy:
   twitter: terminatorLM
 disclosedAt: 2023/11/02
 publishedAt: 2023/11/02
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Amazon Managed Workflows for Apache Airflow (MWAA) and the Task instance details
@@ -31,8 +32,9 @@ summary: |
 manualRemediation: |
   AWS users should update their instances via the AWS Console.
   GCP users should take steps to update their Cloud Composer versions to 2.4.2 or later.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/ramimac
 references:
 - https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
 - https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
+entryStatus: Finalized

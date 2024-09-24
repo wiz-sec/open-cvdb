@@ -1,6 +1,6 @@
 title: Autopilot node compromise via allowlisted workload masquerade
 slug: gke-autopilot-allowlist
-cves: null
+cves:
 affectedPlatforms:
 - GCP
 affectedServices: Autopilot
@@ -13,7 +13,7 @@ discoveredBy:
   twitter: https://twitter.com/yuvalavra
 disclosedAt: 2021/06/01
 publishedAt: 2022/03/08
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Unit 42 researchers disclosed several vulnerabilities and attack techniques in GKE Autopilot to Google, the root cause being insufficient verification of allowlisted workload image names. 
@@ -21,9 +21,10 @@ summary: |
   and (3) covertly persist administrative access through backdoors that are completely invisible to cluster operators.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/
 - https://cloud.google.com/support/bulletins#gcp-2022-009
 - https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2022-009
+entryStatus: Finalized

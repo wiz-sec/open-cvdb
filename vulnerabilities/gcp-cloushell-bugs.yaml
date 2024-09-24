@@ -1,11 +1,12 @@
 title: GCP Cloudshell Vulnerabilities
 slug: gcp-cloudshell-bugs
-cves: null
+cves:
 affectedPlatforms:
 - GCP
 affectedServices:
 - Cloudshell
-image: https://cdn.pixabay.com/photo/2020/11/07/15/31/hermit-crab-shell-5721572_1280.jpg
+image: 
+  https://cdn.pixabay.com/photo/2020/11/07/15/31/hermit-crab-shell-5721572_1280.jpg
 severity: Medium
 discoveredBy:
   name: Wouter ter Maat
@@ -14,14 +15,14 @@ discoveredBy:
   twitter: https://twitter.com/wtm_offensi
 disclosedAt: 2019/12/16
 publishedAt: 2019/12/16
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
   Wouter ter Maat discovered 9 vulnerabilities in GCP Cloudshell that could
   allow an attacker to access resources in another customer's environment. 
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-introduction/
@@ -31,3 +32,4 @@ references:
 - https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-4/
 - https://www.youtube.com/watch?v=J2icGMocQds
 - https://security.googleblog.com/2020/03/announcing-our-first-gcp-vrp-prize.html
+entryStatus: Finalized
