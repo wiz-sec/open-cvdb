@@ -1,22 +1,23 @@
 title: CloudImposer
 slug: cloudimposer-gcp
-cves: null
+cves:
 affectedPlatforms:
 - GCP
 affectedServices:
 - Google Cloud Composer
 - App Engine
 - Cloud Functions
-image: https://images.unsplash.com/photo-1681276504729-0306eda98642?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: 
+  https://images.unsplash.com/photo-1681276504729-0306eda98642?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: High
 discoveredBy:
   name: Liv Matan
   org: Tenable
   domain: tenable.com
   twitter: terminatorLM
-disclosedAt: null
+disclosedAt:
 publishedAt: 2024/09/16
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Google Cloud Composer is a managed service for Apache Airflow. Tenable discovered that the Cloud Composer package was vulnerable to dependency confusion, which could have allowed attackers to
@@ -25,7 +26,8 @@ summary: |
   Python packages. Following disclosure, Google fixed the dependency confusion vulnerability and also updated their documentation.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/mer-b
 references:
 - https://www.tenable.com/blog/cloudimposer-executing-code-on-millions-of-google-servers-with-a-single-malicious-package
+entryStatus: Finalized

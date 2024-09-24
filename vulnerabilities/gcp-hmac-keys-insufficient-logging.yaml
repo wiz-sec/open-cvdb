@@ -18,14 +18,15 @@ disclosedAt: 2024/02/07
 exploitabilityPeriod: Ongoing
 knownITWExploitation: false
 summary: |
-Cloud Audit Logs do not capture actions mediated through the cloud console private API 
-service (cloudconsole-pa). Consequently, there is no logging of HMAC key creation or deletion 
-linked to user accounts. This absence of logs hampers defenders' ability to alert or monitor 
-the creation of HMAC keys for user accounts, posing a persistence risk, or their deletion, 
-presenting a denial of service risk.
+  Cloud Audit Logs do not capture actions mediated through the cloud console private API 
+  service (cloudconsole-pa). Consequently, there is no logging of HMAC key creation or deletion 
+  linked to user accounts. This absence of logs hampers defenders' ability to alert or monitor 
+  the creation of HMAC keys for user accounts, posing a persistence risk, or their deletion, 
+  presenting a denial of service risk.
 manualRemediation: |
   None possible
 detectionMethods: null
 contributor: https://github.com/KatTraxler
 references:
 - https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+entryStatus: Finalized

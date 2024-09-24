@@ -32,7 +32,8 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - WorkSpaces
-image: https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: 
+  https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: High
 discoveredBy:
   name: Kasif Dekel
@@ -41,8 +42,8 @@ discoveredBy:
   twitter: https://twitter.com/kasifdekel
 disclosedAt: 2021/05/02
 publishedAt: 2021/12/07
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
   Several cloud desktop solutions rely on a 3rd-party library called Eltima SDK to provide
   USB over Ethernet capabilities, to allow users to connect and share local devices such as
@@ -52,6 +53,8 @@ summary: |
 manualRemediation: |
   AWS Workspaces users must manually update if they have either AutoStop WorkSpaces
   with maintenance disabled or AlwaysOn WorkSpaces with OS updates disabled.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/kasif-dekel
-references: https://www.sentinelone.com/labs/usb-over-ethernet-multiple-privilege-escalation-vulnerabilities-in-aws-and-other-major-cloud-services/
+references: 
+  https://www.sentinelone.com/labs/usb-over-ethernet-multiple-privilege-escalation-vulnerabilities-in-aws-and-other-major-cloud-services/
+entryStatus: Finalized

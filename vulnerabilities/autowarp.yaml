@@ -1,21 +1,22 @@
 title: AutoWarp
 slug: autowarp
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Automation Service
-image: https://images.unsplash.com/photo-1651491602333-fea83f1d9107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+image: 
+  https://images.unsplash.com/photo-1651491602333-fea83f1d9107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Critical
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1.21, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Yanir Tsarimi
   org: Orca Security
   domain: https://orca.security/
-  twitter: null
+  twitter:
 publishedAt: 2022/03/07
 disclosedAt: 2021/12/06
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   An exposed endpoint in the Azure Automation Service allowed to steal Azure
@@ -25,7 +26,8 @@ manualRemediation: |
   principle, including on managed identities assigned to automation accounts. While
   this would not have prevented the leakage of API credentials, it would have reduced
   the blast radius.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/christophetd
 references:
 - https://orca.security/resources/blog/autowarp-microsoft-azure-automation-service-vulnerability/
+entryStatus: Finalized

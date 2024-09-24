@@ -1,22 +1,23 @@
 title: Azure App Services takeover via legacy API
 slug: azure-mgmt-api-rce
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Resource Manager (ARM)
 - Azure Functions
 - Azure App Services
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-mgmt-api-rce.jpg 
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-mgmt-api-rce.jpg
 severity: Medium
 discoveredBy:
   name: Haakon Holm Gulbrandsrud, Christian August Holm Hansen
   org: Binary Security
   domain: binarysecurity.no
-  twitter: null
-publishedAt: 2023/06/12 
+  twitter:
+publishedAt: 2023/06/12
 disclosedAt: 2023/04/28
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Binary Security found two vulnerabilities in the legacy Azure Resource Manager (ARM) REST API.
@@ -28,7 +29,8 @@ summary: |
   Key Vault references. For Azure Functions, this would result in complete compromise of the app.
 manualRemediation: |
   None required.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/chrihala
 references:
 - https://binarysecurity.no/posts/2023/06/function-apps-rce
+entryStatus: Finalized

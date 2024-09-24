@@ -7,17 +7,18 @@ affectedPlatforms:
 affectedServices:
 - Synapse Analytics
 - Data Factory
-image: https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+image: 
+  https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 severity: Critical
 piercingIndexVector: {version: 1.5, A1: 22, A2: 1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Tzah Pahima
   org: Orca Security
   domain: https://orca.security/
-  twitter: null
+  twitter:
 disclosedAt: 2022/01/04
 publishedAt: 2022/05/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure Synapse Analytics and Azure Data Factory were vulnerable to cross-tenant access and code execution.
@@ -25,9 +26,10 @@ summary: |
   (2) credentials for multiple customers stored on a shared host and (3) an insecure management server API.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://orca.security/resources/blog/azure-synapse-analytics-security-advisory/
 - https://orca.security/resources/blog/synlapse-critical-azure-synapse-analytics-service-vulnerability/
 - https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/
+entryStatus: Finalized

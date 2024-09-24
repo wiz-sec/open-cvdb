@@ -1,11 +1,12 @@
 title: AWS AppStream Cloudtrail Bypass
 slug: aws-appstream-cloudtrail-bypass
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - AppStream
-image: https://images.unsplash.com/photo-1590865616814-02ceb702269a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJvdW5kfGVufDB8fDB8fHwy
+image: 
+  https://images.unsplash.com/photo-1590865616814-02ceb702269a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJvdW5kfGVufDB8fDB8fHwy
 severity: Low
 discoveredBy:
   name: Saransh Rana
@@ -22,7 +23,8 @@ summary: |
   as appstream.amazonaws.com.
 manualRemediation: |
   None required 
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/ramimac
 references:
 - https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream
+entryStatus: Finalized

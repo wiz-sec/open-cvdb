@@ -1,19 +1,20 @@
 title: Google Cloud Shell command injection
 slug: gcp-cloudshell-open-in-command-injection
-cves: null
+cves:
 affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud Shell
-image: https://images.unsplash.com/photo-1541427914209-ef891bee99fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80
+image: 
+  https://images.unsplash.com/photo-1541427914209-ef891bee99fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80
 severity: Medium
 discoveredBy:
   name: Ademar Nowasky Junior
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: nowaskyjr
 publishedAt: 2021/12/28
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2021/01/23
 knownITWExploitation: false
 summary: |
@@ -28,7 +29,8 @@ summary: |
   Google mitigated this issue by preventing users from being able to provide both parameters at once.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/ramimac
 references:
 - https://docs.google.com/document/d/1-TTCS6fS6kvFUkoJmX4Udr-czQ79lSUVXiWsiAED_bs
+entryStatus: Finalized

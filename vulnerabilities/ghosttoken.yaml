@@ -1,14 +1,14 @@
 title: GhostToken
 slug: ghosttoken
-cves: null
+cves:
 affectedPlatforms:
 - GCP
-affectedServices: null
+affectedServices:
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/ghosttoken.jpg
 severity: Medium
-piercingIndexVector: null
+piercingIndexVector:
 discoveredBy:
-  name: null
+  name:
   org: Astrix Security
   domain: astrix.security
   twitter: https://twitter.com/AstrixSecurity
@@ -27,7 +27,8 @@ summary: |
 manualRemediation: |
   It is recommended that Google users go to the "Apps with access to you account" page and verify that they are familiar
   with all authorized third-party apps, and that each has the minimal needed permissions.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/danielleaminov16
 references:
 - https://astrix.security/ghosttoken-exploiting-gcp-application-infrastructure-to-create-invisible-unremovable-trojan-app-on-google-accounts/
+entryStatus: Finalized

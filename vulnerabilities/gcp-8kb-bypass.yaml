@@ -1,17 +1,18 @@
 title: Google Cloud Armor packet size bypass
 slug: gcp-8kb-bypass
-cves: null
+cves:
 affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud Armor
-image: https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: 
+  https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: Medium
 discoveredBy:
   name: Karan Saini, Riyaz Walikar
   org: Kloudle
   domain: https://kloudle.com/
-  twitter: null
+  twitter:
 disclosedAt: 2022/02/24
 publishedAt: 2022/02/24
 exploitabilityPeriod: Ongoing
@@ -26,8 +27,9 @@ summary: |
 manualRemediation: |
   A custom rule can be added in Advanced mode - `int(request.headers["content-length"]) >= 8192`,
   with 502, 403, or 404 HTTP response status in return.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/riyazwalikar
 references:
 - https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
 - https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
+entryStatus: Finalized

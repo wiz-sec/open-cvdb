@@ -1,31 +1,33 @@
 title: Bypassable and overly-privileged IAM policies
 slug: iam-policies-bypass-overprivileged
-cves: null
+cves:
 affectedPlatforms:
 - AWS
-affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bypassing_policies_and_overly_privileged.jpg
+affectedServices:
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bypassing_policies_and_overly_privileged.jpg
 severity: Medium
 discoveredBy:
   name: Multiple findings
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 disclosedAt: 2017/11/07
 publishedAt: 2017/11/07
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
-summary: | 
+summary: |
   AWS has previously provided managed policies or guidance in documentation
   for policies with mistakes that allow them to be bypassed. Additionally,
   some policies are over-privileged. Date of disclosure is for the first issue of
   this type, while references provide other examples by various individuals.
 manualRemediation: |
   Review the policies provided by AWS
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://duo.com/blog/potential-gaps-in-suggested-amazon-web-services-security-policies-for-mfa
 - https://summitroute.com/blog/2019/06/18/aws-iam-managed-policy-review/
 - https://medium.com/ymedialabs-innovation/an-aws-managed-policy-that-allowed-granting-root-admin-access-to-any-role-51b409ea7ff0
 - https://www.tenchisecurity.com/blog/thefaultinourstars
+entryStatus: Finalized

@@ -1,12 +1,13 @@
 title: Synapse Spark LPE
 slug: synapse-spark-lpe
 cves:
-- null
+- 
 affectedPlatforms:
 - Azure
 affectedServices:
 - Synapse Analytics
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
 severity: Medium
 discoveredBy:
   name: Tzah Pahima
@@ -15,7 +16,7 @@ discoveredBy:
   twitter: TzahPahima
 disclosedAt: 2022/06/01
 publishedAt: 2022/09/01
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure Synapse Analytics is an analytics service for processing data using various runtimes,
@@ -30,8 +31,9 @@ summary: |
   and recommended mounting Data Lake Storage Gen2 or Azure Blob Storage instead.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://orca.security/resources/blog/synapse-local-privilege-escalation-vulnerability-spark/
 - https://msrc-blog.microsoft.com/2022/09/01/vulnerability-fixed-in-azure-synapse-spark/
+entryStatus: Finalized

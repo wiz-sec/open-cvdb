@@ -7,28 +7,30 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - HDInsight
-image: https://images.unsplash.com/photo-1608562719218-920013a7a249?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: 
+  https://images.unsplash.com/photo-1608562719218-920013a7a249?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Medium
 discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
   domain: https://orca.security/
-  twitter: null
-disclosedAt: null
+  twitter:
+disclosedAt:
 publishedAt: 2024/02/06
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
- Three privilege escalation and denial-of-service vulnerabilities were discovered in Azure HDinsight, related to their usage of Apache Oozie and Ambari.
- The root cause of at least one of these vulnerabilities is a flaw in Apache Oozie itself, leading to regex denial-of-service (ReDoS). The other two vulnerabilities
- could allow an authenticated attacker with HDI cluster access to gain cluster administrator privileges and perform any resource service management operation.
- The vulnerabilities were patched in the October 2023 security update of Azure HDinsight.
+  Three privilege escalation and denial-of-service vulnerabilities were discovered in Azure HDinsight, related to their usage of Apache Oozie and Ambari.
+  The root cause of at least one of these vulnerabilities is a flaw in Apache Oozie itself, leading to regex denial-of-service (ReDoS). The other two vulnerabilities
+  could allow an authenticated attacker with HDI cluster access to gain cluster administrator privileges and perform any resource service management operation.
+  The vulnerabilities were patched in the October 2023 security update of Azure HDinsight.
 manualRemediation: |
   Update to HDInsight image 2308221128 or 2310140056.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/mer-b
 references:
 - https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36419
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38156
 - https://github.com/apache/oozie/pull/92
+entryStatus: Finalized
