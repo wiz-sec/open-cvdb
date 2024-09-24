@@ -1,5 +1,6 @@
 title: ChaosDB
 slug: chaosdb
+entryStatus: Finalized
 cves: null
 affectedPlatforms:
 - Azure
