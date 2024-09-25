@@ -6,7 +6,7 @@ affectedPlatforms:
 affectedServices:
 - Document AI
 - Cloud Storage
-image: https://images.unsplash.com/photo-1532303517831-241791b20fb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.pexels.com/photos/582070/pexels-photo-582070.jpeg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Medium
 discoveredBy:
   name: Kat Traxler
@@ -15,16 +15,17 @@ discoveredBy:
   twitter: nightmareJs
 publishedAt: 2024/09/16
 disclosedAt: 2024/04/04
-exploitabilityPeriod: Since the creation of the Document AI Service and its batch processing capabilities.
+exploitabilityPeriod: Ongoing, since the creation of the Document AI Service and its batch processing capabilities.
 knownITWExploitation: false
 summary: |
-The Document AI service unintentionally allows users to read any Cloud Storage object in the same project.
-- The Document AI service agent is auto-assigned with excessive permissions, allowing it to access all objects from Cloud Storage buckets in the same project.
-- Malicious actors can exploit this to exfiltrate data from Cloud Storage by indirectly leveraging the service agent's permissions.
-- This vulnerability is an instance of transitive access abuse, a class of security flaw where unauthorized access is gained indirectly through a trusted intermediary. 
-- With this abuse case, threats move beyond first-tier “risky permissions” to include a spiderweb of undocumented transitive relationships.
+  The Document AI service unintentionally allows users to read any Cloud Storage object in the same project, in a way that isn't properly documented.
+  The Document AI service agent is auto-assigned with excessive permissions, allowing it to access all objects from Cloud Storage buckets in the same project.
+  Malicious actors can exploit this to exfiltrate data from Cloud Storage by indirectly leveraging the service agent's permissions.
+  This vulnerability is an instance of transitive access abuse, a class of security flaw where unauthorized access is gained indirectly
+  through a trusted intermediary.
 manualRemediation: |
-  Remediation is not possible only mitigating controls. Use the Org Policy Constraint serviceuser.services to prevent the enablement of the Document AI service when it's not needed and restrict the API usage with the Org Policy Constraint serviceuser.restrictServiceUsage.
+  Full remediation is not possible, but mitigating controls can be applied: use the Org Policy Constraint serviceuser.services
+  to prevent the enablement of the Document AI service when it's not needed and restrict the API usage with the Org Policy Constraint serviceuser.restrictServiceUsage.
 detectionMethods: null
 contributor: https://github.com/KatTraxler
 references:
