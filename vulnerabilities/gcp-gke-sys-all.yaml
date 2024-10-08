@@ -1,0 +1,27 @@
+title: Google Cloud GKE Unsecure Sys:All Binding
+slug: gcp-gke-sys-all
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- GKE
+image: https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: Medium
+discoveredBy:
+  name: Roi Nisimi
+  org: Orca
+  domain: https://orca.com/
+  twitter: https://x.com/roinisimi
+disclosedAt: 2024/01/19
+publishedAt: 2024/01/24
+exploitabilityPeriod: Ongoing
+knownITWExploitation: false
+summary: |
+  The system:authenticated group in Kubernetes is a special group that includes all authenticated entities, including human users and service accounts. Anyone who successfully authenticates to the Kubernetes API server, regardless of the authentication method used, will be automatically included in this unique group. Thus, it will share the same roles and permissions of the group. This misunderstanding then creates a significant security loophole when administrators unknowingly bind this group with overly permissive roles.
+manualRemediation: |
+  In addition to upgrading to GKE version 1.28 or higher, the main way to block this attack vector is to strictly follow the principle of least privilege. In that sense, assigning broad permissions to the system:authenticated group, whether it is deterministic or not, is a clear breach of this principle. Organizations should always aim for granularity.
+detectionMethods: null
+contributor: https://github.com/KatTraxler
+references:
+- https://orca.security/resources/blog/sys-all-google-kubernetes-engine-risk/#h-recommended-actions
+- https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2024-003
