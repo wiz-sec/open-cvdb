@@ -1,5 +1,5 @@
 title: Multiple SSRF vulnerablities in Azure services
-slug: azure_multiple_ssrf
+slug: azure-multiple-ssrf
 cves:
 affectedPlatforms:
 - Azure

@@ -1,5 +1,5 @@
 title: Azue Health privilege escalation via SSRF
-slug: azure_health_pe_ssrf
+slug: azure-health-pe-ssrf
 cves:
 affectedPlatforms:
 - Azure

@@ -1,5 +1,5 @@
 title: Azure Machine Learning SSRF
-slug: azure_ml_ssrf_pt
+slug: azure-ml-ssrf-pt
 cves:
 affectedPlatforms:
 - Azure
