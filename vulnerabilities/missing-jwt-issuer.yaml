@@ -1,4 +1,4 @@
-title: Azure Machine Learning SSRF
+title: Missing JWT issuer and signer validation in ALB middleware
 slug: missing-jwt-issuer
 cves:
 - CVE-2024-8901
