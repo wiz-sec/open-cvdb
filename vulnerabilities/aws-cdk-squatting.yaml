@@ -10,7 +10,7 @@ severity: Medium
 discoveredBy:
   name: Ofek Itach, Yakir Kadkoda
   org: Aqua
-  domain: https://www.aquasec.com/
+  domain: aquasec.com
   twitter: null
 publishedAt: 2024/10/24
 disclosedAt: 2024/06/27
