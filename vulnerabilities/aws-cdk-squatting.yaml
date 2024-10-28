@@ -1,0 +1,32 @@
+title: AWS CDK Bucket Squatting Risk
+slug: aws-cdk-squatting
+cves: null
+affectedPlatforms:
+- AWS
+affectedServices:
+- Cloud Development Kit (CDK)
+image: https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
+discoveredBy:
+  name: Ofek Itach, Yakir Kadkoda
+  org: Aqua
+  domain: https://www.aquasec.com/
+  twitter: null
+publishedAt: 2024/10/24
+disclosedAt: 2024/06/27
+exploitabilityPeriod: Ongoing
+knownITWExploitation: false
+summary: |
+  The AWS Cloud Development Kit (CDK) is a way of deploying infrastructure-as-code. The vulnerability involves AWS CDK’s use of a predictable S3 bucket name format
+  (cdk-{Qualifier}-assets-{Account-ID}-{Region}), where the default “random” qualifier (hnb659fds) is common and easily guessed. If an AWS customer deletes this bucket and reuses CDK, 
+  an attacker who claims the bucket can inject malicious CloudFormation templates, potentially gaining admin access. Attackers supposedly only need the AWS account ID to prepare the bucket 
+  in various regions, exploiting the default naming convention. However, it is important to note that the additional conditions greatly lower the likelihood of exploitation. 
+  The victim must use the CDK, having deleted the bucket, and then subsequently attempt to deploy with the CDK. Making it so that even if there is a vulnerable account, it could be months, 
+  if ever for the attack to work.
+manualRemediation: |
+  User action is required to upgrade the CDK, and/or to update the CDK’s IAM role’s policy to include an IAM condition to ensure the S3 bucket is owned by the customer.
+detectionMethods: null
+contributor: https://github.com/mer-b
+references:
+- https://www.aquasec.com/blog/aws-cdk-risk-exploiting-a-missing-s3-bucket-allowed-account-takeover/
+entryStatus: Finalized
