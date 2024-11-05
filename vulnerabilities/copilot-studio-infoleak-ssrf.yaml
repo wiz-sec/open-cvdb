@@ -1,6 +1,7 @@
 title: Copilot Studio information disclosure via SSRF
 slug: copilot-studio-infoleak-ssrf
 cves:
+- CVE-2024-38206
 affectedPlatforms:
 - Azure
 affectedServices:
