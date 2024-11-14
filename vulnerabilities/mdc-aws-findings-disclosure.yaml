@@ -1,0 +1,27 @@
+title: Unauthorized Access to AWS Account Findings in Microsoft Defender for Cloud
+slug: mdc-aws-findings-disclosure
+cves: null
+affectedPlatforms:
+- Azure
+affectedServices:
+- Microsoft Defender for Cloud
+image: https://images.unsplash.com/photo-1627227702786-f3268b95f980?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: High
+piercingIndexVector: null
+discoveredBy:
+  name: Brandon Evans, Eric Johnson
+  org: null
+  domain: https://www.linkedin.com/in/brandonmaxevans/
+  twitter: null
+publishedAt: 2024/07/15
+disclosedAt: 2024/02/07
+exploitabilityPeriod: Prior to 2024/03/07
+knownITWExploitation: null
+summary: |
+  Microsoft Defender for Cloud at one point provided customers with a flawed configuration template through their public GitHub repository. This template creates resources in the customer's AWS account so that Microsoft Defender for Cloud can scan it. In the rare cases in which this template was deployed, under certain, limited circumstances, Defender for Cloud's security findings for these AWS accounts could be disclosed to unauthorized third parties.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/BrandonE
+references:
+- https://www.linkedin.com/pulse/confused-deputy-vulnerability-microsoft-defender-cloud-brandon-evans-9fyge/
