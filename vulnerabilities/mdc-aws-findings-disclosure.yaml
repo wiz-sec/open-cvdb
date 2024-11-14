@@ -5,14 +5,14 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Microsoft Defender for Cloud
-image: https://media.licdn.com/dms/image/D5612AQFqV4olU3gswA/article-cover_image-shrink_720_1280/0/1721055504788?e=1727913600&v=beta&t=PVfDs-imiLjAnszoLbKHSuKu5geZwpwfnP0tiyJ1hnU
-severity: critical
+image: https://images.unsplash.com/photo-1627227702786-f3268b95f980?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: High
 piercingIndexVector: null
 discoveredBy:
   name: Brandon Evans, Eric Johnson
-  org: 
+  org: null
   domain: https://www.linkedin.com/in/brandonmaxevans/
-  twitter: 
+  twitter: null
 publishedAt: 2024/07/15
 disclosedAt: 2024/02/07
 exploitabilityPeriod: Prior to 2024/03/07
