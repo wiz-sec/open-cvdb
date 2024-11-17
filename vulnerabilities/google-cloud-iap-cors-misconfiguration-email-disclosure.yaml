@@ -1,6 +1,6 @@
 title: IAP CORS Misconfiguration Allows Email Disclosure
 slug: google-cloud-iap-cors-misconfiguration-email-disclosure
-cves: null
+cves:
 affectedPlatforms:
   - GCP
 affectedServices:
@@ -15,13 +15,13 @@ discoveredBy:
 publishedAt: 2023/01/06
 disclosedAt: 2022/05/03
 exploitabilityPeriod: Until July 2022
-knownITWExploitation: null
+knownITWExploitation: false
 summary: |
   A CORS misconfiguration in Google Cloud's Identity-Aware Proxy (IAP) could have allowed attackers to disclose the email address of an authenticated user in websites protected by IAP, by convincing the user to connect to an attacker-controlled domain. This vulnerability enabled attackers to exploit CORS settings to access sensitive email information of both authenticated and unauthenticated users (with the latter requiring additional social engineering).
 manualRemediation: |
   None required
 detectionMethods: null
-status: finalized
 contributor: https://github.com/mer-b
 references:
   - https://medium.com/@LogicalHunter/identity-aware-proxy-misconfiguration-google-cloud-vulnerability-813d2a07a4ed
+entryStatus: finalized
