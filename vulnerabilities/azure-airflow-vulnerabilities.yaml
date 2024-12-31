@@ -1,0 +1,31 @@
+title: Dirty DAG: Azure Apache Airflow Integration Vulnerabilities
+slug: azure-airflow-vulnerabilities
+cves:
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Data Factory
+image: 
+ https://images.unsplash.com/photo-1726111254187-9c584c215689?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Low
+discoveredBy:
+  name: Ofir Balassiano, David Orlovsky
+  org: Palo Alto
+  domain: https://unit42.paloaltonetworks.com/
+  twitter: 
+publishedAt: 2024/12/16
+disclosedAt: null
+exploitabilityPeriod:
+knownITWExploitation: false
+summary: |
+  Unit 42 researchers identified vulnerabilities in the Azure Data Factory's integration with Apache Airflow. These vulnerabilities include misconfigured Kubernetes Role-Based Access Control (RBAC), improper secret handling in Azure’s internal Geneva service, and weak authentication mechanisms. 
+  Exploiting these flaws, attackers could gain shadow admin control over Azure infrastructure by crafting malicious DAG files or compromising service principals, leading to unauthorized access, data exfiltration, malware deployment, and persistent control of the cluster. 
+  Once attackers gain access, they can escalate privileges within the Azure Kubernetes Service (AKS) cluster, compromise containerized environments, and exploit Azure’s Geneva service to manipulate logs and metrics. 
+  The research highlighted how weak default configurations allowed attackers to escape containers, obtain root access to host nodes, and enumerate critical Azure resources. This included access to storage accounts, DNS zones, and other sensitive assets. 
+manualRemediation: |
+  None required
+detectionMethods:
+contributor: https://github.com/mer-b
+references:
+- https://unit42.paloaltonetworks.com/azure-data-factory-apache-airflow-vulnerabilities/
+entryStatus: Finalized
