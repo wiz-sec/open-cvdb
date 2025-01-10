@@ -1,0 +1,30 @@
+title: ModeLeak: LLM Model Exfiltration Vulnerability in Vertex AI
+slug: llm-model-exfiltration-vulnerability-in-vertex-ai
+cves: 
+affectedPlatforms:
+- GCP
+affectedServices:
+- VertexAI
+image: https://unit42.paloaltonetworks.com/wp-content/uploads/2024/11/Tuning-of-Vertex-AI-model-_Vulnerability-12.png
+severity: high
+discoveredBy:
+  name: Ofir Balassiano, Ofir Shaty
+  org: Palo Alto Networks
+  domain: https://unit42.paloaltonetworks.com
+publishedAt: 2024/11/12
+disclosedAt: null
+summary: |
+  A vulnerability in GCP's Vertex AI service allows privilege escalation and unauthorized access to sensitive LLM models. Attackers can exfiltrate these models by exploiting misconfigurations in access controls and service bindings.
+
+  **Privilege Escalation via Custom Jobs**  
+  By exploiting custom job permissions, the researchers were able to escalate their privileges and gain unauthorized access to all data services in the project.
+
+  **Model Exfiltration via Malicious Model**  
+  Deploying a poisoned model in Vertex AI led to the exfiltration of all other fine-tuned models, posing a serious proprietary and sensitive data exfiltration attack risk.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/OfirBalassiano
+references:
+- https://unit42.paloaltonetworks.com/privilege-escalation-llm-model-exfil-vertex-ai/
+entryStatus: Stub
