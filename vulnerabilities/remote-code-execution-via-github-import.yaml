@@ -1,0 +1,29 @@
+title: Remote Code Execution via GitHub Import
+slug: remote-code-execution-via-github-import
+cves: []
+affectedPlatforms:
+  - AWS
+affectedServices:
+  - GitLab
+image: https://images.unsplash.com/INSERT_IMAGE_HERE?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: Critical
+discoveredBy:
+  name: yvvdwf
+  org: HackerOne
+  domain: hackerone.com
+  twitter: https://x.com/yvvdwf
+publishedAt: 2022/08/17
+disclosedAt: 2022/11/16
+exploitabilityPeriod: 
+knownITWExploitation: false
+summary: |
+  A critical vulnerability in GitLab's GitHub import feature allows remote code execution. The issue stems from improper handling of Sawyer::Resource objects, enabling injection of Redis commands. This can be escalated to execute arbitrary bash commands on the SaaS managed service as well as self-hosted GitLab servers, potentially leading to full system compromise.
+manualRemediation: |
+  None required for SaaS service; self-hosted GitLab instances need to be updated to version 15.3.1
+detectionMethods: |
+  Monitor for unexpected Redis commands or connections, especially those involving system_hook_push or PagesWorker. Check for unusual network connections or file system changes on GitLab servers.
+contributor: https://github.com/sshayb
+entryStatus: Finalized
+references:
+  - https://gitlab.com/gitlab-org/gitlab/-/issues/371098
+  - https://hackerone.com/reports/1672388
