@@ -3,6 +3,7 @@ slug: azure-devops-zero-click
 cves: CVE-2023-36561
 affectedPlatforms:
 - Azure
+- GitHub
 affectedServices:
 - Azure DevOps Services
 - Azure Pipelines
