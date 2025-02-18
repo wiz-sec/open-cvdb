@@ -2,18 +2,19 @@ title: Actions Core Delimiter Injection Vulnerability
 slug: actions-core-delimiter-injection-vulnerability
 cves: 
   - CVE-2022-35954
-affectedPlatforms: [GitHub]
+affectedPlatforms:
+  - GitHub
 affectedServices:
   - GitHub Actions
-image: https://images.unsplash.com/INSERT_IMAGE_HERE?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+image: https://images.unsplash.com/photo-1611689698962-77dc89162107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
 severity: Medium
 discoveredBy:
   name: Juho Nurminen
-  org: 
-  domain: 
-  twitter: https://x.com/jupenur
+  org: null
+  domain: null
+  twitter: jupenur
 publishedAt: 2022/08/12
-disclosedAt: 
+disclosedAt: null
 exploitabilityPeriod: Until 2022/08/12
 knownITWExploitation: false
 summary: |
