@@ -1,0 +1,28 @@
+title: Copilot Studio information disclosure via SSRF
+slug: copilot-studio-infoleak-ssrf
+cves:
+- CVE-2024-38206
+affectedPlatforms:
+- Azure
+affectedServices:
+- Copilot Studio
+image:
+severity:
+discoveredBy:
+  name:
+  org: Tenable
+  domain: tenable.com
+  twitter:
+publishedAt: 2024/08/20
+disclosedAt:
+exploitabilityPeriod:
+knownITWExploitation:
+summary: |
+  
+manualRemediation: |
+  
+detectionMethods:
+contributor:
+references:
+- https://www.tenable.com/blog/ssrfing-the-web-with-the-help-of-copilot-studio
+entryStatus: Stub

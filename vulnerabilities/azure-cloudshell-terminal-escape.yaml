@@ -1,27 +1,29 @@
 title: Azure Cloud Shell terminal escape
 slug: azure-cloudshell-terminal-escape
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Cloudshell
-image: https://azurecomcdn.azureedge.net/cvt-7d12cb554a538170e8ffd3f464d6d95301d16aeeecba8d10775a17b0cdc5f7a2/svg/cloud-shell.svg
+image: 
+  https://azurecomcdn.azureedge.net/cvt-7d12cb554a538170e8ffd3f464d6d95301d16aeeecba8d10775a17b0cdc5f7a2/svg/cloud-shell.svg
 severity: Medium
 discoveredBy:
   name: Felix Wilhelm
   org: Google
-  domain: null
+  domain:
   twitter: _fel1x
 publishedAt: 2019/01/09
 disclosedAt: 2019/01/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   If attacker controlled data is viewed in Cloudshell it could have led to
   code execution. This exact same issue was later discovered in AWS as well.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/_fel1x/status/1083085715565621250
+entryStatus: Finalized

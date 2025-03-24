@@ -1,0 +1,29 @@
+title: Actions Core Delimiter Injection Vulnerability
+slug: actions-core-delimiter-injection-vulnerability
+cves: 
+  - CVE-2022-35954
+affectedPlatforms:
+  - GitHub
+affectedServices:
+  - GitHub Actions
+image: https://images.unsplash.com/photo-1611689698962-77dc89162107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: Medium
+discoveredBy:
+  name: Juho Nurminen
+  org: null
+  domain: null
+  twitter: jupenur
+publishedAt: 2022/08/12
+disclosedAt: null
+exploitabilityPeriod: Until 2022/08/12
+knownITWExploitation: false
+summary: |
+  The @actions/core package had a delimiter injection vulnerability in the exportVariable function. Attackers could use a known delimiter to break out of a specific variable and assign values to other arbitrary variables. This may have allowed modification of path or environment variables without the intention of workflow or action authors.
+manualRemediation: |
+  Upgrade to @actions/core v1.9.1 or ensure user input does not contain the delimiter '_GitHubActionsFileCommandDelimeter_' before calling core.exportVariable.
+detectionMethods: |
+  Review workflows and actions that write untrusted values to the GITHUB_ENV file. Check for potential manipulation of path or other environment variables.
+contributor: https://github.com/sshayb
+entryStatus: Finalized
+references:
+  - https://github.com/advisories/GHSA-7r3h-m5j6-3q42

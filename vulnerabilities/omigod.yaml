@@ -16,10 +16,10 @@ discoveredBy:
   name: Nir Ohfeld
   org: Wiz
   domain: https://www.wiz.io/
-  twitter: null
+  twitter:
 disclosedAt: 2021/09/14
 publishedAt: 2021/06/01
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: true
 summary: |
   Azure forces the install of an agent on Linux VMs, which contained a vulnerability
@@ -42,3 +42,4 @@ references:
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38645
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38649
 - https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
+entryStatus: Finalized

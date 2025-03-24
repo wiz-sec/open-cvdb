@@ -1,0 +1,32 @@
+title: GCP HMAC Keys do not log creation, deletion or usage
+slug: gcp-hmac-keys-insufficient-logging
+cves: null
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Storage XML API
+- Cloud Console Private API Service
+image: https://images.unsplash.com/photo-1417026846249-f31f7e43fc35?q=80&w=2143&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Low
+discoveredBy:
+  name: Kat Traxler
+  org: Vectra AI
+  domain: kattraxler.cloud
+  twitter: nightmareJs
+publishedAt: 2024/06/17
+disclosedAt: 2024/02/07
+exploitabilityPeriod: Ongoing
+knownITWExploitation: false
+summary: |
+  Cloud Audit Logs do not capture actions mediated through the cloud console private API 
+  service (cloudconsole-pa). Consequently, there is no logging of HMAC key creation or deletion 
+  linked to user accounts. This absence of logs hampers defenders' ability to alert or monitor 
+  the creation of HMAC keys for user accounts, posing a persistence risk, or their deletion, 
+  presenting a denial of service risk.
+manualRemediation: |
+  None possible
+detectionMethods: null
+contributor: https://github.com/KatTraxler
+references:
+- https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+entryStatus: Finalized

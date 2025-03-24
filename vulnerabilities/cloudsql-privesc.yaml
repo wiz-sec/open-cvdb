@@ -1,36 +1,39 @@
-title: Cloud SQL privilege escalation
+title: Cloud SQL for SQL Server privilege escalation
 slug: cloudsql-privesc
-cves: null
+cves:
 affectedPlatforms:
-- GCP 
+- GCP
 affectedServices:
 - Cloud SQL
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-privesc.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-privesc.jpg
 severity: high
-piercingIndexVector: null
+piercingIndexVector:
 discoveredBy:
-  name: null
+  name:
   org: Dig
-  domain: https://www.dig.security/
-  twitter: null
+  domain: dig.security
+  twitter:
 publishedAt: 2023/05/24
 disclosedAt: 2023/02/13
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
-  A vulnerability discovered in GCP's Cloud SQL service could be abused
+  A vulnerability discovered in GCP's Cloud SQL service allowed customer
+  administrator accounts to create triggers in the tempdb database and use
+  those to gain sysadmin privileges in the instance. This could be abused
   to result in complete control of the database engine and access to the
   host OS. An attacker could have listed and accessed files in the host OS,
   including any secrets on the machine, as well as gaining access to service
   agents. However, it is unclear from the report if this level of access could
   have allowed lateral movement within the Cloud SQL service or grant cross-tenant
-  access to other customers' data. The root cause of this vulnerability is also
-  unclear, though it allowed a series of privilege escalations, initially granting
-  the default sqlserver user access to a GCP admin role, and then the sysadmin role,
-  effectively granting a potential threat actor full access to the SQL server.
+  access to other customers' data. The reporters did not disclose any lateral movement
+  and Google stated in their security bulletin that it was not possible.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/jacks-reid
 references:
 - https://www.dig.security/post/gcp-cloudsql-vulnerability-leads-to-internal-container-access-and-data-exposure
+- https://cloud.google.com/sql/docs/security-bulletins#gcp-2023-007
+entryStatus: Finalized

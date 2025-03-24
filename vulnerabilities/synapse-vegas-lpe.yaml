@@ -1,0 +1,30 @@
+title: Synapse Analytics privilege escalation via intelligent caching
+slug: synapse-vegas-lpe
+cves:
+affectedPlatforms:
+- Azure
+affectedServices:
+- Synapse Analytics
+image: 
+  https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Medium
+discoveredBy:
+  name: Jimi Sebree
+  org: Tenable
+  domain: tenable.com
+  twitter: dinobytes
+disclosedAt: 2024/01/25
+publishedAt: 2024/03/07
+exploitabilityPeriod: September 2023 - January 2024
+knownITWExploitation: false
+summary: |
+  Tenable Research discovered a privilege escalation flaw that allows a user to escalate privileges to that 
+  of the root user within the context of a Spark VM. This escalation was achieved because of a permissions
+  issue with scripts utilized by the intelligent caching service (AKA "Vegas") present in the environment.
+manualRemediation: |
+  None required
+detectionMethods:
+contributer: https://github.com/dinobytes
+references:
+- https://www.tenable.com/security/research/tra-2024-06
+entryStatus: Finalized

@@ -1,0 +1,29 @@
+title: Data exfil via VPC endpoint denials in CloudTrail
+slug: vpc-endpoint-log-data-exfil
+cves:
+affectedPlatforms:
+- AWS
+affectedServices:
+- VPC Endpoints
+image: 
+  https://images.unsplash.com/photo-1683638202767-909fa34ffeb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: Low
+discoveredBy:
+  name: Sam Cox
+  org: Tracebit
+  domain: tracebit.com
+  twitter: null
+publishedAt: 2024/10/15
+disclosedAt: 2024/06/04
+exploitabilityPeriod:
+knownITWExploitation: false
+summary: |
+  CloudTrail delivered events to the resource owner and API caller even when the API action was denied by the VPC endpoint policy.
+  This could have enabled a stealthy data exfiltration method in cases where an attacker had previously compromised a VPC, by smuggling data through the user agent field in denied requests.
+manualRemediation: |
+  None required
+detectionMethods:
+contributor: https://github.com/korniko98
+references:
+- https://tracebit.com/blog/breaching-the-data-perimeter-cloudtrail-as-a-mechanism-for-data-exfiltration
+entryStatus: Finalized

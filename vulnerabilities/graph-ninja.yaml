@@ -1,0 +1,31 @@
+title: GraphNinja
+slug: graph-ninja
+cves:
+affectedPlatforms:
+- Azure
+affectedServices:
+- Microsoft Graph
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/graph-ninja.jpg
+severity: Medium
+discoveredBy:
+  name: Nyx Geek
+  org: TrustedSec
+  domain: trustedsec.com
+  twitter: nyxgeek
+publishedAt: 2024/04/29
+disclosedAt:
+exploitabilityPeriod: June 2023 - March 2024
+knownITWExploitation: false
+summary: |
+  A vulnerability in Microsoft Graph allowed attackers to conduct password-spray attacks without detection.
+  The issue involved switching the 'common' authentication endpoint with that of an unrelated tenant,
+  thereby avoiding the appearance of logon attempts in the victim's logs.
+  This technique could allow attackers to validate user credentials through verbose error messages, 
+  but actual successful logons using these credentials would still be recorded in the victims' logs (regardless of endpoint).
+manualRemediation: |
+  None required
+detectionMethods:
+contributor: https://github.com/mer-b
+references:
+- https://trustedsec.com/blog/full-disclosure-a-look-at-a-recently-patched-microsoft-graph-logging-bypass-graphninja
+entryStatus: Finalized

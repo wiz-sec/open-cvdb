@@ -1,0 +1,40 @@
+title: GCP HMAC Keys are not discoverable or revokable other than for self
+slug: gcp-hmac-keys-unauditable
+cves:
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Cloud Storage XML API
+- Google Cloud IAM
+image: 
+  https://images.unsplash.com/photo-1602974605125-2b4afee39ab5?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: Low
+discoveredBy:
+  name: Kat Traxler
+  org: Vectra AI
+  domain: kattraxler.cloud
+  twitter: nightmareJs
+publishedAt: 2024/06/17
+disclosedAt: 2024/02/07
+exploitabilityPeriod: Ongoing
+knownITWExploitation: false
+summary: |
+  GCP administrators face challenges in managing HMAC keys within their organizations, 
+  lacking visibility into which user accounts have generated these keys and whether they are 
+  actively being used to access storage objects. Additionally, there's a lack of functionality 
+  to revoke keys associated with other users, restricting their ability to enforce security 
+  policies effectively. Similarly, GCP incident response teams rely on Cloud Logging to monitor
+  Cloud Storage object access, but they lack specific indicators to determine if HMAC keys are
+  being utilized in these access attempts.
+manualRemediation: |
+  No full remediation is possible at this time. While various containment actions, such as suspending
+  or deleting compromised user accounts, may initially seem effective by rejecting previously created
+  Sigv4 signed headers, reactivating or recreating the same user allows the reuse of credentials
+  unless they have expired. Furthermore, removing Cloud IAM Roles can revoke access to affected storage
+  resources. However, it's important to note that reassigning roles does not invalidate previously
+  created Sigv4 signed headers, allowing them to continue functioning even after the role change.
+detectionMethods:
+contributor: https://github.com/KatTraxler
+references:
+- https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+entryStatus: Finalized

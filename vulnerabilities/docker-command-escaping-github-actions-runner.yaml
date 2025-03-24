@@ -1,0 +1,29 @@
+title: Docker Command Escaping in GitHub Actions Runner
+slug: docker-command-escaping-github-actions-runner
+cves: 
+  - CVE-2022-39321
+affectedPlatforms:
+  - GitHub
+affectedServices:
+  - GitHub Actions
+image: https://images.unsplash.com/photo-1623010933720-df5f3b729dbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: High
+discoveredBy:
+  name: Juho Nurminen
+  org: null
+  domain: null
+  twitter: jupenur
+publishedAt: 2022/10/24
+disclosedAt: null
+exploitabilityPeriod: Until 2022/10/24
+knownITWExploitation: false
+summary: |
+  A vulnerability in the GitHub Actions Runner allowed untrusted inputs in environment variables to escape and modify docker command invocations. This affected jobs using container actions, job containers, or service containers. The issue has been patched in multiple versions of the runner.
+manualRemediation: |
+  Update to one of the patched runner versions: 2.296.2, 2.293.1, 2.289.4, 2.285.2, or 2.283.4. GHES and GHAE customers should patch their instances for automatic runner upgrades.
+detectionMethods: |
+  Check the version of your GitHub Actions Runner. If using a vulnerable version, review jobs for potential exploitation of environment variables in container-related actions.
+contributor: https://github.com/sshayb
+entryStatus: Finalized
+references:
+  - https://github.com/advisories/GHSA-2c6m-6gqh-6qg3

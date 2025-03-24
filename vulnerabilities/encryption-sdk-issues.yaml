@@ -5,16 +5,17 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - KMS
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
 severity: Low
 discoveredBy:
   name: Thai Duong (thaidn)
   org: Google
-  domain: null
+  domain:
   twitter: XorNinja
 disclosedAt: 2020/09/28
 publishedAt: 2020/09/28
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   AWS KMS and all versions of AWS Encryption SDKs prior to version 2.0.0 were susceptible to
@@ -22,10 +23,11 @@ summary: |
   encryption context, user agent, and IP address upon decryption), ciphertext forgery (an attacker could
   create ciphertexts that were accepted by other users) and lack of robustness (an attacker could create
   ciphertexts that decrypt to different plaintexts for different users).
-manualRemediation: | 
+manualRemediation: |
   Update the SDK to the latest secure version.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/XorNinja/status/1310587707605659649
 - https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html
+entryStatus: Finalized

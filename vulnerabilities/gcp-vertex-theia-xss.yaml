@@ -1,0 +1,30 @@
+title: XSS in Google Cloud Theia notebooks
+slug: gcp-vertex-theia-xss
+cves:
+- CVE-2021-41038
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Vertex AI Workbench
+image: https://demo-source.imgix.net/snowboard.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: High
+discoveredBy:
+  name: Sivanesh Ashok, Sreeram KL
+  org:
+  domain: blog.geekycat.in
+  twitter: kl_sree, sivaneshashok
+disclosedAt: 2022/01/01
+publishedAt: 2023/01/15
+exploitabilityPeriod:
+knownITWExploitation: false
+summary: |
+  This vulnerability chain exploits a Cross-Site Scripting (XSS) flaw (CVE-2021-41038) within the Theia IDE used in Google Vertex AI Workbench.
+  An attacker could inject malicious JavaScript code into the Theia IDE. This code could then be used to steal the OAuth token associated with the project's default Compute Engine service account,
+  because when a user-managed Vertex AI Workbench instance is created, it utilizes the project's default Compute Engine service account. At the time, this default service account had the Editor Role assigned by default.
+manualRemediation: |
+  None, as the Theia IDE is no longer offered as a Vertex AI experimental image.
+detectionMethods:
+contributor: https://github.com/KatTraxler
+references:
+- https://blog.geekycat.in/posts/xss-using-postmessage-in-google-cloud-theia-notebooks/
+entryStatus: Finalized

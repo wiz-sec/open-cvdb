@@ -1,6 +1,6 @@
 title: Privilege escalation in GCP OS Login
 slug: gcp-os-login-pe
-cves: 
+cves:
 - CVE-2020-8933
 - CVE-2020-8907
 - CVE-2020-8903
@@ -8,24 +8,27 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - OS Login
-image: https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: 
+  https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy:
   name: Chris Moberly
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: init_string
 disclosedAt: 2020/06/04
 publishedAt: 2021/03/17
 exploitabilityPeriod: until June 2020
-knownITWExploitation: null
+knownITWExploitation:
 summary: |
   GCP provides an OS Login service for managing SSH access to compute instances using IAM roles.
   An attacker could abuse this feature via LXD, Docker (if available on the target system) and
   DHCP poisoning of the metadata server to escalate their privileges on a Google Compute Engine VM.
 manualRemediation: |
-  
-detectionMethods: null
+
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020
+- https://initblog.com/2020/oslogin-privesc/
+entryStatus: Finalized

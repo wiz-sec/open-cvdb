@@ -31,7 +31,6 @@ When creating a pull request, please adhere to the following guidelines:
 
 
 ### Contact Us
-* Join our [Slack group](https://bit.ly/cloudVuln)
 * Follow us on [Twitter](https://twitter.com/cloudvulndb), [LinkedIn](https://www.linkedin.com/company/cloudvulndb/) and [Mastodon](https://infosec.exchange/@cloudvulndb)
 * [Email us](mailto:cloudvulndb@gmail.com)
 * Add [requests](https://github.com/wiz-sec/open-cvdb/issues/new/choose) for bugfixes or new features

@@ -1,28 +1,30 @@
 title: Exfiltrate data via the logs of GCP Org policy
 slug: gcp-org-policy-exfiltrate-data
-cves: null
+cves:
 affectedPlatforms:
 - GCP
-affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/exfiltrating_data_via_policy_logs.jpg
+affectedServices:
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/exfiltrating_data_via_policy_logs.jpg
 severity: Low
 discoveredBy:
   name: Jonathan Rault
   org: TrustOnCloud
   domain: https://trustoncloud.com/
-  twitter: null
+  twitter:
 disclosedAt: 2020/10/12
 publishedAt: 2021/09/22
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Upon blocking a request, GCP Org policy constraints were logging the deny
   logs in Principal''s project and the blocking project. An attacker could use those
   logs to exfiltrate any data, by making request from a Principal they own from
   a defender project.
-manualRemediation: | 
+manualRemediation: |
   Review denied logs in the defender project, because it was also logged there.
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://trustoncloud.com/exfiltrate-data-from-your-super-secure-google-cloud-project-using-the-security-control-built-to-prevent-it/
+entryStatus: Finalized

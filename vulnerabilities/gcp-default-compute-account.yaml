@@ -1,13 +1,16 @@
 title: GCP Default compute account is project Editor
 slug: gcp-default-compute-account
-cves: null
+cves:
 affectedPlatforms:
 - GCP
-affectedServices: null
-image: https://assets.website-files.com/6207f5adfd8e615d3d70498b/6239e2f458c48918ab0602dd_GCP%20-%20comp%20blue.png
+affectedServices:
+image: 
+  https://assets.website-files.com/6207f5adfd8e615d3d70498b/6239e2f458c48918ab0602dd_GCP%20-%20comp%20blue.png
 severity: Medium
-discoveredBy: null
-disclosedAt: null
+discoveredBy:
+  name: Louis Duruflé-Seta
+  domain: durufle.eu
+disclosedAt:
 publishedAt: 2020/11/22
 exploitabilityPeriod: Since the creation of GCP
 knownITWExploitation: false
@@ -20,7 +23,8 @@ summary: |
   undo this.
 manualRemediation: |
   Remove these permissions, it can be done via an organization policy
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/louisdurufle
 references:
 - https://cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts#disable_service_account_default_grants
+entryStatus: Finalized

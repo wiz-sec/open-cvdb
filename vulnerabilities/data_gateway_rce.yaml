@@ -1,11 +1,12 @@
 title: Azure on-premises data gateway cross-tenant access
 slug: data_gateway_rce
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - On-premises data gateway
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/data_gateway_rce.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/data_gateway_rce.jpg
 severity: Critical
 discoveredBy:
   name: Nick Landers
@@ -14,7 +15,7 @@ discoveredBy:
   twitter: monoxgas
 publishedAt: 2023/03/30
 disclosedAt: 2022/09/30
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure on-premises data gateway allows data transfer between an on-prem customer network and
@@ -25,7 +26,8 @@ summary: |
   unauthorized cross-tenant access.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://www.netspi.com/blog/technical/vulnerability-research/azure-service-bus-power-platform/
+entryStatus: Finalized

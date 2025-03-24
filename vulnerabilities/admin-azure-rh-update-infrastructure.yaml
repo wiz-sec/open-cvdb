@@ -1,19 +1,20 @@
 title: Public admin access to Azure's Red Hat Update Infrastructure
 slug: admin-azure-rh-update-infrastructure
-cves: null
+cves:
 affectedPlatforms:
 - Azure
-affectedServices: null
-image: https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
+affectedServices:
+image: 
+  https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
 severity: Low
 discoveredBy:
   name: Ian Duffy
-  org: null
+  org:
   domain: https://ianduffy.ie/
-  twitter: null
+  twitter:
 publishedAt: 2016/11/26
 disclosedAt: 2016/11/26
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Full administrative access to the Azure Red Hat Enterprise Linux Appliance REST API was publicly exposed.
@@ -21,6 +22,7 @@ summary: |
   The vulnerable infrastructure supplies all the packages for all Red Hat Enterprise Linux instances booted from the Azure marketplace.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references: https://ianduffy.ie/2016/11/26/azure-bug-bounty-pwning-red-hat-enterprise-linux/
+entryStatus: Finalized

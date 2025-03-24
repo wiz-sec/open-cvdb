@@ -1,0 +1,32 @@
+title: AWS CodeBuild Token Leakage
+slug: aws-codebuild-access-token-leak
+cves:
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS CodeBuild
+image: 
+  https://images.unsplash.com/photo-1689349483530-bb7a0734d9fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
+discoveredBy:
+  name: Carlos Polop
+  org: Halborn
+  domain:
+  twitter: hacktricks_live
+publishedAt: 2023/02/25
+disclosedAt: 2023/01/18
+exploitabilityPeriod:
+knownITWExploitation:
+summary: |
+  An attacker with elevated permissions in CodeBuild could leak 
+  the configured credentials for Github/Bitbucket. This was possible by 
+  configuring the http_proxy and https_proxy variables, which would allow 
+  you to capture the credentials via MITM.
+manualRemediation: |
+  None required
+detectionMethods:
+contributor: https://github.com/ramimac
+references:
+- https://www.halborn.com/blog/post/halborn-discovers-and-discloses-vulnerability-in-aws-code-build
+- https://cloud.hacktricks.xyz/pentesting-cloud/aws-pentesting/aws-post-exploitation/aws-codebuild-post-exploitation/aws-codebuild-token-leakage
+entryStatus: Finalized

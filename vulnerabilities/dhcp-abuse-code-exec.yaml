@@ -1,26 +1,28 @@
 title: DHCP abuse for code exec
 slug: dhcp-abuse-code-exec
-cves: null
+cves:
 affectedPlatforms:
 - GCP
-affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dhcp-abuse-code-exec.jpg
+affectedServices:
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dhcp-abuse-code-exec.jpg
 severity: Medium
 discoveredBy:
   name: Imre Rad
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 disclosedAt: 2020/09/26
 publishedAt: 2021/06/25
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Under certain conditions, an attacker can flood DHCP packets to the victim
   VM, allowing it to impersonate the Metadata server, and grant themselves SSH access.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/irsl/gcp-dhcp-takeover-code-exec
+entryStatus: Finalized

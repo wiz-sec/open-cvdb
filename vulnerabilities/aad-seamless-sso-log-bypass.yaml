@@ -1,27 +1,29 @@
 title: Azure AD Seamless SSO logging bypass
 slug: aad-seamless-sso-log-bypass
-cves: null
+cves:
 affectedPlatforms:
 - Azure
 affectedServices:
 - Azure AD Seamless SSO
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aad-seamless-sso-log-bypass.jpg
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aad-seamless-sso-log-bypass.jpg
 severity: Low
 discoveredBy:
-  name: null
+  name:
   org: Secureworks
   domain: secureworks.com
-  twitter: null
+  twitter:
 publishedAt: 2021/09/29
 disclosedAt: 2021/06/29
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure Active Directory Seamless Single Sign-On feature allowed single-factor brute-force attacks
   against Azure AD without generating sign-in events in the targeted organization’s tenant.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/korniko98
 references:
 - https://www.secureworks.com/research/undetected-azure-active-directory-brute-force-attacks
+entryStatus: Finalized

@@ -1,6 +1,6 @@
 title: ELB Cache mechanism HTTP header smuggling
 slug: elb-cache-http-smuggling
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -22,9 +22,10 @@ summary: |
   Any internal header could have beem overridden, also the one that should not be exposed/forwarded by the
   client, such as `CloudFront-Viewer-Country-Region` or any other `CloudFront` enhanced header. 
   This special security issue was affecting all AWS users with that a specific setting enabled.
-manualRemediation: null
-detectionMethods: null
+manualRemediation:
+detectionMethods:
 contributor: https://github.com/mhgeay
 references:
 - https://twitter.com/nJoyneer/status/1526593840928411650
 - https://raw.globalsecuritydatabase.org/GSD-2022-1002524
+entryStatus: Finalized

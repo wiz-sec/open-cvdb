@@ -1,21 +1,22 @@
 title: Cognito User Group spoofing
 slug: cognito-user-group-spoofing
-cves: null
+cves:
 affectedPlatforms:
 - AWS
 affectedServices:
 - Cognito
 - Amazon API Gateway
-image: https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80
+image: 
+  https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80
 severity: Low
 discoveredBy:
-  name: null
+  name:
   org: opsmorph
   domain: https://www.opsmorph.com/
   twitter: https://twitter.com/opsmorph
 publishedAt: 2022/02/15
 disclosedAt: 2022/02/15
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Opsmorph discovered an improper access control vulnerability in authorization logic common in applications built on AWS. The vulnerability means a user 
@@ -27,6 +28,7 @@ summary: |
   of the token.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods:
 contributor: https://github.com/0xdabbad00
 references: https://www.opsmorph.com/Blog/usergroupspoofing
+entryStatus: Finalized

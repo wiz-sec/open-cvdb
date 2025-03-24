@@ -1,0 +1,30 @@
+title: AWS AppStream Cloudtrail Bypass
+slug: aws-appstream-cloudtrail-bypass
+cves:
+affectedPlatforms:
+- AWS
+affectedServices:
+- AppStream
+image: 
+  https://images.unsplash.com/photo-1590865616814-02ceb702269a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJvdW5kfGVufDB8fDB8fHwy
+severity: Low
+discoveredBy:
+  name: Saransh Rana
+  org: CRED
+  domain: https://saransh-rana.gitbook.io
+  twitter: _sr1695_
+publishedAt: 2023/09/11
+disclosedAt: 2023/09/11
+exploitabilityPeriod: ongoing
+knownITWExploitation: false
+summary: |
+  Credentials can be extracted from AppStream. When used, they obscure
+  the sourceIP and userName of the initial user. The sourceIP appears 
+  as appstream.amazonaws.com.
+manualRemediation: |
+  None required 
+detectionMethods:
+contributor: https://github.com/ramimac
+references:
+- https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream
+entryStatus: Finalized
