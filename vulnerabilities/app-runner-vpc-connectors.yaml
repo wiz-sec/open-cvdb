@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - App Runner
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-vpc-connectors.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-vpc-connectors.jpg
 severity: Low
 discoveredBy:
   name: Nick Frichette

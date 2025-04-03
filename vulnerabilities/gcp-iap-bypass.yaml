@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - GCP
 affectedServices:
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/identity_aware_proxy.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/identity_aware_proxy.jpg
 severity: Medium
 discoveredBy:
   name: Unknown

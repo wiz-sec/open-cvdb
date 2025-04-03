@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Cloudshell
-image: 
-  https://cdn.pixabay.com/photo/2020/11/07/15/31/hermit-crab-shell-5721572_1280.jpg
+image: https://cdn.pixabay.com/photo/2020/11/07/15/31/hermit-crab-shell-5721572_1280.jpg
 severity: Medium
 discoveredBy:
   name: Wouter ter Maat

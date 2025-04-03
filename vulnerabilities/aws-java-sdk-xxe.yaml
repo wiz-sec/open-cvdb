@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Java SDK
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-java-sdk-xxe.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-java-sdk-xxe.jpg
 severity: Low
 discoveredBy:
   name: Alex Brasetvik

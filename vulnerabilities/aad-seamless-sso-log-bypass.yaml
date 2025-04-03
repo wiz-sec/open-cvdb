@@ -5,8 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Azure AD Seamless SSO
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aad-seamless-sso-log-bypass.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aad-seamless-sso-log-bypass.jpg
 severity: Low
 discoveredBy:
   name:

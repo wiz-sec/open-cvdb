@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud Armor
-image: 
-  https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+image: https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 severity: Medium
 discoveredBy:
   name: Karan Saini, Riyaz Walikar

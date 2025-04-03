@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - AWS
 affectedServices: AWS Management Console
-image: 
-  https://images.pexels.com/photos/768093/pexels-photo-768093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/768093/pexels-photo-768093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
   name: Nick Frichette

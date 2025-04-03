@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - Azure
 affectedServices:
-image: 
-  https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
+image: https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
 severity: Low
 discoveredBy:
   name: Ian Duffy

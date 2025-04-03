@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud Asset Inventory
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/asset-key-thief.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/asset-key-thief.jpg
 severity: Medium
 piercingIndexVector:
 discoveredBy:

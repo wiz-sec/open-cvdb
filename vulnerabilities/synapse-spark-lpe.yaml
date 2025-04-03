@@ -6,8 +6,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Synapse Analytics
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
 severity: Medium
 discoveredBy:
   name: Tzah Pahima

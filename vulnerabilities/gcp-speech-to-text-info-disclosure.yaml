@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - GCP Speech-to-Text
-image: 
-  https://images.unsplash.com/photo-1613870948964-7125fa3e1aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjb3JkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
+image: https://images.unsplash.com/photo-1613870948964-7125fa3e1aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjb3JkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
 severity: Medium
 discoveredBy:
   name: Dan Maas

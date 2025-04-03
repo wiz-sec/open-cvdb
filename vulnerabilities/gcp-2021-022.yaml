@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Anthos
-image: 
-  https://images.unsplash.com/photo-1458014854819-1a40aa70211c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1458014854819-1a40aa70211c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Low
 discoveredBy:
   name:

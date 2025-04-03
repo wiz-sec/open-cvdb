@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - GKE Sandbox
-image: 
-  https://images.pexels.com/photos/5371573/pexels-photo-5371573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/5371573/pexels-photo-5371573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy:
   name:
