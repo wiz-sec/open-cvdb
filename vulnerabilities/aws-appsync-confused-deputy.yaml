@@ -27,7 +27,8 @@ summary: |
   they could use it invoke arbitrary AWS API calls.
 manualRemediation: |
   None required 
-detectionMethods: Suspicious calls from roles assumed by the AppSync service.
+detectionMethods: |
+  Suspicious calls from roles assumed by the AppSync service.
 contributor: https://github.com/frichetten
 references:
 - https://securitylabs.datadoghq.com/articles/appsync-vulnerability-disclosure/

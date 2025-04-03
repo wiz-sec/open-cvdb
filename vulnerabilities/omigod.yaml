@@ -32,7 +32,8 @@ manualRemediation: |
   For cloud deployments, Microsoft has deployed the updates to extensions across Azure regions. 
   The automatic extension updates were transparently patched without a reboot. 
   Where possible, customers should ensure that automatic extension updates are enabled.
-detectionMethods: OMI version < 1.6.8.1
+detectionMethods: |
+  OMI version < 1.6.8.1
 contributor: https://github.com/0xdabbad00
 references:
 - https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution

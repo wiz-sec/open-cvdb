@@ -27,8 +27,8 @@ summary: |
   account compromise of users without MFA enabled.
 manualRemediation: |
   None required
-detectionMethods: Detect potential brute-force behavior using the CloudTrail ConsoleLogin
-  event.
+detectionMethods: |
+  Detect potential brute-force behavior using the CloudTrail ConsoleLogin event.
 contributor: https://github.com/korniko98
 references:
 - https://securitylabs.datadoghq.com/articles/aws-console-rate-limit-bypass/
