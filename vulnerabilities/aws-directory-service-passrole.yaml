@@ -1,4 +1,4 @@
-title: AWS Directory Service not checking iam:PassRole on EnableRoleAccess
+title: 'AWS Directory Service not checking iam:PassRole on EnableRoleAccess'
 slug: aws-directory-service-passrole
 cves:
 affectedPlatforms:
