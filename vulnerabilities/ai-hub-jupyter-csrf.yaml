@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - AI Hub Jupyter Notebook
-image: 
-  https://images.pexels.com/photos/1148496/pexels-photo-1148496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/1148496/pexels-photo-1148496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy:
   name: s1r1us

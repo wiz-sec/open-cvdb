@@ -5,8 +5,7 @@ affectedPlatforms:
 - IBM
 affectedServices:
 - IBM Cloud Databases
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/hellskeychain.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/hellskeychain.jpg
 severity: Critical
 discoveredBy:
   name: Ronen Shustin, Shir Tamari

@@ -5,8 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - AD B2C
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-b2c-crypto-flaw.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-b2c-crypto-flaw.jpg
 severity: Critical
 piercingIndexVector: {version: 1.5, A1: 22, A2: 1, A7: 1, A8: 1.1}
 discoveredBy:

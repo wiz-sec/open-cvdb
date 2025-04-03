@@ -8,8 +8,7 @@ affectedServices:
 - Azure API Management Service
 - Azure Functions
 - Azure Digital Twins Explorer
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_multiple_ssrf.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_multiple_ssrf.jpg
 severity: Low
 discoveredBy:
   name: Lidor Ben Shitrit

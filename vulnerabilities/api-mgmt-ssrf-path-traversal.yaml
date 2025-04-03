@@ -5,8 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Azure API Management
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/api-mgmt-ssrf-path-traversal.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/api-mgmt-ssrf-path-traversal.jpg
 severity: High
 discoveredBy:
   name: Liv Matan

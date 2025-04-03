@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - GCE
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gce_ssh_key_injection.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gce_ssh_key_injection.jpg
 severity: High
 discoveredBy:
   name: Sivanesh Ashok

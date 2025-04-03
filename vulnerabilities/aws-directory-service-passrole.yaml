@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Directory Service
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
 severity: medium
 piercingIndexVector: {version: 1.5, A3: 1, A4: 1, A5: 1, A6: 6, A7: 1.1, A8: 0, 7: null}
 discoveredBy:
