@@ -8,8 +8,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - OS Login
-image: 
-  https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy:
   name: Chris Moberly

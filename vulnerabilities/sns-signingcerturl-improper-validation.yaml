@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - Amazon Simple Notification Service (SNS)
-image: 
-  https://images.unsplash.com/photo-1611095780122-d692cee29291?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2lnbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
+image: https://images.unsplash.com/photo-1611095780122-d692cee29291?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2lnbmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
 severity: Medium
 discoveredBy:
   name: Eugene Lim

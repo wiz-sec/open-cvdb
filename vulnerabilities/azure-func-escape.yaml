@@ -5,8 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Serverless Functions
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-func-escape.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-func-escape.jpg
 severity: Medium
 discoveredBy:
   name: Aviv Sasson, Daniel Prizmant

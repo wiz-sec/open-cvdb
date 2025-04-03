@@ -5,8 +5,7 @@ affectedPlatforms:
 - GCP
 affectedServices:
 - Google Cloud Shell
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gcp-cloudshell-command-injection.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gcp-cloudshell-command-injection.jpg
 severity: Medium
 discoveredBy:
   name: Bugra Eskici

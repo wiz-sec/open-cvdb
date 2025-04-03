@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - AWS
 affectedServices:
-image: 
-  https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+image: https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Low
 discoveredBy:
   name: Ryan Gerstenkorn

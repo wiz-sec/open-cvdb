@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - KMS
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
 severity: Low
 discoveredBy:
   name: Thai Duong (thaidn)

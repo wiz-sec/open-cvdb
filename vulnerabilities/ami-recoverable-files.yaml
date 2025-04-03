@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - AWS
 affectedServices:
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg
 severity: Low
 discoveredBy:
   name: Marco Balduzzi, Jonas Zaddach, Davide Balzarotti, Engin Kirda, Sergio Loureiro

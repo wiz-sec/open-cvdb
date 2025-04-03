@@ -5,8 +5,7 @@ affectedPlatforms:
 - Azure
 affectedServices:
 - Cloud Shell
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-cloudshell-injection.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-cloudshell-injection.jpg
 severity: High
 piercingIndexVector: {version: 1.5, A1: 22, A2: 1.21, A7: 0.9, A8: 1.1}
 discoveredBy:

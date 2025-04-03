@@ -5,8 +5,7 @@ affectedPlatforms:
 - AWS
 affectedServices:
 - EC2
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_elastic_compute_console.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_elastic_compute_console.jpg
 severity: Low
 discoveredBy:
   name: Johann Rehberger

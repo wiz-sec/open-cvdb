@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - GCP
 affectedServices:
-image: 
-  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/exfiltrating_data_via_policy_logs.jpg
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/exfiltrating_data_via_policy_logs.jpg
 severity: Low
 discoveredBy:
   name: Jonathan Rault

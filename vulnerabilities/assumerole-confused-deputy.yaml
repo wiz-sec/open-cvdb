@@ -4,8 +4,7 @@ cves:
 affectedPlatforms:
 - AWS
 affectedServices:
-image: 
-  https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png
+image: https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png
 severity: Medium
 discoveredBy:
   name: Daniel Grzelak
