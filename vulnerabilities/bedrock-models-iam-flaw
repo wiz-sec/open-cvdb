@@ -1,0 +1,28 @@
+title: IAM Policy Flaw Allowed Unauthorized Access to Bedrock Models
+slug: bedrock-models-iam-flaw
+cves: []
+affectedPlatforms:
+  - AWS
+affectedServices:
+  - AWS Bedrock
+image: https://images.unsplash.com/photo-1697731054413-76d71c54f9c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: High
+discoveredBy:
+  name: Carlos Mora
+  org: TrustOnCloud
+  domain: trustoncloud.com
+  twitter: null
+publishedAt: 2024/03/24
+disclosedAt: 2024/01/15
+exploitabilityPeriod: Until March 17th, 2024
+knownITWExploitation: false
+summary: |
+TrustOnCloud identified a flaw in how AWS Bedrock enforces IAM access controls using the aws-marketplace:ProductId condition key, which is meant to restrict subscriptions to specific foundation models. Their testing revealed that some Bedrock models, including those from Cohere and Stability AI, were not consistently blocked or allowed as intended by IAM policies, posing potential compliance and cost risks. AWS acknowledged and fixed the issue, notifying affected customers and updating testing procedures to prevent future issues.
+manualRemediation: |
+  null
+detectionMethods: |
+  null
+contributor: https://github.com/korniko98
+entryStatus: Finalized
+references:
+  - https://trustoncloud.com/blog/exposing-the-weakness-how-we-identified-a-flaw-in-bedrocks-foundation-model-access-control/
