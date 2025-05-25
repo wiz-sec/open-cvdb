@@ -1,0 +1,28 @@
+title: Security Flaw in AWS Transit Gateway Peering Attachments
+slug: aws-transit-gateway-peering-flaw
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Transit Gateway
+image: null
+severity: High
+discoveredBy:
+  name: James Sheard
+  org: DoiT
+  domain: doit.com
+  twitter: null
+publishedAt: 2024/09/12
+disclosedAt: 2024/07/25
+exploitabilityPeriod: Until 2024/08/07
+knownITWExploitation: false
+summary: |
+  A security flaw in AWS Transit Gateway Peering attachments allowed unauthorized acceptance of peering requests between regions. The exploit bypassed the approval step, granting potential unauthorized access to networks. AWS patched the issue on August 7, 2024, after being notified on July 25, 2024.
+manualRemediation: |
+  Implement SCPs to block the AcceptTransitGatewayPeeringAttachment API call for untrusted accounts or use organization ID-based policies to secure the entire organization.
+detectionMethods: |
+  Monitor CloudTrail logs for unauthorized AcceptTransitGatewayPeeringAttachment API calls from external accounts. Implement alerts for unexpected state changes in Transit Gateway peering attachments.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://engineering.doit.com/aws-transit-gateway-peering-exploit-a1715edd4c8a

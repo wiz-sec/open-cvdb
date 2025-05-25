@@ -1,0 +1,28 @@
+title: Hacking Google Bard via Prompt Injection
+slug: google-bard-prompt-injection
+cves: []
+affectedPlatforms:
+- Google
+affectedServices:
+- Google Bard
+image: null
+severity: High
+discoveredBy:
+  name: wunderwuzzi
+  org: Embrace The Red
+  domain: embracethered.com
+  twitter: null
+publishedAt: 2023/11/03
+disclosedAt: 2023/09/19
+exploitabilityPeriod: Until 2023/10/19
+knownITWExploitation: false
+summary: |
+  A vulnerability in Google Bard allowed for prompt injection and data exfiltration through its Extensions feature. By injecting malicious instructions into shared Google Docs, an attacker could force Bard to render images with exfiltrated chat history data in the URL. The exploit bypassed Content Security Policy using Google Apps Script.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unexpected image rendering in Google Bard conversations and unusual data access patterns in Google Docs and Gmail linked to Bard.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/

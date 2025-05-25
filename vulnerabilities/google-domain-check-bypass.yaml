@@ -1,0 +1,33 @@
+title: Google wide domain check bypass
+slug: google-domain-check-bypass
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Console
+- GMail API
+- Actions Console
+- YouTube Studio
+- Google Accounts
+image: null
+severity: High
+discoveredBy:
+  name: David Schütz
+  org: null
+  domain: xdavidhu.me
+  twitter: null
+publishedAt: 2020/03/08
+disclosedAt: 2020/01/04
+exploitabilityPeriod: Until 2020/03/06
+knownITWExploitation: false
+summary: |
+  A vulnerability in Google's common JavaScript library allowed bypassing domain validation checks across multiple Google products. By using a backslash character in URLs, an attacker could make the regex parser and browser disagree on the authority (domain) portion of a URL, allowing injection of arbitrary domains that pass whitelisting checks.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unexpected URL parsing behaviors, especially URLs containing backslash characters between the authority and path components.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://feed.bugs.xdavidhu.me/bugs/0008
+- https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/

@@ -1,0 +1,29 @@
+title: Power Platform Privilege Escalation in Azure AD
+slug: power-platform-privilege-escalation
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Power Platform
+- Azure Active Directory
+image: null
+severity: Critical
+discoveredBy:
+  name: null
+  org: Secureworks Counter Threat Unit
+  domain: secureworks.com
+  twitter: null
+publishedAt: 2023/08/24
+disclosedAt: 2023/04/05
+exploitabilityPeriod: Until 2023/04/06
+knownITWExploitation: false
+summary: |
+  Secureworks researchers discovered an Azure AD application with an abandoned reply URL related to Microsoft Power Platform. An attacker could leverage this URL to redirect authorization codes, exchange them for access tokens, and call Power Platform API via a middle-tier service to obtain elevated privileges. Microsoft quickly addressed the issue by removing the identified abandoned reply URL from the Azure AD application.
+manualRemediation: |
+  None required. Microsoft has addressed the issue by removing the identified abandoned reply URL from the Azure AD application.
+detectionMethods: |
+  Monitor for abandoned reply URLs in Azure AD applications. Organizations should be aware that deleting the service principal or disabling users' sign-in ability for the affected app would nullify its legitimate use.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.secureworks.com/research/power-platform-privilege-escalation

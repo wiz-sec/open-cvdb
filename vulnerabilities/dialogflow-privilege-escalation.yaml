@@ -1,0 +1,28 @@
+title: Privilege escalation on Dialogflow cloud platform
+slug: dialogflow-privilege-escalation
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Dialogflow
+image: null
+severity: High
+discoveredBy:
+  name: lalka
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2021/06/13
+disclosedAt: 2021/04/06
+exploitabilityPeriod: Until 2021/06/13
+knownITWExploitation: false
+summary: |
+  A privilege escalation vulnerability was discovered in Google's Dialogflow cloud platform. When downgrading a user's role from Developer to Reviewer, the permissions were not properly updated, allowing the user to retain Developer-level access. This issue persisted in the Google Cloud Console, where role changes resulted in additive permissions instead of replacements.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Administrators can verify user permissions in the Google Cloud Console IAM section to ensure they match the intended access levels set in Dialogflow.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://0x01alka.medium.com/google-vrp-privilege-escalation-on-https-dialogflow-cloud-google-com-599af6c4516d

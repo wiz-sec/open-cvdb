@@ -1,0 +1,39 @@
+title: Abusing Service Tags to Bypass Azure Firewall Rules
+slug: azure-firewall-bypass
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Application Insights
+- DevOps
+- Machine Learning
+- Logic Apps
+- Container Registry
+- Load Testing
+- API Management
+- Data Factory
+- Action Group
+- AI Video Indexer
+- Chaos Studio
+image: null
+severity: High
+discoveredBy:
+  name: Liv Matan
+  org: Tenable
+  domain: tenable.com
+  twitter: null
+publishedAt: 2024/06/03
+disclosedAt: 2024/01/24
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Tenable Research discovered a vulnerability in Azure allowing attackers to bypass firewall rules based on Service Tags by forging requests from trusted services. It affects over 10 Azure services and enables access to internal/private Azure resources. Microsoft updated documentation to clarify Service Tags' security limitations.
+manualRemediation: |
+  Analyze network rules for Service Tag usage. Add authentication and authorization layers to affected assets. Implement strong network authentication when configuring Azure services' network rules.
+detectionMethods: |
+  Search for use of affected Service Tags in network rules. Monitor for unexpected traffic from Azure services to internal resources. Review authentication logs for suspicious access attempts.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.tenable.com/blog/these-services-shall-not-pass-abusing-service-tags-to-bypass-azure-firewall-rules-customer
+- https://msrc.microsoft.com/blog/2024/06/improved-guidance-for-azure-network-service-tags/

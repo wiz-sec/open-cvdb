@@ -1,0 +1,28 @@
+title: Burning Data with Malicious Firewall Rules in Azure SQL
+slug: burning-data-azure-sql-firewall
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure SQL Server
+image: null
+severity: High
+discoveredBy:
+  name: Coby Abrams
+  org: Varonis Threat Labs
+  domain: varonis.com
+  twitter: null
+publishedAt: 2025/04/15
+disclosedAt: 2024/08/05
+exploitabilityPeriod: Until 2025/04/09
+knownITWExploitation: false
+summary: |
+  Varonis Threat Labs discovered a vulnerability in Azure SQL Server allowing privileged users to create malicious firewall rules that can delete Azure resources when triggered by admin actions. The exploit involves manipulating rule names via TSQL to inject destructive commands, potentially leading to large-scale data loss in affected Azure accounts.
+manualRemediation: |
+  None required. Microsoft has fully patched the vulnerability as of April 09, 2025.
+detectionMethods: |
+  Monitor for unusual firewall rule creation or modification in Azure SQL Servers, especially rules with suspicious names or IP ranges of 0.0.0.0.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.varonis.com/blog/malicious-firewall-rules-in-azure-sql

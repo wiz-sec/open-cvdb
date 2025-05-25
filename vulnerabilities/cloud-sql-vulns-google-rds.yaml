@@ -1,0 +1,30 @@
+title: Cloud SQL vulnerabilities in Google's RDS offering
+slug: cloud-sql-vulns-google-rds
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud SQL
+- Cloud SQL Auth Proxy
+image: null
+severity: High
+discoveredBy:
+  name: Imre Rad
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2021/10/18
+disclosedAt: 2021/01/21
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Multiple vulnerabilities were found in Google Cloud SQL, including config file injection leading to RCE, information disclosure in the Cloud SQL Auth Proxy, and a design issue in Postgres IAM authentication allowing access token theft. Other issues included GCR permission misconfigurations and potential for terminal escape sequence injection attacks via gcloud.
+manualRemediation: |
+  Upgrade Cloud SQL Auth Proxy clients to force TLSv1.3. Review and restrict permissions on GCR repositories. Consider disabling MySQL LOAD DATA LOCAL feature.
+detectionMethods: |
+  Monitor for unexpected Cloud SQL instance access or configuration changes. Review Cloud SQL Auth Proxy logs for anomalous connection attempts.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://irsl.medium.com/dropping-a-shell-in-googles-cloud-sql-the-speckle-umbrella-story-f9375bd4960d
+- https://irsl.medium.com/the-speckle-umbrella-story-part-2-fcc0193614ea

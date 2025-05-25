@@ -1,0 +1,30 @@
+title: Exploring a Critical Risk in Google Workspace's Domain-Wide Delegation Feature
+slug: google-workspace-domain-wide-delegation-risk
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Google Workspace
+image: null
+severity: High
+discoveredBy:
+  name: Zohar Zigdon
+  org: Unit 42
+  domain: paloaltonetworks.com
+  twitter: null
+publishedAt: 2023/11/30
+disclosedAt: 2023/06/27
+exploitabilityPeriod: Until patched
+knownITWExploitation: false
+summary: |
+  Unit 42 researchers discovered a security risk in Google Workspace's domain-wide delegation feature that allows a GCP identity with necessary permissions to generate access tokens to impersonate Google Workspace users and access their data. This mismatch between GCP permissions and Google Workspace access could be exploited by malicious insiders or attackers with stolen credentials.
+manualRemediation: |
+  Position service accounts with domain delegation permissions in higher-level folders in the GCP hierarchy to restrict access. Implement least privilege access and use Prisma Cloud for visibility, alerting and remediation of risky permissions.
+detectionMethods: |
+  Monitor GCP and Google Workspace audit logs for suspicious service account key creation, authorization events, and granting of domain-wide delegation permissions. Use Cortex XDR and Prisma Cloud for anomaly detection and alerting.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover
+- https://medium.com/@lutzenfried/gcp-domain-wide-delegation-abuses-b82b8dd8cf15
+- https://unit42.paloaltonetworks.com/critical-risk-in-google-workspace-delegation-feature/

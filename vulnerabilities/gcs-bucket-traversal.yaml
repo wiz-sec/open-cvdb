@@ -1,0 +1,28 @@
+title: Bucket Traversal in Google Cloud Storage Transfer Manager
+slug: gcs-bucket-traversal
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Storage
+image: null
+severity: Medium
+discoveredBy:
+  name: null
+  org: Google Bug Hunters
+  domain: google.com
+  twitter: null
+publishedAt: 2023/06/13
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A bucket traversal vulnerability was discovered in the google.cloud.storage.transfer_manager.upload_chunks_concurrently() function of Google Cloud Storage. This issue could potentially allow unauthorized access to files in different buckets or directories within the same project.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor access logs for suspicious file access patterns across different buckets or directories within Google Cloud Storage projects.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://bughunters.google.com/reports/vrp/h1K5SciPh

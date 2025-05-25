@@ -1,0 +1,31 @@
+title: CloudWatch Dashboard Sharing Exposes EC2 Tags
+slug: cloudwatch-dashboard-sharing-exposes-tags
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- CloudWatch
+- Cognito
+- EC2
+- Lambda
+image: null
+severity: Medium
+discoveredBy:
+  name: Leonidas Tsaousis
+  org: WithSecure
+  domain: withsecure.com
+  twitter: null
+publishedAt: 2025/01/16
+disclosedAt: 2024/07/26
+exploitabilityPeriod: Until 2024/08/28
+knownITWExploitation: false
+summary: |
+  A vulnerability in AWS CloudWatch dashboard sharing allowed viewers to access EC2 instance tags and potentially invoke Lambda functions in the source account. The issue stemmed from a logic bug in the AWS Console combined with a "fail open" condition in Amazon Cognito. AWS has since patched the vulnerability.
+manualRemediation: |
+  Review and limit use of shared dashboards. Restrict IAM permissions for dashboard sharing. Scope additional IAM permissions narrowly when using custom dashboard features.
+detectionMethods: |
+  Monitor for unexpected EC2:DescribeTags API calls. Review Cognito Identity Pool configurations, especially the AllowClassicFlow setting.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://labs.withsecure.com/publications/cloudwatch-dashboard

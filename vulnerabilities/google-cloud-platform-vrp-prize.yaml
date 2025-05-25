@@ -1,0 +1,29 @@
+title: Google Cloud Platform VRP Prize Writeup
+slug: google-cloud-platform-vrp-prize
+cves:
+- CVE-2014-8453
+affectedPlatforms:
+- GCP
+affectedServices:
+- AI Hub
+image: null
+severity: Medium
+discoveredBy:
+  name: Missoum Said
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2019/11/29
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability was discovered in Google Cloud Platform's AI Hub service, allowing unrestricted file uploads. This could potentially lead to bypassing Same-Origin Policy by uploading SWF files, enabling CSRF attacks across browsers, and exploiting CVE-2014-8453 on IE with Adobe Reader installed. The issue resulted in a $1337 bounty reward.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unusual file uploads or unexpected file types being served from the AI Hub service. Implement strict file type restrictions and content disposition headers for uploaded files.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://medium.com/@missoum1307/writeup-for-the-2019-google-cloud-platform-vrp-prize-4e104ef9f204

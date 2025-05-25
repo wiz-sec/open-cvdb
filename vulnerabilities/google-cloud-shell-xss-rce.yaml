@@ -1,0 +1,28 @@
+title: Google Cloud Shell XSS to RCE Vulnerability
+slug: google-cloud-shell-xss-rce
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Shell
+image: null
+severity: High
+discoveredBy:
+  name: Omar Espino
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2020/10/01
+disclosedAt: 2020/02/06
+exploitabilityPeriod: Until 2020/03/18
+knownITWExploitation: false
+summary: |
+  A vulnerability in Google Cloud Shell allowed escalation from XSS to full instance takeover as root. The attack exploited an XSS in the markdown preview functionality to read sensitive files, obtain the instance's private key and hostname, and gain SSH access as root. The issue affected the Eclipse Theia-based editor used in Cloud Shell.
+manualRemediation: |
+  None required. The vulnerability was fixed by Google.
+detectionMethods: |
+  Monitor for unexpected SSH access to Cloud Shell instances, especially from external IP addresses. Review Cloud Shell access logs for anomalous activity.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://omespino.com/write-up-google-bug-bounty-xss-to-cloud-shell-instance-takeover-rce-as-root-5000-usd/

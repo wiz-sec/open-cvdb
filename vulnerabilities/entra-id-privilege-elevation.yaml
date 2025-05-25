@@ -1,0 +1,31 @@
+title: Privilege Elevation Vulnerability in Entra ID
+slug: entra-id-privilege-elevation
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Entra ID
+- Device Registration Service
+- Viva Engage
+- Microsoft Rights Management Service
+image: null
+severity: High
+discoveredBy:
+  name: Eric Woodruff
+  org: Semperis
+  domain: semperis.com
+  twitter: null
+publishedAt: 2024/08/07
+disclosedAt: 2024/01/11
+exploitabilityPeriod: Until 2024/04/19
+knownITWExploitation: false
+summary: |
+  Semperis researchers discovered vulnerabilities in Microsoft applications that allowed privilege elevation in Entra ID beyond expected authorization controls. The most severe finding enabled adding users to privileged roles, including Global Administrator, without proper permissions. The issues affected Device Registration Service, Viva Engage, and Microsoft Rights Management Service. Microsoft has since resolved the vulnerabilities.
+manualRemediation: |
+  Inspect affected service principals for lingering credentials using Microsoft Graph. Examine Entra ID audit logs for suspicious activity by Device Registration Service. Treat Application Administrator and Cloud Application Administrator roles as highly privileged.
+detectionMethods: |
+  Check for credentials assigned to Device Registration Service and Viva Engage service principals. Search Entra ID audit logs for actions performed by Device Registration Service and credential assignments to its service principal.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.semperis.com/blog/unoauthorized-privilege-elevation-through-microsoft-applications/

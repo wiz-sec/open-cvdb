@@ -1,0 +1,31 @@
+title: FreeRTOS and coreSNTP Security Advisories
+slug: freertos-coresntp-advisories
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- FreeRTOS
+- coreSNTP
+image: null
+severity: Low
+discoveredBy:
+  name: sweeneyirrigreen
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2025/05/10
+disclosedAt: null
+exploitabilityPeriod: Until 2025/05/08
+knownITWExploitation: false
+summary: |
+  Security advisories were issued for FreeRTOS and coreSNTP releases containing unintended scripts that could potentially transmit AWS credentials if executed on Linux/macOS. Affected releases have been removed and users are advised to rotate credentials and delete downloaded copies.
+manualRemediation: |
+  Delete affected release files. Rotate AWS credentials in ~/.aws/credentials. Contact AWS Support if needed.
+detectionMethods: |
+  Check SHA256 hashes of downloaded FreeRTOS/coreSNTP release files against those listed in the advisories.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://github.com/FreeRTOS/FreeRTOS/security/advisories/GHSA-5677-2m7x-vjp8
+- https://github.com/FreeRTOS/coreSNTP/security/advisories/GHSA-rwv9-2426-cpvv
+- https://github.com/FreeRTOS/FreeRTOS/pull/1348.

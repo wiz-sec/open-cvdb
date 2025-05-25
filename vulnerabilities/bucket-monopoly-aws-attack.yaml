@@ -1,0 +1,34 @@
+title: Bucket Monopoly Attack on AWS Services
+slug: bucket-monopoly-aws-attack
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- CloudFormation
+- Glue
+- EMR
+- SageMaker
+- CodeStar
+- ServiceCatalog
+image: null
+severity: High
+discoveredBy:
+  name: Yakir Kadkoda, Ofek Itach, Michael Katchinskiy
+  org: Aqua Security
+  domain: aquasec.com
+  twitter: null
+publishedAt: 2024/08/07
+disclosedAt: 2024/02/16
+exploitabilityPeriod: Until 2024/06/26
+knownITWExploitation: false
+summary: |
+  Researchers discovered critical vulnerabilities in 6 AWS services that could allow attackers to breach accounts through malicious S3 buckets. By claiming predictable bucket names, attackers could inject code, steal data, or gain admin access. AWS has since fixed the issues, but the attack vector may still apply to other services and open source projects.
+manualRemediation: |
+  Use aws:ResourceAccount condition in IAM policies to restrict access to trusted buckets. Verify S3 bucket ownership. Use unique identifiers when naming buckets instead of predictable patterns.
+detectionMethods: |
+  Check for unexpected S3 buckets matching patterns like "aws-glue-assets-{AccountID}-{Region}". Verify bucket ownership across all regions. Monitor for unauthorized cross-account S3 access.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.aquasec.com/news/critical-vulnerabilities-aws/
+- https://www.aquasec.com/blog/bucket-monopoly-breaching-aws-accounts-through-shadow-resources/

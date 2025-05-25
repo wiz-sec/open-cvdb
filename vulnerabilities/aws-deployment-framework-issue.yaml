@@ -1,0 +1,29 @@
+title: Issue with AWS Deployment Framework
+slug: aws-deployment-framework-issue
+cves:
+- CVE-2024-37293
+affectedPlatforms:
+- AWS
+affectedServices:
+- AWS Deployment Framework
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Xidian University
+  domain: null
+  twitter: null
+publishedAt: 2024/06/11
+disclosedAt: null
+exploitabilityPeriod: Until 2024/06/11
+knownITWExploitation: false
+summary: |
+  CVE-2024-37293 affects the AWS Deployment Framework's bootstrap process, potentially allowing privilege escalation if an actor has permissions to change CodeBuild projects or Lambda functions. The issue is fixed in version 4.0 and above. AWS recommends immediate upgrade and temporary mitigation by adding a permissions boundary to roles created by ADF in the management account.
+manualRemediation: |
+  Upgrade to ADF version 4.0 or above. As temporary mitigation, add a permissions boundary to roles created by ADF in the management account, denying all IAM and STS actions until upgrading or bootstrapping a new account.
+detectionMethods: |
+  Check the version of AWS Deployment Framework in use. Monitor for unauthorized changes to CodeBuild projects or Lambda functions associated with ADF bootstrap process.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://aws.amazon.com/security/security-bulletins/AWS-2024-005/

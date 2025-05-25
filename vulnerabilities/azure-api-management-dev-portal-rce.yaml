@@ -1,0 +1,28 @@
+title: Code Execution in Azure API Management Developer Portal
+slug: azure-api-management-dev-portal-rce
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- API Management Developer Portal
+image: null
+severity: High
+discoveredBy:
+  name: Alvaro Munoz
+  org: GitHub Security Lab
+  domain: github.com
+  twitter: null
+publishedAt: 2024/12/11
+disclosedAt: 2024/10/22
+exploitabilityPeriod: Until 2024/11/04
+knownITWExploitation: false
+summary: |
+  A vulnerability in Azure API Management Developer Portal allows arbitrary code execution and secret exfiltration. The issue stems from a workflow that loads untrusted data from opened issues, potentially allowing attackers to inject malicious commands. This could lead to code execution in the runner, granting access to sensitive tokens and permissions.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for suspicious activity in GitHub Actions workflows, especially those handling user-supplied data. Review and audit workflows for potential code injection vulnerabilities.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/

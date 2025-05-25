@@ -1,0 +1,30 @@
+title: AWS API Gateway Header Smuggling and Cache Confusion
+slug: aws-api-gateway-header-smuggling
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- API Gateway
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Omegapoint
+  domain: omegapoint.se
+  twitter: null
+publishedAt: 2023/09/19
+disclosedAt: 2022/11/10
+exploitabilityPeriod: Until 2023/05/10
+knownITWExploitation: false
+summary: |
+  Researchers at Omegapoint identified two issues in AWS API Gateway authorizers: 1) A header rewrite feature could be abused to bypass authorization by overwriting headers after the authorizer lambda processed them. 2) Caching of authorization policies could be exploited to reuse cached policies with modified identification sources, bypassing the authorizer.
+manualRemediation: |
+  Implement proper defense-in-depth access controls in applications behind API Gateway, rather than relying solely on the gateway authorizer for authentication and authorization.
+detectionMethods: |
+  Monitor for unexpected access patterns or data access across tenant boundaries. Review logs for suspicious header combinations or multiple occurrences of authorization-related headers.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://aws.amazon.com/blogs/security/removing-header-remapping-from-amazon-api-gateway-and-notes-about-our-work-with-security-researchers/
+- https://securityblog.omegapoint.se/en/writeup-apigw/
+- https://partners.amazonaws.com/partners/001E000000Rl0xZIAR/Omegapoint)

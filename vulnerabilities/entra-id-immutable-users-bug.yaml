@@ -1,0 +1,28 @@
+title: Entra ID Bug Creates Immutable Users
+slug: entra-id-immutable-users-bug
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Entra ID
+image: null
+severity: Medium
+discoveredBy:
+  name: Katie Knowles
+  org: Datadog Security Labs
+  domain: datadoghq.com
+  twitter: null
+publishedAt: 2025/03/25
+disclosedAt: 2024/08/19
+exploitabilityPeriod: Until 2025/02/22
+knownITWExploitation: false
+summary: |
+  A bug in Entra ID restricted management administrative units allowed creating immutable users that couldn't be modified or disabled, even by Global Administrators. This could enable an attacker to protect a compromised account from containment. The issue was caused by a timing vulnerability when removing users from restricted AUs and required specific steps to remediate affected accounts.
+manualRemediation: |
+  Add affected user to a new restricted management AU, then delete that AU without first removing the user. Wait 5-10 minutes for restricted status to clear.
+detectionMethods: |
+  Monitor for creation of restricted management AUs and users being added to them. Datadog Cloud SIEM provides detections for these activities.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://securitylabs.datadoghq.com/articles/creating-immutable-users-entra-id-administrative-units/

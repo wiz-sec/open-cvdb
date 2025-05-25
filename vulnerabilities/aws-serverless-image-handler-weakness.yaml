@@ -1,0 +1,29 @@
+title: Abusing AWS Serverless Image Handler Configuration Weakness
+slug: aws-serverless-image-handler-weakness
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Dynamic Image Transformation for Amazon CloudFront
+- AWS Serverless Image Handler
+image: null
+severity: Medium
+discoveredBy:
+  name: Karim El-Melhaoui
+  org: O3 Cyber AS
+  domain: o3cyber.com
+  twitter: null
+publishedAt: 2025/02/19
+disclosedAt: null
+exploitabilityPeriod: Until 6.2.6
+knownITWExploitation: false
+summary: |
+  AWS solution 'Dynamic Image Transformation for Amazon CloudFront', prior to version 6.2.6, contains a configuration weakness. The Lambda role doesn't constrain bucket access, and the environment variable can be set to a wildcard, allowing access to any bucket. This could potentially lead to unintended access to sensitive images across multiple buckets in the AWS account.
+manualRemediation: |
+  Upgrade to version 6.2.6 or later of the AWS Serverless Image Handler. Ensure that the SOURCE_BUCKET variable is set to specific bucket names and not wildcards. Review and restrict IAM policies for Lambda functions to access only necessary S3 buckets.
+detectionMethods: |
+  Check the version of AWS Serverless Image Handler in use. Review Lambda function configurations, particularly the SOURCE_BUCKET environment variable and IAM roles. Audit S3 bucket access logs for unexpected access patterns from Lambda functions associated with this service.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.o3c.no/knowledge/abusing-aws-serverless-image-handler
