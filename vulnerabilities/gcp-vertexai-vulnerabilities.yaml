@@ -10,7 +10,7 @@ severity: high
 discoveredBy:
   name: Ofir Balassiano, Ofir Shaty
   org: Palo Alto Networks
-  domain: https://unit42.paloaltonetworks.com
+  domain: unit42.paloaltonetworks.com
 publishedAt: 2024/11/12
 disclosedAt: null
 summary: |
