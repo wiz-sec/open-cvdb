@@ -10,8 +10,8 @@ severity: Low
 discoveredBy:
   name: Ben Reser
   org: Vibes
-  domain: https://www.vibes.com/
-  twitter: https://twitter.com/BenReser
+  domain: vibes.com
+  twitter: BenReser
 disclosedAt: 2022/05/11
 publishedAt: 2022/05/31
 exploitabilityPeriod: by 2022/05/22
