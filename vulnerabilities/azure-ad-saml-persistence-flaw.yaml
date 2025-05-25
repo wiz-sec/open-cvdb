@@ -1,0 +1,28 @@
+title: Azure AD Flaw Allowed SAML Token Persistence
+slug: azure-ad-saml-persistence-flaw
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Active Directory
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Secureworks Counter Threat Unit
+  domain: secureworks.com
+  twitter: null
+publishedAt: 2023/01/18
+disclosedAt: 2022/08/04
+exploitabilityPeriod: Until 2022/10/25
+knownITWExploitation: false
+summary: |
+  A vulnerability in Azure Active Directory allowed users to retain access to SAML applications after their assignment was removed. Attackers could exploit this to establish persistence and elevate privileges on targeted SAML applications. The flaw was triggered by chaining sign-in with additional application and specific parameters in the token request, bypassing user assignment verification.
+manualRemediation: |
+  None required. Microsoft has fixed the issue in Azure Active Directory.
+detectionMethods: |
+  Monitor for unexpected access to SAML applications, especially after user assignments have been removed. Review Azure AD application consents and permissions for suspicious configurations.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.secureworks.com/research/azure-active-directory-flaw-allowed-saml-persistence

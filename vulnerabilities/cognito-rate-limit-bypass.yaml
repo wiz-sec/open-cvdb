@@ -1,0 +1,28 @@
+title: Amazon Cognito Rate Limit Bypass Vulnerability
+slug: cognito-rate-limit-bypass
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Amazon Cognito
+image: null
+severity: High
+discoveredBy:
+  name: Daniel Lümmel
+  org: LuemmelSec
+  domain: luemmelsec.de
+  twitter: null
+publishedAt: 2023/12/27
+disclosedAt: 2023/09/20
+exploitabilityPeriod: Until 2023/12/27
+knownITWExploitation: false
+summary: |
+  A rate limit bypass vulnerability was discovered in Amazon Cognito, allowing attackers to potentially brute-force login credentials, password reset PINs, and MFA codes by sending requests in parallel. The vulnerability affected the main login flow, password reset function, and MFA process, potentially exposing user accounts to unauthorized access.
+manualRemediation: |
+  None required. Amazon has deployed a fix globally.
+detectionMethods: |
+  Monitor Cognito logs for unusual patterns of failed login attempts, password resets, or MFA verifications occurring in rapid succession from the same source.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://luemmelsec.github.io/Amazon-Cognito-Ratelimit-Bypass/

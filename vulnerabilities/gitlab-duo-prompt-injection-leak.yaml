@@ -1,0 +1,27 @@
+title: Remote Prompt Injection in GitLab Duo Leaks Source Code
+slug: gitlab-duo-prompt-injection-leak
+cves: []
+affectedPlatforms:
+- GitLab
+affectedServices: []
+image: null
+severity: High
+discoveredBy:
+  name: Omer Mayraz
+  org: Legit Security
+  domain: legitsecurity.com
+  twitter: null
+publishedAt: 2025/05/22
+disclosedAt: 2025/02/12
+exploitabilityPeriod: Until 2025/02/12
+knownITWExploitation: false
+summary: |
+  A remote prompt injection vulnerability in GitLab Duo allowed attackers to steal source code from private projects, manipulate code suggestions, and exfiltrate confidential information. The attack chain involved hidden prompts, HTML injection, and exploitation of Duo's access to private data. GitLab has since patched both the HTML and prompt injection vectors.
+manualRemediation: |
+  None required. GitLab has patched the vulnerability.
+detectionMethods: |
+  Monitor for unusual or unexpected HTML content in GitLab Duo responses. Watch for suspicious network requests originating from GitLab pages, especially those containing base64-encoded data.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo

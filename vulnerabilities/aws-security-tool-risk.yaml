@@ -1,0 +1,28 @@
+title: AWS Security Tool Introduces Privilege Escalation Risk
+slug: aws-security-tool-risk
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Account Assessment for AWS Organizations
+image: null
+severity: High
+discoveredBy:
+  name: Eliav Livneh
+  org: Token Security
+  domain: token.security
+  twitter: null
+publishedAt: 2025/05/19
+disclosedAt: 2024/12/12
+exploitabilityPeriod: Until 2025/01/28
+knownITWExploitation: false
+summary: |
+  AWS's Account Assessment for AWS Organizations tool, designed to audit cross-account access, inadvertently introduced privilege escalation risks due to flawed deployment instructions. Customers were encouraged to deploy the tool in lower-sensitivity accounts, creating risky trust paths from insecure environments into highly sensitive ones. This could allow attackers to pivot from compromised development accounts into production and management accounts.
+manualRemediation: |
+  Uninstall the tool by deleting CloudFormation stacks for Hub, Spoke, and Org-Management components. If needed, redeploy with the hub role in an account with security equivalent to the management account to prevent privilege escalation risks.
+detectionMethods: |
+  Search for IAM roles containing "ScanSpokeResource" or "AccountAssessment-Spoke-ExecutionRole" in their names. Use AWS CLI command: aws iam list-roles --query "Roles[?contains(RoleName, 'ScanSpokeResource') || contains(RoleName, 'AccountAssessment-Spoke-ExecutionRole')]"
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.token.security/blog/aws-built-a-security-tool-it-introduced-a-security-risk

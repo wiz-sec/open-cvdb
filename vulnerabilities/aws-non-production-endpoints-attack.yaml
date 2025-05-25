@@ -1,0 +1,31 @@
+title: Non-Production AWS Endpoints as Attack Surface
+slug: aws-non-production-endpoints-attack
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- ECR
+- Cost Explorer
+- Route 53 Resolver
+- IVS
+image: null
+severity: High
+discoveredBy:
+  name: Nick Frichette
+  org: Datadog Security Labs
+  domain: datadoghq.com
+  twitter: null
+publishedAt: 2024/05/28
+disclosedAt: 2023/06/27
+exploitabilityPeriod: 2023/06/27 - 2024/05/27
+knownITWExploitation: false
+summary: |
+  Researchers identified non-production AWS API endpoints that could be abused for defense evasion, including silent permission enumeration, accessing account data without logging, and partially bypassing CloudTrail. AWS has remediated specific issues but thousands of such endpoints may exist.
+manualRemediation: |
+  None required. AWS has remediated the specific vulnerabilities disclosed.
+detectionMethods: |
+  Monitor for API calls to non-standard AWS endpoints. Review CloudTrail logs for unusual event sources or missing expected events.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://securitylabs.datadoghq.com/articles/non-production-endpoints-as-an-attack-surface-in-aws/

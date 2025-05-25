@@ -1,0 +1,28 @@
+title: Google App Engine RCE Worth $36k
+slug: google-app-engine-rce
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- App Engine
+image: null
+severity: High
+discoveredBy:
+  name: Ezequiel Pereira
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2019/08/31
+disclosedAt: 2018/02/25
+exploitabilityPeriod: Until 2018/03/13
+knownITWExploitation: false
+summary: |
+  Researcher discovered access to non-production Google App Engine environments and internal APIs. This allowed configuring internal settings like Service Account IDs and quotas. Google considered it RCE due to their infrastructure. Access was blocked and a $36,337 reward issued.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unexpected access attempts to non-production App Engine environments. Review App Engine configuration changes, especially around Service Accounts and quotas.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.ezequiel.tech/p/36k-google-app-engine-rce.html

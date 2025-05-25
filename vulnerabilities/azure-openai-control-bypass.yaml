@@ -1,0 +1,30 @@
+title: Control plane bypass in Azure OpenAI
+slug: azure-openai-control-bypass
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- OpenAI
+image: null
+severity: High
+discoveredBy:
+  name: Tyson Garrett
+  org: TrustOnCloud
+  domain: trustoncloud.com
+  twitter: null
+publishedAt: 2023/12/12
+disclosedAt: 2023/10/24
+exploitabilityPeriod: Until 2024/04/02
+knownITWExploitation: false
+summary: |
+  A way to manage Azure OpenAI deployments via the Data Plane was discovered, bypassing key security controls. This allows creation/modification/deletion of deployments without the usual protections of Resource Manager Locks, Azure Policy, and Entra ID authentication.
+manualRemediation: |
+  Avoid using the Azure AI Developer built-in role. Add the affected OpenAI deployment operations to the NotDataActions section of applicable Role Definitions.
+detectionMethods: |
+  Monitor for unexpected changes to Azure OpenAI deployments, especially those made via the data plane APIs. Review role assignments and custom roles for overly permissive OpenAI permissions.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://github.com/tyson-trust
+- https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/
+- https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/#impacted)

@@ -1,0 +1,28 @@
+title: GitHub Copilot Chat Vulnerable to Data Exfiltration
+slug: github-copilot-chat-data-exfiltration
+cves: []
+affectedPlatforms:
+- GitHub
+affectedServices:
+- GitHub Copilot Chat
+image: null
+severity: High
+discoveredBy:
+  name: wunderwuzzi
+  org: Embrace The Red
+  domain: embracethered.com
+  twitter: null
+publishedAt: 2024/06/14
+disclosedAt: 2024/02/25
+exploitabilityPeriod: Until 2024/06/12
+knownITWExploitation: false
+summary: |
+  GitHub Copilot Chat VS Code Extension was vulnerable to data exfiltration via prompt injection when analyzing untrusted source code. The vulnerability allowed attackers to access previous conversation turns and append information from the chat history to an image URL, which was then automatically retrieved by Copilot, sending the data to the attacker.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unexpected outbound image requests from the GitHub Copilot Chat extension. Review source code for potential malicious instructions that could trigger prompt injection attacks.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/

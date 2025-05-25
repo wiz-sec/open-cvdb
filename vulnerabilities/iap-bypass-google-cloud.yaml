@@ -1,0 +1,28 @@
+title: Bypassing Identity-Aware Proxy in Google Cloud
+slug: iap-bypass-google-cloud
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Identity-Aware Proxy
+image: null
+severity: High
+discoveredBy:
+  name: SebLu
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2021/12/30
+disclosedAt: 2021/05/05
+exploitabilityPeriod: Until 2021/06
+knownITWExploitation: false
+summary: |
+  A vulnerability in Google Cloud Platform's Identity-Aware Proxy (IAP) allowed attackers to bypass authentication and access IAP-secured web applications. The exploit involved creating a malicious IAP-secured app using the target's OAuth client ID, configuring query parameter-based routing to capture redirect tokens, and using these tokens to hijack authorized sessions.
+manualRemediation: |
+  None required. The vulnerability has been fixed by Google.
+detectionMethods: |
+  Monitor for unauthorized access to IAP-secured applications. Review IAP logs for suspicious authentication attempts or unexpected redirect patterns.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.seblu.de/2021/12/iap-bypass.html

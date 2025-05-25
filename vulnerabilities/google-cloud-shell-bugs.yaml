@@ -1,0 +1,29 @@
+title: Google Cloud Shell Bugs Expose User Credentials
+slug: google-cloud-shell-bugs
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud Shell
+- Cloud Run
+image: null
+severity: High
+discoveredBy:
+  name: David Dworken
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2020/08/18
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Three vulnerabilities in Google Cloud Shell were discovered, allowing attackers to execute arbitrary code and potentially steal user credentials. The bugs affected Ruby gemspec parsing, TypeScript plugin loading, and Go binary path manipulation in Cloud Run. These issues arose from mismatches between Cloud Shell's threat model and the assumptions of its underlying open-source components.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for suspicious activity in Cloud Shell instances, especially unexpected code execution or credential access. Review logs for unusual repository cloning or file access patterns.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://blog.daviddworken.com/posts/cloud-shell-bugs-explained/

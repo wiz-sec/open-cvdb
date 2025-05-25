@@ -1,0 +1,29 @@
+title: Flaw in Bedrock's Foundation Model Access Control
+slug: bedrock-access-control-flaw
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Amazon Bedrock
+- AWS Marketplace
+image: null
+severity: High
+discoveredBy:
+  name: Carlos Mora
+  org: TrustOnCloud
+  domain: trustoncloud.com
+  twitter: null
+publishedAt: 2024/03/27
+disclosedAt: 2024/01/15
+exploitabilityPeriod: Until 2024/01/18
+knownITWExploitation: false
+summary: |
+  A flaw in AWS Bedrock's foundation model access control allowed unauthorized subscriptions to certain models, bypassing IAM policies using the aws-marketplace:ProductId condition key. This could lead to compliance issues and financial risks. AWS has since fixed the issue and notified affected customers.
+manualRemediation: |
+  Review IAM policies for Amazon Bedrock, ensure correct permissions are set. Remove model access to affected models if subscription should have been denied. Refer to AWS documentation for instructions on removing model access in Amazon Bedrock.
+detectionMethods: |
+  Monitor CloudTrail logs for unexpected AcceptAgreementRequest and CreateFoundationModelAgreement events. Review IAM policies and test them to ensure they behave as expected for all foundation models.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://trustoncloud.com/exposing-the-weakness-how-we-identified-a-flaw-in-bedrocks-foundation-model-access-control/

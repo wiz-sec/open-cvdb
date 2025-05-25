@@ -1,0 +1,29 @@
+title: AWS Sign-in IAM User Login Flow Username Enumeration
+slug: aws-iam-login-username-enumeration
+cves:
+- CVE-2025-0693
+affectedPlatforms:
+- AWS
+affectedServices:
+- IAM
+image: null
+severity: Medium
+discoveredBy:
+  name: null
+  org: Rhino Security Labs
+  domain: rhinosecuritylabs.com
+  twitter: null
+publishedAt: 2025/01/23
+disclosedAt: null
+exploitabilityPeriod: Until 2025/01/16
+knownITWExploitation: false
+summary: |
+  A vulnerability in AWS IAM Sign-in login flow could allow attackers to enumerate IAM usernames by measuring server response times. This issue affected AWS Sign-in IAM User login flow prior to January 16, 2025. AWS has since introduced a delay in response times across all authentication failure scenarios to mitigate the vulnerability.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor sign-in activity, including failed and successful sign-in events, using AWS CloudTrail. Refer to the CloudTrail Event Reference documentation for more information.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://aws.amazon.com/security/security-bulletins/AWS-2025-002/

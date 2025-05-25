@@ -1,0 +1,28 @@
+title: AWS Neuron SDK Dependency Confusion Vulnerability Recurs
+slug: aws-neuron-sdk-dependency-confusion
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Neuron SDK
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Giraffe Security
+  domain: giraffesecurity.com
+  twitter: null
+publishedAt: 2024/12/29
+disclosedAt: 2022/04/01
+exploitabilityPeriod: Until 2024/12/29
+knownITWExploitation: false
+summary: |
+  AWS Neuron SDK has reintroduced a dependency confusion vulnerability three times in four years. The issue stems from using the --extra-index-url parameter in pip install commands, which allows potential installation of malicious packages from PyPI instead of AWS's private repository. Despite previous reports, AWS has not fully addressed the problem, leaving new packages vulnerable to exploitation.
+manualRemediation: |
+  Use the --index-url parameter instead of --extra-index-url when installing Neuron SDK packages, or utilize a more secure package manager like Poetry. Always verify the source and security of installation instructions, even from reputable sources.
+detectionMethods: |
+  Check if Neuron SDK packages are being installed from the correct AWS repository. Verify package integrity and source before installation. Monitor for unexpected or unauthorized package installations in your development environment.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://giraffesecurity.dev/posts/amazon-hat-trick/

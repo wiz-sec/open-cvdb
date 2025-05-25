@@ -1,0 +1,30 @@
+title: Azure AZNFS-mount Utility Root Privilege Escalation
+slug: azure-aznfs-mount-privilege-escalation
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Azure Blob Storage
+- Azure HPC
+- Azure AI
+image: null
+severity: High
+discoveredBy:
+  name: Tal Peleg
+  org: Varonis Threat Labs
+  domain: varonis.com
+  twitter: null
+publishedAt: 2025/05/06
+disclosedAt: null
+exploitabilityPeriod: Until 2.0.11
+knownITWExploitation: false
+summary: |
+  A critical vulnerability in AZNFS-mount utility, preinstalled on Azure HPC/AI images, allowed unprivileged users to escalate privileges to root on Linux machines. The flaw existed in versions up to 2.0.10 and involved a SUID binary. Azure classified it as low severity but fixed it in version 2.0.11.
+manualRemediation: |
+  Enable the AZNFS-mount utility's auto-update feature or manually update to version 2.0.11 or later.
+detectionMethods: |
+  Check for the presence of AZNFS-mount utility versions prior to 2.0.11 on Azure HPC/AI workloads or systems using Azure Blob Storage with NFS.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.varonis.com/blog/aznfs-root-privilege-escalation-on-azure

@@ -1,0 +1,28 @@
+title: Entra ID Allows Users to Update Principal Names
+slug: entra-id-upn-update-flaw
+cves: []
+affectedPlatforms:
+- Azure
+affectedServices:
+- Entra ID
+image: null
+severity: High
+discoveredBy:
+  name: Tony Redmond
+  org: Office 365 for IT Pros
+  domain: office365itpros.com
+  twitter: null
+publishedAt: 2025/01/24
+disclosedAt: 2025/01/24
+exploitabilityPeriod: Until 2025/01/24
+knownITWExploitation: false
+summary: |
+  A configuration change in Entra ID allowed unprivileged users to update their own User Principal Names (UPNs) through interfaces like the Entra admin center and PowerShell. This could lead to impersonation risks. Microsoft quickly fixed the issue after it was reported. The vulnerability affected synchronized hybrid environments as well.
+manualRemediation: |
+  Administrators should review UPN changes made during the vulnerability period and revert any unauthorized changes. Consider implementing access controls for the Entra admin center and Microsoft Graph PowerShell SDK.
+detectionMethods: |
+  Monitor audit logs for "Update User" events, particularly changes to the UPN field. Use tools like Search-UnifiedAuditLog cmdlet, Purview Audit solution, or AuditLogsQuery Graph API to review changes.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://office365itpros.com/2025/01/24/update-user-principal-names/

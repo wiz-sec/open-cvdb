@@ -1,0 +1,33 @@
+title: Issue with data.all Framework Multiple CVEs
+slug: data-all-framework-cves
+cves:
+- CVE-2024-52311
+- CVE-2024-52312
+- CVE-2024-52313
+- CVE-2024-52314
+- CVE-2024-10953
+affectedPlatforms:
+- AWS
+affectedServices:
+- data.all
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Amazon Web Services
+  domain: aws.amazon.com
+  twitter: null
+publishedAt: 2024/11/08
+disclosedAt: null
+exploitabilityPeriod: Until 2024/11/08
+knownITWExploitation: false
+summary: |
+  Multiple security vulnerabilities were identified in data.all, an open source development framework for building data marketplaces on AWS. The issues affect versions 1.0.0 through 2.6.0 and include problems with authentication token invalidation, unauthorized operations on DataSets and Environments, incorrect object-level authorizations, potential access to sensitive data via logs, and unauthorized mutating update operations on notification records.
+manualRemediation: |
+  Upgrade to data.all version 2.6.1 or later. Ensure any forked or derivative code is patched to incorporate the new fixes.
+detectionMethods: |
+  Check the installed version of data.all. If using version 2.6.0 or earlier, the system may be vulnerable. Review logs for suspicious activities related to the described vulnerabilities.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://aws.amazon.com/security/security-bulletins/AWS-2024-013/

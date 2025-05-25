@@ -1,0 +1,30 @@
+title: Sketchy Cheat Sheet
+slug: cloud-architecture-tool-vulnerabilities
+cves:
+- CVE-2023-26140
+affectedPlatforms:
+- Google Cloud Platform
+affectedServices:
+- Google Cloud Architecture Diagramming Tool
+image: null
+severity: High
+discoveredBy:
+  name: Jakub Domeracki
+  org: Egnyte
+  domain: egnyte.com
+  twitter: null
+publishedAt: 2024/11/09
+disclosedAt: 2023/11/22
+exploitabilityPeriod: Until 2024/10/01
+knownITWExploitation: false
+summary: |
+  Multiple vulnerabilities were discovered in Google's Cloud Architecture Diagramming Tool, including XSS, unauthorized access to user data, and misconfigured storage buckets. The issues allowed accessing sensitive customer information and potentially executing arbitrary code. Google ultimately decommissioned the service due to the severity of the flaws.
+manualRemediation: |
+  None required. Google has decommissioned the affected service.
+detectionMethods: |
+  Monitor for unauthorized access to Google Cloud resources and suspicious OAuth token grants to third-party applications.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://jdomeracki.github.io/2024/11/09/sketchy_cheat_sheet/
+- https://speakerdeck.com/jdomeracki/sketchy_cheat_sheet

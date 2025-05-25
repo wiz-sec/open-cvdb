@@ -1,0 +1,28 @@
+title: Poisoning GitHub's Runner Images Supply Chain Attack
+slug: github-runner-images-supply-chain
+cves: []
+affectedPlatforms:
+- GitHub
+affectedServices:
+- GitHub Actions
+image: null
+severity: Critical
+discoveredBy:
+  name: Adnan Khan
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2023/12/20
+disclosedAt: 2023/07/22
+exploitabilityPeriod: Until 2023/07/25
+knownITWExploitation: false
+summary: |
+  A critical vulnerability in GitHub's actions/runner-images repository allowed arbitrary code execution on self-hosted runners, potentially enabling modification of GitHub's runner base images. The flaw stemmed from misconfigured self-hosted runners on a public repository with default workflow approval settings. The researcher gained persistence, accessed secrets, and could have inserted malicious code into GitHub's runner images used by customers.
+manualRemediation: |
+  Change repository settings to "Require approval for all outside collaborators" for any public repository using self-hosted runners. Apply defense-in-depth measures to self-hosted runners.
+detectionMethods: |
+  Monitor for unexpected changes to workflow files, especially the runs-on field. Review logs for signs of unauthorized access or unusual activity on self-hosted runners. Implement strict approval processes for workflows from fork pull requests.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/

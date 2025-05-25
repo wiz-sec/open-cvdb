@@ -1,0 +1,29 @@
+title: Google Cloud Data Fusion GitHub Actions Vulnerabilities
+slug: data-fusion-github-actions-vulns
+cves: []
+affectedPlatforms:
+- GCP
+- GitHub
+affectedServices:
+- Cloud Data Fusion
+image: null
+severity: High
+discoveredBy:
+  name: null
+  org: Google Bug Hunters
+  domain: null
+  twitter: null
+publishedAt: null
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Multiple "pwn request" vulnerabilities were discovered in Google Cloud Data Fusion, which is based on open-source CDAP code. These vulnerabilities affect GitHub Actions and allow for remote code execution (RCE) and compromise of build artifacts. The issues potentially impact both the Google Cloud platform and GitHub's CI/CD infrastructure.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor GitHub Actions logs for suspicious activity. Review build artifacts for unexpected changes or injections. Implement security scanning for GitHub Actions workflows, especially those interacting with Google Cloud Data Fusion.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://bughunters.google.com/reports/vrp/M3Pjk25Sn

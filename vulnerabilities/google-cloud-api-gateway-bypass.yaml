@@ -1,0 +1,32 @@
+title: Critical Authentication Bypass in Google Cloud API Gateway
+slug: google-cloud-api-gateway-bypass
+cves:
+- CVE-2023-30845
+affectedPlatforms:
+- GCP
+affectedServices:
+- API Gateway
+- Cloud Run
+- App Engine
+- Cloud Functions
+image: null
+severity: Critical
+discoveredBy:
+  name: Panagiotis Vasilikos
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2023/06/21
+disclosedAt: 2023/02/01
+exploitabilityPeriod: Until 2023/03/01
+knownITWExploitation: false
+summary: |
+  A critical authentication bypass vulnerability was discovered in Google Cloud API Gateway, affecting its JWT authentication method. The flaw, stemming from a business logic bug in the ESPv2 service proxy, allowed attackers to bypass authentication controls by manipulating HTTP methods. This vulnerability impacted various authentication methods including Firebase, Auth0, Okta, and Google ID tokens.
+manualRemediation: |
+  Upgrade to ESVP2 proxy release v2.43.0 or higher. This release ensures that JWT authentication occurs even when the caller specifies x-http-method-override.
+detectionMethods: |
+  Monitor for unexpected PUT requests with x-http-method-override header set to POST. Review logs for successful access to restricted endpoints without proper authentication.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://securingbits.com/bypassing-google-cloud-api-gateway

@@ -1,0 +1,29 @@
+title: Dropping a Shell in Google Cloud SQL
+slug: cloud-sql-shell-drop
+cves: []
+affectedPlatforms:
+- GCP
+affectedServices:
+- Cloud SQL
+image: null
+severity: Critical
+discoveredBy:
+  name: Ezequiel Pereira and Wouter ter Maat
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2020/08/18
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Researchers discovered vulnerabilities in Google Cloud SQL that allowed gaining unauthorized shell access to MySQL instances. By chaining SQL injection, parameter injection in mysqldump, and network spoofing, they were able to escape a Docker container and gain full access to the host VM running Cloud SQL.
+manualRemediation: |
+  None required. Google patched the vulnerabilities.
+detectionMethods: |
+  Monitor for suspicious export operations and network activity on Cloud SQL instances. Review logs for anomalous mysqldump commands or container escapes.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://www.ezequiel.tech/2020/08/dropping-shell-in.html
+- https://offensi.com/2020/08/18/how-to-contact-google-sre-dropping-a-shell-in-cloud-sql/

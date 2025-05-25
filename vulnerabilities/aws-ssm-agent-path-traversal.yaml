@@ -1,0 +1,29 @@
+title: Path Traversal in AWS SSM Agent Plugin ID Validation
+slug: aws-ssm-agent-path-traversal
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Systems Manager (SSM)
+- SSM Agent
+image: null
+severity: High
+discoveredBy:
+  name: Elad Beber
+  org: Cymulate
+  domain: cymulate.com
+  twitter: null
+publishedAt: 2025/04/09
+disclosedAt: 2025/02/12
+exploitabilityPeriod: Until 2025/03/05
+knownITWExploitation: false
+summary: |
+  A path traversal vulnerability in AWS SSM Agent's ValidatePluginId function allows attackers to create directories and execute scripts in unintended locations on the filesystem. This could lead to privilege escalation or other malicious activities, as files may be written to or executed from sensitive areas of the system with root privileges.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Monitor for unexpected directory creation or file execution in sensitive system areas, especially those involving the SSM Agent. Review SSM document executions for suspicious plugin IDs containing path traversal sequences.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://cymulate.com/blog/aws-ssm-agent-plugin-id-path-traversal/

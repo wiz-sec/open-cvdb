@@ -1,0 +1,28 @@
+title: Issue with Amazon EC2 VM Import Export Service
+slug: ec2-vm-import-export-issue
+cves: []
+affectedPlatforms:
+- AWS
+affectedServices:
+- Amazon EC2 VM Import Export Service
+image: null
+severity: Medium
+discoveredBy:
+  name: null
+  org: Immersive Labs
+  domain: null
+  twitter: null
+publishedAt: 2024/06/11
+disclosedAt: null
+exploitabilityPeriod: Until 2024/04/12
+knownITWExploitation: false
+summary: |
+  AWS addressed an issue with the Amazon EC2 VM Import Export Service where importing Windows VMs with custom Sysprep answer files resulted in an unprotected backup copy being created, potentially exposing sensitive data. The issue affected imports made before April 12, 2024, and could impact instances launched from affected AMIs.
+manualRemediation: |
+  Check for .vmimport files in specified directories, restrict access or remove the file, delete affected AMIs, and create new AMIs using the EC2 VMIE Service or EC2 API/Console after applying the fix to the instance.
+detectionMethods: |
+  Search for files ending with .vmimport in specified Windows directories associated with Sysprep on imported EC2 instances or instances launched from potentially affected AMIs.
+contributor: https://github.com/korniko98
+entryStatus: Stub (AI-Generated)
+references:
+- https://aws.amazon.com/security/security-bulletins/AWS-2024-006/
