@@ -3,7 +3,7 @@ slug: cloud-architecture-tool-vulnerabilities
 cves:
 - CVE-2023-26140
 affectedPlatforms:
-- Google Cloud Platform
+- GCP
 affectedServices:
 - Google Cloud Architecture Diagramming Tool
 image: null
