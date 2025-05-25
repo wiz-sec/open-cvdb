@@ -1,6 +1,6 @@
 title: CloudTrail bypass for AWS Service Catalog
 slug: aws-service-catalog-cloudtrail-bypass
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -23,7 +23,7 @@ summary: |
   after gaining a foothold in a victim AWS environment.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/frichetten
 references:
 - https://securitylabs.datadoghq.com/articles/bypass-cloudtrail-aws-service-catalog-and-other/

@@ -1,6 +1,6 @@
 title: Impersonate GCP Organization Through the Organizations Update Method
 slug: gcp-organization-impersontaion-through-update
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,13 +9,13 @@ image: https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?q=80&w=2070&
 severity: Medium
 discoveredBy:
   name: Ezequiel Pereira
-  org:
+  org: null
   domain: https://www.ezequiel.tech
   twitter: epereiralopez
 publishedAt: 2019/01/20
 disclosedAt: 2018/11/29
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   A GCP Organizations name could be changed through the (deprecated) organizations.update 
   method in the Resource Manager, even though the documentation said the "displayName" was read-only.
@@ -27,7 +27,7 @@ summary: |
   accounts or building projects that manage sensible information.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/KatTraxler
 references:
 - https://www.ezequiel.tech/2019/01/75k-google-cloud-platform-organization.html

@@ -1,6 +1,6 @@
 title: AWS Neuron SDK Dependency Confusion Vulnerability Recurs
 slug: aws-neuron-sdk-dependency-confusion
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

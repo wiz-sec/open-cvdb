@@ -1,6 +1,6 @@
 title: IAM privilege escalation via undocumented CodeStar API
 slug: aws-codestar-privilege-escalation
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -29,7 +29,7 @@ manualRemediation: |
   Apply principle of least privilege to all CodeStar-related resources to ensure the codestar:CreateProjectFromTemplate 
   permission is only granted when absolutely necessary. Implement monitoring on any users with access to the 
   codestar:CreateProject and iam:PassRole actions to detect potential escalation attempts.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/blakedunson
 references:
 - https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/

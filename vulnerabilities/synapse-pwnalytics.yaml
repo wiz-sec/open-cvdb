@@ -1,6 +1,6 @@
 title: Privilege escalation and file poisoning in Synapse Analytics
 slug: synapse-pwnalytics
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -8,10 +8,10 @@ affectedServices:
 image: https://cdn.pixabay.com/photo/2016/06/26/23/47/poison-1481596_1280.jpg
 severity: Medium
 discoveredBy:
-  name:
+  name: null
   org: Tenable
   domain: https://www.tenable.com/
-  twitter:
+  twitter: null
 disclosedAt: 2022/03/10
 publishedAt: 2022/06/13
 exploitabilityPeriod: Until June 1st, 2022
@@ -23,7 +23,7 @@ summary: |
   services users generally do not have access to.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291

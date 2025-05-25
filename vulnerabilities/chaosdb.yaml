@@ -1,7 +1,7 @@
 title: ChaosDB
 slug: chaosdb
 entryStatus: Finalized
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -19,9 +19,9 @@ disclosedAt: 2021/08/09
 exploitabilityPeriod: 2017 - 2021
 knownITWExploitation: false
 summary: |
-   Azure's Cosmos DB database service was vulnerable to remote account takeover.
-   Any Azure user could gain full admin access to other customers' Cosmos DB instances without authorization.
-   The vulnerability had a trivial exploit that doesn't require any previous access to the target environment.
+  Azure's Cosmos DB database service was vulnerable to remote account takeover.
+  Any Azure user could gain full admin access to other customers' Cosmos DB instances without authorization.
+  The vulnerability had a trivial exploit that doesn't require any previous access to the target environment.
 manualRemediation: |
   Regenerate primary read/write key.
 detectionMethods: null

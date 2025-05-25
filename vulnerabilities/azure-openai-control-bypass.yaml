@@ -1,6 +1,6 @@
 title: Control plane bypass in Azure OpenAI
 slug: azure-openai-control-bypass
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

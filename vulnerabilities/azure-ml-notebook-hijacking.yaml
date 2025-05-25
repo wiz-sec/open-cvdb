@@ -1,6 +1,6 @@
 title: Hijacking Azure Machine Learning Notebooks
 slug: azure-ml-notebook-hijacking
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

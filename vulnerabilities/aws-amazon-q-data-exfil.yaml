@@ -1,6 +1,6 @@
 title: Amazon Q for Business Data Exfiltration
 slug: aws-amazon-q-data-exfil
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,12 +9,12 @@ image: https://images.unsplash.com/photo-1642516303080-431f6681f864?w=1500&auto=
 severity: Low
 discoveredBy:
   name: Johann Rehberger
-  org:
+  org: null
   domain: https://embracethered.com
   twitter: wunderwuzzi23
 publishedAt: 2024/01/18
 disclosedAt: 2023/12/04
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   An Indirect Prompt Injection attack can cause the LLM to return
@@ -23,7 +23,7 @@ summary: |
   exfiltration of the victim’s data by rendering hyperlinks.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://embracethered.com/blog/posts/2024/aws-amazon-q-fixes-markdown-rendering-vulnerability/

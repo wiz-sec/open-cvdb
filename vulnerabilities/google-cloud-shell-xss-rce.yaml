@@ -1,6 +1,6 @@
 title: Google Cloud Shell XSS to RCE Vulnerability
 slug: google-cloud-shell-xss-rce
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

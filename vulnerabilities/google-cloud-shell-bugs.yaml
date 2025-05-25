@@ -1,6 +1,6 @@
 title: Google Cloud Shell Bugs Expose User Credentials
 slug: google-cloud-shell-bugs
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

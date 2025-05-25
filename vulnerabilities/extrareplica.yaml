@@ -1,6 +1,6 @@
 title: ExtraReplica
 slug: extrareplica
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -12,10 +12,10 @@ discoveredBy:
   name: Sagi Tzadik, Nir Ohfeld, Shir Tamari, Ronen Shustin
   org: Wiz
   domain: https://www.wiz.io/
-  twitter:
+  twitter: null
 disclosedAt: 2022/01/11
 publishedAt: 2022/04/28
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A chain of critical vulnerabilities was discovered in Azure Database for PostgreSQL Flexible Server,
@@ -23,7 +23,7 @@ summary: |
   If exploited, a malicious actor could have replicated and gained read access to Azure PostgreSQL Flexible Server customer databases.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/

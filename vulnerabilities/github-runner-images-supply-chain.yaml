@@ -1,6 +1,6 @@
 title: Poisoning GitHub's Runner Images Supply Chain Attack
 slug: github-runner-images-supply-chain
-cves: []
+cves: null
 affectedPlatforms:
 - GitHub
 affectedServices:

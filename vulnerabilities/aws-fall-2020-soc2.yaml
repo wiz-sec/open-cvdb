@@ -1,16 +1,16 @@
 title: AWS SOC 2 type 2 failure (Fall 2020)
 slug: aws-fall-2020-soc2
-cves:
+cves: null
 affectedPlatforms:
 - AWS
-affectedServices:
+affectedServices: null
 image: https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80
-severity:
-discoveredBy:
+severity: null
+discoveredBy: null
 publishedAt: 2020/12/20
 disclosedAt: 2020/12/20
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   Information about this issue is under NDA, but AWS customers can read about it on pages 120-121 of the report,
   which is available for download through AWS Artifact.
@@ -18,7 +18,7 @@ summary: |
   been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.
 manualRemediation: |
   None required 
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://aws.amazon.com/blogs/security/fall-2020-soc-reports-now-available-with-124-services-in-scope/

@@ -1,6 +1,6 @@
 title: AWS Direct Connect route injection issue
 slug: aws-direct-connect-route-injection
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

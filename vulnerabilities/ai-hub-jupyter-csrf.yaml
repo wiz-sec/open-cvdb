@@ -1,6 +1,6 @@
 title: AI Hub Jupyter Notebook instance CSRF
 slug: ai-hub-jupyter-csrf
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,12 +9,12 @@ image: https://images.pexels.com/photos/1148496/pexels-photo-1148496.jpeg?auto=c
 severity: Medium
 discoveredBy:
   name: s1r1us
-  org:
+  org: null
   domain: https://blog.s1r1us.ninja/
   twitter: S1r1u5_
 publishedAt: 2020/10/17
 disclosedAt: 2020/03/10
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   AI Hub Jupyter Notebook server lacked a check of the Origin header that
@@ -22,7 +22,7 @@ summary: |
   arbitrary actions in customer environments.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ds0440
 references:
 - https://blog.s1r1us.ninja/research/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks

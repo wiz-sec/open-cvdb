@@ -1,6 +1,6 @@
 title: Entra ID Allows Users to Update Principal Names
 slug: entra-id-upn-update-flaw
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

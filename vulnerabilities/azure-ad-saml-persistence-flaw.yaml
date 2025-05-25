@@ -1,6 +1,6 @@
 title: Azure AD Flaw Allowed SAML Token Persistence
 slug: azure-ad-saml-persistence-flaw
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

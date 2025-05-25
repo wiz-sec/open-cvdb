@@ -1,6 +1,6 @@
 title: Oracle Apiary SSRF
 slug: apiary-ssrf
-cves:
+cves: null
 affectedPlatforms:
 - OCI
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
   domain: https://orca.security/
-  twitter:
+  twitter: null
 publishedAt: 2022/02/08
 disclosedAt: 2022/02/08
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   By misusing the Apiary web service and taking advantage of Apiary's use of IMDSv1,
@@ -22,7 +22,7 @@ summary: |
   and use it to gain more access and sensitive data of other hosts in the same environment.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://orca.security/resources/blog/oracle-server-side-request-forgery-ssrf-attack-metadata/

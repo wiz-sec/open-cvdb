@@ -1,6 +1,6 @@
 title: Hacking Google Bard via Prompt Injection
 slug: google-bard-prompt-injection
-cves: []
+cves: null
 affectedPlatforms:
 - Google
 affectedServices:

@@ -1,6 +1,6 @@
 title: Abusing Service Tags to Bypass Azure Firewall Rules
 slug: azure-firewall-bypass
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

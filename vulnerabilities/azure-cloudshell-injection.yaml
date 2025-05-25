@@ -1,6 +1,6 @@
 title: Azure Cloud Shell access token theft
 slug: azure-cloudshell-injection
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -15,7 +15,7 @@ discoveredBy:
   twitter: gafnitav
 publishedAt: 2022/09/20
 disclosedAt: 2022/08/20
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   An issue in Azure Cloud Shell could have allowed an attacker to take over
@@ -25,7 +25,7 @@ summary: |
   Azure IMDS on other tenants' behalf and thereby obtain their access tokens.
 manualRemediation: |
   None required.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens

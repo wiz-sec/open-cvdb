@@ -1,14 +1,13 @@
 title: Logic Apps privilege escalation to root
 slug: azure-logic-app-contributor-escalation-to-root-owner
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Logic Apps
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_logic_app_privilege_escalation.jpg
 severity: Medium
-piercingIndexVector: {version: 1.5, A3: 1.05, A4: 1.05, A5: 1.05, A6: 8, A7: 1.1,
-  A8: 0.9}
+piercingIndexVector: {version: 1.5, A3: 1.05, A4: 1.05, A5: 1.05, A6: 8, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Josh Magri
   org: NetSPI
@@ -16,7 +15,7 @@ discoveredBy:
   twitter: passthehashbrwn
 publishedAt: 2022/03/09
 disclosedAt: 2022/03/01
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Azure Logic Apps use API Connections to authenticate actions to services. Having Contributor access to
@@ -26,7 +25,7 @@ summary: |
   and it would be resolved by the server, resulting in a request to an unintended scope.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-logic-app-contributor-escalation-to-root-owner/

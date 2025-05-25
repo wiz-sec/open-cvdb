@@ -1,20 +1,20 @@
 title: Client-Side SSRF to Google Cloud Project Takeover
 slug: client-side-ssrf-google-cloud-project-takeover
-cves:
-affectedPlatforms: 
-  - GCP
+cves: null
+affectedPlatforms:
+- GCP
 affectedServices:
-  - Vertex AI Workbench
+- Vertex AI Workbench
 image: https://images.unsplash.com/photo-1533511105234-0029ad9ac542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
 severity: High
 discoveredBy:
   name: Sivanesh Ashok, Sreeram KL
-  org:
+  org: null
   domain: geekycat.in
   twitter: kl_sree, sivaneshashok
 publishedAt: 2023/01/12
-disclosedAt: 
-exploitabilityPeriod: 
+disclosedAt: null
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A vulnerability in Vertex AI Workbench allowed attackers to take over victims' Google Cloud projects through client-side SSRF.
@@ -22,7 +22,7 @@ summary: |
   A bypass was later discovered (and also fixed) using open redirects in Feedburner and CSRF token manipulation.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/korniko98
 references:
 - https://blog.geekycat.in/posts/client-side-ssrf-to-google-cloud-project-takeover/

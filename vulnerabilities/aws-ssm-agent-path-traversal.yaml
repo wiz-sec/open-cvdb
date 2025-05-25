@@ -1,6 +1,6 @@
 title: Path Traversal in AWS SSM Agent Plugin ID Validation
 slug: aws-ssm-agent-path-traversal
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

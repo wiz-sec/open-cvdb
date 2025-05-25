@@ -1,6 +1,6 @@
 title: Code Execution in Azure API Management Developer Portal
 slug: azure-api-management-dev-portal-rce
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

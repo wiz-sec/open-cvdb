@@ -1,6 +1,6 @@
 title: GraphNinja
 slug: graph-ninja
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -13,7 +13,7 @@ discoveredBy:
   domain: trustedsec.com
   twitter: nyxgeek
 publishedAt: 2024/04/29
-disclosedAt:
+disclosedAt: null
 exploitabilityPeriod: June 2023 - March 2024
 knownITWExploitation: false
 summary: |
@@ -24,7 +24,7 @@ summary: |
   but actual successful logons using these credentials would still be recorded in the victims' logs (regardless of endpoint).
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://trustedsec.com/blog/full-disclosure-a-look-at-a-recently-patched-microsoft-graph-logging-bypass-graphninja

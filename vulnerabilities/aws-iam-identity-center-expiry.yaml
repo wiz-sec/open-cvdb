@@ -1,6 +1,6 @@
 title: AWS IAM Identity Center Expiry
 slug: aws-iam-identity-center-expiry
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,12 +9,12 @@ image: https://images.unsplash.com/photo-1664776984155-9da4f7cfafd3?w=1500&auto=
 severity: Low
 discoveredBy:
   name: Aidan Steele
-  org:
+  org: null
   domain: https://awsteele.com
   twitter: __steele
 publishedAt: 2023/12/19
 disclosedAt: 2023/12/01
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   AWS IAM Identity Center exchanges third-party OIDC tokens for
@@ -26,7 +26,7 @@ summary: |
   without an exp claim could be replayed after >24 hours had passed. 
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://awsteele.com/blog/2023/12/19/an-aws-iam-identity-center-vulnerability.html

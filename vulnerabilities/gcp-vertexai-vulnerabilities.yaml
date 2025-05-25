@@ -1,6 +1,6 @@
 title: 'ModeLeak: LLM Model Exfiltration Vulnerability in Vertex AI'
 slug: gcp-vertexai-vulnerabilities
-cves: 
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

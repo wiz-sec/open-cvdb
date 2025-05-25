@@ -1,6 +1,6 @@
 title: Entra ID Bug Creates Immutable Users
 slug: entra-id-immutable-users-bug
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

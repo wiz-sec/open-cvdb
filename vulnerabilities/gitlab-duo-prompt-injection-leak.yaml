@@ -1,6 +1,6 @@
 title: Remote Prompt Injection in GitLab Duo Leaks Source Code
 slug: gitlab-duo-prompt-injection-leak
-cves: []
+cves: null
 affectedPlatforms:
 - GitLab
 affectedServices: []

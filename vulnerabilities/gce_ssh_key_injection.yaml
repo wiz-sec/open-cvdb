@@ -1,6 +1,6 @@
 title: SSH key injection in Google Cloud Compute Engine
 slug: gce_ssh_key_injection
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,12 +9,12 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gce_ssh_k
 severity: High
 discoveredBy:
   name: Sivanesh Ashok
-  org:
+  org: null
   domain: stazot.com
   twitter: sivaneshashok
 publishedAt: 2023/01/12
 disclosedAt: 2022/07/14
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Google Cloud Compute Engine (GCE) was vulnerable to SSH key injection by abusing an SSH-in-browser feature to change username and password.
@@ -25,7 +25,7 @@ summary: |
   and the machine would need to be configured to allow SSH connections (which is the default setting), and accept connections from any IP address.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://blog.stazot.com/ssh-key-injection-google-cloud/

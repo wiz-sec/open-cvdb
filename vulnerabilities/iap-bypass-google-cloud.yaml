@@ -1,6 +1,6 @@
 title: Bypassing Identity-Aware Proxy in Google Cloud
 slug: iap-bypass-google-cloud
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

@@ -1,6 +1,6 @@
 title: AWS API Gateway Header Smuggling and Cache Confusion
 slug: aws-api-gateway-header-smuggling
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

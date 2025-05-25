@@ -1,6 +1,6 @@
 title: Azure AD B2C cryptographic flaw allowing account compromise
 slug: azure-b2c-crypto-flaw
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -24,7 +24,7 @@ summary: |
   An attacker could redeem this refresh token for a session token, thereby gaining access to the victim account as if they had logged in through a legitimate login flow.
 manualRemediation: |
   None required, but AD B2C tenant administrators should perform a key rotation and/or switch to symmetric cryptography (e.g., AES).
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/jnovak-praetorian
 references:
 - https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/

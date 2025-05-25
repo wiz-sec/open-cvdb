@@ -1,19 +1,19 @@
 title: Org policies bypass
 slug: gcp-org-policies-bypass
-cves:
+cves: null
 affectedPlatforms:
 - GCP
-affectedServices:
+affectedServices: null
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/organization_bypass.jpg
 severity: Medium
 discoveredBy:
   name: Kat Traxler
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: NightmareJS
 disclosedAt: 2021/05/15
 publishedAt: 2021/09/10
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Allows an attacker with privileges in the account to share resources outside
@@ -21,7 +21,7 @@ summary: |
   their access.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://kattraxler.github.io/gcp/hacking/2021/09/10/gcp-org-policy-bypass-ai-notebooks.html

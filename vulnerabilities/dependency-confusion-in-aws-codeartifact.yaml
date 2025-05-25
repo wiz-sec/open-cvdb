@@ -1,6 +1,6 @@
 title: Dependency confusion in AWS CodeArtifact
 slug: dependency-confusion-in-aws-codeartifact
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Ignacio Dominguez
   org: Zego
   domain: https://medium.com/@ignacio.dominguez
-  twitter:
+  twitter: null
 publishedAt: 2022/07/14
 disclosedAt: 2021/10/29
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   AWS CodeArtifact was susceptible to dependency confusion / substitution (i.e, publication of a
@@ -23,7 +23,7 @@ summary: |
   given package can be added to a CodeArtifact repository.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d

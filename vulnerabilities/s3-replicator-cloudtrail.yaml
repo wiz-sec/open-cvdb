@@ -1,6 +1,6 @@
 title: S3 Replication only logs first destination bucket
 slug: s3-replicator-cloudtrail
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,8 +9,8 @@ image: https://images.unsplash.com/photo-1515325915697-9279b4f7effc?ixlib=rb-1.2
 severity: Low
 discoveredBy:
   name: Kat Traxler
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: NightmareJS
 disclosedAt: 2021/10/19
 publishedAt: 2022/07/20

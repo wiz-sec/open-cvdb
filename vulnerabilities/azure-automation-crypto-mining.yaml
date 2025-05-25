@@ -1,6 +1,6 @@
 title: Azure Automation Service Used for Cryptocurrency Mining
 slug: azure-automation-crypto-mining
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

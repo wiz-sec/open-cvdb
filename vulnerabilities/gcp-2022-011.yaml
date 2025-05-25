@@ -1,6 +1,6 @@
 title: GKE Sandbox side channel attack
 slug: gcp-2022-011
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -8,14 +8,14 @@ affectedServices:
 image: https://images.pexels.com/photos/5371573/pexels-photo-5371573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 severity: Medium
 discoveredBy:
-  name:
-  org:
-  domain:
-  twitter:
-disclosedAt:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: null
 publishedAt: 2022/03/22
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   There was a misconfiguration with Simultaneous Multi-Threading (SMT),
   also known as Hyper-threading, in GKE Sandbox images, causing nodes
@@ -23,7 +23,7 @@ summary: |
   Microarchitectural Data Sampling (MDS).
 manualRemediation: |
   Upgrade nodes to versions 1.22.6-gke.1500 and later or 1.23.3-gke.1100 and later.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://cloud.google.com/support/bulletins#gcp-2022-011

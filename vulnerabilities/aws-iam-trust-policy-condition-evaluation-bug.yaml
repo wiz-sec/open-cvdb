@@ -1,6 +1,6 @@
 title: AWS IAM Trust Policy Condition Evaluation Bug
 slug: aws-iam-trust-policy-condition-evaluation-bug
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,13 +9,13 @@ affectedServices:
 image: https://images.unsplash.com/photo-1659896975336-4ff776bedb86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Low
 discoveredBy:
-  name:
+  name: null
   org: Stedi
   domain: https://www.stedi.com
-  twitter:
+  twitter: null
 publishedAt: 2024/04/09
 disclosedAt: 2023/06/20
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Tag variable names affected whether trust policy conditions were evaluated correctly.
@@ -28,7 +28,7 @@ summary: |
   the same pattern of STS role assumption with tag-based conditions.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://www.stedi.com/blog/stedi-discovered-an-aws-access-vulnerability

@@ -2,9 +2,9 @@ title: Remote Code Execution via GitHub Import
 slug: remote-code-execution-via-github-import
 cves: null
 affectedPlatforms:
-  - GitHub
+- GitHub
 affectedServices:
-  - GitLab Import
+- GitLab Import
 image: https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
 severity: Critical
 discoveredBy:
@@ -25,5 +25,5 @@ detectionMethods: |
 contributor: https://github.com/sshayb
 entryStatus: Finalized
 references:
-  - https://gitlab.com/gitlab-org/gitlab/-/issues/371098
-  - https://hackerone.com/reports/1672388
+- https://gitlab.com/gitlab-org/gitlab/-/issues/371098
+- https://hackerone.com/reports/1672388

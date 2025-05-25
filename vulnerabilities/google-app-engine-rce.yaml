@@ -1,6 +1,6 @@
 title: Google App Engine RCE Worth $36k
 slug: google-app-engine-rce
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

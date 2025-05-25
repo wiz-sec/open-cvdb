@@ -1,6 +1,6 @@
 title: Azure Serverless Functions escape to host
 slug: azure-func-escape
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -11,7 +11,7 @@ discoveredBy:
   name: Aviv Sasson, Daniel Prizmant
   org: Palo Alto
   domain: https://unit42.paloaltonetworks.com/
-  twitter:
+  twitter: null
 publishedAt: 2022/12/15
 disclosedAt: 2022/12/15
 exploitabilityPeriod: Ongoing
@@ -31,7 +31,7 @@ summary: |
   bind mount APIs, but the other elements of this attack sequence remain exploitable.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://unit42.paloaltonetworks.com/azure-serverless-functions-security/

@@ -1,6 +1,6 @@
 title: CosMiss
 slug: cosmiss
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -12,7 +12,7 @@ discoveredBy:
   name: Lidor Ben Shitrit, Roee Sagi
   org: Orca Security
   domain: https://orca.security/
-  twitter:
+  twitter: null
 publishedAt: 2022/11/01
 disclosedAt: 2022/10/04
 exploitabilityPeriod: 2022/08/12 - 2022/10/06

@@ -1,6 +1,6 @@
 title: Multiple issues in AWS IAM Authenticator for Kubernetes
 slug: aws-auth-multiple-issues
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -10,11 +10,11 @@ severity: Low
 discoveredBy:
   name: Felix Wilhelm
   org: Google
-  domain:
+  domain: null
   twitter: _fel1x
 publishedAt: 2020/10/06
 disclosedAt: 2020/07/15
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Amazon Elastic Kubernetes Service (EKS) uses IAM to provide authentication to the cluster
@@ -27,7 +27,7 @@ summary: |
   versions newer than 1.12 (as older versions are vulnerable to request smuggling).
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/korniko98
 references:
 - https://bugs.chromium.org/p/project-zero/issues/detail?id=2066

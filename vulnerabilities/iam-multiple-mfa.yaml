@@ -1,6 +1,6 @@
 title: MFA enforcement IAM policy bypass
 slug: iam-multiple-mfa
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -25,7 +25,7 @@ summary: |
   enforces MFA, either via an external IdP or AWS SSO, were not affected by this issue.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://www.mwrcybersec.com/when-mfa-becomes-sfa

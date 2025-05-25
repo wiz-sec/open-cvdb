@@ -1,6 +1,6 @@
 title: AWS API Gateway HTTP header smuggling
 slug: aws-api-gw-smuggling
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Daniel Thatcher
   org: intruder
   domain: https://www.intruder.io/
-  twitter:
+  twitter: null
 publishedAt: 2021/11/10
 disclosedAt: 2021/11/10
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A flaw in AWS API Gateway enabled hiding HTTP request headers. Tampering
@@ -22,7 +22,7 @@ summary: |
   and request smuggling.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/a10ns
 references:
 - https://www.intruder.io/research/practical-http-header-smuggling

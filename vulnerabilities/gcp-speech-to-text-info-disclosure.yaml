@@ -1,6 +1,6 @@
 title: GCP Speech to Text Information Disclosure
 slug: gcp-speech-to-text-info-disclosure
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

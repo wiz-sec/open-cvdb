@@ -1,6 +1,6 @@
 title: AWS RDS does not enforce SSL/TLS encryption
 slug: aws-rds-no-ssl-tls
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -24,7 +24,7 @@ manualRemediation: |
   values of the attached DB cluster parameter group. For MySQL and MariaDB there is no known workaround,
   other than ensuring clients connect to these database types only within the VPC. In general, ensure that
   RDS database instances without SSL/TLS enabled are not exposed over public networks.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/riyazwalikar
 references:
 - https://kloudle.com/blog/aws-rds-does-not-force-clients-to-connect-using-a-secure-transport-layer

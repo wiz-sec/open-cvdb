@@ -1,6 +1,6 @@
 title: Azurescape
 slug: azurescape
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -12,17 +12,17 @@ discoveredBy:
   name: Yuval Avrahami
   org: Palo Alto
   domain: https://www.paloaltonetworks.com/
-  twitter:
+  twitter: null
 publishedAt: 2021/09/09
 disclosedAt: 2021/09/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Cross-account container escape
 manualRemediation: |
   Revoking any privileged credentials that were deployed to the
   platform before Aug. 31, 2021, and checking their access logs for irregularities.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://unit42.paloaltonetworks.com/azure-container-instances/
