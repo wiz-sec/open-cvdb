@@ -1,0 +1,37 @@
+title: GuardDuty bypass via S3 permission modification
+slug: guardduty-s3-bypass
+cves:
+affectedPlatforms:
+- AWS
+affectedServices:
+- GuardDuty
+image: null
+severity: Low
+discoveredBy:
+  name:
+  org: Gem Security
+  domain: gem.security
+  twitter:
+publishedAt: 2023/05/18
+disclosedAt: null
+exploitabilityPeriod: Until 2023/04/28
+knownITWExploitation: false
+summary: |
+  Threat actors in possession of IAM active credentials that had the power to
+  update S3 bucket policies could have bypassed GuardDuty’s S3 detections and
+  silently updated permissions for S3 resources, resulting in a bucket configuration
+  that allowed anonymous data access. This gap in GuardDuty’s alert coverage
+  occurred only when S3’s Block Public Access was not enabled on the account
+  or the bucket, and when KMS-based server-side bucket encryption was not in
+  use. In order to trigger on opening public access, GuardDuty needs to invoke
+  two API calls: GetBucketPublicAccessBlock and GetBucketPolicyStatus. Blocking
+  these specific API calls essentially blocked GuardDuty’s ability to trigger
+  the alerts. Following disclosure, AWS added GD alerts on the creation of any
+  policy that both allows data access but seeks to deny access to configuration information.
+manualRemediation: |
+  None required
+detectionMethods:
+contributor: https://github.com/korniko98
+references:
+- https://web.archive.org/web/20240805231624/https://www.gem.security/post/guardduty-improves-data-exfiltration-protections-through-collaboration-with-gem
+entryStatus: Finalized
