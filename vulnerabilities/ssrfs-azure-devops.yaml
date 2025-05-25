@@ -1,6 +1,6 @@
 title: Finding SSRFs in Azure DevOps
 slug: ssrfs-azure-devops
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

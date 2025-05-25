@@ -1,6 +1,6 @@
 title: BreakingFormation
 slug: breakingformation
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -12,17 +12,17 @@ discoveredBy:
   name: Tzah Pahima
   org: Orca Security
   domain: https://orca.security/
-  twitter:
+  twitter: null
 publishedAt: 2022/01/13
 disclosedAt: 2021/09/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Read access of host of AWS internal Cloudformation service via XXE SSRF.
   The level of access with the compromised IAM role from there is unclear.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://orca.security/resources/blog/aws-cloudformation-vulnerability/

@@ -1,6 +1,6 @@
 title: Dropped active Google Cloud Armor security policy
 slug: gcp-2021-019
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -8,14 +8,14 @@ affectedServices:
 image: https://images.unsplash.com/photo-1607217237228-a8b69908bad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80
 severity: Low
 discoveredBy:
-  name:
-  org:
-  domain:
-  twitter:
-disclosedAt:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: null
 publishedAt: 2021/09/29
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   There is a known issue where updating a BackendConfig resource
   using the v1beta1 API removes an active Google Cloud Armor 
@@ -23,7 +23,7 @@ summary: |
   on your Ingress resources via the BackendConfig, then this issue does not affect your clusters.
 manualRemediation: |
   Dropped Cloud Armor security policies must be manually reattached. 
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://cloud.google.com/support/bulletins#gcp-2021-019

@@ -1,6 +1,6 @@
 title: Microsoft Healthcare Chatbot Vulnerabilities
 slug: microsoft-healthcare-chatbot-vulnerabilities
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

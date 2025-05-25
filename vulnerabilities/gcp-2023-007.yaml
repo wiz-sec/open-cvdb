@@ -1,6 +1,6 @@
 title: Privilege escalation in GCP Cloud SQL
 slug: gcp-2023-007
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -8,14 +8,14 @@ affectedServices:
 image: https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=2036&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Medium
 discoveredBy:
-  name:
-  org:
-  domain:
-  twitter:
-disclosedAt:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+disclosedAt: null
 publishedAt: 2023/06/02
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   A vulnerability was discovered in Cloud SQL for SQL Server
   that allowed customer administrator accounts to create triggers 
@@ -24,7 +24,7 @@ summary: |
   and partial access to the machine running that SQL Server instance.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://cloud.google.com/support/bulletins#GCP-2023-007

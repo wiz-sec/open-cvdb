@@ -1,6 +1,6 @@
 title: Azure AZNFS-mount Utility Root Privilege Escalation
 slug: azure-aznfs-mount-privilege-escalation
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

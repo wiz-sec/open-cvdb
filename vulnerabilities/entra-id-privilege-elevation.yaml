@@ -1,6 +1,6 @@
 title: Privilege Elevation Vulnerability in Entra ID
 slug: entra-id-privilege-elevation
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

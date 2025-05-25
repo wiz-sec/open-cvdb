@@ -1,6 +1,6 @@
 title: MWAA logs leak tokens and hostnames
 slug: mwaa-leaky-logs
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -27,7 +27,7 @@ summary: |
   were low.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/BenReser/status/1531710736719695872

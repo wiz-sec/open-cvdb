@@ -1,6 +1,6 @@
 title: FreeRTOS and coreSNTP Security Advisories
 slug: freertos-coresntp-advisories
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

@@ -1,6 +1,6 @@
 title: FlowFixation
 slug: flowfixation
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -12,9 +12,9 @@ discoveredBy:
   org: Tenable
   domain: tenable.com
   twitter: terminatorLM
-disclosedAt:
+disclosedAt: null
 publishedAt: 2024/03/21
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A flaw in Amazon Managed Workflows for Apache Airflow (MWAA) could have allowed potential session hijacking and remote code execution.
@@ -25,7 +25,7 @@ summary: |
   and grants the attacker access.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://www.tenable.com/blog/flowfixation-aws-apache-airflow-service-takeover-vulnerability-and-why-neglecting-guardrails

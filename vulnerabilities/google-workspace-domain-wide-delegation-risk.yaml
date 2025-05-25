@@ -1,6 +1,6 @@
 title: Google Workspace Domain-Wide Delegation Flaw
 slug: google-workspace-domain-wide-delegation-risk
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

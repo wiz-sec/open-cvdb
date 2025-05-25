@@ -1,6 +1,6 @@
 title: GCP Cloudshell Cross-Site WebSocket Hijacking (CSWSH)
 slug: gcp-cloudshell-cswsh
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,12 +9,12 @@ image: https://images.unsplash.com/photo-1543789289-2fcb1e565eb6?ixlib=rb-4.0.3&
 severity: Low
 discoveredBy:
   name: Psi
-  org:
+  org: null
   domain: ψ.fun
-  twitter:
+  twitter: null
 publishedAt: 2020/03/11
-disclosedAt:
-exploitabilityPeriod:
+disclosedAt: null
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Google Cloudshell leveraged websockets without validating that the origin matched the current instance host.
@@ -24,7 +24,7 @@ summary: |
   and ending in successful CSWSH, which would allow the attacker to hijack the target user's requests.
 manualRemediation: |
   null
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://ψ.fun/i/yvpMj

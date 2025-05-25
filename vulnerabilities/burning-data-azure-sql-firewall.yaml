@@ -1,6 +1,6 @@
 title: Burning Data with Malicious Firewall Rules in Azure SQL
 slug: burning-data-azure-sql-firewall
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

@@ -1,19 +1,19 @@
 title: VPC Hosted Zones unauditable
 slug: vpc-hosted-zones-unauditable
-cves:
+cves: null
 affectedPlatforms:
 - AWS
-affectedServices:
+affectedServices: null
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/unauditible_hosted_zones.jpg
 severity: Low
 discoveredBy:
   name: Ryan Gerstenkorn
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: Ryan_Jarv
 disclosedAt: 2019/05/13
 publishedAt: 2019/05/24
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   For 6 years, it was not possible to see what hosted zones an attacker
@@ -23,7 +23,7 @@ summary: |
   maintain a backdoor.
 manualRemediation: |
   Audit your VPC hosted zones
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/RyanJarv
 references:
 - https://twitter.com/__steele/status/1273748905826455552

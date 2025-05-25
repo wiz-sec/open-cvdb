@@ -1,6 +1,6 @@
 title: Persistence Vulnerability in GCP Cloud Workstations
 slug: gcp-cloud-workstations-persistence-flaw
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

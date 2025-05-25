@@ -1,6 +1,6 @@
 title: AWS Java SDK XXE injection
 slug: aws-java-sdk-xxe
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,18 +9,18 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-java-
 severity: Low
 discoveredBy:
   name: Alex Brasetvik
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: alexbrasetvik
 publishedAt: 2017/10/10
-disclosedAt:
-exploitabilityPeriod:
+disclosedAt: null
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   The AWS Java SDK was vulnerable to XML external entity (XXE) injection related to XML parsers.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/korniko98
 references:
 - https://github.com/aws/aws-sdk-java/commit/080a0037395f8b1e8e81b59c9d2c3a3d7624c8ac#diff-4ac32a78649ca5bdd8e0ba38b7006a1eR8

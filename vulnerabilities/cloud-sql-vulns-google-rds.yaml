@@ -1,6 +1,6 @@
 title: Cloud SQL vulnerabilities in Google's RDS offering
 slug: cloud-sql-vulns-google-rds
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

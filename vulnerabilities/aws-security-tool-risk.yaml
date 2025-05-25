@@ -1,6 +1,6 @@
 title: AWS Security Tool Introduces Privilege Escalation Risk
 slug: aws-security-tool-risk
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

@@ -1,6 +1,6 @@
 title: AttachMe
 slug: attachme
-cves:
+cves: null
 affectedPlatforms:
 - OCI
 affectedServices:
@@ -14,7 +14,7 @@ discoveredBy:
   twitter: eladgabay_
 publishedAt: 2022/09/20
 disclosedAt: 2022/06/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Any unattached storage volume, or attached storage volumes allowing multi-attachment,
@@ -23,7 +23,7 @@ summary: |
   executable file manipulation in the target tenant's environment.
 manualRemediation: |
   None required.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/nirohfeld
 references:
 - https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access

@@ -1,27 +1,27 @@
 title: Azure Machine Learning SSRF
 slug: azure-ml-ssrf-pt
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
 - Azure Machine Learning
-image:
-severity:
+image: null
+severity: null
 discoveredBy:
-  name:
+  name: null
   org: Tenable, Wiz
-  domain:
-  twitter:
+  domain: null
+  twitter: null
 publishedAt: 2024/06/17
-disclosedAt:
-exploitabilityPeriod:
-knownITWExploitation:
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
-  
+
 manualRemediation: |
-  
-detectionMethods:
-contributor:
+
+detectionMethods: null
+contributor: null
 references:
 - https://msrc.microsoft.com/blog/2024/06/mitigating-ssrf-vulnerabilities-impacting-azure-machine-learning/
 - https://www.tenable.com/security/research/tra-2024-22

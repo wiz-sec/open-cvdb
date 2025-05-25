@@ -1,6 +1,6 @@
 title: Bucket Monopoly Attack on AWS Services
 slug: bucket-monopoly-aws-attack
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

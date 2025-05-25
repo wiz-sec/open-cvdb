@@ -1,6 +1,6 @@
 title: Data Exfiltration Through CloudTrail
 slug: cloudtrail-data-exfiltration
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

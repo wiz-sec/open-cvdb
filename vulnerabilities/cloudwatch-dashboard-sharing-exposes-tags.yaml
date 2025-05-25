@@ -1,6 +1,6 @@
 title: CloudWatch Dashboard Sharing Exposes EC2 Tags
 slug: cloudwatch-dashboard-sharing-exposes-tags
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

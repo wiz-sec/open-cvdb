@@ -1,6 +1,6 @@
 title: Abusing AWS Serverless Image Handler Configuration Weakness
 slug: aws-serverless-image-handler-weakness
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

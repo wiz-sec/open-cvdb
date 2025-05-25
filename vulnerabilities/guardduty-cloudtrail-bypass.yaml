@@ -1,6 +1,6 @@
 title: GuardDuty detection bypass via cloudtrail
 slug: guardduty-cloudtrail-bypass
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Spencer Gietzen
   org: Rhino Security
   domain: https://rhinosecuritylabs.com/
-  twitter:
+  twitter: null
 disclosedAt: 2020/04/23
 publishedAt: 2020/04/23
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   GuardDuty detected CloudTrail being outright disabled, but did not detect if an attacker with the
@@ -23,7 +23,7 @@ summary: |
   triggers if PutEventSelectors is used to disable all event types.
 manualRemediation: |
   As a safety measure, set up additional detections independent of GuardDuty.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass

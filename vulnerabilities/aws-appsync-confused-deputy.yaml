@@ -1,6 +1,6 @@
 title: AWS AppSync confused deputy via ServiceRoleArn
 slug: aws-appsync-confused-deputy
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

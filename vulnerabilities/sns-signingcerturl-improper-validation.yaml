@@ -1,6 +1,6 @@
 title: SNS SigningCertUrl improper validation
 slug: sns-signingcerturl-improper-validation
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,12 +9,12 @@ image: https://images.unsplash.com/photo-1611095780122-d692cee29291?ixlib=rb-4.0
 severity: Medium
 discoveredBy:
   name: Eugene Lim
-  org:
+  org: null
   domain: spaceraccoon.dev
   twitter: spaceraccoonsec
 publishedAt: 2022/08/19
-disclosedAt:
-exploitabilityPeriod:
+disclosedAt: null
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Amazon SNS' signature validation in the official SDK relied on a weak regex for default AWS certificate locations, 
@@ -22,7 +22,7 @@ summary: |
   allowing an attacker to forge messages to any user of the official SDK SNS validator.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://spaceraccoon.dev/exploiting-improper-validation-amazon-simple-notification-service/

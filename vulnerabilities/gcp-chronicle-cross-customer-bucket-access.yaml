@@ -1,6 +1,6 @@
 title: Chronicle cross-customer bucket access
 slug: gcp-chronicle-cross-customer-bucket-access
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,8 +9,8 @@ image: https://images.unsplash.com/photo-1605164612754-da6d7c6ba723?w=2000&auto=
 severity: High
 discoveredBy:
   name: DoggoZW
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: DoggoZW
 disclosedAt: 2023/09/19
 publishedAt: 2023/09/19
@@ -25,7 +25,7 @@ summary: |
   of the bucket URI.
 manualRemediation: |
   null
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://cloud.google.com/support/bulletins#gcp-2023-028

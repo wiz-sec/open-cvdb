@@ -1,6 +1,6 @@
 title: Dropping a Shell in Google Cloud SQL
 slug: cloud-sql-shell-drop
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

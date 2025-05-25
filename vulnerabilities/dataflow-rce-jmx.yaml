@@ -1,6 +1,6 @@
 title: Dataflow RCE via unauthenticated JMX service
 slug: dataflow-rce-jmx
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,12 +9,12 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dataflow-
 severity: Low
 discoveredBy:
   name: Mike Brancato
-  org:
+  org: null
   domain: https://mbrancato.github.io/
   twitter: meatballninja
 publishedAt: 2021/12/28
 disclosedAt: 2021/03/05
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Dataflow worker nodes ran an unauthenticated Java Management Extensions (JMX) service that under
@@ -24,7 +24,7 @@ summary: |
   Compute Engine default service account, which has the project-wide Editor role assigned).
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/korniko98
 references:
 - https://mbrancato.github.io/2021/12/28/rce-dataflow.html

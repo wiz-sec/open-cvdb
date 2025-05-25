@@ -1,6 +1,6 @@
 title: Security Flaw in AWS Transit Gateway Peering Attachments
 slug: aws-transit-gateway-peering-flaw
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

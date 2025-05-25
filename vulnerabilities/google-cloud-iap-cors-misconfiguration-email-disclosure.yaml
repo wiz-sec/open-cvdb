@@ -1,10 +1,10 @@
 title: IAP CORS Misconfiguration Allows Email Disclosure
 slug: google-cloud-iap-cors-misconfiguration-email-disclosure
-cves:
+cves: null
 affectedPlatforms:
-  - GCP
+- GCP
 affectedServices:
-  - Identity-Aware Proxy (IAP)
+- Identity-Aware Proxy (IAP)
 image: https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Medium
 discoveredBy:
@@ -23,5 +23,5 @@ manualRemediation: |
 detectionMethods: null
 contributor: https://github.com/mer-b
 references:
-  - https://medium.com/@LogicalHunter/identity-aware-proxy-misconfiguration-google-cloud-vulnerability-813d2a07a4ed
+- https://medium.com/@LogicalHunter/identity-aware-proxy-misconfiguration-google-cloud-vulnerability-813d2a07a4ed
 entryStatus: finalized

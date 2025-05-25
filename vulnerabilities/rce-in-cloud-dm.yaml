@@ -1,6 +1,6 @@
 title: RCE in Google Cloud Deployment Manager
 slug: rce-in-cloud-dm
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -9,19 +9,19 @@ image: https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2
 severity: High
 discoveredBy:
   name: Ezequiel Pereira
-  org:
+  org: null
   domain: https://www.ezequiel.tech/
   twitter: https://twitter.com/epereiralopez
 disclosedAt: 2020/05/07
 publishedAt: 2020/05/21
 exploitabilityPeriod: until 2020/05/20
-knownITWExploitation:
+knownITWExploitation: null
 summary: |
   An RCE in Google Cloud Deployment Manager could have allowed an attacker to make
   requests to internal Google services, authenticated as a privileged service account.
 manualRemediation: |
 
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://www.ezequiel.tech/2020/05/rce-in-cloud-dm.html

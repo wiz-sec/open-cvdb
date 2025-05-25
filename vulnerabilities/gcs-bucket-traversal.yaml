@@ -1,6 +1,6 @@
 title: Bucket Traversal in Google Cloud Storage Transfer Manager
 slug: gcs-bucket-traversal
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

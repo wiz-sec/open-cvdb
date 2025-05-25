@@ -1,26 +1,26 @@
 title: GCP IAP bypass
 slug: gcp-iap-bypass
-cves:
+cves: null
 affectedPlatforms:
 - GCP
-affectedServices:
+affectedServices: null
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/identity_aware_proxy.jpg
 severity: Medium
 discoveredBy:
   name: Unknown
-  org:
-  domain:
-  twitter:
+  org: null
+  domain: null
+  twitter: null
 disclosedAt: 2021/09/17
 publishedAt: 2021/09/17
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Convincing a victim to click a specially crafted link would allow the attacker
   to bypass the Identity-Aware Proxy (a core component of BeyondCorp).
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://cloud.google.com/support/bulletins#gcp-2021-020

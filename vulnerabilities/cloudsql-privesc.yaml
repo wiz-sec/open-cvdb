@@ -1,22 +1,22 @@
 title: Cloud SQL for SQL Server privilege escalation
 slug: cloudsql-privesc
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
 - Cloud SQL
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-privesc.jpg
 severity: high
-piercingIndexVector:
+piercingIndexVector: null
 discoveredBy:
-  name:
+  name: null
   org: Dig
   domain: dig.security
-  twitter:
+  twitter: null
 publishedAt: 2023/05/24
 disclosedAt: 2023/02/13
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   A vulnerability discovered in GCP's Cloud SQL service allowed customer
   administrator accounts to create triggers in the tempdb database and use
@@ -30,7 +30,7 @@ summary: |
   and Google stated in their security bulletin that it was not possible.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/jacks-reid
 references:
 - https://www.dig.security/post/gcp-cloudsql-vulnerability-leads-to-internal-container-access-and-data-exposure

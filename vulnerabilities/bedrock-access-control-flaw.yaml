@@ -1,6 +1,6 @@
 title: Flaw in Bedrock's Foundation Model Access Control
 slug: bedrock-access-control-flaw
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

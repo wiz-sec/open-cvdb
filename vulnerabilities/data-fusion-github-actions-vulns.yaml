@@ -1,6 +1,6 @@
 title: Google Cloud Data Fusion GitHub Actions Vulnerabilities
 slug: data-fusion-github-actions-vulns
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 - GitHub

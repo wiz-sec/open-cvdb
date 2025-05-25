@@ -1,6 +1,6 @@
 title: AWS RDS local file read
 slug: aws-rds-local-file-read
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Gafnit Amiga
   org: Lightspin
   domain: https://www.lightspin.io/
-  twitter:
+  twitter: null
 publishedAt: 2022/04/11
 disclosedAt: 2021/12/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A vulnerability was discovered in the Aurora PostgreSQL log_fdw extension
@@ -22,7 +22,7 @@ summary: |
   files on the EC2 host and obtain credentials for an internal AWS service.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://blog.lightspin.io/aws-rds-critical-security-vulnerability

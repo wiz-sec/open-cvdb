@@ -1,6 +1,6 @@
 title: BrokenSesame
 slug: brokensesame
-cves:
+cves: null
 affectedPlatforms:
 - Alibaba
 affectedServices:
@@ -12,10 +12,10 @@ discoveredBy:
   name: Ronen Shustin, Shir Tamari
   org: Wiz
   domain: https://www.wiz.io/
-  twitter:
+  twitter: null
 publishedAt: 2023/04/19
 disclosedAt: 2022/12/04
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   ApsaraDB and AnalyticDB contained several vulnerabilities in their PostgreSQL offerings
@@ -30,7 +30,7 @@ summary: |
   container, and susceptibility to the core_pattern container escape technique.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/korniko98
 references:
 - https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r

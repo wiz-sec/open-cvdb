@@ -1,6 +1,6 @@
 title: Privilege escalation on Dialogflow cloud platform
 slug: dialogflow-privilege-escalation
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

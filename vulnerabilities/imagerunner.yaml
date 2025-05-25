@@ -2,34 +2,34 @@ title: 'ImageRunner: Privilege Escalation Vulnerability in GCP Cloud Run'
 slug: imagerunner
 cves: null
 affectedPlatforms:
-   - GCP
+- GCP
 affectedServices:
-   - Cloud Run
+- Cloud Run
 image: https://images.unsplash.com/photo-1683637935665-3f999365fea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
 severity: Medium
 discoveredBy:
-   name: Liv Matan
-   org: Tenable
-   domain: tenable.com
-   twitter: terminatorLM
+  name: Liv Matan
+  org: Tenable
+  domain: tenable.com
+  twitter: terminatorLM
 publishedAt: 2025/04/01
 disclosedAt: 2024/11/25
 exploitabilityPeriod: Until 2025/01/25
 knownITWExploitation: false
 summary: |
-   An attacker with `run.services.update` and `iam.serviceAccounts.actAs` permissions but without
-   explicit registry access could deploy new revisions of Cloud Run services that pulled private
-   container images stored in the same GCP project. This was possible because Cloud Run uses a
-   service agent with the necessary registry read permissions to retrieve these images, regardless
-   of the caller’s access level. By updating a service revision and injecting malicious commands
-   into the container's arguments (e.g., using Netcat for reverse shell access), attackers could
-   extract secrets or run unauthorized code. The flaw stemmed from the Cloud Run service agent’s
-   trust model, which did not enforce a separate registry permission check on the deploying identity.
-   Google has since modified this behavior to require that the identity updating the Cloud Run
-   resource also has explicit Artifact Registry Reader or Storage Object Viewer roles.
+  An attacker with `run.services.update` and `iam.serviceAccounts.actAs` permissions but without
+  explicit registry access could deploy new revisions of Cloud Run services that pulled private
+  container images stored in the same GCP project. This was possible because Cloud Run uses a
+  service agent with the necessary registry read permissions to retrieve these images, regardless
+  of the caller’s access level. By updating a service revision and injecting malicious commands
+  into the container's arguments (e.g., using Netcat for reverse shell access), attackers could
+  extract secrets or run unauthorized code. The flaw stemmed from the Cloud Run service agent’s
+  trust model, which did not enforce a separate registry permission check on the deploying identity.
+  Google has since modified this behavior to require that the identity updating the Cloud Run
+  resource also has explicit Artifact Registry Reader or Storage Object Viewer roles.
 manualRemediation: null
 detectionMethods: null
 contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
-   - https://www.tenable.com/blog/imagerunner-a-privilege-escalation-vulnerability-impacting-gcp-cloud-run
+- https://www.tenable.com/blog/imagerunner-a-privilege-escalation-vulnerability-impacting-gcp-cloud-run

@@ -1,20 +1,20 @@
 title: AWS AI services ToS allow sharing of customer data
 slug: terms-conditions-customer-data
-cves:
+cves: null
 affectedPlatforms:
 - AWS
-affectedServices:
+affectedServices: null
 image: https://cdn.pixabay.com/photo/2022/02/13/02/01/terms-7010195_1280.jpg
-severity:
+severity: null
 discoveredBy:
   name: Ben Bridts
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: benbridts
 disclosedAt: 2020/07/08
 publishedAt: 2022/01/06
-exploitabilityPeriod:
-knownITWExploitation:
+exploitabilityPeriod: null
+knownITWExploitation: null
 summary: |
   Use of the AI services on AWS allows customer data to be moved outside of
   the regions it is used in and potentially shared with third-parties.
@@ -22,7 +22,7 @@ summary: |
   been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.
 manualRemediation: |
   Customers can opt out of this data usage by following the instructions included in the linked reference.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://twitter.com/benbridts/status/1280934515305824256

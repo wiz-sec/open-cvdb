@@ -1,6 +1,6 @@
 title: AWS Default Roles Can Lead to Service Takeover
 slug: aws-default-roles-service-takeover
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

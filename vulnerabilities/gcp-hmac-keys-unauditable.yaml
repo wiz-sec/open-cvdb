@@ -1,6 +1,6 @@
 title: GCP HMAC Keys are not discoverable or revokable other than for self
 slug: gcp-hmac-keys-unauditable
-cves:
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:
@@ -32,7 +32,7 @@ manualRemediation: |
   unless they have expired. Furthermore, removing Cloud IAM Roles can revoke access to affected storage
   resources. However, it's important to note that reassigning roles does not invalidate previously
   created Sigv4 signed headers, allowing them to continue functioning even after the role change.
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/KatTraxler
 references:
 - https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud

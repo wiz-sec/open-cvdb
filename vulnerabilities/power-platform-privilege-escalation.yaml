@@ -1,6 +1,6 @@
 title: Power Platform Privilege Escalation in Azure AD
 slug: power-platform-privilege-escalation
-cves: []
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:

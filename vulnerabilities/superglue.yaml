@@ -1,6 +1,6 @@
 title: SuperGlue
 slug: superglue
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -12,17 +12,17 @@ discoveredBy:
   name: Yanir Tsarimi
   org: Orca Security
   domain: https://orca.security/
-  twitter:
+  twitter: null
 disclosedAt: 2021/09/30
 publishedAt: 2022/01/13
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Compromise of internal AWS Glue service to assume the glue role in any
   AWS account that used glue.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://orca.security/resources/blog/aws-glue-vulnerability/

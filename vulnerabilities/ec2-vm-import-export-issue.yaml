@@ -1,6 +1,6 @@
 title: Issue with Amazon EC2 VM Import Export Service
 slug: ec2-vm-import-export-issue
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

@@ -1,6 +1,6 @@
 title: ECR Public vulnerability in undocumented API
 slug: public-ecr-undocumented-api
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -15,7 +15,7 @@ discoveredBy:
   twitter: gafnitav
 publishedAt: 2022/12/13
 disclosedAt: 2022/11/15
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A vulnerability in Elastic Container Registry (ECR) Public could have allowed a
@@ -26,7 +26,7 @@ summary: |
   existing image to inject malicious code on any machine that would pull and run it.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/guycoldham
 references:
 - https://blog.lightspin.io/aws-ecr-public-vulnerability

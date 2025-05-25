@@ -1,6 +1,6 @@
 title: Non-Production AWS Endpoints as Attack Surface
 slug: aws-non-production-endpoints-attack
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:

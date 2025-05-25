@@ -1,6 +1,6 @@
 title: Google wide domain check bypass
 slug: google-domain-check-bypass
-cves: []
+cves: null
 affectedPlatforms:
 - GCP
 affectedServices:

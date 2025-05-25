@@ -1,6 +1,6 @@
 title: GitHub Copilot Chat Vulnerable to Data Exfiltration
 slug: github-copilot-chat-data-exfiltration
-cves: []
+cves: null
 affectedPlatforms:
 - GitHub
 affectedServices:

@@ -1,6 +1,6 @@
 title: Azure Front Door client-side desync
 slug: azure-front-door-desync
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -9,12 +9,12 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-fro
 severity: Medium
 discoveredBy:
   name: Jeti
-  org:
+  org: null
   domain: https://blog.jeti.pw/
   twitter: 0xJeti
 publishedAt: 2023/06/27
 disclosedAt: 2023/05/08
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   A client-side desync vulnerability was discovered in Front Door, one of Azure's CDN solutions,
@@ -23,7 +23,7 @@ summary: |
   link), but could allow an attacker to steal session cookies or forge responses to victim requests.
 manualRemediation: |
   null
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://blog.jeti.pw/posts/knocking-on-the-front-door/

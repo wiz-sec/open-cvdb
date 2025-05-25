@@ -1,6 +1,6 @@
 title: Azure Site Recovery privilege escalation
 slug: azure-site-recovery-pe
-cves:
+cves: null
 affectedPlatforms:
 - Azure
 affectedServices:
@@ -11,10 +11,10 @@ discoveredBy:
   name: Joshua Murrell
   org: NetSPI
   domain: https://www.netspi.com/
-  twitter:
+  twitter: null
 publishedAt: 2024/02/13
 disclosedAt: 2024/01/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   When the ASR service is enabled, it uses an Automation Account with a System-Assigned Managed Identity
@@ -27,7 +27,7 @@ summary: |
   subscription, including the ability to execute commands on VMs as `NT Authority\\SYSTEM`.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/mer-b
 references:
 - https://www.netspi.com/blog/technical/cloud-penetration-testing/elevating-privileges-with-azure-site-recovery-services/

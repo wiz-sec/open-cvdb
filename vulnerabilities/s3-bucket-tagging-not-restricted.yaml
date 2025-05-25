@@ -1,6 +1,6 @@
 title: S3 bucket tagging not restricted
 slug: s3-bucket-tagging-not-restricted
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,19 +9,19 @@ image: https://images.unsplash.com/photo-1590106361237-f75de58c98ce?ixlib=rb-1.2
 severity: Low
 discoveredBy:
   name: Ian Mckay
-  org:
-  domain:
+  org: null
+  domain: null
   twitter: iann0036
 disclosedAt: 2020/09/28
 publishedAt: 2020/09/28
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   Lack of the privilege s3:PutBucketTagging did not restrict the ability
   to tag S3 buckets.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: null
 contributor: https://github.com/0xdabbad00
 references:
 - https://onecloudplease.com/blog/security-september-still-early-days-for-abac

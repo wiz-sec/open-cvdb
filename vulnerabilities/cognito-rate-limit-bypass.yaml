@@ -1,6 +1,6 @@
 title: Amazon Cognito Rate Limit Bypass Vulnerability
 slug: cognito-rate-limit-bypass
-cves: []
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
