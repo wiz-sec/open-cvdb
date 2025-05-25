@@ -10,7 +10,7 @@ image: https://demo-source.imgix.net/snowboard.jpg?q=80&w=2070&auto=format&fit=c
 severity: High
 discoveredBy:
   name: Sivanesh Ashok, Sreeram KL
-  org:
+  org: null
   domain: blog.geekycat.in
   twitter: null
 disclosedAt: 2022/01/01
