@@ -9,20 +9,20 @@ image: https://images.unsplash.com/photo-1613870948964-7125fa3e1aab?ixlib=rb-4.0
 severity: Medium
 discoveredBy:
   name: Dan Maas
-  org:
-  domain: https://www.dcine.com
-  twitter:
+  org: null
+  domain: dcine.com
+  twitter: null
 publishedAt: 2020/01/12
 disclosedAt: 2019/04/09
-exploitabilityPeriod:
+exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
   GCP's Speech-to-Text "operations/list" and "operations/get" APIs would return data that did 
   not belong to the caller when no parameters were provided. It is unclear whether this was 
-  cross-customer data disclosure, or potentially test or internal data. 
+  cross-customer data disclosure, or potentially test or internal data.
 manualRemediation: |
-  null
-detectionMethods:
+  None required
+detectionMethods: null
 contributor: https://github.com/ramimac
 references:
 - https://www.dcine.com/2020/01/12/information-disclosure-vulnerability-in-the-google-cloud-speech-to-text-api/
