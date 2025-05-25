@@ -1,6 +1,6 @@
 title: XSS on EC2 web console
 slug: ec2-console-xss
-cves:
+cves: null
 affectedPlatforms:
 - AWS
 affectedServices:
@@ -9,9 +9,9 @@ image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_el
 severity: Low
 discoveredBy:
   name: Johann Rehberger
-  org:
-  domain:
-  twitter:
+  org: null
+  domain: embracethered.com
+  twitter: null
 disclosedAt: 2020/07/01
 publishedAt: 2020/07/01
 exploitabilityPeriod:
