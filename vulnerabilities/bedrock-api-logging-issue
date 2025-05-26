@@ -1,0 +1,29 @@
+title: Bedrock API Logging Issue
+slug: bedrock-api-logging-issue
+cves: null
+affectedPlatforms:
+  - AWS
+affectedServices:
+  - Amazon Bedrock
+  - CloudTrail
+image: https://images.unsplash.com/photo-1493556273165-cf5bca5cc8e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: Medium
+discoveredBy:
+  name: Alessandro Brucato
+  org: Sysdig
+  domain: sysdig.com
+  twitter: null
+publishedAt: 2024/12/12
+disclosedAt: 2024/07/17
+exploitabilityPeriod: Until 2024/08/09
+knownITWExploitation: false
+summary: |
+  Sysdig's Threat Research Team discovered an issue with Amazon Bedrock API logging in CloudTrail. Failed API calls were logged as successful without error codes, hindering detection efforts and potentially generating false positives. The issue affected Bedrock Runtime APIs, specifically InvokeModel and Converse. AWS resolved the problem.
+manualRemediation: |
+  None required
+detectionMethods: |
+  null
+contributor: https://github.com/mer-b
+entryStatus: Finalized
+references:
+  - https://sysdig.com/blog/bedrock-slip-sysdig-trt-discovers-cloudtrail-logging-missteps/
