@@ -1,6 +1,6 @@
 title: Bedrock API Logging Issue
 slug: bedrock-api-logging-issue
-cves: []
+cves: null
 affectedPlatforms:
   - AWS
 affectedServices:
@@ -10,7 +10,7 @@ image: https://images.unsplash.com/photo-1493556273165-cf5bca5cc8e6?ixlib=rb-1.2
 severity: Medium
 discoveredBy:
   name: Alessandro Brucato
-  org: Sysdig Threat Research Team
+  org: Sysdig
   domain: sysdig.com
   twitter: null
 publishedAt: 2024/12/12
@@ -23,7 +23,7 @@ manualRemediation: |
   None required
 detectionMethods: |
   null
-contributor: https://github.com/korniko98
+contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
   - https://sysdig.com/blog/bedrock-slip-sysdig-trt-discovers-cloudtrail-logging-missteps/
