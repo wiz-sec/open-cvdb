@@ -19,10 +19,24 @@ disclosedAt: 2024/07/16
 exploitabilityPeriod: null
 knownITWExploitation: false
 summary: |
-The AWS Client VPN service was found to be affected by two vulnerabilities which could potentially allow malicious actors with access to a user’s device to execute arbitrary commands with elevated privileges, including escalating to root access. Both vulnerabilities stem from buffer overflow issues, a common programming error that can be exploited to overwrite memory and gain unauthorized control over a system.
-The impact of these vulnerabilities is severe, as successful exploitation could lead to complete compromise of an affected device. Attackers could gain access to sensitive data, install malware, or disrupt system operations. Given the widespread use of AWS Client VPN for secure remote access, the potential for widespread exploitation is a significant concern.
-AWS has acted swiftly to address these vulnerabilities, releasing updated versions of the Client VPN software for all supported platforms. However, the onus is on users to promptly apply these updates to mitigate the risk.
-manualRemediation: Customers using AWS Client VPN should upgrade to version 3.11.1 or higher for Windows, 3.9.2 or higher for MacOS, and 3.12.1 or higher for Linux.
+  The AWS Client VPN service was found to be affected by two
+  vulnerabilities which could potentially allow malicious actors with access to
+  a user’s device to execute arbitrary commands with elevated privileges,
+  including escalating to root access. Both vulnerabilities stem from buffer
+  overflow issues, a common programming error that can be exploited to overwrite
+  memory and gain unauthorized control over a system. The impact of these
+  vulnerabilities is severe, as successful exploitation could lead to complete
+  compromise of an affected device. Attackers could gain access to sensitive
+  data, install malware, or disrupt system operations. Given the widespread use
+  of AWS Client VPN for secure remote access, the potential for widespread
+  exploitation is a significant concern. AWS has acted swiftly to address these
+  vulnerabilities, releasing updated versions of the Client VPN software for all
+  supported platforms. However, the onus is on users to promptly apply these
+  updates to mitigate the risk.
+manualRemediation: |
+  Customers using AWS Client VPN should upgrade to version
+  3.11.1 or higher for Windows, 3.9.2 or higher for MacOS, and 3.12.1 or higher
+  for Linux.
 contributor: https://github.com/Mitalee09
 entryStatus: Finalized
 references:
