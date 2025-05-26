@@ -22,7 +22,7 @@ manualRemediation: |
   null
 detectionMethods: |
   null
-contributor: https://github.com/korniko98
+contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
   - https://trustoncloud.com/blog/exposing-the-weakness-how-we-identified-a-flaw-in-bedrocks-foundation-model-access-control/
