@@ -7,6 +7,7 @@ affectedServices:
 - Health Bot
 image: https://images.unsplash.com/photo-1611690828749-66c846dbd1b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 severity: Critical
+piercingIndexVector: {version: 1.6, A1: 22, A2: 1, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Yanir Tsarimi
   org: Breachproof
