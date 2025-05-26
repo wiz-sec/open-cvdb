@@ -1,0 +1,28 @@
+title: Azure tenant takeover via Microsoft application
+slug: azure-tenant-takeover-microsoft-application
+cves: null
+affectedPlatforms:
+  - Azure
+affectedServices:
+  - Microsoft Entra ID
+  - Microsoft Dynamics 365 Supply Chain Visibility
+image: https://images.unsplash.com/photo-1595044426077-d36d9236d54a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
+severity: High
+discoveredBy:
+  name: Arnau Ortega
+  org: FalconForce
+  domain: falconforce.nl
+  twitter: null
+publishedAt: 2024/04/26
+disclosedAt: 2023/11/18
+exploitabilityPeriod: Until 2024/01/29
+knownITWExploitation: false
+summary: |
+  A vulnerability in Microsoft Dynamics 365 Supply Chain Visibility allowed arbitrary takeover of Azure tenants via a malicious reply URL. Clicking a link could grant an attacker directory read access or full tenant control if clicked by a Global Admin, without requiring user consent.
+manualRemediation: None required
+detectionMethods: |
+  Monitor for unexpected additions of users to high-privilege roles like Global Administrator. Review sign-in logs for suspicious access from unfamiliar IP addresses or locations.
+contributor: https://github.com/mer-b
+entryStatus: Finalized
+references:
+  - https://falconforce.nl/arbitrary-1-click-azure-tenant-takeover-via-ms-application/
