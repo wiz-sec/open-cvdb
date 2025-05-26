@@ -1,6 +1,6 @@
 title: IAM Policy Flaw Allowed Unauthorized Access to Bedrock Models
 slug: bedrock-models-iam-flaw
-cves: []
+cves: null
 affectedPlatforms:
   - AWS
 affectedServices:
