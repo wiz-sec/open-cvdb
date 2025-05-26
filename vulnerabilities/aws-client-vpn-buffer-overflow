@@ -1,6 +1,8 @@
 title: AWS Client VPN buffer overflow
 slug: aws-client-vpn-buffer-overflow
-cves: [CVE-2024-30164,CVE-2024-30165]
+cves:
+  - CVE-2024-30164
+  - CVE-2024-30165
 affectedPlatforms:
   - AWS
 affectedServices:
@@ -8,9 +10,9 @@ affectedServices:
 image: https://images.unsplash.com/photo-1599590996663-4547b239dfb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80
 severity: Medium
 discoveredBy:
-  name: Robinhood
-  org: null
-  domain: null
+  name: null
+  org: Robinhood
+  domain: robinhood.com
   twitter: null
 publishedAt: 2024/07/16
 disclosedAt: 2024/07/16
