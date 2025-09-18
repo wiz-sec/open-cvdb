@@ -1,13 +1,12 @@
 title: Entra ID actor token validation bug allowing cross-tenant global admin
-slug: one-token-to-rule-them-all-global-admin-entra-id-actor-tokens
+slug: global-admin-entra-id-actor-tokens
 cves:
 - CVE-2025-55241
 affectedPlatforms:
-- Microsoft Entra ID
-affectedServices:
-- All services reliant on Microsoft Entra ID for authentication
+- Entra ID
+affectedServices: null
+image: null
 severity: Critical
-piercingIndexVector: null
 discoveredBy:
   name: Dirk-jan Mollema
   org: Outsider Security
