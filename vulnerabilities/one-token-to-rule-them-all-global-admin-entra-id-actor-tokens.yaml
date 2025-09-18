@@ -6,7 +6,6 @@ affectedPlatforms:
 - Microsoft Entra ID
 affectedServices:
 - All services reliant on Microsoft Entra ID for authentication
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/one-token-to-rule-them-all-global-admin-entra-id-actor-tokens.jpg
 severity: critical
 piercingIndexVector: null
 discoveredBy:
