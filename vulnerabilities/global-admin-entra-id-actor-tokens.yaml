@@ -3,7 +3,7 @@ slug: global-admin-entra-id-actor-tokens
 cves:
 - CVE-2025-55241
 affectedPlatforms:
-- Entra ID
+- Azure
 affectedServices: []
 image: null
 severity: Critical
