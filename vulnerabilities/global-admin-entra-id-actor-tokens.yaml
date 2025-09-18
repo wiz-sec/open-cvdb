@@ -24,13 +24,9 @@ summary: |
   vulnerability bypassed security policies like Conditional Access. The issue was reported to Microsoft, who
   deployed a global fix within days.
 manualRemediation: |
-  None required
+  None required.
 detectionMethods: |
-  AuditLogs
-  | where not(OperationName has "group")
-  | where not(OperationName == "Set directory feature on tenant")
-  | where InitiatedBy has "user"
-  | where InitiatedBy.user.displayName has_any ( "Office 365 Exchange Online", "Skype for Business Online", "Dataverse", "Office 365 SharePoint Online", "Microsoft Dynamics ERP")
+  Review AuditLogs as recommended in referenced articles.
 contributor: https://github.com/sapirxfed
 references:
 - https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/
