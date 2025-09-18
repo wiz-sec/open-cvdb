@@ -17,7 +17,12 @@ disclosedAt: 2024/01/15
 exploitabilityPeriod: Until March 17th, 2024
 knownITWExploitation: false
 summary: |
-TrustOnCloud identified a flaw in how AWS Bedrock enforces IAM access controls using the aws-marketplace:ProductId condition key, which is meant to restrict subscriptions to specific foundation models. Their testing revealed that some Bedrock models, including those from Cohere and Stability AI, were not consistently blocked or allowed as intended by IAM policies, posing potential compliance and cost risks. AWS acknowledged and fixed the issue, notifying affected customers and updating testing procedures to prevent future issues.
+  TrustOnCloud identified a flaw in how AWS Bedrock enforces IAM access controls using the
+  aws-marketplace:ProductId condition key, which is meant to restrict subscriptions to specific
+  foundation models. Their testing revealed that some Bedrock models, including those from Cohere
+  and Stability AI, were not consistently blocked or allowed as intended by IAM policies, posing
+  potential compliance and cost risks. AWS acknowledged and fixed the issue, notifying affected
+  customers and updating testing procedures to prevent future issues.
 manualRemediation: |
   null
 detectionMethods: |
