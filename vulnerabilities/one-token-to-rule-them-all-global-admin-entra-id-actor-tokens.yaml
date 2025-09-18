@@ -1,0 +1,39 @@
+title: Entra ID actor token validation bug allowing cross-tenant global admin
+slug: one-token-to-rule-them-all-global-admin-entra-id-actor-tokens
+cves:
+- CVE-2025-55241
+affectedPlatforms:
+- Microsoft Entra ID
+affectedServices:
+- All services reliant on Microsoft Entra ID for authentication
+severity: Critical
+piercingIndexVector: null
+discoveredBy:
+  name: Dirk-jan Mollema
+  org: Outsider Security
+  domain: dirkjanm.io
+  twitter: _dirkjan
+publishedAt: 2025/09/17
+disclosedAt: 2025/09/04
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A critical vulnerability discovered in Microsoft's Entra ID (formerly Azure AD) allowed for cross-tenant
+  access and potential global admin privilege escalation. The flaw was found in the legacy Azure AD Graph API,
+  which improperly validated the originating tenant for undocumented "Actor tokens." An attacker could use a
+  token from their own tenant to authenticate as any user, including Global Admins, in any other tenant. This
+  vulnerability bypassed security policies like Conditional Access. The issue was reported to Microsoft, who
+  deployed a global fix within days.
+manualRemediation: |
+  None required
+detectionMethods: |
+  AuditLogs
+  | where not(OperationName has "group")
+  | where not(OperationName == "Set directory feature on tenant")
+  | where InitiatedBy has "user"
+  | where InitiatedBy.user.displayName has_any ( "Office 365 Exchange Online", "Skype for Business Online", "Dataverse", "Office 365 SharePoint Online", "Microsoft Dynamics ERP")
+contributor: https://github.com/sapirxfed
+references:
+- https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/
+- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55241
+entryStatus: Finalized
