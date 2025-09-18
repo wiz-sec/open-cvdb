@@ -4,7 +4,7 @@ cves:
 - CVE-2025-55241
 affectedPlatforms:
 - Entra ID
-affectedServices: null
+affectedServices: []
 image: null
 severity: Critical
 discoveredBy:
