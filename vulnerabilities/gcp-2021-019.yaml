@@ -28,6 +28,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - https://cloud.google.com/support/bulletins#gcp-2021-019
-  - https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2021-019
+  - https://cloud.google.com/support/bulletins
+  - https://cloud.google.com/anthos/clusters/docs/security-bulletins
 entryStatus: Finalized

@@ -34,13 +34,10 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://orca.security/resources/blog/ssrf-vulnerabilities-in-four-azure-services/
-  - 
-  https://msrc-blog.microsoft.com/2023/01/17/microsoft-resolves-four-ssrf-vulnerabilities-in-azure-cloud-services/
+  - https://orca.security/resources/blog/ssrf-vulnerabilities-in-four-azure-services/
+  - https://msrc-blog.microsoft.com/2023/01/17/microsoft-resolves-four-ssrf-vulnerabilities-in-azure-cloud-services/
   - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-digital-twins/
   - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-functions-app/
   - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-api-management/
-  - 
-  https://orca.security/resources/blog/ssrf-vulnerabilities-azure-machine-learning/
+  - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-machine-learning/
 entryStatus: Finalized

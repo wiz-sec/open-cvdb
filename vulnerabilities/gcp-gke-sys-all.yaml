@@ -32,4 +32,4 @@ detectionMethods: |-
 contributor: https://github.com/KatTraxler
 references:
   - https://orca.security/resources/blog/sys-all-google-kubernetes-engine-risk
-  - https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2024-003
+  - https://cloud.google.com/anthos/clusters/docs/security-bulletins

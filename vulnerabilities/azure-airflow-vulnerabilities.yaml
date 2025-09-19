@@ -28,6 +28,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://unit42.paloaltonetworks.com/azure-data-factory-apache-airflow-vulnerabilities/
+  - https://unit42.paloaltonetworks.com/azure-data-factory-apache-airflow-vulnerabilities/
 entryStatus: Finalized

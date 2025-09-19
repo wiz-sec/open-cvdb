@@ -29,6 +29,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - https://cloud.google.com/support/bulletins#GCP-2023-007
-  - https://cloud.google.com/sql/docs/security-bulletins#gcp-2023-007
+  - https://cloud.google.com/support/bulletins
+  - https://cloud.google.com/sql/docs/security-bulletins
 entryStatus: Finalized

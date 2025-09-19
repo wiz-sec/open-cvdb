@@ -31,8 +31,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/riyazwalikar
 references:
-  - 
-  https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
-  - 
-  https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
+  - https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf
+  - https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor
 entryStatus: Finalized

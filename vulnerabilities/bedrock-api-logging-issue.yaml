@@ -27,5 +27,4 @@ detectionMethods: |
 contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
-  - 
-  https://sysdig.com/blog/bedrock-slip-sysdig-trt-discovers-cloudtrail-logging-missteps/
+  - https://sysdig.com/blog/bedrock-slip-sysdig-trt-discovers-cloudtrail-logging-missteps/

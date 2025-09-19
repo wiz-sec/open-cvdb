@@ -25,5 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://securitylabs.datadoghq.com/articles/creating-immutable-users-entra-id-administrative-units/
+  - https://securitylabs.datadoghq.com/articles/creating-immutable-users-entra-id-administrative-units/

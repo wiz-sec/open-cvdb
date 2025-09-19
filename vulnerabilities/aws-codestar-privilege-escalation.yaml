@@ -34,6 +34,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/blakedunson
 references:
-  - 
-  https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/
+  - https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/
 entryStatus: Finalized

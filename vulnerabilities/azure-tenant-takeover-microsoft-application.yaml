@@ -26,5 +26,4 @@ detectionMethods: |
 contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
-  - 
-  https://falconforce.nl/arbitrary-1-click-azure-tenant-takeover-via-ms-application/
+  - https://falconforce.nl/arbitrary-1-click-azure-tenant-takeover-via-ms-application/

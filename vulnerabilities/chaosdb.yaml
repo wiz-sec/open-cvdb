@@ -29,7 +29,5 @@ detectionMethods: |-
 contributor: https://github.com/0xdabbad00
 references:
   - https://chaosdb.wiz.io/
-  - 
-  https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases
-  - 
-  https://www.wiz.io/blog/chaosdb-explained-azures-cosmos-db-vulnerability-walkthrough
+  - https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases
+  - https://www.wiz.io/blog/chaosdb-explained-azures-cosmos-db-vulnerability-walkthrough

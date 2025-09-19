@@ -28,5 +28,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://securitylabs.datadoghq.com/articles/non-production-endpoints-as-an-attack-surface-in-aws/
+  - https://securitylabs.datadoghq.com/articles/non-production-endpoints-as-an-attack-surface-in-aws/

@@ -34,6 +34,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://web.archive.org/web/20240805231624/https://www.gem.security/post/guardduty-improves-data-exfiltration-protections-through-collaboration-with-gem
+  - https://web.archive.org/web/20240805231624/https://www.gem.security/post/guardduty-improves-data-exfiltration-protections-through-collaboration-with-gem
 entryStatus: Finalized

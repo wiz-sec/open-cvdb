@@ -26,8 +26,7 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://www.upguard.com/breaches/identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more
+  - https://www.upguard.com/breaches/identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more
   - https://www.theregister.com/2020/01/23/aws_engineer_credentials_github/
   - https://github.com/SummitRoute/csp_security_mistakes/issues/17
 entryStatus: Finalized

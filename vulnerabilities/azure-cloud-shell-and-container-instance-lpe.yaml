@@ -34,6 +34,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/yuvalavra
 references:
-  - 
-  https://hencohen10.medium.com/i-own-your-cloud-shell-taking-over-azure-cloud-shell-kubernetes-cluster-through-unsecured-558621519cf9
+  - https://hencohen10.medium.com/i-own-your-cloud-shell-taking-over-azure-cloud-shell-kubernetes-cluster-through-unsecured-558621519cf9
 entryStatus: Finalized

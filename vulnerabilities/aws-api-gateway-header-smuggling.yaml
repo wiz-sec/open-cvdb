@@ -25,7 +25,6 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://aws.amazon.com/blogs/security/removing-header-remapping-from-amazon-api-gateway-and-notes-about-our-work-with-security-researchers/
+  - https://aws.amazon.com/blogs/security/removing-header-remapping-from-amazon-api-gateway-and-notes-about-our-work-with-security-researchers/
   - https://securityblog.omegapoint.se/en/writeup-apigw/
-  - https://partners.amazonaws.com/partners/001E000000Rl0xZIAR/Omegapoint)
+  - https://partners.amazonaws.com/partners/001E000000Rl0xZIAR/Omegapoint

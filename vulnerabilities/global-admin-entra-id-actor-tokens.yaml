@@ -29,7 +29,6 @@ detectionMethods: |
   Review AuditLogs as recommended in referenced articles.
 contributor: https://github.com/sapirxfed
 references:
-  - 
-  https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/
+  - https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens/
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55241
 entryStatus: Finalized

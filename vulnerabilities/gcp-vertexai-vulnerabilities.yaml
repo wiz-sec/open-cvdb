@@ -24,6 +24,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/OfirBalassiano
 references:
-  - 
-  https://unit42.paloaltonetworks.com/privilege-escalation-llm-model-exfil-vertex-ai/
+  - https://unit42.paloaltonetworks.com/privilege-escalation-llm-model-exfil-vertex-ai/
 entryStatus: Finalized

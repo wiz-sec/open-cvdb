@@ -28,7 +28,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass
+  - https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass
   - https://twitter.com/0xdabbad00/status/1258909131605307393
 entryStatus: Finalized

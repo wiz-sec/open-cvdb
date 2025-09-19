@@ -26,6 +26,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://kattraxler.github.io/gcp/hacking/2021/09/10/gcp-org-policy-bypass-ai-notebooks.html
+  - https://kattraxler.github.io/gcp/hacking/2021/09/10/gcp-org-policy-bypass-ai-notebooks.html
 entryStatus: Finalized

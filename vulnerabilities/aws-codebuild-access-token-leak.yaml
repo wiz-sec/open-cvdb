@@ -28,8 +28,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://www.halborn.com/blog/post/halborn-discovers-and-discloses-vulnerability-in-aws-code-build
-  - 
-  https://cloud.hacktricks.xyz/pentesting-cloud/aws-pentesting/aws-post-exploitation/aws-codebuild-post-exploitation/aws-codebuild-token-leakage
+  - https://www.halborn.com/blog/post/halborn-discovers-and-discloses-vulnerability-in-aws-code-build
+  - https://cloud.hacktricks.xyz/pentesting-cloud/aws-pentesting/aws-post-exploitation/aws-codebuild-post-exploitation/aws-codebuild-token-leakage
 entryStatus: Finalized

@@ -27,6 +27,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ds0440
 references:
-  - 
-  https://blog.s1r1us.ninja/research/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks
+  - https://blog.s1r1us.ninja/research/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks
 entryStatus: Finalized

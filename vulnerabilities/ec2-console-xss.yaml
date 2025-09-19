@@ -25,6 +25,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://embracethered.com/blog/posts/2020/aws-xss-cross-site-scripting-vulnerability/
+  - https://embracethered.com/blog/posts/2020/aws-xss-cross-site-scripting-vulnerability/
 entryStatus: Finalized

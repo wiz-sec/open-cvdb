@@ -26,6 +26,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://onecloudplease.com/blog/security-september-racing-against-cloudwatch-synthetics-canaries
+  - https://onecloudplease.com/blog/security-september-racing-against-cloudwatch-synthetics-canaries
 entryStatus: Finalized

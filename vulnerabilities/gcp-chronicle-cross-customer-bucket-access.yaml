@@ -30,6 +30,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - https://cloud.google.com/support/bulletins#gcp-2023-028
+  - https://cloud.google.com/support/bulletins
   - https://x.com/DoggoZW/status/1706290389974495650
 entryStatus: Finalized

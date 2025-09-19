@@ -30,6 +30,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://www.tenable.com/blog/cloudimposer-executing-code-on-millions-of-google-servers-with-a-single-malicious-package
+  - https://www.tenable.com/blog/cloudimposer-executing-code-on-millions-of-google-servers-with-a-single-malicious-package
 entryStatus: Finalized

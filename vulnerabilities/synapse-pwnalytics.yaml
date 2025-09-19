@@ -27,8 +27,7 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291
+  - https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291
   - https://www.tenable.com/security/research/tra-2022-19
   - https://www.tenable.com/security/research/tra-2022-20
 entryStatus: Finalized
