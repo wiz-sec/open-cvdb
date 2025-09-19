@@ -1,12 +1,12 @@
 title: ACSESSED
 slug: acsessed
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+- azure
 affectedServices:
 - Cognitive Search
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/network-bypass-cognitive-search.jpg
-severity: Medium
+severity: medium
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.1, A8: 0.7}
 discoveredBy:
   name: Emilien Socchi
