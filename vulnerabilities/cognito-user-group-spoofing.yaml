@@ -31,5 +31,6 @@ manualRemediation: |
 detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
-references: https://www.opsmorph.com/Blog/usergroupspoofing
+references:
+  - https://www.opsmorph.com/Blog/usergroupspoofing
 entryStatus: Finalized

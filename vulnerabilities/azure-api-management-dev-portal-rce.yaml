@@ -25,5 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/
+  - https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/

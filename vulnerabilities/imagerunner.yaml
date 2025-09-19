@@ -34,5 +34,4 @@ detectionMethods: |-
 contributor: https://github.com/mer-b
 entryStatus: Finalized
 references:
-  - 
-  https://www.tenable.com/blog/imagerunner-a-privilege-escalation-vulnerability-impacting-gcp-cloud-run
+  - https://www.tenable.com/blog/imagerunner-a-privilege-escalation-vulnerability-impacting-gcp-cloud-run

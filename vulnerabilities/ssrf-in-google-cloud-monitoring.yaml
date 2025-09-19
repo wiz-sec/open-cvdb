@@ -28,6 +28,5 @@ detectionMethods: |-
 contributor: https://github.com/0xdabbad00
 references:
   - https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html
-  - 
-  https://omespino.com/write-up-google-vrp-n-a-ssrf-bypass-with-quadzero-in-google-cloud-monitoring/
+  - https://omespino.com/write-up-google-vrp-n-a-ssrf-bypass-with-quadzero-in-google-cloud-monitoring/
 entryStatus: Finalized

@@ -25,5 +25,6 @@ manualRemediation: |
 detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
-references: https://ianduffy.ie/2016/11/26/azure-bug-bounty-pwning-red-hat-enterprise-linux/
+references:
+  - https://ianduffy.ie/2016/11/26/azure-bug-bounty-pwning-red-hat-enterprise-linux/
 entryStatus: Finalized

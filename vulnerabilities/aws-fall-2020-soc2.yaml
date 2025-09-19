@@ -23,6 +23,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://aws.amazon.com/blogs/security/fall-2020-soc-reports-now-available-with-124-services-in-scope/
+  - https://aws.amazon.com/blogs/security/fall-2020-soc-reports-now-available-with-124-services-in-scope/
 entryStatus: Finalized

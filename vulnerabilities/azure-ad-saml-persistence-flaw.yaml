@@ -25,5 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://www.secureworks.com/research/azure-active-directory-flaw-allowed-saml-persistence
+  - https://www.secureworks.com/research/azure-active-directory-flaw-allowed-saml-persistence

@@ -30,8 +30,7 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/
+  - https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36419
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38156
   - https://github.com/apache/oozie/pull/92

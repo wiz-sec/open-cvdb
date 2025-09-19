@@ -27,11 +27,9 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://obmiblog.blogspot.com/2022/12/gcp-2022-few-bugs-in-google-cloud-shell.html
+  - https://obmiblog.blogspot.com/2022/12/gcp-2022-few-bugs-in-google-cloud-shell.html
   - https://obmiblog.blogspot.com/2019/12/gcp-5k-file-uploading-csrf.html
   - https://obmiblog.blogspot.com/2019/12/gcp-5k-oauth-token-hijack.html
   - https://obmiblog.blogspot.com/2019/12/gcp-5k-xss-type-ii.html
-  - 
-  https://security.googleblog.com/2023/06/google-cloud-awards-313337-in-2022-vrp.html
+  - https://security.googleblog.com/2023/06/google-cloud-awards-313337-in-2022-vrp.html
 entryStatus: Finalized

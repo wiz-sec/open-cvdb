@@ -26,10 +26,8 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://cloud.google.com/blog/products/identity-security/updates-coming-for-authorized-networks-and-cloud-runfunctions-on-gke
-  - 
-  https://cloud.google.com/blog/products/containers-kubernetes/understanding-gkes-new-control-plane-connectivity
+  - https://cloud.google.com/blog/products/identity-security/updates-coming-for-authorized-networks-and-cloud-runfunctions-on-gke
+  - https://cloud.google.com/blog/products/containers-kubernetes/understanding-gkes-new-control-plane-connectivity
   - https://twitter.com/itspeterc/status/1534205155914264576
   - https://twitter.com/itspeterc/status/1578054948188819457
 entryStatus: Finalized

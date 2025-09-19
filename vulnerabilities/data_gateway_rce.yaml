@@ -30,6 +30,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://www.netspi.com/blog/technical/vulnerability-research/azure-service-bus-power-platform/
+  - https://www.netspi.com/blog/technical/vulnerability-research/azure-service-bus-power-platform/
 entryStatus: Finalized

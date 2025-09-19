@@ -32,7 +32,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/KatTraxler
 references:
-  - 
-  https://www.vectra.ai/blog/transitive-access-abuse-data-exfiltration-via-document-ai
+  - https://www.vectra.ai/blog/transitive-access-abuse-data-exfiltration-via-document-ai
   - https://github.com/KatTraxler/document-ai-samples
 entryStatus: Finalized

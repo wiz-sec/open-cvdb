@@ -28,5 +28,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://www.semperis.com/blog/unoauthorized-privilege-elevation-through-microsoft-applications/
+  - https://www.semperis.com/blog/unoauthorized-privilege-elevation-through-microsoft-applications/

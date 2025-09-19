@@ -30,6 +30,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html
+  - https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html
 entryStatus: Finalized

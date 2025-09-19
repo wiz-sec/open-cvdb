@@ -37,6 +37,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/
+  - https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/
 entryStatus: Finalized

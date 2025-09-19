@@ -27,6 +27,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://orca.security/resources/blog/oracle-server-side-request-forgery-ssrf-attack-metadata/
+  - https://orca.security/resources/blog/oracle-server-side-request-forgery-ssrf-attack-metadata/
 entryStatus: Finalized

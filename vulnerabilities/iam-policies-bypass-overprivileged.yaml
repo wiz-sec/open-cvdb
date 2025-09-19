@@ -27,10 +27,8 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://duo.com/blog/potential-gaps-in-suggested-amazon-web-services-security-policies-for-mfa
+  - https://duo.com/blog/potential-gaps-in-suggested-amazon-web-services-security-policies-for-mfa
   - https://summitroute.com/blog/2019/06/18/aws-iam-managed-policy-review/
-  - 
-  https://medium.com/ymedialabs-innovation/an-aws-managed-policy-that-allowed-granting-root-admin-access-to-any-role-51b409ea7ff0
+  - https://medium.com/ymedialabs-innovation/an-aws-managed-policy-that-allowed-granting-root-admin-access-to-any-role-51b409ea7ff0
   - https://www.tenchisecurity.com/blog/thefaultinourstars
 entryStatus: Finalized

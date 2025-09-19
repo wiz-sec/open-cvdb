@@ -30,6 +30,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens
+  - https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens
 entryStatus: Finalized

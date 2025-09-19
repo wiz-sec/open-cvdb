@@ -38,7 +38,6 @@ detectionMethods: |
   the identity pool ID is not owned by an identity pool in the same account.
 contributor: https://github.com/frichetten
 references:
-  - 
-  https://securitylabs.datadoghq.com/articles/amplified-exposure-how-aws-flaws-made-amplify-iam-roles-vulnerable-to-takeover/
+  - https://securitylabs.datadoghq.com/articles/amplified-exposure-how-aws-flaws-made-amplify-iam-roles-vulnerable-to-takeover/
   - https://aws.amazon.com/security/security-bulletins/AWS-2024-003/
 entryStatus: Finalized

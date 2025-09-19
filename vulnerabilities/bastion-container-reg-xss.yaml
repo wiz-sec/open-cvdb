@@ -36,8 +36,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://orca.security/resources/blog/examining-two-xss-vulnerabilities-in-azure-services/
-  - 
-  https://msrc.microsoft.com/blog/2023/06/microsoft-mitigates-set-of-cross-site-scripting-xss-vulnerabilities-in-azure-bastion-and-azure-container-registry/
+  - https://orca.security/resources/blog/examining-two-xss-vulnerabilities-in-azure-services/
+  - https://msrc.microsoft.com/blog/2023/06/microsoft-mitigates-set-of-cross-site-scripting-xss-vulnerabilities-in-azure-bastion-and-azure-container-registry/
 entryStatus: Finalized

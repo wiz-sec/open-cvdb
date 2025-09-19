@@ -35,7 +35,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/jacks-reid
 references:
-  - 
-  https://www.dig.security/post/gcp-cloudsql-vulnerability-leads-to-internal-container-access-and-data-exposure
-  - https://cloud.google.com/sql/docs/security-bulletins#gcp-2023-007
+  - https://www.dig.security/post/gcp-cloudsql-vulnerability-leads-to-internal-container-access-and-data-exposure
+  - https://cloud.google.com/sql/docs/security-bulletins
 entryStatus: Finalized

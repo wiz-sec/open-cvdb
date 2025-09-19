@@ -36,7 +36,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
-  - https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
+  - https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
+  - https://cloud.google.com/composer/docs/known-issues
 entryStatus: Finalized

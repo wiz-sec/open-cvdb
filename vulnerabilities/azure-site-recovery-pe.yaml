@@ -32,6 +32,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://www.netspi.com/blog/technical/cloud-penetration-testing/elevating-privileges-with-azure-site-recovery-services/
+  - https://www.netspi.com/blog/technical/cloud-penetration-testing/elevating-privileges-with-azure-site-recovery-services/
 entryStatus: Finalized

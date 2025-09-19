@@ -27,6 +27,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/nirohfeld
 references:
-  - 
-  https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
+  - https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
 entryStatus: Finalized

@@ -25,6 +25,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://www.secureworks.com/research/azure-active-directory-exposes-internal-information
+  - https://www.secureworks.com/research/azure-active-directory-exposes-internal-information
 entryStatus: Finalized
