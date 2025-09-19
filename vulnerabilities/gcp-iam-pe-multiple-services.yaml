@@ -32,6 +32,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html
+  - https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html
 entryStatus: Finalized

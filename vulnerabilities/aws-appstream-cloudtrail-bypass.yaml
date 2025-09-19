@@ -27,6 +27,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream
+  - https://saransh-rana.gitbook.io/aboutme/bypass-cloudtrail-detection-using-aws-appstream
 entryStatus: Finalized

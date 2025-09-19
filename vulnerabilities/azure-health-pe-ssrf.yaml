@@ -24,6 +24,5 @@ detectionMethods: |-
   None
 contributor:
 references:
-  - 
-  https://www.tenable.com/blog/compromising-microsofts-ai-healthcare-chatbot-service
+  - https://www.tenable.com/blog/compromising-microsofts-ai-healthcare-chatbot-service
 entryStatus: Stub

@@ -25,5 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/
+  - https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/

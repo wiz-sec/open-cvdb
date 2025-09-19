@@ -30,7 +30,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020
+  - https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020
   - https://initblog.com/2020/oslogin-privesc/
 entryStatus: Finalized

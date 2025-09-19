@@ -20,9 +20,7 @@ summary: |
 manualRemediation:
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://msrc-blog.microsoft.com/2022/10/19/investigation-regarding-misconfigured-microsoft-storage-location-2/
-  - 
-  https://socradar.io/sensitive-data-of-65000-entities-in-111-countries-leaked-due-to-a-single-misconfigured-data-bucket/
+  - https://msrc-blog.microsoft.com/2022/10/19/investigation-regarding-misconfigured-microsoft-storage-location-2/
+  - https://socradar.io/sensitive-data-of-65000-entities-in-111-countries-leaked-due-to-a-single-misconfigured-data-bucket/
   - https://socradar.io/details-on-the-largest-b2b-leak-bluebleed/
 entryStatus: Finalized

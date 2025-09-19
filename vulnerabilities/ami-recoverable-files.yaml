@@ -27,6 +27,5 @@ detectionMethods: |-
 contributor: https://github.com/ramimac
 references:
   - http://seclab.nu/static/publications/sac2012ec2.pdf
-  - 
-  https://aws.amazon.com/security/security-bulletins/reminder-about-safely-sharing-and-using-public-amis/
+  - https://aws.amazon.com/security/security-bulletins/reminder-about-safely-sharing-and-using-public-amis/
 entryStatus: Finalized

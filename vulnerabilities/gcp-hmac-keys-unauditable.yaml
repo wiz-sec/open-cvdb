@@ -37,6 +37,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/KatTraxler
 references:
-  - 
-  https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+  - https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
 entryStatus: Finalized

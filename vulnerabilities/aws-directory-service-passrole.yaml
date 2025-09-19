@@ -29,7 +29,6 @@ detectionMethods: |
   Roles trusting Directory Service being assumed by unexpected users.
 contributor: https://github.com/benbridts
 references:
-  - 
-  https://cloudar.be/awsblog/spotted-privilege-escalation-in-aws-directory-service/
+  - https://cloudar.be/awsblog/spotted-privilege-escalation-in-aws-directory-service/
   - https://aws.amazon.com/security/security-bulletins/AWS-2023-003/
 entryStatus: Finalized

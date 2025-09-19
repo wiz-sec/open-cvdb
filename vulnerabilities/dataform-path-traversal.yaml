@@ -30,5 +30,5 @@ detectionMethods: |-
 contributor: https://github.com/korniko98
 entryStatus: Finalized
 references:
-  - https://cloud.google.com/support/bulletins#gcp-2025-045
+  - https://cloud.google.com/support/bulletins
   - https://www.cve.org/CVERecord?id=CVE-2025-9118

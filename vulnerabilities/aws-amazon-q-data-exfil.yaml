@@ -28,6 +28,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://embracethered.com/blog/posts/2024/aws-amazon-q-fixes-markdown-rendering-vulnerability/
+  - https://embracethered.com/blog/posts/2024/aws-amazon-q-fixes-markdown-rendering-vulnerability/
 entryStatus: Finalized

@@ -29,7 +29,6 @@ detectionMethods: |-
 contributor: https://github.com/mer-b
 references:
   - https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d
-  - 
-  https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
+  - https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
   - https://docs.aws.amazon.com/codeartifact/latest/ug/package-origin-controls.html
 entryStatus: Finalized

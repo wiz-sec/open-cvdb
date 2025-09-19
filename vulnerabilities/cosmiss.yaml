@@ -33,7 +33,6 @@ manualRemediation: |
   None required.
 contributor: https://github.com/korniko98
 references:
-  - 
-  https://msrc-blog.microsoft.com/2022/11/01/microsoft-mitigates-vulnerability-in-jupyter-notebooks-for-azure-cosmos-db/
+  - https://msrc-blog.microsoft.com/2022/11/01/microsoft-mitigates-vulnerability-in-jupyter-notebooks-for-azure-cosmos-db/
   - https://orca.security/resources/blog/cosmiss-vulnerability-azure-cosmos-db/
 entryStatus: Finalized

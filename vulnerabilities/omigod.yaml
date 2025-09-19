@@ -36,13 +36,11 @@ detectionMethods: |
   OMI version < 1.6.8.1
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
+  - https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
   - https://www.wiz.io/blog/omigod-critical-vulnerabilities-in-omi-azure
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38647
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38648
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38645
   - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38649
-  - 
-  https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
+  - https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
 entryStatus: Finalized

@@ -25,6 +25,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://medium.com/@LogicalHunter/identity-aware-proxy-misconfiguration-google-cloud-vulnerability-813d2a07a4ed
+  - https://medium.com/@LogicalHunter/identity-aware-proxy-misconfiguration-google-cloud-vulnerability-813d2a07a4ed
 entryStatus: finalized

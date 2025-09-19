@@ -31,6 +31,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-logic-app-contributor-escalation-to-root-owner/
+  - https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-logic-app-contributor-escalation-to-root-owner/
 entryStatus: Finalized

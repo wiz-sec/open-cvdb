@@ -27,10 +27,7 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - 
-  https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/
-  - 
-  https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities
-  - 
-  https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution
+  - https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/
+  - https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities
+  - https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution
 entryStatus: Finalized

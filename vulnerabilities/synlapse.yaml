@@ -31,8 +31,6 @@ detectionMethods: |-
 contributor: https://github.com/0xdabbad00
 references:
   - https://orca.security/resources/blog/azure-synapse-analytics-security-advisory/
-  - 
-  https://orca.security/resources/blog/synlapse-critical-azure-synapse-analytics-service-vulnerability/
-  - 
-  https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/
+  - https://orca.security/resources/blog/synlapse-critical-azure-synapse-analytics-service-vulnerability/
+  - https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/
 entryStatus: Finalized

@@ -32,7 +32,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/korniko98
 references:
-  - https://cloud.google.com/build/docs/security-bulletins#GCP-2023-013
-  - 
-  https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/
+  - https://cloud.google.com/build/docs/security-bulletins
+  - https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/
 entryStatus: Finalized

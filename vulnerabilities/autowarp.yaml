@@ -30,6 +30,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/christophetd
 references:
-  - 
-  https://orca.security/resources/blog/autowarp-microsoft-azure-automation-service-vulnerability/
+  - https://orca.security/resources/blog/autowarp-microsoft-azure-automation-service-vulnerability/
 entryStatus: Finalized

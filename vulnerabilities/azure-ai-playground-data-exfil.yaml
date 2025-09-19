@@ -31,6 +31,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
+  - https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
 entryStatus: Finalized

@@ -24,7 +24,6 @@ detectionMethods: |-
   None
 contributor:
 references:
-  - 
-  https://msrc.microsoft.com/blog/2024/06/mitigating-ssrf-vulnerabilities-impacting-azure-machine-learning/
+  - https://msrc.microsoft.com/blog/2024/06/mitigating-ssrf-vulnerabilities-impacting-azure-machine-learning/
   - https://www.tenable.com/security/research/tra-2024-22
 entryStatus: Stub

@@ -27,7 +27,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://spaceraccoon.dev/exploiting-improper-validation-amazon-simple-notification-service/
-  - https://2022.cloud-village.org/#talks?collapseEugeneLim
+  - https://spaceraccoon.dev/exploiting-improper-validation-amazon-simple-notification-service/
+  - https://2022.cloud-village.org/
 entryStatus: Finalized

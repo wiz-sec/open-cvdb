@@ -29,8 +29,6 @@ detectionMethods: |-
   None
 contributor: https://github.com/riyazwalikar
 references:
-  - 
-  https://kloudle.com/blog/aws-rds-does-not-force-clients-to-connect-using-a-secure-transport-layer
-  - 
-  https://kloudle.com/academy/fixing-the-default-insecure-network-connection-option-for-rds-instances
+  - https://kloudle.com/blog/aws-rds-does-not-force-clients-to-connect-using-a-secure-transport-layer
+  - https://kloudle.com/academy/fixing-the-default-insecure-network-connection-option-for-rds-instances
 entryStatus: Finalized

@@ -25,5 +25,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/0xdabbad00
 references:
-  - https://cloud.google.com/support/bulletins#gcp-2021-020
+  - https://cloud.google.com/support/bulletins
 entryStatus: Finalized

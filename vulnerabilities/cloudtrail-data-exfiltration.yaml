@@ -25,5 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://github.com/jfbette/cloudconcerns/blob/main/scenarios/dataleakage/cloudtrail/data-exfiltration-through-cloudtrail.md
+  - https://github.com/jfbette/cloudconcerns/blob/main/scenarios/dataleakage/cloudtrail/data-exfiltration-through-cloudtrail.md

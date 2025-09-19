@@ -35,7 +35,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-  - 
-  https://www.tenable.com/blog/these-services-shall-not-pass-abusing-service-tags-to-bypass-azure-firewall-rules-customer
-  - 
-  https://msrc.microsoft.com/blog/2024/06/improved-guidance-for-azure-network-service-tags/
+  - https://www.tenable.com/blog/these-services-shall-not-pass-abusing-service-tags-to-bypass-azure-firewall-rules-customer
+  - https://msrc.microsoft.com/blog/2024/06/improved-guidance-for-azure-network-service-tags/

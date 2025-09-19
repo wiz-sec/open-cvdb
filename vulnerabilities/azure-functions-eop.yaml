@@ -31,6 +31,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/mer-b
 references:
-  - 
-  https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-function-apps/
+  - https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-function-apps/
 entryStatus: Finalized

@@ -31,6 +31,5 @@ detectionMethods: |-
   None
 contributor: https://github.com/ramimac
 references:
-  - 
-  https://awsteele.com/blog/2023/12/19/an-aws-iam-identity-center-vulnerability.html
+  - https://awsteele.com/blog/2023/12/19/an-aws-iam-identity-center-vulnerability.html
 entryStatus: Finalized
