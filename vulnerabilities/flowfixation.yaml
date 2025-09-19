@@ -1,20 +1,21 @@
 title: FlowFixation
 slug: flowfixation
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- MWAA
-image: https://images.unsplash.com/photo-1528922087877-3f44f53a8f7d?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: High
+  - MWAA
+image: 
+  https://images.unsplash.com/photo-1528922087877-3f44f53a8f7d?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: high
 discoveredBy:
   name: Liv Matan
   org: Tenable
   domain: tenable.com
   twitter: terminatorLM
-disclosedAt: null
+disclosedAt:
 publishedAt: 2024/03/21
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A flaw in Amazon Managed Workflows for Apache Airflow (MWAA) could have allowed potential session hijacking and remote code execution.
@@ -25,8 +26,10 @@ summary: |
   and grants the attacker access.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/mer-b
 references:
-- https://www.tenable.com/blog/flowfixation-aws-apache-airflow-service-takeover-vulnerability-and-why-neglecting-guardrails
+  - 
+  https://www.tenable.com/blog/flowfixation-aws-apache-airflow-service-takeover-vulnerability-and-why-neglecting-guardrails
 entryStatus: Finalized

@@ -1,13 +1,14 @@
 title: GCP HMAC Keys do not log creation, deletion or usage
 slug: gcp-hmac-keys-insufficient-logging
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Google Cloud Storage XML API
-- Cloud Console Private API Service
-image: https://images.unsplash.com/photo-1417026846249-f31f7e43fc35?q=80&w=2143&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Low
+  - Google Cloud Storage XML API
+  - Cloud Console Private API Service
+image: 
+  https://images.unsplash.com/photo-1417026846249-f31f7e43fc35?q=80&w=2143&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
 discoveredBy:
   name: Kat Traxler
   org: Vectra AI
@@ -25,8 +26,10 @@ summary: |
   presenting a denial of service risk.
 manualRemediation: |
   None possible
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/KatTraxler
 references:
-- https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+  - 
+  https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
 entryStatus: Finalized

@@ -1,20 +1,20 @@
 title: Data Exfiltration Through CloudTrail
 slug: cloudtrail-data-exfiltration
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- CloudTrail
-image: null
-severity: High
+  - CloudTrail
+image:
+severity: high
 discoveredBy:
-  name: null
-  org: null
-  domain: null
-  twitter: null
+  name:
+  org:
+  domain:
+  twitter:
 publishedAt: 2023/12/20
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   This scenario describes a potential data exfiltration technique using AWS CloudTrail. An attacker with access to CloudTrail logs could potentially extract sensitive information from logged events, including API calls and data modifications. This poses a risk to data confidentiality and could lead to unauthorized access to sensitive information.
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://github.com/jfbette/cloudconcerns/blob/main/scenarios/dataleakage/cloudtrail/data-exfiltration-through-cloudtrail.md
+  - 
+  https://github.com/jfbette/cloudconcerns/blob/main/scenarios/dataleakage/cloudtrail/data-exfiltration-through-cloudtrail.md

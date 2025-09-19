@@ -1,12 +1,13 @@
 title: AWS CloudTrail bypass for specific IAM actions
 slug: aws-iamadmin-cloudtrail-bypass
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- IAM
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-iamadmin-cloudtrail-bypass.jpg
-severity: Medium
+  - IAM
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-iamadmin-cloudtrail-bypass.jpg
+severity: medium
 discoveredBy:
   name: Nick Frichette
   org: Datadog
@@ -22,8 +23,9 @@ summary: |
   This could have enabled adversaries to perform enumeration and reconnaissance activity undetected after gaining a foothold in a victim AWS environment.
 manualRemediation: |
   None required 
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/frichetten
 references:
-- https://securitylabs.datadoghq.com/articles/iamadmin-cloudtrail-bypass/
+  - https://securitylabs.datadoghq.com/articles/iamadmin-cloudtrail-bypass/
 entryStatus: Finalized

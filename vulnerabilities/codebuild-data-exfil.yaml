@@ -1,19 +1,20 @@
 title: Codebuild data exfiltration
 slug: codebuild-data-exfil
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
-image: https://images.unsplash.com/photo-1631106256072-54c89defe828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-severity: Low
+  - aws
+affectedServices:
+image: 
+  https://images.unsplash.com/photo-1631106256072-54c89defe828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+severity: low
 discoveredBy:
   name: Aidan Steele
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: __steele
 publishedAt: 2022/02/03
 disclosedAt: 2022/02/03
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   When customers attach a CodeBuild project to their VPC, CodeBuild’s build container
@@ -25,8 +26,10 @@ summary: |
   customer-defined VPC configuration.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html
+  - 
+  https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html
 entryStatus: Finalized

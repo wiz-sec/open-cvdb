@@ -1,20 +1,21 @@
 title: Lethal Injection
 slug: lethal-injection
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Health Bot
-image: https://images.unsplash.com/photo-1611690828749-66c846dbd1b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Critical
+  - Health Bot
+image: 
+  https://images.unsplash.com/photo-1611690828749-66c846dbd1b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: critical
 discoveredBy:
   name: Yanir Tsarimi
   org: Breachproof
   domain: breachproof.net
   twitter: yanir_
 publishedAt: 2024/05/07
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Multiple vulnerabilities were uncovered in Azure Health Bot service, Microsoft's health chatbot platform.
@@ -28,9 +29,11 @@ summary: |
   vm2 to the isolated-vm library (which uses V8 isolates).
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://www.breachproof.net/blog/lethal-injection-how-we-hacked-microsoft-ai-chat-bot
-- https://twitter.com/Yanir_/status/1787927285443494137
+  - 
+  https://www.breachproof.net/blog/lethal-injection-how-we-hacked-microsoft-ai-chat-bot
+  - https://twitter.com/Yanir_/status/1787927285443494137
 entryStatus: Finalized

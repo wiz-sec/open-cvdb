@@ -1,19 +1,19 @@
 title: AWS package backfill attack
 slug: aws-package-backfill
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
+  - aws
+affectedServices:
 image: https://images.pexels.com/photos/4498122/pexels-photo-4498122.jpeg
-severity: Low
+severity: low
 discoveredBy:
-  name: null
+  name:
   org: Mend Diffend
   domain: https://www.mend.io/
-  twitter: null
+  twitter:
 publishedAt: 2022/05/01
 disclosedAt: 2022/05/01
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Two malicious versions were created of packages previously used by AWS.
@@ -22,9 +22,10 @@ summary: |
   removed, their names became available and the two packages were then
   populated with malicious code. If AWS-deployed software had any dependencies
   on these packages, this would have led to a dependency confusion attack.
-manualRemediation: null
-detectionMethods: null
+manualRemediation:
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.mend.io/resources/blog/aws-targeted-by-a-package-backfill-attack/
+  - https://www.mend.io/resources/blog/aws-targeted-by-a-package-backfill-attack/
 entryStatus: Finalized

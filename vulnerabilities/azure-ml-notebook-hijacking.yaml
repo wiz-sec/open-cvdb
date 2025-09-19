@@ -1,21 +1,21 @@
 title: Hijacking Azure Machine Learning Notebooks
 slug: azure-ml-notebook-hijacking
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Machine Learning
-- Azure Storage
-image: null
-severity: High
+  - Azure Machine Learning
+  - Azure Storage
+image:
+severity: high
 discoveredBy:
   name: Karl Fosaaen
   org: NetSPI
   domain: netspi.com
-  twitter: null
+  twitter:
 publishedAt: 2025/01/08
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure Machine Learning notebooks can be hijacked by attackers with Storage Account access to inject malicious code. A now-fixed vulnerability allowed Reader role escalation to code execution. The article details the attack methods, including modifying notebooks, obtaining managed identity tokens, and exfiltrating data. It also introduces a tool for dumping AML workspace credentials.
@@ -26,4 +26,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.netspi.com/blog/technical-blog/cloud-pentesting/hijacking-azure-machine-learning-notebooks/
+  - 
+  https://www.netspi.com/blog/technical-blog/cloud-pentesting/hijacking-azure-machine-learning-notebooks/

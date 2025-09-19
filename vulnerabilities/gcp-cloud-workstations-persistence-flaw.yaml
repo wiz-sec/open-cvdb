@@ -1,20 +1,20 @@
 title: Persistence Vulnerability in GCP Cloud Workstations
 slug: gcp-cloud-workstations-persistence-flaw
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Workstations
-image: null
-severity: High
+  - Cloud Workstations
+image:
+severity: high
 discoveredBy:
   name: Saransh Rana
   org: CRED
   domain: cred.club
-  twitter: null
+  twitter:
 publishedAt: 2022/07/16
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A critical security flaw in Google Cloud Platform's Cloud Workstations allows unauthorized access and privilege escalation. The vulnerability stems from persistent session management, enabling users to access and exploit credentials of higher-privileged users. This can lead to impersonation, creation of new service accounts with elevated permissions, and bypassing of access controls.
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://saransh-rana.gitbook.io/aboutme/maintaining-persistence-via-shared-sessions-on-cloud-workstations
+  - 
+  https://saransh-rana.gitbook.io/aboutme/maintaining-persistence-via-shared-sessions-on-cloud-workstations

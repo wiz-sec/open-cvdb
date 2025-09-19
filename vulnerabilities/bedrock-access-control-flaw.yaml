@@ -1,18 +1,18 @@
 title: Flaw in Bedrock's Foundation Model Access Control
 slug: bedrock-access-control-flaw
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Amazon Bedrock
-- AWS Marketplace
-image: null
-severity: High
+  - Amazon Bedrock
+  - AWS Marketplace
+image:
+severity: high
 discoveredBy:
   name: Carlos Mora
   org: TrustOnCloud
   domain: trustoncloud.com
-  twitter: null
+  twitter:
 publishedAt: 2024/03/27
 disclosedAt: 2024/01/15
 exploitabilityPeriod: Until 2024/01/18
@@ -26,4 +26,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://trustoncloud.com/exposing-the-weakness-how-we-identified-a-flaw-in-bedrocks-foundation-model-access-control/
+  - 
+  https://trustoncloud.com/exposing-the-weakness-how-we-identified-a-flaw-in-bedrocks-foundation-model-access-control/

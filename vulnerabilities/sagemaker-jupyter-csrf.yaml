@@ -1,21 +1,21 @@
 title: AWS SageMaker Jupyter Notebook instance CSRF
 slug: sagemaker-jupyter-csrf
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- SageMaker Jupyter Notebook
+  - SageMaker Jupyter Notebook
 image: https://www.inawisdom.com/wp-content/uploads/2018/06/SageMaker_Icon_Large.jpg
-severity: Medium
+severity: medium
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.1, A8: 0.9}
 discoveredBy:
   name: Gafnit Amiga
   org: Lightspin
   domain: https://www.lightspin.io/
-  twitter: null
+  twitter:
 disclosedAt: 2021/12/02
 publishedAt: 2021/12/02
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   AWS SageMaker Notebook server lacked a check of the Origin header that
@@ -23,8 +23,9 @@ summary: |
   arbitrary actions in customer environments. The exact same issue existed in GCP previously.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/a10ns
 references:
-- https://blog.lightspin.io/aws-sagemaker-notebook-takeover-vulnerability
+  - https://blog.lightspin.io/aws-sagemaker-notebook-takeover-vulnerability
 entryStatus: Finalized

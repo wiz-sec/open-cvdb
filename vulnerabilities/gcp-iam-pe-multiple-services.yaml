@@ -1,25 +1,25 @@
 title: IAM privilege escalation in multiple GCP services
 slug: gcp-iam-pe-multiple-services
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Composer
-- Dataflow
-- Dataproc
-- Dataprep
-- Data Fusion
+  - Composer
+  - Dataflow
+  - Dataproc
+  - Dataprep
+  - Data Fusion
 image: https://cdn.pixabay.com/photo/2019/08/20/07/55/escalator-4418051_1280.jpg
-severity: High
+severity: high
 discoveredBy:
   name: Allison Donovan, Dylan Ayrey
-  org: null
+  org:
   domain: https://security.love/
-  twitter: null
+  twitter:
 disclosedAt: 2019/06/03
 publishedAt: 2020/11/22
 exploitabilityPeriod: Ongoing, partially fixed on June 2020
-knownITWExploitation: null
+knownITWExploitation:
 summary: |
   Composer, Dataflow, Dataproc, Dataprep and Data Fusion all used the Compute Engine
   default service account by default and relied on product-level IAM permissions
@@ -28,8 +28,10 @@ summary: |
   these services to require this permission.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html
+  - 
+  https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html
 entryStatus: Finalized

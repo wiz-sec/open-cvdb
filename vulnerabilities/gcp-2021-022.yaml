@@ -1,21 +1,22 @@
 title: Predictible seed in Anthos Identity Service LDAP module
 slug: gcp-2021-022
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Anthos
-image: https://images.unsplash.com/photo-1458014854819-1a40aa70211c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Low
+  - Anthos
+image: 
+  https://images.unsplash.com/photo-1458014854819-1a40aa70211c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
 discoveredBy:
-  name: null
-  org: null
-  domain: null
-  twitter: null
-disclosedAt: null
+  name:
+  org:
+  domain:
+  twitter:
+disclosedAt:
 publishedAt: 2021/09/22
 exploitabilityPeriod: Ongoing
-knownITWExploitation: null
+knownITWExploitation:
 summary: |
   A vulnerability was discovered in the Anthos Identity Service (AIS) LDAP module
   of Anthos clusters on VMware versions 1.8 and 1.8.1 where a seed key used in generating
@@ -23,9 +24,10 @@ summary: |
   claims and escalate privileges indefinitely.
 manualRemediation: |
   Upgrade your clusters to version 1.8.2.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://cloud.google.com/support/bulletins#gcp-2021-022
-- https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2021-022
+  - https://cloud.google.com/support/bulletins#gcp-2021-022
+  - https://cloud.google.com/anthos/clusters/docs/security-bulletins#gcp-2021-022
 entryStatus: Finalized

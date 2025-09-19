@@ -1,20 +1,20 @@
 title: Microsoft Healthcare Chatbot Vulnerabilities
 slug: microsoft-healthcare-chatbot-vulnerabilities
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Health Bot
-image: null
-severity: High
+  - Azure Health Bot
+image:
+severity: high
 discoveredBy:
   name: Yanir Tsarimi
   org: Breachproof
   domain: breachproof.com
-  twitter: null
+  twitter:
 publishedAt: 2024/01/01
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Multiple vulnerabilities in Microsoft's Azure Health Bot service were discovered, allowing access to sensitive infrastructure and confidential medical data. Issues included sandbox escapes, unrestricted code execution, access to authentication secrets, cross-tenant data exposure, and unauthorized deletion of resources. Microsoft quickly patched the vulnerabilities and restructured the service architecture for improved security.
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.breachproof.net/blog/lethal-injection-how-we-hacked-microsoft-ai-chat-bot
+  - 
+  https://www.breachproof.net/blog/lethal-injection-how-we-hacked-microsoft-ai-chat-bot

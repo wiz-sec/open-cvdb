@@ -1,17 +1,17 @@
 title: GitHub Copilot Chat Vulnerable to Data Exfiltration
 slug: github-copilot-chat-data-exfiltration
-cves: null
+cves: []
 affectedPlatforms:
-- GitHub
+  - github
 affectedServices:
-- GitHub Copilot Chat
-image: null
-severity: High
+  - GitHub Copilot Chat
+image:
+severity: high
 discoveredBy:
   name: wunderwuzzi
   org: Embrace The Red
   domain: embracethered.com
-  twitter: null
+  twitter:
 publishedAt: 2024/06/14
 disclosedAt: 2024/02/25
 exploitabilityPeriod: Until 2024/06/12
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/
+  - 
+  https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/

@@ -3,16 +3,16 @@ slug: dataform-path-traversal
 cves:
   - CVE-2025-9118
 affectedPlatforms:
-  - GCP
+  - gcp
 affectedServices:
   - Dataform
-image: null
-severity: Critical
+image:
+severity: critical
 discoveredBy:
-  name: null
+  name:
   org: Unknown
-  domain: null
-  twitter: null
+  domain:
+  twitter:
 publishedAt: 2025/08/21
 disclosedAt: 2025/08/21
 exploitabilityPeriod: 2025/08/07 to 2025/08/21
@@ -25,7 +25,8 @@ summary: |
   Google, there was no evidence of exploitation in the wild.
 manualRemediation: |
   None required.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 entryStatus: Finalized
 references:

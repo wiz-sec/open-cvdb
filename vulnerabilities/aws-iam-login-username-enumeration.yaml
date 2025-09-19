@@ -1,20 +1,20 @@
 title: AWS Sign-in IAM User Login Flow Username Enumeration
 slug: aws-iam-login-username-enumeration
 cves:
-- CVE-2025-0693
+  - CVE-2025-0693
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- IAM
-image: null
-severity: Medium
+  - IAM
+image:
+severity: medium
 discoveredBy:
-  name: null
+  name:
   org: Rhino Security Labs
   domain: rhinosecuritylabs.com
-  twitter: null
+  twitter:
 publishedAt: 2025/01/23
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2025/01/16
 knownITWExploitation: false
 summary: |
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://aws.amazon.com/security/security-bulletins/AWS-2025-002/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2025-002/

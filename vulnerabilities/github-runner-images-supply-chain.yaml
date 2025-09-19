@@ -1,17 +1,17 @@
 title: Poisoning GitHub's Runner Images Supply Chain Attack
 slug: github-runner-images-supply-chain
-cves: null
+cves: []
 affectedPlatforms:
-- GitHub
+  - github
 affectedServices:
-- GitHub Actions
-image: null
-severity: Critical
+  - GitHub Actions
+image:
+severity: critical
 discoveredBy:
   name: Adnan Khan
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2023/12/20
 disclosedAt: 2023/07/22
 exploitabilityPeriod: Until 2023/07/25
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/
+  - https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/

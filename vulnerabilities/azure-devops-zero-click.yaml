@@ -2,13 +2,14 @@ title: Azure Devops Zero-Click CI/CD Vulnerability
 slug: azure-devops-zero-click
 cves: CVE-2023-36561
 affectedPlatforms:
-- Azure
-- GitHub
+  - azure
+  - github
 affectedServices:
-- Azure DevOps Services
-- Azure Pipelines
-image: https://images.unsplash.com/photo-1507823690283-48b0929e727b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: High
+  - Azure DevOps Services
+  - Azure Pipelines
+image: 
+  https://images.unsplash.com/photo-1507823690283-48b0929e727b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: high
 discoveredBy:
   name: Nadav Noy
   org: Legit Security
@@ -32,8 +33,9 @@ summary: |
 manualRemediation: |
   None required if you are using Azure DevOps cloud services. 
   Otherwise, make sure you're running a patched build.
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://www.legitsecurity.com/blog/azure-devops-zero-click-ci/cd-vulnerability
+  - https://www.legitsecurity.com/blog/azure-devops-zero-click-ci/cd-vulnerability
 entryStatus: Finalized

@@ -1,17 +1,17 @@
 title: Azure AD Flaw Allowed SAML Token Persistence
 slug: azure-ad-saml-persistence-flaw
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Active Directory
-image: null
-severity: High
+  - Azure Active Directory
+image:
+severity: high
 discoveredBy:
-  name: null
+  name:
   org: Secureworks Counter Threat Unit
   domain: secureworks.com
-  twitter: null
+  twitter:
 publishedAt: 2023/01/18
 disclosedAt: 2022/08/04
 exploitabilityPeriod: Until 2022/10/25
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.secureworks.com/research/azure-active-directory-flaw-allowed-saml-persistence
+  - 
+  https://www.secureworks.com/research/azure-active-directory-flaw-allowed-saml-persistence

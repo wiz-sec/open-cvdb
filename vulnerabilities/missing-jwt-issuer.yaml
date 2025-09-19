@@ -1,13 +1,13 @@
 title: Missing JWT issuer and signer validation in ALB middleware
 slug: missing-jwt-issuer
 cves:
-- CVE-2024-8901
-- CVE-2024-10125
+  - CVE-2024-8901
+  - CVE-2024-10125
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- AWS ALB Route Directive Adapter For Istio
-- AspNetCore for Application Load Balancer OpenId Connect
+  - AWS ALB Route Directive Adapter For Istio
+  - AspNetCore for Application Load Balancer OpenId Connect
 image:
 severity:
 discoveredBy:
@@ -20,12 +20,13 @@ disclosedAt:
 exploitabilityPeriod:
 knownITWExploitation:
 summary: |
-  
+
 manualRemediation: |
-  
-detectionMethods:
+
+detectionMethods: |-
+  None
 contributor:
 references:
-- https://aws.amazon.com/security/security-bulletins/AWS-2024-011/
-- https://aws.amazon.com/security/security-bulletins/AWS-2024-012/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2024-011/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2024-012/
 entryStatus: Stub

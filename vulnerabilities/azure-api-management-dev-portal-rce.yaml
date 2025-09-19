@@ -1,17 +1,17 @@
 title: Code Execution in Azure API Management Developer Portal
 slug: azure-api-management-dev-portal-rce
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- API Management Developer Portal
-image: null
-severity: High
+  - API Management Developer Portal
+image:
+severity: high
 discoveredBy:
   name: Alvaro Munoz
   org: GitHub Security Lab
   domain: github.com
-  twitter: null
+  twitter:
 publishedAt: 2024/12/11
 disclosedAt: 2024/10/22
 exploitabilityPeriod: Until 2024/11/04
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/
+  - 
+  https://securitylab.github.com/advisories/GHSL-2024-312_Azure_API_Management_Developer_Portal/

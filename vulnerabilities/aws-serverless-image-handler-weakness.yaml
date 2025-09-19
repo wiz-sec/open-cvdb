@@ -1,20 +1,20 @@
 title: Abusing AWS Serverless Image Handler Configuration Weakness
 slug: aws-serverless-image-handler-weakness
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Dynamic Image Transformation for Amazon CloudFront
-- AWS Serverless Image Handler
-image: null
-severity: Medium
+  - Dynamic Image Transformation for Amazon CloudFront
+  - AWS Serverless Image Handler
+image:
+severity: medium
 discoveredBy:
   name: Karim El-Melhaoui
   org: O3 Cyber AS
   domain: o3cyber.com
-  twitter: null
+  twitter:
 publishedAt: 2025/02/19
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 6.2.6
 knownITWExploitation: false
 summary: |
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.o3c.no/knowledge/abusing-aws-serverless-image-handler
+  - https://www.o3c.no/knowledge/abusing-aws-serverless-image-handler

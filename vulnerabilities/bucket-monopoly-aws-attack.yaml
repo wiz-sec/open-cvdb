@@ -1,22 +1,22 @@
 title: Bucket Monopoly Attack on AWS Services
 slug: bucket-monopoly-aws-attack
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- CloudFormation
-- Glue
-- EMR
-- SageMaker
-- CodeStar
-- ServiceCatalog
-image: null
-severity: High
+  - CloudFormation
+  - Glue
+  - EMR
+  - SageMaker
+  - CodeStar
+  - ServiceCatalog
+image:
+severity: high
 discoveredBy:
   name: Yakir Kadkoda, Ofek Itach, Michael Katchinskiy
   org: Aqua Security
   domain: aquasec.com
-  twitter: null
+  twitter:
 publishedAt: 2024/08/07
 disclosedAt: 2024/02/16
 exploitabilityPeriod: Until 2024/06/26
@@ -30,5 +30,6 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.aquasec.com/news/critical-vulnerabilities-aws/
-- https://www.aquasec.com/blog/bucket-monopoly-breaching-aws-accounts-through-shadow-resources/
+  - https://www.aquasec.com/news/critical-vulnerabilities-aws/
+  - 
+  https://www.aquasec.com/blog/bucket-monopoly-breaching-aws-accounts-through-shadow-resources/

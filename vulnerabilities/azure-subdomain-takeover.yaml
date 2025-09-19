@@ -1,14 +1,14 @@
 title: Subdomain takeover via Azure Traffic Manager
 slug: azure-subdomain-takeover
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices: Traffic Manager
 image: https://images.pexels.com/photos/186537/pexels-photo-186537.jpeg
-severity: Low
+severity: low
 discoveredBy:
   name: Patrick Hudak
-  org: null
+  org:
   domain: https://0xpatrik.com/
   twitter: https://twitter.com/0xpatrik
 publishedAt: 2018/08/10
@@ -20,9 +20,10 @@ summary: |
 manualRemediation: |
   Review your DNS zones and identify CNAME records that are dangling or have been taken over.
   For further recommendations, review Microsoft's article on subdomain takeovers (linked in references).
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://0xpatrik.com/subdomain-takeover-starbucks-ii/
-- https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover
+  - https://0xpatrik.com/subdomain-takeover-starbucks-ii/
+  - https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover
 entryStatus: Finalized

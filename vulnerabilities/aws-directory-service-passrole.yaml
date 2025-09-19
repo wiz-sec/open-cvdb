@@ -1,11 +1,12 @@
 title: AWS Directory Service not checking PassRole on EnableRoleAccess
 slug: aws-directory-service-passrole
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Directory Service
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
+  - Directory Service
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-directory-service-passrole.jpg
 severity: medium
 piercingIndexVector: {version: 1.5, A3: 1, A4: 1, A5: 1, A6: 6, A7: 1.1, A8: 0, 7: null}
 discoveredBy:
@@ -28,6 +29,7 @@ detectionMethods: |
   Roles trusting Directory Service being assumed by unexpected users.
 contributor: https://github.com/benbridts
 references:
-- https://cloudar.be/awsblog/spotted-privilege-escalation-in-aws-directory-service/
-- https://aws.amazon.com/security/security-bulletins/AWS-2023-003/
+  - 
+  https://cloudar.be/awsblog/spotted-privilege-escalation-in-aws-directory-service/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2023-003/
 entryStatus: Finalized

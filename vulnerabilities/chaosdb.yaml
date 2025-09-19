@@ -1,19 +1,19 @@
 title: ChaosDB
 slug: chaosdb
 entryStatus: Finalized
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Cosmos DB
+  - Cosmos DB
 image: https://www.datocms-assets.com/75231/1659890296-chaosdb-0.jpeg
-severity: Critical
+severity: critical
 piercingIndexVector: {version: 1.5, A1: 22, A2: 1, A7: 1.1, A8: 1.0}
 discoveredBy:
   name: Nir Ohfeld, Sagi Tzadik
   org: Wiz
   domain: https://www.wiz.io/
-  twitter: null
+  twitter:
 publishedAt: 2021/08/26
 disclosedAt: 2021/08/09
 exploitabilityPeriod: 2017 - 2021
@@ -24,9 +24,12 @@ summary: |
   The vulnerability had a trivial exploit that doesn't require any previous access to the target environment.
 manualRemediation: |
   Regenerate primary read/write key.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://chaosdb.wiz.io/
-- https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases
-- https://www.wiz.io/blog/chaosdb-explained-azures-cosmos-db-vulnerability-walkthrough
+  - https://chaosdb.wiz.io/
+  - 
+  https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases
+  - 
+  https://www.wiz.io/blog/chaosdb-explained-azures-cosmos-db-vulnerability-walkthrough

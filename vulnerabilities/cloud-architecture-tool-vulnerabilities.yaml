@@ -1,18 +1,18 @@
 title: Sketchy Cheat Sheet
 slug: cloud-architecture-tool-vulnerabilities
 cves:
-- CVE-2023-26140
+  - CVE-2023-26140
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Google Cloud Architecture Diagramming Tool
-image: null
-severity: High
+  - Google Cloud Architecture Diagramming Tool
+image:
+severity: high
 discoveredBy:
   name: Jakub Domeracki
   org: Egnyte
   domain: egnyte.com
-  twitter: null
+  twitter:
 publishedAt: 2024/11/09
 disclosedAt: 2023/11/22
 exploitabilityPeriod: Until 2024/10/01
@@ -26,5 +26,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://jdomeracki.github.io/2024/11/09/sketchy_cheat_sheet/
-- https://speakerdeck.com/jdomeracki/sketchy_cheat_sheet
+  - https://jdomeracki.github.io/2024/11/09/sketchy_cheat_sheet/
+  - https://speakerdeck.com/jdomeracki/sketchy_cheat_sheet

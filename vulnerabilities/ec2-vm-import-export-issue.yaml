@@ -1,19 +1,19 @@
 title: Issue with Amazon EC2 VM Import Export Service
 slug: ec2-vm-import-export-issue
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Amazon EC2 VM Import Export Service
-image: null
-severity: Medium
+  - Amazon EC2 VM Import Export Service
+image:
+severity: medium
 discoveredBy:
-  name: null
+  name:
   org: Immersive Labs
-  domain: null
-  twitter: null
+  domain:
+  twitter:
 publishedAt: 2024/06/11
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2024/04/12
 knownITWExploitation: false
 summary: |
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://aws.amazon.com/security/security-bulletins/AWS-2024-006/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2024-006/

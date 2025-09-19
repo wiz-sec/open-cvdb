@@ -1,17 +1,17 @@
 title: Google Cloud Shell XSS to RCE Vulnerability
 slug: google-cloud-shell-xss-rce
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Shell
-image: null
-severity: High
+  - Cloud Shell
+image:
+severity: high
 discoveredBy:
   name: Omar Espino
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2020/10/01
 disclosedAt: 2020/02/06
 exploitabilityPeriod: Until 2020/03/18
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://omespino.com/write-up-google-bug-bounty-xss-to-cloud-shell-instance-takeover-rce-as-root-5000-usd/
+  - 
+  https://omespino.com/write-up-google-bug-bounty-xss-to-cloud-shell-instance-takeover-rce-as-root-5000-usd/

@@ -1,17 +1,17 @@
 title: Burning Data with Malicious Firewall Rules in Azure SQL
 slug: burning-data-azure-sql-firewall
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure SQL Server
-image: null
-severity: High
+  - Azure SQL Server
+image:
+severity: high
 discoveredBy:
   name: Coby Abrams
   org: Varonis Threat Labs
   domain: varonis.com
-  twitter: null
+  twitter:
 publishedAt: 2025/04/15
 disclosedAt: 2024/08/05
 exploitabilityPeriod: Until 2025/04/09
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.varonis.com/blog/malicious-firewall-rules-in-azure-sql
+  - https://www.varonis.com/blog/malicious-firewall-rules-in-azure-sql

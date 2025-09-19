@@ -1,16 +1,16 @@
 title: Resource policy confused deputy issue with services
 slug: resource-policy-confused-deputy
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
+  - aws
+affectedServices:
 image: https://cdn.pixabay.com/photo/2021/09/24/11/29/cowboy-6652332_960_720.png
-severity: Low
+severity: low
 discoveredBy:
   name: Dan Peebles
   org: Bridgewater
   domain: https://www.bridgewater.com/
-  twitter: null
+  twitter:
 disclosedAt: 2018/11/28
 publishedAt: 2018/11/28
 exploitabilityPeriod: until February 2021
@@ -23,10 +23,13 @@ summary: |
   and Ami Luttwak from Wiz presented it at Black Hat 2021.
 manualRemediation: |
   Update existing vulnerable IAM policies by adding scoping condition.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/a10ns
 references:
-- https://www.youtube.com/watch?v=F3JmBhTQmyY&t=2475s
-- https://summitroute.com/blog/2019/04/03/advanced_aws_policy_auditing_confused_deputies_with_aws_services/
-- https://www.wiz.io/blog/black-hat-2021-aws-cross-account-vulnerabilities-how-isolated-is-your-cloud-environment
+  - https://www.youtube.com/watch?v=F3JmBhTQmyY&t=2475s
+  - 
+  https://summitroute.com/blog/2019/04/03/advanced_aws_policy_auditing_confused_deputies_with_aws_services/
+  - 
+  https://www.wiz.io/blog/black-hat-2021-aws-cross-account-vulnerabilities-how-isolated-is-your-cloud-environment
 entryStatus: Finalized

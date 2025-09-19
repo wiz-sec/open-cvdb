@@ -1,15 +1,15 @@
 title: Log4Shell Hot Patch Vulnerable to Container Escape and Privilege Escalation
 slug: log4shell-hotpatch
 cves:
-- CVE-2021-3100
-- CVE-2021-3101
-- CVE-2022-0070
-- CVE-2022-0071
+  - CVE-2021-3100
+  - CVE-2021-3101
+  - CVE-2022-0070
+  - CVE-2022-0071
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
 image: https://images.pexels.com/photos/4518638/pexels-photo-4518638.jpeg
-severity: High
+severity: high
 discoveredBy:
   name: Yuval Avrahami
   org: Palo Alto
@@ -23,9 +23,10 @@ summary: |
   AWS's hotpatches for Log4shell worked as intended but introduced new container escape vulnerabilities.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/
-- https://aws.amazon.com/security/security-bulletins/AWS-2022-006/
+  - https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2022-006/
 entryStatus: Finalized

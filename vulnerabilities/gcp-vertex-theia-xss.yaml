@@ -1,18 +1,19 @@
 title: XSS in Google Cloud Theia notebooks
 slug: gcp-vertex-theia-xss
 cves:
-- CVE-2021-41038
+  - CVE-2021-41038
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Vertex AI Workbench
-image: https://demo-source.imgix.net/snowboard.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: High
+  - Cloud Vertex AI Workbench
+image: 
+  https://demo-source.imgix.net/snowboard.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: high
 discoveredBy:
   name: Sivanesh Ashok, Sreeram KL
-  org: null
+  org:
   domain: blog.geekycat.in
-  twitter: null
+  twitter:
 disclosedAt: 2022/01/01
 publishedAt: 2023/01/15
 exploitabilityPeriod:
@@ -23,8 +24,10 @@ summary: |
   because when a user-managed Vertex AI Workbench instance is created, it utilizes the project's default Compute Engine service account. At the time, this default service account had the Editor Role assigned by default.
 manualRemediation: |
   None, as the Theia IDE is no longer offered as a Vertex AI experimental image.
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/KatTraxler
 references:
-- https://blog.geekycat.in/posts/xss-using-postmessage-in-google-cloud-theia-notebooks/
+  - 
+  https://blog.geekycat.in/posts/xss-using-postmessage-in-google-cloud-theia-notebooks/
 entryStatus: Finalized

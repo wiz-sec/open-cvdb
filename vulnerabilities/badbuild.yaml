@@ -1,20 +1,20 @@
 title: Bad.Build
 slug: badbuild
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Build
+  - Cloud Build
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/badbuild.jpg
-severity: Low
+severity: low
 discoveredBy:
   name: Roi Nisimi
   org: Orca Security
   domain: orca.security
-  twitter: null
+  twitter:
 publishedAt: 2023/07/18
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   An information disclosure vulnerability in the Google Cloud Build service could have
@@ -28,9 +28,11 @@ summary: |
   audit logs containing all project permissions (logging.privateLogEntries.list).
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://cloud.google.com/build/docs/security-bulletins#GCP-2023-013
-- https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/
+  - https://cloud.google.com/build/docs/security-bulletins#GCP-2023-013
+  - 
+  https://orca.security/resources/blog/bad-build-google-cloud-build-potential-supply-chain-attack-vulnerability/
 entryStatus: Finalized

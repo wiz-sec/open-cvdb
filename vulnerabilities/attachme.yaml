@@ -1,12 +1,12 @@
 title: AttachMe
 slug: attachme
-cves: null
+cves: []
 affectedPlatforms:
-- OCI
+  - oci
 affectedServices:
-- OCI Volumes
+  - OCI Volumes
 image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/attachme.jpg
-severity: High
+severity: high
 discoveredBy:
   name: Elad Gabay
   org: Wiz
@@ -14,7 +14,7 @@ discoveredBy:
   twitter: eladgabay_
 publishedAt: 2022/09/20
 disclosedAt: 2022/06/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Any unattached storage volume, or attached storage volumes allowing multi-attachment,
@@ -23,8 +23,10 @@ summary: |
   executable file manipulation in the target tenant's environment.
 manualRemediation: |
   None required.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/nirohfeld
 references:
-- https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
+  - 
+  https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access
 entryStatus: Finalized

@@ -2,13 +2,14 @@ title: RCE vulnerability in Azure Pipelines
 slug: azure-pipeline-rce
 cves: CVE-2023-21553
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Pipelines
-- Azure DevOps Services
-- Azure DevOps Server
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-pipeline-rce.jpg
-severity: High
+  - Azure Pipelines
+  - Azure DevOps Services
+  - Azure DevOps Server
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-pipeline-rce.jpg
+severity: high
 discoveredBy:
   name: Nadav Noy
   org: Legit Security
@@ -28,8 +29,10 @@ summary: |
   a pull request or push a commit in a repo integrated with Pipelines.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/mer-b
 references:
-- https://www.legitsecurity.com/blog/remote-code-execution-vulnerability-in-azure-pipelines-can-lead-to-software-supply-chain-attack
+  - 
+  https://www.legitsecurity.com/blog/remote-code-execution-vulnerability-in-azure-pipelines-can-lead-to-software-supply-chain-attack
 entryStatus: Finalized

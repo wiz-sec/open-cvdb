@@ -1,17 +1,17 @@
 title: Security Flaw in AWS Transit Gateway Peering Attachments
 slug: aws-transit-gateway-peering-flaw
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Transit Gateway
-image: null
-severity: High
+  - Transit Gateway
+image:
+severity: high
 discoveredBy:
   name: James Sheard
   org: DoiT
   domain: doit.com
-  twitter: null
+  twitter:
 publishedAt: 2024/09/12
 disclosedAt: 2024/07/25
 exploitabilityPeriod: Until 2024/08/07
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://engineering.doit.com/aws-transit-gateway-peering-exploit-a1715edd4c8a
+  - https://engineering.doit.com/aws-transit-gateway-peering-exploit-a1715edd4c8a

@@ -1,17 +1,17 @@
 title: Control plane bypass in Azure OpenAI
 slug: azure-openai-control-bypass
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- OpenAI
-image: null
-severity: High
+  - OpenAI
+image:
+severity: high
 discoveredBy:
   name: Tyson Garrett
   org: TrustOnCloud
   domain: trustoncloud.com
-  twitter: null
+  twitter:
 publishedAt: 2023/12/12
 disclosedAt: 2023/10/24
 exploitabilityPeriod: Until 2024/04/02
@@ -25,6 +25,7 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://github.com/tyson-trust
-- https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/
-- https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/#impacted)
+  - https://github.com/tyson-trust
+  - https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/
+  - 
+  https://trustoncloud.com/how-i-bypassed-the-control-plane-in-azure-openai/#impacted)

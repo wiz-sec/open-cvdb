@@ -1,21 +1,21 @@
 title: Azure AZNFS-mount Utility Root Privilege Escalation
 slug: azure-aznfs-mount-privilege-escalation
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Blob Storage
-- Azure HPC
-- Azure AI
-image: null
-severity: High
+  - Azure Blob Storage
+  - Azure HPC
+  - Azure AI
+image:
+severity: high
 discoveredBy:
   name: Tal Peleg
   org: Varonis Threat Labs
   domain: varonis.com
-  twitter: null
+  twitter:
 publishedAt: 2025/05/06
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2.0.11
 knownITWExploitation: false
 summary: |
@@ -27,4 +27,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.varonis.com/blog/aznfs-root-privilege-escalation-on-azure
+  - https://www.varonis.com/blog/aznfs-root-privilege-escalation-on-azure

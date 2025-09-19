@@ -1,16 +1,17 @@
 title: S3 Replication only logs first destination bucket
 slug: s3-replicator-cloudtrail
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- S3
-image: https://images.unsplash.com/photo-1515325915697-9279b4f7effc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80
-severity: Low
+  - S3
+image: 
+  https://images.unsplash.com/photo-1515325915697-9279b4f7effc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80
+severity: low
 discoveredBy:
   name: Kat Traxler
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: NightmareJS
 disclosedAt: 2021/10/19
 publishedAt: 2022/07/20
@@ -30,6 +31,7 @@ detectionMethods: |
   Monitor for changes to Replication rules (e.g., via the S3BucketChangesAlarm alert in CloudWatch) and note any suspicious destinations.
 contributor: https://github.com/korniko98
 references:
-- https://www.vectra.ai/blogpost/abusing-the-replicator-silently-exfiltrating-data-with-the-aws-s3-replication-service
-- https://www.youtube.com/watch?v=9lvLboXE9tw
+  - 
+  https://www.vectra.ai/blogpost/abusing-the-replicator-silently-exfiltrating-data-with-the-aws-s3-replication-service
+  - https://www.youtube.com/watch?v=9lvLboXE9tw
 entryStatus: Finalized

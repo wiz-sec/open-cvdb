@@ -1,20 +1,21 @@
 title: Azure Devops account takeover via dangling subdomain takeover
 slug: azure-devops-dangling-domain
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- DevOps
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-devops-dangling-domain.jpg
-severity: Medium
+  - DevOps
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-devops-dangling-domain.jpg
+severity: medium
 discoveredBy:
   name: Christian August Holm Hansen
   org: Binary Security
   domain: https://binarysecurity.no/
-  twitter: null
+  twitter:
 publishedAt: 2022/11/07
 disclosedAt: 2021/02/18
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Binary Security discovered and registered two dangling cloudapp.azure.com
@@ -28,8 +29,9 @@ summary: |
   attacker-controlled server, thereby allowing account takeover.
 manualRemediation: |
   None required 
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://www.binarysecurity.no/posts/2022/11/azure-devops-takeover
+  - https://www.binarysecurity.no/posts/2022/11/azure-devops-takeover
 entryStatus: Finalized

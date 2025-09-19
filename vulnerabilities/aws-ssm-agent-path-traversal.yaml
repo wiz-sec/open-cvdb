@@ -1,18 +1,18 @@
 title: Path Traversal in AWS SSM Agent Plugin ID Validation
 slug: aws-ssm-agent-path-traversal
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Systems Manager (SSM)
-- SSM Agent
-image: null
-severity: High
+  - Systems Manager (SSM)
+  - SSM Agent
+image:
+severity: high
 discoveredBy:
   name: Elad Beber
   org: Cymulate
   domain: cymulate.com
-  twitter: null
+  twitter:
 publishedAt: 2025/04/09
 disclosedAt: 2025/02/12
 exploitabilityPeriod: Until 2025/03/05
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://cymulate.com/blog/aws-ssm-agent-plugin-id-path-traversal/
+  - https://cymulate.com/blog/aws-ssm-agent-plugin-id-path-traversal/

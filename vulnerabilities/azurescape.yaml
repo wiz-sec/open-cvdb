@@ -1,29 +1,30 @@
 title: Azurescape
 slug: azurescape
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- ACI
+  - ACI
 image: https://images.pexels.com/photos/845265/pexels-photo-845265.jpeg
-severity: Critical
+severity: critical
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1.1, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Yuval Avrahami
   org: Palo Alto
   domain: https://www.paloaltonetworks.com/
-  twitter: null
+  twitter:
 publishedAt: 2021/09/09
 disclosedAt: 2021/09/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Cross-account container escape
 manualRemediation: |
   Revoking any privileged credentials that were deployed to the
   platform before Aug. 31, 2021, and checking their access logs for irregularities.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://unit42.paloaltonetworks.com/azure-container-instances/
+  - https://unit42.paloaltonetworks.com/azure-container-instances/
 entryStatus: Finalized

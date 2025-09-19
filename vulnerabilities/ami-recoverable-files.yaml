@@ -1,19 +1,20 @@
 title: AWS published official AMIs with recoverable deleted files
 slug: ami-recoverable-files
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg
-severity: Low
+  - aws
+affectedServices:
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg
+severity: low
 discoveredBy:
   name: Marco Balduzzi, Jonas Zaddach, Davide Balzarotti, Engin Kirda, Sergio Loureiro
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2011/06/04
 disclosedAt: 2011/06/04
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Researchers, while investigating the security posture of Public AMIs, were
@@ -21,9 +22,11 @@ summary: |
 manualRemediation: |
   Follow [best practices](https://aws.amazon.com/articles/how-to-share-and-use-public-amis-in-a-secure-manner/)
   when sharing Public AMIs
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- http://seclab.nu/static/publications/sac2012ec2.pdf
-- https://aws.amazon.com/security/security-bulletins/reminder-about-safely-sharing-and-using-public-amis/
+  - http://seclab.nu/static/publications/sac2012ec2.pdf
+  - 
+  https://aws.amazon.com/security/security-bulletins/reminder-about-safely-sharing-and-using-public-amis/
 entryStatus: Finalized

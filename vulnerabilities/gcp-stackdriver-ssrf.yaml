@@ -1,29 +1,32 @@
 title: GCP Stackdriver Debugger SSRF
 slug: gcp-stackdriver-ssrf
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- GCP Stackdriver Debugger
-image: https://images.unsplash.com/photo-1601829534265-66684bd4dcc6?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Low
+  - GCP Stackdriver Debugger
+image: 
+  https://images.unsplash.com/photo-1601829534265-66684bd4dcc6?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
 discoveredBy:
   name: Ron Chan
-  org: null
+  org:
   domain: https://ngailong.wordpress.com/
-  twitter: null
-disclosedAt: null
+  twitter:
+disclosedAt:
 publishedAt: 2019/12/19
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
   An SSRF bug in GCP's Stackdriver Debugger feature's code import could have been used to leak the authentication
   token of the user to an attacker-controlled server. Exploitation would require that the user had previously
   configured a specific code hosting service (such as GitHub), and could be tricked into clicking a malicious link.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://ngailong.wordpress.com/2019/12/19/google-vrp-ssrf-in-google-cloud-platform-stackdriver/
+  - 
+  https://ngailong.wordpress.com/2019/12/19/google-vrp-ssrf-in-google-cloud-platform-stackdriver/
 entryStatus: Finalized

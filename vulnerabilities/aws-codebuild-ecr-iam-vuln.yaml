@@ -1,23 +1,24 @@
 title: Overprivileged CodeBuild default ECR IAM policy
 slug: aws-codebuild-ecr-iam-vuln
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- AWS CodeBuild
-- AWS ECR
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-codebuild-ecr-iam-vuln.jpg
+  - AWS CodeBuild
+  - AWS ECR
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-codebuild-ecr-iam-vuln.jpg
 severity: medium
 piercingIndexVector: {version: 1.5, A3: 1, A4: 1, A5: 1.05, A6: 6, A7: 1.1, A8: 1.1}
 discoveredBy:
   name: Will Deane
   org: ASX Consulting
   domain: asxconsulting.co.uk
-  twitter: null
+  twitter:
 publishedAt: 2023/02/25
 disclosedAt: 2022/07/04
 exploitabilityPeriod: Until July 26, 2022
-knownITWExploitation: null
+knownITWExploitation:
 summary: |
   For AWS CodeBuild, when using a custom container image stored in ECR and the 
   project service role for the credentials to pull the image, the default IAM 
@@ -31,8 +32,9 @@ manualRemediation: |
   update those project’s IAM policies to match the updated policy. 
   Please refer to the CodeBuild documentation for updating your project’s IAM policies.
   https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-access-control-iam-identity-based-access-control.html#ecr-policies
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/willdeane
 references:
-- https://www.asxconsulting.co.uk/blog/codebuild/
+  - https://www.asxconsulting.co.uk/blog/codebuild/
 entryStatus: Finalized

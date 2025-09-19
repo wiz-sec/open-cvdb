@@ -1,17 +1,17 @@
 title: Google App Engine RCE Worth $36k
 slug: google-app-engine-rce
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- App Engine
-image: null
-severity: High
+  - App Engine
+image:
+severity: high
 discoveredBy:
   name: Ezequiel Pereira
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2019/08/31
 disclosedAt: 2018/02/25
 exploitabilityPeriod: Until 2018/03/13
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.ezequiel.tech/p/36k-google-app-engine-rce.html
+  - https://www.ezequiel.tech/p/36k-google-app-engine-rce.html

@@ -1,28 +1,31 @@
 title: Lightsail object storage access keys logged
 slug: lightsail-keys-logged
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Lightsail
-image: https://images.pexels.com/photos/3067516/pexels-photo-3067516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-severity: Medium
+  - Lightsail
+image: 
+  https://images.pexels.com/photos/3067516/pexels-photo-3067516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: medium
 discoveredBy:
   name: Scott Piper
   org: Summit Route
   domain: https://summitroute.com/
-  twitter: null
+  twitter:
 disclosedAt: 2021/08/05
 publishedAt: 2021/08/05
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Lightsail object storage allows the creation of access keys which were
   logged to CloudTrail (both access key and secret key)
 manualRemediation: |
   Roll access keys
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://summitroute.com/blog/2021/08/05/lightsail-object-storage-concerns-part-1/
+  - 
+  https://summitroute.com/blog/2021/08/05/lightsail-object-storage-concerns-part-1/
 entryStatus: Finalized

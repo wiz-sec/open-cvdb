@@ -1,20 +1,21 @@
 title: Power Platform Custom Code information disclosure
 slug: power-platform-info-leak
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Power Platform
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/power-platform-info-leak.jpg
-severity: High
+  - Power Platform
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/power-platform-info-leak.jpg
+severity: high
 discoveredBy:
   name: Evan Grant
   org: Tenable
   domain: tenable.com
-  twitter: null
+  twitter:
 publishedAt: 2023/08/04
 disclosedAt: 2023/03/30
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A vulnerability in Power Platform could lead to unauthorized access to Custom
@@ -31,9 +32,11 @@ summary: |
   fix was applied (on August 2nd, 2023).
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://msrc.microsoft.com/blog/2023/08/microsoft-mitigates-power-platform-custom-code-information-disclosure-vulnerability/
-- https://www.tenable.com/security/research/tra-2023-25
+  - 
+  https://msrc.microsoft.com/blog/2023/08/microsoft-mitigates-power-platform-custom-code-information-disclosure-vulnerability/
+  - https://www.tenable.com/security/research/tra-2023-25
 entryStatus: Finalized

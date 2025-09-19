@@ -1,20 +1,21 @@
 title: GCP Cloudshell XSS and CSRF bugs
 slug: gcp-cloudshell-xss-csrf
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- GCP Cloudshell
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gcp-cloudshell-xss-csrf.jpg
-severity: Medium
+  - GCP Cloudshell
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/gcp-cloudshell-xss-csrf.jpg
+severity: medium
 discoveredBy:
   name: Obmi
-  org: null
+  org:
   domain: https://obmiblog.blogspot.com/
-  twitter: null
+  twitter:
 publishedAt: 2019/12/15
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   GCP Cloudshell has been affected by various XSS and CSRF vulnerabilities stemming from different root causes
@@ -22,12 +23,15 @@ summary: |
   normally requires user interaction through social engineering (convincing a potential victim to click a malicious link).
 manualRemediation: |
   null
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/mer-b
 references:
-- https://obmiblog.blogspot.com/2022/12/gcp-2022-few-bugs-in-google-cloud-shell.html
-- https://obmiblog.blogspot.com/2019/12/gcp-5k-file-uploading-csrf.html
-- https://obmiblog.blogspot.com/2019/12/gcp-5k-oauth-token-hijack.html
-- https://obmiblog.blogspot.com/2019/12/gcp-5k-xss-type-ii.html
-- https://security.googleblog.com/2023/06/google-cloud-awards-313337-in-2022-vrp.html
+  - 
+  https://obmiblog.blogspot.com/2022/12/gcp-2022-few-bugs-in-google-cloud-shell.html
+  - https://obmiblog.blogspot.com/2019/12/gcp-5k-file-uploading-csrf.html
+  - https://obmiblog.blogspot.com/2019/12/gcp-5k-oauth-token-hijack.html
+  - https://obmiblog.blogspot.com/2019/12/gcp-5k-xss-type-ii.html
+  - 
+  https://security.googleblog.com/2023/06/google-cloud-awards-313337-in-2022-vrp.html
 entryStatus: Finalized

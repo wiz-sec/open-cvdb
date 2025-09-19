@@ -1,17 +1,17 @@
 title: Entra ID Allows Users to Update Principal Names
 slug: entra-id-upn-update-flaw
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Entra ID
-image: null
-severity: High
+  - Entra ID
+image:
+severity: high
 discoveredBy:
   name: Tony Redmond
   org: Office 365 for IT Pros
   domain: office365itpros.com
-  twitter: null
+  twitter:
 publishedAt: 2025/01/24
 disclosedAt: 2025/01/24
 exploitabilityPeriod: Until 2025/01/24
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://office365itpros.com/2025/01/24/update-user-principal-names/
+  - https://office365itpros.com/2025/01/24/update-user-principal-names/

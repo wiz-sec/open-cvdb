@@ -1,24 +1,24 @@
 title: Issue with data.all Framework Multiple CVEs
 slug: data-all-framework-cves
 cves:
-- CVE-2024-52311
-- CVE-2024-52312
-- CVE-2024-52313
-- CVE-2024-52314
-- CVE-2024-10953
+  - CVE-2024-52311
+  - CVE-2024-52312
+  - CVE-2024-52313
+  - CVE-2024-52314
+  - CVE-2024-10953
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- data.all
-image: null
-severity: High
+  - data.all
+image:
+severity: high
 discoveredBy:
-  name: null
+  name:
   org: Amazon Web Services
   domain: aws.amazon.com
-  twitter: null
+  twitter:
 publishedAt: 2024/11/08
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2024/11/08
 knownITWExploitation: false
 summary: |
@@ -30,4 +30,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://aws.amazon.com/security/security-bulletins/AWS-2024-013/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2024-013/
