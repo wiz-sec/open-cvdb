@@ -1,20 +1,20 @@
 title: Non-Production AWS Endpoints as Attack Surface
 slug: aws-non-production-endpoints-attack
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- ECR
-- Cost Explorer
-- Route 53 Resolver
-- IVS
-image: null
-severity: High
+  - ECR
+  - Cost Explorer
+  - Route 53 Resolver
+  - IVS
+image:
+severity: high
 discoveredBy:
   name: Nick Frichette
   org: Datadog Security Labs
   domain: datadoghq.com
-  twitter: null
+  twitter:
 publishedAt: 2024/05/28
 disclosedAt: 2023/06/27
 exploitabilityPeriod: 2023/06/27 - 2024/05/27
@@ -28,4 +28,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://securitylabs.datadoghq.com/articles/non-production-endpoints-as-an-attack-surface-in-aws/
+  - 
+  https://securitylabs.datadoghq.com/articles/non-production-endpoints-as-an-attack-surface-in-aws/

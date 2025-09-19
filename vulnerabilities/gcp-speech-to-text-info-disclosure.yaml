@@ -1,20 +1,21 @@
 title: GCP Speech to Text Information Disclosure
 slug: gcp-speech-to-text-info-disclosure
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- GCP Speech-to-Text
-image: https://images.unsplash.com/photo-1613870948964-7125fa3e1aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjb3JkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
-severity: Medium
+  - GCP Speech-to-Text
+image: 
+  https://images.unsplash.com/photo-1613870948964-7125fa3e1aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjb3JkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
+severity: medium
 discoveredBy:
   name: Dan Maas
-  org: null
+  org:
   domain: dcine.com
-  twitter: null
+  twitter:
 publishedAt: 2020/01/12
 disclosedAt: 2019/04/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   GCP's Speech-to-Text "operations/list" and "operations/get" APIs would return data that did 
@@ -22,8 +23,10 @@ summary: |
   cross-customer data disclosure, or potentially test or internal data.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://www.dcine.com/2020/01/12/information-disclosure-vulnerability-in-the-google-cloud-speech-to-text-api/
+  - 
+  https://www.dcine.com/2020/01/12/information-disclosure-vulnerability-in-the-google-cloud-speech-to-text-api/
 entryStatus: Finalized

@@ -1,20 +1,20 @@
 title: Issue with AWS Deployment Framework
 slug: aws-deployment-framework-issue
 cves:
-- CVE-2024-37293
+  - CVE-2024-37293
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- AWS Deployment Framework
-image: null
-severity: High
+  - AWS Deployment Framework
+image:
+severity: high
 discoveredBy:
-  name: null
+  name:
   org: Xidian University
-  domain: null
-  twitter: null
+  domain:
+  twitter:
 publishedAt: 2024/06/11
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2024/06/11
 knownITWExploitation: false
 summary: |
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://aws.amazon.com/security/security-bulletins/AWS-2024-005/
+  - https://aws.amazon.com/security/security-bulletins/AWS-2024-005/

@@ -1,27 +1,30 @@
 title: XSS on EC2 web console
 slug: ec2-console-xss
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- EC2
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_elastic_compute_console.jpg
-severity: Low
+  - EC2
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_elastic_compute_console.jpg
+severity: low
 discoveredBy:
   name: Johann Rehberger
-  org: null
+  org:
   domain: embracethered.com
-  twitter: null
+  twitter:
 disclosedAt: 2020/07/01
 publishedAt: 2020/07/01
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Display of EC2 tags had XSS
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://embracethered.com/blog/posts/2020/aws-xss-cross-site-scripting-vulnerability/
+  - 
+  https://embracethered.com/blog/posts/2020/aws-xss-cross-site-scripting-vulnerability/
 entryStatus: Finalized

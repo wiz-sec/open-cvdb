@@ -1,22 +1,23 @@
 title: Asset Key Thief
 slug: asset-key-thief
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Asset Inventory
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/asset-key-thief.jpg
-severity: Medium
-piercingIndexVector: null
+  - Cloud Asset Inventory
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/asset-key-thief.jpg
+severity: medium
+piercingIndexVector:
 discoveredBy:
   name: Jackson Reid
   org: SADA
   domain: https://sada.com/
-  twitter: null
+  twitter:
 publishedAt: 2023/04/19
 disclosedAt: 2023/02/07
-exploitabilityPeriod: null
-knownITWExploitation: null
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
   Asset Key Thief was a Google Cloud 
   privilege escalation vulnerability that enabled 
@@ -36,8 +37,9 @@ manualRemediation: |
   Search for anomalous Service Account activity. 
   Audit principals with access to the "cloudasset.assets.searchAllResources" permission. 
   Search for "google.cloud.asset.v1.AssetService.SearchAllResources" ADMIN_READ data access logs.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/jacks-reid
 references:
-- https://engineering.sada.com/asset-key-thief-disclosure-cfae4f1778b6
+  - https://engineering.sada.com/asset-key-thief-disclosure-cfae4f1778b6
 entryStatus: Finalized

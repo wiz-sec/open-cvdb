@@ -1,13 +1,14 @@
 title: Document AI data exfiltration
 slug: gcp-document-ai-data-exfil
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Document AI
-- Cloud Storage
-image: https://images.pexels.com/photos/582070/pexels-photo-582070.jpeg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Medium
+  - Document AI
+  - Cloud Storage
+image: 
+  https://images.pexels.com/photos/582070/pexels-photo-582070.jpeg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: medium
 discoveredBy:
   name: Kat Traxler
   org: Vectra AI
@@ -15,7 +16,8 @@ discoveredBy:
   twitter: nightmareJs
 publishedAt: 2024/09/16
 disclosedAt: 2024/04/04
-exploitabilityPeriod: Ongoing, since the creation of the Document AI Service and its batch processing capabilities.
+exploitabilityPeriod: Ongoing, since the creation of the Document AI Service and its
+  batch processing capabilities.
 knownITWExploitation: false
 summary: |
   The Document AI service unintentionally allows users to read any Cloud Storage object in the same project, in a way that isn't properly documented.
@@ -26,9 +28,11 @@ summary: |
 manualRemediation: |
   Full remediation is not possible, but mitigating controls can be applied: use the Org Policy Constraint serviceuser.services
   to prevent the enablement of the Document AI service when it's not needed and restrict the API usage with the Org Policy Constraint serviceuser.restrictServiceUsage.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/KatTraxler
 references:
-- https://www.vectra.ai/blog/transitive-access-abuse-data-exfiltration-via-document-ai
-- https://github.com/KatTraxler/document-ai-samples
+  - 
+  https://www.vectra.ai/blog/transitive-access-abuse-data-exfiltration-via-document-ai
+  - https://github.com/KatTraxler/document-ai-samples
 entryStatus: Finalized

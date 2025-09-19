@@ -1,27 +1,29 @@
 title: Azue Health privilege escalation via SSRF
 slug: azure-health-pe-ssrf
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Health
-image: null
-severity: null
+  - Azure Health
+image:
+severity:
 discoveredBy:
-  name: null
+  name:
   org: Tenable
   domain: tenable.com
-  twitter: null
+  twitter:
 publishedAt: 2024/08/13
-disclosedAt: null
-exploitabilityPeriod: null
-knownITWExploitation: null
+disclosedAt:
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
 
 manualRemediation: |
 
-detectionMethods: null
-contributor: null
+detectionMethods: |-
+  None
+contributor:
 references:
-- https://www.tenable.com/blog/compromising-microsofts-ai-healthcare-chatbot-service
+  - 
+  https://www.tenable.com/blog/compromising-microsofts-ai-healthcare-chatbot-service
 entryStatus: Stub

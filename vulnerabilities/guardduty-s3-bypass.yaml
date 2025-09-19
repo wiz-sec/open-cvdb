@@ -1,19 +1,19 @@
 title: GuardDuty bypass via S3 permission modification
 slug: guardduty-s3-bypass
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- GuardDuty
-image: null
-severity: Low
+  - GuardDuty
+image:
+severity: low
 discoveredBy:
-  name: null
+  name:
   org: Gem Security
   domain: gem.security
-  twitter: null
+  twitter:
 publishedAt: 2023/05/18
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2023/04/28
 knownITWExploitation: false
 summary: |
@@ -30,8 +30,10 @@ summary: |
   policy that both allows data access but seeks to deny access to configuration information.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://web.archive.org/web/20240805231624/https://www.gem.security/post/guardduty-improves-data-exfiltration-protections-through-collaboration-with-gem
+  - 
+  https://web.archive.org/web/20240805231624/https://www.gem.security/post/guardduty-improves-data-exfiltration-protections-through-collaboration-with-gem
 entryStatus: Finalized

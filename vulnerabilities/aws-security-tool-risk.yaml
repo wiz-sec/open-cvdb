@@ -1,17 +1,17 @@
 title: AWS Security Tool Introduces Privilege Escalation Risk
 slug: aws-security-tool-risk
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Account Assessment for AWS Organizations
-image: null
-severity: High
+  - Account Assessment for AWS Organizations
+image:
+severity: high
 discoveredBy:
   name: Eliav Livneh
   org: Token Security
   domain: token.security
-  twitter: null
+  twitter:
 publishedAt: 2025/05/19
 disclosedAt: 2024/12/12
 exploitabilityPeriod: Until 2025/01/28
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.token.security/blog/aws-built-a-security-tool-it-introduced-a-security-risk
+  - 
+  https://www.token.security/blog/aws-built-a-security-tool-it-introduced-a-security-risk

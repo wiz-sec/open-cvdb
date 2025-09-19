@@ -1,17 +1,17 @@
 title: Entra ID Bug Creates Immutable Users
 slug: entra-id-immutable-users-bug
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Entra ID
-image: null
-severity: Medium
+  - Entra ID
+image:
+severity: medium
 discoveredBy:
   name: Katie Knowles
   org: Datadog Security Labs
   domain: datadoghq.com
-  twitter: null
+  twitter:
 publishedAt: 2025/03/25
 disclosedAt: 2024/08/19
 exploitabilityPeriod: Until 2025/02/22
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://securitylabs.datadoghq.com/articles/creating-immutable-users-entra-id-administrative-units/
+  - 
+  https://securitylabs.datadoghq.com/articles/creating-immutable-users-entra-id-administrative-units/

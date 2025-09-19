@@ -1,20 +1,20 @@
 title: CloudWatch Dashboard Sharing Exposes EC2 Tags
 slug: cloudwatch-dashboard-sharing-exposes-tags
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- CloudWatch
-- Cognito
-- EC2
-- Lambda
-image: null
-severity: Medium
+  - CloudWatch
+  - Cognito
+  - EC2
+  - Lambda
+image:
+severity: medium
 discoveredBy:
   name: Leonidas Tsaousis
   org: WithSecure
   domain: withsecure.com
-  twitter: null
+  twitter:
 publishedAt: 2025/01/16
 disclosedAt: 2024/07/26
 exploitabilityPeriod: Until 2024/08/28
@@ -28,4 +28,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://labs.withsecure.com/publications/cloudwatch-dashboard
+  - https://labs.withsecure.com/publications/cloudwatch-dashboard

@@ -1,20 +1,20 @@
 title: FreeRTOS and coreSNTP Security Advisories
 slug: freertos-coresntp-advisories
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- FreeRTOS
-- coreSNTP
-image: null
-severity: Low
+  - FreeRTOS
+  - coreSNTP
+image:
+severity: low
 discoveredBy:
   name: sweeneyirrigreen
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2025/05/10
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: Until 2025/05/08
 knownITWExploitation: false
 summary: |
@@ -26,6 +26,6 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://github.com/FreeRTOS/FreeRTOS/security/advisories/GHSA-5677-2m7x-vjp8
-- https://github.com/FreeRTOS/coreSNTP/security/advisories/GHSA-rwv9-2426-cpvv
-- https://github.com/FreeRTOS/FreeRTOS/pull/1348.
+  - https://github.com/FreeRTOS/FreeRTOS/security/advisories/GHSA-5677-2m7x-vjp8
+  - https://github.com/FreeRTOS/coreSNTP/security/advisories/GHSA-rwv9-2426-cpvv
+  - https://github.com/FreeRTOS/FreeRTOS/pull/1348.

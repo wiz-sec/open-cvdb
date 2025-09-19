@@ -1,21 +1,21 @@
 title: AWS Direct Connect route injection issue
 slug: aws-direct-connect-route-injection
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- EC2
-- Direct Connect
-image: null
-severity: High
+  - EC2
+  - Direct Connect
+image:
+severity: high
 discoveredBy:
   name: Jamie Finnigan
-  org: null
+  org:
   domain: chair6.net
-  twitter: null
+  twitter:
 publishedAt: 2024/08/15
 disclosedAt: 2024/05/16
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A BGP-based feature of the AWS Direct Connect service allowed a third party to inject an incorrect route for an external IP, effectively hijacking AWS-sourced traffic. This resulted in connectivity issues between AWS EC2 instances and external systems. The issue was caused by a typo in a Direct Connect customer's configuration, which advertised an incorrect prefix to AWS.
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://chair6.net/lets-encrypt-renewal-failures-and-aws-traffic-hijacking.html
+  - https://chair6.net/lets-encrypt-renewal-failures-and-aws-traffic-hijacking.html

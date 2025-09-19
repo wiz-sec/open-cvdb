@@ -1,21 +1,21 @@
 title: Critical Authentication Bypass in Google Cloud API Gateway
 slug: google-cloud-api-gateway-bypass
 cves:
-- CVE-2023-30845
+  - CVE-2023-30845
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- API Gateway
-- Cloud Run
-- App Engine
-- Cloud Functions
-image: null
-severity: Critical
+  - API Gateway
+  - Cloud Run
+  - App Engine
+  - Cloud Functions
+image:
+severity: critical
 discoveredBy:
   name: Panagiotis Vasilikos
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2023/06/21
 disclosedAt: 2023/02/01
 exploitabilityPeriod: Until 2023/03/01
@@ -29,4 +29,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://securingbits.com/bypassing-google-cloud-api-gateway
+  - https://securingbits.com/bypassing-google-cloud-api-gateway

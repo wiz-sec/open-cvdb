@@ -1,17 +1,17 @@
 title: Google Workspace Domain-Wide Delegation Flaw
 slug: google-workspace-domain-wide-delegation-risk
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Google Workspace
-image: null
-severity: High
+  - Google Workspace
+image:
+severity: high
 discoveredBy:
   name: Zohar Zigdon
   org: Unit 42
   domain: paloaltonetworks.com
-  twitter: null
+  twitter:
 publishedAt: 2023/11/30
 disclosedAt: 2023/06/27
 exploitabilityPeriod: Until patched
@@ -25,6 +25,8 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover
-- https://medium.com/@lutzenfried/gcp-domain-wide-delegation-abuses-b82b8dd8cf15
-- https://unit42.paloaltonetworks.com/critical-risk-in-google-workspace-delegation-feature/
+  - 
+  https://www.hunters.security/en/blog/delefriend-a-newly-discovered-design-flaw-in-domain-wide-delegation-could-leave-google-workspace-vulnerable-for-takeover
+  - https://medium.com/@lutzenfried/gcp-domain-wide-delegation-abuses-b82b8dd8cf15
+  - 
+  https://unit42.paloaltonetworks.com/critical-risk-in-google-workspace-delegation-feature/

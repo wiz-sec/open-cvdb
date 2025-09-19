@@ -1,15 +1,16 @@
 title: Lack of internal change controls for IAM managed policies
 slug: iam-managed-policies-lack-controls
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/policy_changed_in_unexpected_and_insecure_ways.jpg
-severity: Low
-discoveredBy: null
+  - aws
+affectedServices:
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/policy_changed_in_unexpected_and_insecure_ways.jpg
+severity: low
+discoveredBy:
 disclosedAt: 2020/10/15
 publishedAt: 2020/10/15
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   AWS have released or changed managed IAM policies in unexpected and insecure ways.
@@ -19,8 +20,9 @@ summary: |
   ones added.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/Rami_McCarthy
 references:
-- https://twitter.com/__steele/status/1316909785607012352
+  - https://twitter.com/__steele/status/1316909785607012352
 entryStatus: Finalized

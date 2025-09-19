@@ -2,11 +2,12 @@ title: Encryption SDK vulnerabilities
 slug: encryption-sdk-issues
 cves: CVE-2020-8897
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- KMS
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
-severity: Low
+  - KMS
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg
+severity: low
 discoveredBy:
   name: Thai Duong (thaidn)
   org: Google
@@ -24,9 +25,11 @@ summary: |
   ciphertexts that decrypt to different plaintexts for different users).
 manualRemediation: |
   Update the SDK to the latest secure version.
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://twitter.com/XorNinja/status/1310587707605659649
-- https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html
+  - https://twitter.com/XorNinja/status/1310587707605659649
+  - 
+  https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html
 entryStatus: Finalized

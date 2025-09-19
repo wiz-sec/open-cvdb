@@ -1,20 +1,20 @@
 title: Azure Automation Service Used for Cryptocurrency Mining
 slug: azure-automation-crypto-mining
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Automation Service
-image: null
-severity: High
+  - Azure Automation Service
+image:
+severity: high
 discoveredBy:
   name: Ariel Gamrian
   org: SafeBreach Labs
   domain: safebreach.com
-  twitter: null
+  twitter:
 publishedAt: 2023/11/08
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   SafeBreach Labs researchers developed methods to leverage Microsoft Azure's Automation Service for free, undetectable cryptocurrency mining. They found three ways to execute miners: two using their own environment and Azure's resources for free, and one in a victim's environment undetected. The techniques could potentially be used for any task requiring code execution on Azure.
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.safebreach.com/blog/cryptocurrency-miner-microsoft-azure
+  - https://www.safebreach.com/blog/cryptocurrency-miner-microsoft-azure

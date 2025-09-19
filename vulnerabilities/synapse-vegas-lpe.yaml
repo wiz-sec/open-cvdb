@@ -1,12 +1,13 @@
 title: Synapse Analytics privilege escalation via intelligent caching
 slug: synapse-vegas-lpe
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Synapse Analytics
-image: https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Medium
+  - Synapse Analytics
+image: 
+  https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: medium
 discoveredBy:
   name: Jimi Sebree
   org: Tenable
@@ -22,8 +23,9 @@ summary: |
   issue with scripts utilized by the intelligent caching service (AKA "Vegas") present in the environment.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributer: https://github.com/dinobytes
 references:
-- https://www.tenable.com/security/research/tra-2024-06
+  - https://www.tenable.com/security/research/tra-2024-06
 entryStatus: Finalized

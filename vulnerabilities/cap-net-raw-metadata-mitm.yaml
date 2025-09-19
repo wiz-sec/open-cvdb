@@ -1,22 +1,22 @@
 title: GKE and EKS CAP_NET_RAW metadata service MITM root privilege escalation
 slug: cap-net-raw-metadata-mitm
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
-- AWS
+  - gcp
+  - aws
 affectedServices:
-- GKE
-- EKS
+  - GKE
+  - EKS
 image: https://images.pexels.com/photos/762679/pexels-photo-762679.jpeg
-severity: Medium
+severity: medium
 discoveredBy:
   name: Etienne Champetier
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2020/06/15
 disclosedAt: 2020/06/15
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   An attacker with access to a hostNetwork=true container with CAP_NET_RAW
@@ -28,8 +28,9 @@ summary: |
   is possible to gain root privilege on the host.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://blog.champtar.fr/Metadata_MITM_root_EKS_GKE/
+  - https://blog.champtar.fr/Metadata_MITM_root_EKS_GKE/
 entryStatus: Finalized

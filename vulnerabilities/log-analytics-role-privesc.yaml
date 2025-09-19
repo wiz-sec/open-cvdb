@@ -1,28 +1,31 @@
 title: Azure privilege escalation via Log Analytics role
 slug: log-analytics-role-privesc
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Log Analytics
-image: https://images.pexels.com/photos/761535/pexels-photo-761535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-severity: Medium
+  - Log Analytics
+image: 
+  https://images.pexels.com/photos/761535/pexels-photo-761535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+severity: medium
 discoveredBy:
   name: Karl Fosaaen
   org: NetSPI
   domain: https://www.netspi.com/
-  twitter: null
+  twitter:
 disclosedAt: 2020/10/15
 publishedAt: 2021/09/13
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure AD users could escalate their privileges using the Log Analytics
   Contributor role to reach the full Subscription Contributor role.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.netspi.com/blog/technical/cloud-penetration-testing/escalating-azure-privileges-with-the-log-analystics-contributor-role/
+  - 
+  https://www.netspi.com/blog/technical/cloud-penetration-testing/escalating-azure-privileges-with-the-log-analystics-contributor-role/
 entryStatus: Finalized

@@ -1,11 +1,11 @@
 title: Azure NotLegit
 slug: notlegit
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
-affectedServices: null
+  - azure
+affectedServices:
 image: https://www.datocms-assets.com/75231/1659931538-notlegit-post-by-wiz.png
-severity: High
+severity: high
 discoveredBy:
   name: Shir Tamari
   org: Wiz
@@ -20,8 +20,9 @@ summary: |
   written in PHP, Python, Ruby, or Node, that were deployed using “Local Git”.
 manualRemediation: |
   Remove these permissions - this can be done via an organization policy.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.wiz.io/blog/azure-app-service-source-code-leak/
+  - https://www.wiz.io/blog/azure-app-service-source-code-leak/
 entryStatus: Finalized

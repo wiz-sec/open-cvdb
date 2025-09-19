@@ -1,18 +1,18 @@
 title: Power Platform Privilege Escalation in Azure AD
 slug: power-platform-privilege-escalation
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Power Platform
-- Azure Active Directory
-image: null
-severity: Critical
+  - Power Platform
+  - Azure Active Directory
+image:
+severity: critical
 discoveredBy:
-  name: null
+  name:
   org: Secureworks Counter Threat Unit
   domain: secureworks.com
-  twitter: null
+  twitter:
 publishedAt: 2023/08/24
 disclosedAt: 2023/04/05
 exploitabilityPeriod: Until 2023/04/06
@@ -26,4 +26,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.secureworks.com/research/power-platform-privilege-escalation
+  - https://www.secureworks.com/research/power-platform-privilege-escalation

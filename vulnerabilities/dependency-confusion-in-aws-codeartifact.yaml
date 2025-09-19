@@ -1,20 +1,21 @@
 title: Dependency confusion in AWS CodeArtifact
 slug: dependency-confusion-in-aws-codeartifact
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- CodeArtifact
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dependency_confusion_in_AWS_CodeArtifact.jpg
-severity: Medium
+  - CodeArtifact
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dependency_confusion_in_AWS_CodeArtifact.jpg
+severity: medium
 discoveredBy:
   name: Ignacio Dominguez
   org: Zego
   domain: https://medium.com/@ignacio.dominguez
-  twitter: null
+  twitter:
 publishedAt: 2022/07/14
 disclosedAt: 2021/10/29
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   AWS CodeArtifact was susceptible to dependency confusion / substitution (i.e, publication of a
@@ -23,10 +24,12 @@ summary: |
   given package can be added to a CodeArtifact repository.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/mer-b
 references:
-- https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d
-- https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
-- https://docs.aws.amazon.com/codeartifact/latest/ug/package-origin-controls.html
+  - https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d
+  - 
+  https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/
+  - https://docs.aws.amazon.com/codeartifact/latest/ug/package-origin-controls.html
 entryStatus: Finalized

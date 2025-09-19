@@ -1,16 +1,16 @@
 title: OMIGOD
 slug: omigod
 cves:
-- CVE-2021-38647
-- CVE-2021-38648
-- CVE-2021-38645
-- CVE-2021-38649
+  - CVE-2021-38647
+  - CVE-2021-38648
+  - CVE-2021-38645
+  - CVE-2021-38649
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- OMI
+  - OMI
 image: https://www.datocms-assets.com/75231/1659892020-omigod-8.png
-severity: Critical
+severity: critical
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.0, A8: 1.1}
 discoveredBy:
   name: Nir Ohfeld
@@ -36,11 +36,13 @@ detectionMethods: |
   OMI version < 1.6.8.1
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
-- https://www.wiz.io/blog/omigod-critical-vulnerabilities-in-omi-azure
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38647
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38648
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38645
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38649
-- https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
+  - 
+  https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
+  - https://www.wiz.io/blog/omigod-critical-vulnerabilities-in-omi-azure
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38647
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38648
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38645
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38649
+  - 
+  https://msrc.microsoft.com/blog/2021/09/additional-guidance-regarding-omi-vulnerabilities-within-azure-vm-management-extensions/
 entryStatus: Finalized

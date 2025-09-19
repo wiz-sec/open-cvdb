@@ -2,13 +2,14 @@ title: ApatchMe
 slug: apatchme
 cves: CVE-2023-29247
 affectedPlatforms:
-- AWS
-- GCP
+  - aws
+  - gcp
 affectedServices:
-- MWAA
-- Composer
-image: https://images.unsplash.com/photo-1564979045531-fa386a275b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
-severity: Medium
+  - MWAA
+  - Composer
+image: 
+  https://images.unsplash.com/photo-1564979045531-fa386a275b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+severity: medium
 discoveredBy:
   name: Liv Matan
   org: Tenable
@@ -31,9 +32,11 @@ summary: |
 manualRemediation: |
   AWS users should update their instances via the AWS Console.
   GCP users should take steps to update their Cloud Composer versions to 2.4.2 or later.
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
-- https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
+  - 
+  https://www.tenable.com/blog/apatchme-authenticated-stored-xss-vulnerability-in-aws-and-gcp-apache-airflow-services
+  - https://cloud.google.com/composer/docs/known-issues#cve-2023-29247
 entryStatus: Finalized

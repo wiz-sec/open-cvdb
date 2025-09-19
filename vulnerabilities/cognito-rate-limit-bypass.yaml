@@ -1,17 +1,17 @@
 title: Amazon Cognito Rate Limit Bypass Vulnerability
 slug: cognito-rate-limit-bypass
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Amazon Cognito
-image: null
-severity: High
+  - Amazon Cognito
+image:
+severity: high
 discoveredBy:
   name: Daniel Lümmel
   org: LuemmelSec
   domain: luemmelsec.de
-  twitter: null
+  twitter:
 publishedAt: 2023/12/27
 disclosedAt: 2023/09/20
 exploitabilityPeriod: Until 2023/12/27
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://luemmelsec.github.io/Amazon-Cognito-Ratelimit-Bypass/
+  - https://luemmelsec.github.io/Amazon-Cognito-Ratelimit-Bypass/

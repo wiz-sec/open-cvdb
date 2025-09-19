@@ -1,17 +1,17 @@
 title: Bypassing Identity-Aware Proxy in Google Cloud
 slug: iap-bypass-google-cloud
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Identity-Aware Proxy
-image: null
-severity: High
+  - Identity-Aware Proxy
+image:
+severity: high
 discoveredBy:
   name: SebLu
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2021/12/30
 disclosedAt: 2021/05/05
 exploitabilityPeriod: Until 2021/06
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.seblu.de/2021/12/iap-bypass.html
+  - https://www.seblu.de/2021/12/iap-bypass.html

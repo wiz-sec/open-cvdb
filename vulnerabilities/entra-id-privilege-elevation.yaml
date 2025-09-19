@@ -1,20 +1,20 @@
 title: Privilege Elevation Vulnerability in Entra ID
 slug: entra-id-privilege-elevation
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Entra ID
-- Device Registration Service
-- Viva Engage
-- Microsoft Rights Management Service
-image: null
-severity: High
+  - Entra ID
+  - Device Registration Service
+  - Viva Engage
+  - Microsoft Rights Management Service
+image:
+severity: high
 discoveredBy:
   name: Eric Woodruff
   org: Semperis
   domain: semperis.com
-  twitter: null
+  twitter:
 publishedAt: 2024/08/07
 disclosedAt: 2024/01/11
 exploitabilityPeriod: Until 2024/04/19
@@ -28,4 +28,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.semperis.com/blog/unoauthorized-privilege-elevation-through-microsoft-applications/
+  - 
+  https://www.semperis.com/blog/unoauthorized-privilege-elevation-through-microsoft-applications/

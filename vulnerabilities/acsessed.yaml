@@ -2,10 +2,11 @@ title: ACSESSED
 slug: acsessed
 cves: []
 affectedPlatforms:
-- azure
+  - azure
 affectedServices:
-- Cognitive Search
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/network-bypass-cognitive-search.jpg
+  - Cognitive Search
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/network-bypass-cognitive-search.jpg
 severity: medium
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.1, A8: 0.7}
 discoveredBy:
@@ -15,7 +16,7 @@ discoveredBy:
   twitter: emiliensocchi
 publishedAt: 2022/12/22
 disclosedAt: 2022/02/23
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure Cognitive Search (ACS) is a full-text search engine service.
@@ -23,8 +24,10 @@ summary: |
   to access the data plane of the target, along with a number of pieces of information about the target environment (such as the subscription ID and the name of the index to query).
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/techbrunch
 references:
-- https://www.mnemonic.io/resources/blog/acsessed-cross-tenant-network-bypass-in-azure-cognitive-search/
+  - 
+  https://www.mnemonic.io/resources/blog/acsessed-cross-tenant-network-bypass-in-azure-cognitive-search/
 entryStatus: Finalized

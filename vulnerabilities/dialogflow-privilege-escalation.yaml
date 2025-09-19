@@ -1,17 +1,17 @@
 title: Privilege escalation on Dialogflow cloud platform
 slug: dialogflow-privilege-escalation
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Dialogflow
-image: null
-severity: High
+  - Dialogflow
+image:
+severity: high
 discoveredBy:
   name: lalka
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2021/06/13
 disclosedAt: 2021/04/06
 exploitabilityPeriod: Until 2021/06/13
@@ -25,4 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://0x01alka.medium.com/google-vrp-privilege-escalation-on-https-dialogflow-cloud-google-com-599af6c4516d
+  - 
+  https://0x01alka.medium.com/google-vrp-privilege-escalation-on-https-dialogflow-cloud-google-com-599af6c4516d

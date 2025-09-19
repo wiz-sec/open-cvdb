@@ -1,18 +1,19 @@
 title: Signature version 1 (SigV1) is insecure
 slug: aws-sigv1-insecure
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
-image: https://c4.wallpaperflare.com/wallpaper/600/33/115/pattern-line-emission-background-wallpaper-preview.jpg
-severity: Medium
+  - aws
+affectedServices:
+image: 
+  https://c4.wallpaperflare.com/wallpaper/600/33/115/pattern-line-emission-background-wallpaper-preview.jpg
+severity: medium
 discoveredBy:
   name: Colin Percival
-  org: null
-  domain: null
-  twitter: null
+  org:
+  domain:
+  twitter:
 publishedAt: 2008/12/18
-disclosedAt: null
+disclosedAt:
 exploitabilityPeriod: until December 18th, 2008
 knownITWExploitation: false
 summary: |
@@ -22,8 +23,10 @@ summary: |
   via specially constructed collisions.
 manualRemediation: |
   None required, SigV1 is deprecated at this point
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html
+  - 
+  http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html
 entryStatus: Finalized

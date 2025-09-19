@@ -1,23 +1,24 @@
 title: Multiple SSRF vulnerablities in Azure services
 slug: azure-multiple-ssrf
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure Machine Learning Service
-- Azure API Management Service
-- Azure Functions
-- Azure Digital Twins Explorer
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_multiple_ssrf.jpg
-severity: Low
+  - Azure Machine Learning Service
+  - Azure API Management Service
+  - Azure Functions
+  - Azure Digital Twins Explorer
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_multiple_ssrf.jpg
+severity: low
 discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
   domain: https://orca.security/
-  twitter: null
+  twitter:
 publishedAt: 2023/01/17
 disclosedAt: 2022/10/08
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   SSRF vulnerabilities were discovered in four Azure services: unauthenticated SSRF in
@@ -29,13 +30,17 @@ summary: |
   services, access unauthorized data, or obtain cross-tenant access.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://orca.security/resources/blog/ssrf-vulnerabilities-in-four-azure-services/
-- https://msrc-blog.microsoft.com/2023/01/17/microsoft-resolves-four-ssrf-vulnerabilities-in-azure-cloud-services/
-- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-digital-twins/
-- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-functions-app/
-- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-api-management/
-- https://orca.security/resources/blog/ssrf-vulnerabilities-azure-machine-learning/
+  - 
+  https://orca.security/resources/blog/ssrf-vulnerabilities-in-four-azure-services/
+  - 
+  https://msrc-blog.microsoft.com/2023/01/17/microsoft-resolves-four-ssrf-vulnerabilities-in-azure-cloud-services/
+  - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-digital-twins/
+  - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-functions-app/
+  - https://orca.security/resources/blog/ssrf-vulnerabilities-azure-api-management/
+  - 
+  https://orca.security/resources/blog/ssrf-vulnerabilities-azure-machine-learning/
 entryStatus: Finalized

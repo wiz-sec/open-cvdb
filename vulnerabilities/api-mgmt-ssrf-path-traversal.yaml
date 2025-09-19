@@ -1,12 +1,13 @@
 title: API Management SSRF and path traversal vulnerabilities
 slug: api-mgmt-ssrf-path-traversal
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Azure API Management
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/api-mgmt-ssrf-path-traversal.jpg
-severity: High
+  - Azure API Management
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/api-mgmt-ssrf-path-traversal.jpg
+severity: high
 discoveredBy:
   name: Liv Matan
   org: Ermetic
@@ -14,7 +15,7 @@ discoveredBy:
   twitter: terminatorLM
 publishedAt: 2023/05/04
 disclosedAt: 2022/12/21
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Azure API Management is an API gateway service meant to help organizations to create, manage, secure,
@@ -31,9 +32,11 @@ summary: |
   an attacker to upload code instead, and then potentially execute it on the server itself.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://ermetic.com/blog/azure/when-good-apis-go-bad-uncovering-3-azure-api-management-vulnerabilities/
-- https://twitter.com/terminatorLM/status/1654110442082516992
+  - 
+  https://ermetic.com/blog/azure/when-good-apis-go-bad-uncovering-3-azure-api-management-vulnerabilities/
+  - https://twitter.com/terminatorLM/status/1654110442082516992
 entryStatus: Finalized

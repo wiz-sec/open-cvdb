@@ -1,21 +1,21 @@
 title: Google wide domain check bypass
 slug: google-domain-check-bypass
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Cloud Console
-- GMail API
-- Actions Console
-- YouTube Studio
-- Google Accounts
-image: null
-severity: High
+  - Cloud Console
+  - GMail API
+  - Actions Console
+  - YouTube Studio
+  - Google Accounts
+image:
+severity: high
 discoveredBy:
   name: David Schütz
-  org: null
+  org:
   domain: xdavidhu.me
-  twitter: null
+  twitter:
 publishedAt: 2020/03/08
 disclosedAt: 2020/01/04
 exploitabilityPeriod: Until 2020/03/06
@@ -29,5 +29,6 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://feed.bugs.xdavidhu.me/bugs/0008
-- https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/
+  - https://feed.bugs.xdavidhu.me/bugs/0008
+  - 
+  https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/

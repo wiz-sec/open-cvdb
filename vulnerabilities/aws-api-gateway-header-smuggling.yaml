@@ -1,17 +1,17 @@
 title: AWS API Gateway Header Smuggling and Cache Confusion
 slug: aws-api-gateway-header-smuggling
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- API Gateway
-image: null
-severity: High
+  - API Gateway
+image:
+severity: high
 discoveredBy:
-  name: null
+  name:
   org: Omegapoint
   domain: omegapoint.se
-  twitter: null
+  twitter:
 publishedAt: 2023/09/19
 disclosedAt: 2022/11/10
 exploitabilityPeriod: Until 2023/05/10
@@ -25,6 +25,7 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://aws.amazon.com/blogs/security/removing-header-remapping-from-amazon-api-gateway-and-notes-about-our-work-with-security-researchers/
-- https://securityblog.omegapoint.se/en/writeup-apigw/
-- https://partners.amazonaws.com/partners/001E000000Rl0xZIAR/Omegapoint)
+  - 
+  https://aws.amazon.com/blogs/security/removing-header-remapping-from-amazon-api-gateway-and-notes-about-our-work-with-security-researchers/
+  - https://securityblog.omegapoint.se/en/writeup-apigw/
+  - https://partners.amazonaws.com/partners/001E000000Rl0xZIAR/Omegapoint)

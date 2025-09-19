@@ -1,17 +1,17 @@
 title: Escalating from Reader to Contributor in Azure API Management
 slug: azure-apim-reader-contributor-escalation
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- API Management
-image: null
-severity: High
+  - API Management
+image:
+severity: high
 discoveredBy:
   name: Christian Håland
   org: Binary Security AS
   domain: binarysecurity.no
-  twitter: null
+  twitter:
 publishedAt: 2024/09/13
 disclosedAt: 2024/04/30
 exploitabilityPeriod: Until 2024/06/04
@@ -25,5 +25,5 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://binarysecurity.no/posts/2024/09/apim-privilege-escalation
-- https://binarysecurity.no/posts/2024/11/apim-privesc
+  - https://binarysecurity.no/posts/2024/09/apim-privilege-escalation
+  - https://binarysecurity.no/posts/2024/11/apim-privesc

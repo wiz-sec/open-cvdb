@@ -1,17 +1,17 @@
 title: AWS Neuron SDK Dependency Confusion Vulnerability Recurs
 slug: aws-neuron-sdk-dependency-confusion
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- Neuron SDK
-image: null
-severity: High
+  - Neuron SDK
+image:
+severity: high
 discoveredBy:
-  name: null
+  name:
   org: Giraffe Security
   domain: giraffesecurity.com
-  twitter: null
+  twitter:
 publishedAt: 2024/12/29
 disclosedAt: 2022/04/01
 exploitabilityPeriod: Until 2024/12/29
@@ -25,4 +25,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://giraffesecurity.dev/posts/amazon-hat-trick/
+  - https://giraffesecurity.dev/posts/amazon-hat-trick/

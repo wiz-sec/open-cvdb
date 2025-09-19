@@ -1,16 +1,16 @@
 title: Remote Prompt Injection in GitLab Duo Leaks Source Code
 slug: gitlab-duo-prompt-injection-leak
-cves: null
+cves: []
 affectedPlatforms:
-- GitLab
+  - gitlab
 affectedServices: []
-image: null
-severity: High
+image:
+severity: high
 discoveredBy:
   name: Omer Mayraz
   org: Legit Security
   domain: legitsecurity.com
-  twitter: null
+  twitter:
 publishedAt: 2025/05/22
 disclosedAt: 2025/02/12
 exploitabilityPeriod: Until 2025/02/12
@@ -24,4 +24,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo
+  - https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo

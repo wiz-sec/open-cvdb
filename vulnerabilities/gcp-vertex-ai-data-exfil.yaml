@@ -1,20 +1,21 @@
 title: Vertex AI Studio data exfiltration
 slug: gcp-vertex-ai-data-exfil
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Vertex AI Studio
-image: https://images.unsplash.com/photo-1532303517831-241791b20fb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Low
+  - Vertex AI Studio
+image: 
+  https://images.unsplash.com/photo-1532303517831-241791b20fb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
 discoveredBy:
   name: Johann Rehberger
-  org: null
+  org:
   domain: https://embracethered.com
   twitter: wunderwuzzi23
 publishedAt: 2023/10/19
 disclosedAt: 2023/08/30
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   In Vertex AI Studio, a Prompt Injection attack could cause the LLM to return
@@ -26,8 +27,10 @@ summary: |
   the malicious prompt from elsewhere. A similar issue affected Azure AI.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/ramimac
 references:
-- https://embracethered.com/blog/posts/2023/google-gcp-generative-ai-studio-data-exfiltration-fixed/
+  - 
+  https://embracethered.com/blog/posts/2023/google-gcp-generative-ai-studio-data-exfiltration-fixed/
 entryStatus: Finalized

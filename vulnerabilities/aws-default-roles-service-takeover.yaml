@@ -1,24 +1,24 @@
 title: AWS Default Roles Can Lead to Service Takeover
 slug: aws-default-roles-service-takeover
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- SageMaker
-- Glue
-- EMR
-- CloudFormation
-- CDK
-image: null
-severity: High
+  - SageMaker
+  - Glue
+  - EMR
+  - CloudFormation
+  - CDK
+image:
+severity: high
 discoveredBy:
   name: Yakir Kadkoda, Ofek Itach
   org: Aqua Security
   domain: aquasec.com
-  twitter: null
+  twitter:
 publishedAt: 2025/04/29
-disclosedAt: null
-exploitabilityPeriod: null
+disclosedAt:
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   Research uncovered security flaws in default AWS service roles, granting overly broad permissions like full S3 access. This allows privilege escalation, cross-service access, and potential account compromise across services like SageMaker, Glue, and EMR. Attackers could exploit these roles to manipulate critical assets and move laterally within AWS environments. AWS has since updated default policies and documentation to mitigate risks.
@@ -29,4 +29,4 @@ detectionMethods: |
 contributor: https://github.com/korniko98
 entryStatus: Stub (AI-Generated)
 references:
-- https://www.aquasec.com/blog/shadow-roles-aws-defaults-lead-to-service-takeover/
+  - https://www.aquasec.com/blog/shadow-roles-aws-defaults-lead-to-service-takeover/

@@ -1,13 +1,14 @@
 title: GCP HMAC Keys are not discoverable or revokable other than for self
 slug: gcp-hmac-keys-unauditable
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- Google Cloud Storage XML API
-- Google Cloud IAM
-image: https://images.unsplash.com/photo-1602974605125-2b4afee39ab5?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Low
+  - Google Cloud Storage XML API
+  - Google Cloud IAM
+image: 
+  https://images.unsplash.com/photo-1602974605125-2b4afee39ab5?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: low
 discoveredBy:
   name: Kat Traxler
   org: Vectra AI
@@ -32,8 +33,10 @@ manualRemediation: |
   unless they have expired. Furthermore, removing Cloud IAM Roles can revoke access to affected storage
   resources. However, it's important to note that reassigning roles does not invalidate previously
   created Sigv4 signed headers, allowing them to continue functioning even after the role change.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/KatTraxler
 references:
-- https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
+  - 
+  https://www.vectra.ai/blog/working-as-intended-the-unauditable-unmanageable-keys-in-google-cloud
 entryStatus: Finalized

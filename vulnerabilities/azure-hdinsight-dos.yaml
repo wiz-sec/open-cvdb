@@ -1,14 +1,15 @@
 title: Azure HDInsight privilege escalation and DoS vulnerabilities
 slug: azure-hdinsight-dos
 cves:
-- CVE-2023-36419
-- CVE-2023-38156
+  - CVE-2023-36419
+  - CVE-2023-38156
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- HDInsight
-image: https://images.unsplash.com/photo-1608562719218-920013a7a249?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-severity: Medium
+  - HDInsight
+image: 
+  https://images.unsplash.com/photo-1608562719218-920013a7a249?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+severity: medium
 discoveredBy:
   name: Lidor Ben Shitrit
   org: Orca Security
@@ -25,11 +26,13 @@ summary: |
   The vulnerabilities were patched in the October 2023 security update of Azure HDinsight.
 manualRemediation: |
   Update to HDInsight image 2308221128 or 2310140056.
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/mer-b
 references:
-- https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36419
-- https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38156
-- https://github.com/apache/oozie/pull/92
+  - 
+  https://orca.security/resources/blog/azure-hd-insight-vulnerabilities-privilege-escalation/
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36419
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38156
+  - https://github.com/apache/oozie/pull/92
 entryStatus: Finalized

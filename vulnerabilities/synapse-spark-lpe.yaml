@@ -1,13 +1,14 @@
 title: Synapse Spark LPE
 slug: synapse-spark-lpe
 cves:
-- 
+  -
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Synapse Analytics
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
-severity: Medium
+  - Synapse Analytics
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg
+severity: medium
 discoveredBy:
   name: Tzah Pahima
   org: Orca Security
@@ -30,9 +31,12 @@ summary: |
   and recommended mounting Data Lake Storage Gen2 or Azure Blob Storage instead.
 manualRemediation: |
   None required
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://orca.security/resources/blog/synapse-local-privilege-escalation-vulnerability-spark/
-- https://msrc-blog.microsoft.com/2022/09/01/vulnerability-fixed-in-azure-synapse-spark/
+  - 
+  https://orca.security/resources/blog/synapse-local-privilege-escalation-vulnerability-spark/
+  - 
+  https://msrc-blog.microsoft.com/2022/09/01/vulnerability-fixed-in-azure-synapse-spark/
 entryStatus: Finalized

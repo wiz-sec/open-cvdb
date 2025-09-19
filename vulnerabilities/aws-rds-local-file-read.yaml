@@ -1,20 +1,21 @@
 title: AWS RDS local file read
 slug: aws-rds-local-file-read
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- RDS
-image: https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-severity: High
+  - RDS
+image: 
+  https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+severity: high
 discoveredBy:
   name: Gafnit Amiga
   org: Lightspin
   domain: https://www.lightspin.io/
-  twitter: null
+  twitter:
 publishedAt: 2022/04/11
 disclosedAt: 2021/12/09
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A vulnerability was discovered in the Aurora PostgreSQL log_fdw extension
@@ -22,9 +23,10 @@ summary: |
   files on the EC2 host and obtain credentials for an internal AWS service.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://blog.lightspin.io/aws-rds-critical-security-vulnerability
-- https://aws.amazon.com/security/security-bulletins/AWS-2022-004/
+  - https://blog.lightspin.io/aws-rds-critical-security-vulnerability
+  - https://aws.amazon.com/security/security-bulletins/AWS-2022-004/
 entryStatus: Finalized

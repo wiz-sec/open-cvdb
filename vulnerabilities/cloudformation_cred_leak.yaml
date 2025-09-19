@@ -1,20 +1,21 @@
 title: CloudFormation resource provider credentials leak
 slug: cloudformation_cred_leak
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- CloudFormation
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudformation_cred_leak.jpg
-severity: High
+  - CloudFormation
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudformation_cred_leak.jpg
+severity: high
 discoveredBy:
   name: Aidan Steele
-  org: null
-  domain: null
+  org:
+  domain:
   twitter: __steele
 publishedAt: 2020/09/22
 disclosedAt: 2020/01/21
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   CloudFormation allows the use of Lambda-backed resource providers,
@@ -32,8 +33,10 @@ summary: |
   for roles in other tenants' accounts.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/korniko98
 references:
-- https://onecloudplease.com/blog/security-september-cataclysms-in-the-cloud-formations
+  - 
+  https://onecloudplease.com/blog/security-september-cataclysms-in-the-cloud-formations
 entryStatus: Finalized

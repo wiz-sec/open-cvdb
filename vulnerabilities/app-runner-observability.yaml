@@ -1,15 +1,16 @@
 title: App Runner cross-tenant observability config info leak
 slug: app-runner-observability
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
+  - aws
 affectedServices:
-- App Runner
-image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-observability.jpg
-severity: Low
+  - App Runner
+image: 
+  https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/app-runner-observability.jpg
+severity: low
 discoveredBy:
   name: Nick Frichette
-  org: null
+  org:
   domain: https://frichetten.com
   twitter: frichette_n
 publishedAt: 2023/04/03
@@ -23,8 +24,9 @@ summary: |
   about the observability configuration for App Runner in the account.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/frichetten
 references:
-- https://frichetten.com/blog/minor-cross-tenant-vulns-app-runner
+  - https://frichetten.com/blog/minor-cross-tenant-vulns-app-runner
 entryStatus: Finalized

@@ -1,16 +1,17 @@
 title: 3rd party vendor confused deputy via AssumeRole
 slug: assumerole-confused-deputy
-cves: null
+cves: []
 affectedPlatforms:
-- AWS
-affectedServices: null
-image: https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png
-severity: Medium
+  - aws
+affectedServices:
+image: 
+  https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png
+severity: medium
 discoveredBy:
   name: Daniel Grzelak
   org: Atlassian
   domain: https://www.atlassian.com/
-  twitter: null
+  twitter:
 publishedAt: 2016/11/16
 disclosedAt: 2016/11/16
 exploitabilityPeriod: ongoing
@@ -23,9 +24,10 @@ summary: |
   to prevent and detect this issue.
 manualRemediation: |
   Audit your vendor roles.
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.youtube.com/watch?v=8ZXRw4Ry3mQ
-- https://www.praetorian.com/blog/aws-iam-assume-role-vulnerabilities/
+  - https://www.youtube.com/watch?v=8ZXRw4Ry3mQ
+  - https://www.praetorian.com/blog/aws-iam-assume-role-vulnerabilities/
 entryStatus: Finalized

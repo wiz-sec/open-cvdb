@@ -1,28 +1,29 @@
 title: Bazel supply chain vulnerability
 slug: bazel_supply_chain
-cves: null
+cves: []
 affectedPlatforms:
-- GCP
-affectedServices: null
-image: null
-severity: null
+  - gcp
+affectedServices:
+image:
+severity:
 discoveredBy:
-  name: null
+  name:
   org: Cycode
   domain: cycode.com
-  twitter: null
+  twitter:
 publishedAt: 2024/04/03
-disclosedAt: null
-exploitabilityPeriod: null
-knownITWExploitation: null
+disclosedAt:
+exploitabilityPeriod:
+knownITWExploitation:
 summary: |
   Cycode discovered a CI/CD misconfiguration in the Bazel repo, which if exploited could have
   allowed an attacker to enact a supply chain attack against all Bazel users, which includes
   Google themselves and therefore likely GCP as well.
 manualRemediation: |
 
-detectionMethods: null
-contributor: null
+detectionMethods: |-
+  None
+contributor:
 references:
-- https://cycode.com/blog/cycode-discovers-a-supply-chain-vulnerability-in-bazel/
+  - https://cycode.com/blog/cycode-discovers-a-supply-chain-vulnerability-in-bazel/
 entryStatus: Stub

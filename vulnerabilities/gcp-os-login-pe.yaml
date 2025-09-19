@@ -1,15 +1,16 @@
 title: Privilege escalation in GCP OS Login
 slug: gcp-os-login-pe
 cves:
-- CVE-2020-8933
-- CVE-2020-8907
-- CVE-2020-8903
+  - CVE-2020-8933
+  - CVE-2020-8907
+  - CVE-2020-8903
 affectedPlatforms:
-- GCP
+  - gcp
 affectedServices:
-- OS Login
-image: https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
-severity: Medium
+  - OS Login
+image: 
+  https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+severity: medium
 discoveredBy:
   name: Chris Moberly
   org:
@@ -25,9 +26,11 @@ summary: |
   DHCP poisoning of the metadata server to escalate their privileges on a Google Compute Engine VM.
 manualRemediation: |
 
-detectionMethods:
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020
-- https://initblog.com/2020/oslogin-privesc/
+  - 
+  https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020
+  - https://initblog.com/2020/oslogin-privesc/
 entryStatus: Finalized

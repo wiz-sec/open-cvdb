@@ -1,21 +1,21 @@
 title: ExtraReplica
 slug: extrareplica
-cves: null
+cves: []
 affectedPlatforms:
-- Azure
+  - azure
 affectedServices:
-- Database for PostgreSQL
+  - Database for PostgreSQL
 image: https://www.datocms-assets.com/75231/1659934983-new-replica.png
-severity: Critical
+severity: critical
 piercingIndexVector: {version: 1.5, A1: 20, A2: 1, A7: 1.0, A8: 1.1}
 discoveredBy:
   name: Sagi Tzadik, Nir Ohfeld, Shir Tamari, Ronen Shustin
   org: Wiz
   domain: https://www.wiz.io/
-  twitter: null
+  twitter:
 disclosedAt: 2022/01/11
 publishedAt: 2022/04/28
-exploitabilityPeriod: null
+exploitabilityPeriod:
 knownITWExploitation: false
 summary: |
   A chain of critical vulnerabilities was discovered in Azure Database for PostgreSQL Flexible Server,
@@ -23,10 +23,14 @@ summary: |
   If exploited, a malicious actor could have replicated and gained read access to Azure PostgreSQL Flexible Server customer databases.
 manualRemediation: |
   None required
-detectionMethods: null
+detectionMethods: |-
+  None
 contributor: https://github.com/0xdabbad00
 references:
-- https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/
-- https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities
-- https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution
+  - 
+  https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/
+  - 
+  https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities
+  - 
+  https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution
 entryStatus: Finalized
