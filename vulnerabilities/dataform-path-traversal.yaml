@@ -1,0 +1,33 @@
+title: Dataform cross-tenant path traversal
+slug: dataform-path-traversal
+cves:
+  - CVE-2025-9118
+affectedPlatforms:
+  - GCP
+affectedServices:
+  - Dataform
+image: null
+severity: Critical
+discoveredBy:
+  name: null
+  org: Unknown
+  domain: null
+  twitter: null
+publishedAt: 2025/08/21
+disclosedAt: 2025/08/21
+exploitabilityPeriod: 2025/08/07 to 2025/08/21
+knownITWExploitation: false
+summary: |
+  Dataform could have allowed a malicious customer to gain unauthorized cross-tenant access
+  to other customer's code repositories and data. By preparing a maliciously crafted package.json
+  file, an attacker could exploit a path traversal vulnerability in the npm package installation
+  process, thereby gaining read and write access in other customers' repositories. According to
+  Google, there was no evidence of exploitation in the wild.
+manualRemediation: |
+  None required.
+detectionMethods: null
+contributor: https://github.com/korniko98
+entryStatus: Finalized
+references:
+  - https://cloud.google.com/support/bulletins#gcp-2025-045
+  - https://www.cve.org/CVERecord?id=CVE-2025-9118
