@@ -2,10 +2,10 @@ title: Public admin access to Azure's Red Hat Update Infrastructure
 slug: admin-azure-rh-update-infrastructure
 cves: null
 affectedPlatforms:
-- Azure
+- azure
 affectedServices: null
 image: https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png
-severity: Low
+severity: low
 discoveredBy:
   name: Ian Duffy
   org: null
