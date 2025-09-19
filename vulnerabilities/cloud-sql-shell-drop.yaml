@@ -2,11 +2,11 @@ title: Dropping a Shell in Google Cloud SQL
 slug: cloud-sql-shell-drop
 cves: null
 affectedPlatforms:
-- GCP
+- gcp
 affectedServices:
 - Cloud SQL
 image: null
-severity: Critical
+severity: critical
 discoveredBy:
   name: Ezequiel Pereira and Wouter ter Maat
   org: null
