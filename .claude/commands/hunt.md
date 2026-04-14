@@ -45,6 +45,35 @@ These are the most authoritative sources - official vendor acknowledgments.
 2. For recent months, fetch `/cvrf/{id}` (e.g., `/cvrf/2026-Apr`)
 3. Filter for Azure/Entra/M365 products in the CVRF response
 4. Cross-reference CVEs with existing entries
+5. **Enrich with NVD data** (see below)
+
+### Enriching MSRC CVEs with NVD Data
+
+MSRC's CVRF data provides CVE IDs and CVSS scores, but descriptions are often generic (e.g., "high impact to confidentiality"). The NVD API provides better technical descriptions and CWE classifications.
+
+**NVD API Endpoint:**
+```
+https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-YYYY-NNNNN
+```
+
+**For each MSRC CVE, fetch NVD data to get:**
+- **Description**: Actual vulnerability type (e.g., "Server-side request forgery allows...")
+- **CWE ID**: Weakness classification (e.g., CWE-918 for SSRF, CWE-285 for Improper Authorization)
+
+**Use in entry:**
+- Title: Include vulnerability type from NVD (e.g., "Azure Databricks SSRF Privilege Escalation")
+- Summary: Lead with NVD description and CWE, then add CVSS context
+- References: Include both MSRC and NVD URLs
+
+**Example summary using NVD data:**
+```
+A server-side request forgery (SSRF) vulnerability (CWE-918) in Azure Databricks 
+allowed unauthorized attackers to elevate privileges over a network. Microsoft 
+assigned a CVSS score of 10.0. The vulnerability was addressed in Microsoft's 
+April 2026 security updates.
+```
+
+**Note:** NVD data may lag MSRC announcements by hours or days. If NVD returns no results, create an issue instead of a PR, noting that NVD enrichment is pending.
 
 ### Tier 2: Security Research Firms (High Authority)
 
