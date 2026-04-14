@@ -1,0 +1,31 @@
+title: Cross-Tenant Event Grid Privilege Escalation Vulnerability
+slug: azure-event-grid-cross-tenant-exposure
+cves:
+  - CVE-2025-59273
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure Event Grid
+  - Azure Management Groups
+image: null
+severity: critical
+discoveredBy:
+  name: null
+  org: The Collective Consulting
+  domain: thecollective.eu
+  twitter: null
+publishedAt: 2025/10/24
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A flaw in Azure Event Grid System Topic filtering allowed unauthorized cross-tenant visibility of Event Subscriptions. The vulnerability stemmed from improper scope validation when management groups (which share non-unique IDs across tenants) were used instead of globally-unique subscription IDs. Attackers could create Event Grid System Topics using identical management group names from other tenants to view their subscription configurations, potentially exposing event counts, Azure Policy event details, delivery endpoints (webhooks, Function Apps), authentication credentials, Microsoft Entra ID configuration, and linked identities. Microsoft patched the vulnerability within days of disclosure.
+manualRemediation: |
+  None required. Microsoft patched the vulnerability server-side.
+detectionMethods: |
+  None. No telemetry exists to provide defenders insight into potential exploitation of this vulnerability.
+contributor: https://github.com/ramimac
+references:
+  - https://thecollective.eu/cross-tenant-event-grid-privilege-escalation-vulnerability/
+  - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59273
+entryStatus: Stub (AI-Generated)
