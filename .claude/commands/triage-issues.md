@@ -11,6 +11,13 @@ Automatically triage open issues requesting new vulnerability additions.
 
 This skill processes open issues with the "addition" label, extracts source URLs, runs the vulnerability skill to evaluate them, and either creates a PR or comments with analysis explaining why not.
 
+## Access Requirements
+
+This skill works for both contributors and non-contributors:
+- **Read operations** (issue list, PR list, comments): Work for any authenticated GitHub user
+- **Issue comments**: Any authenticated user can comment on public repo issues
+- **PR creation**: Handled by the vulnerability skill, which supports fork-based workflows for non-contributors
+
 ## Process
 
 ### Step 1: Fetch Open Issues

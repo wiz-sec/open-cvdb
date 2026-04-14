@@ -7,6 +7,14 @@ description: Hunt for new cloud vulnerabilities to add to open-cvdb. Checks auth
 
 Proactively find new cloud vulnerabilities to add to the database.
 
+## Access Requirements
+
+This skill works for both contributors and non-contributors:
+- **Source fetching**: No GitHub access required
+- **Duplicate checking**: Uses local grep, no special access needed
+- **Issue creation**: Any authenticated GitHub user can create issues on public repos
+- **PR creation**: Handled by the vulnerability skill, which supports fork-based workflows
+
 ## Usage
 
 **Check authoritative sources for new vulnerabilities:**
@@ -27,10 +35,16 @@ These are the most authoritative sources - official vendor acknowledgments.
 
 | Vendor | URL | Check Method |
 |--------|-----|--------------|
-| AWS | https://aws.amazon.com/security/security-bulletins/ | Fetch page, look for bulletins not in CVDB |
-| GCP | https://cloud.google.com/support/bulletins | Fetch page, look for cloud-specific bulletins |
-| Azure/MSRC | https://msrc.microsoft.com/update-guide/ | Search for Azure/Entra/M365 advisories |
+| AWS | https://aws.amazon.com/security/security-bulletins/feed/ | Fetch RSS feed (works better than web page) |
+| GCP | https://cloud.google.com/support/bulletins | Fetch page (redirects to docs.cloud.google.com) |
+| Azure/MSRC | https://api.msrc.microsoft.com/cvrf/v3.0/updates | Use MSRC API, then fetch /cvrf/{yyyy-Mon} for details |
 | GitHub | https://github.blog/security/ | Check for platform security posts |
+
+**MSRC API Usage:**
+1. Fetch `/updates` to get list of monthly security updates
+2. For recent months, fetch `/cvrf/{id}` (e.g., `/cvrf/2026-Apr`)
+3. Filter for Azure/Entra/M365 products in the CVRF response
+4. Cross-reference CVEs with existing entries
 
 ### Tier 2: Security Research Firms (High Authority)
 
