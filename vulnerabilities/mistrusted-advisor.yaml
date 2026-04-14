@@ -1,0 +1,29 @@
+title: Mistrusted Advisor
+slug: mistrusted-advisor
+cves: []
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Trusted Advisor
+  - S3
+image: null
+severity: high
+discoveredBy:
+  name: Jason Kao
+  org: Fog Security
+  domain: fogsecurity.io
+  twitter: null
+publishedAt: 2025/08/20
+disclosedAt: 2025/05/02
+exploitabilityPeriod: Until 2025/06/30
+knownITWExploitation: null
+summary: |
+  AWS Trusted Advisor's S3 Security Check could be bypassed by denying specific permissions in bucket policies (s3:GetBucketPolicyStatus, s3:GetBucketPublicAccessBlock, or s3:GetBucketAcl). This allowed attackers to configure publicly accessible S3 buckets while evading detection, as Trusted Advisor would incorrectly report such buckets as secure (green status). AWS deployed fixes in two phases, completing the full remediation on June 30, 2025.
+manualRemediation: |
+  None required. AWS has deployed server-side fixes. However, customers should audit S3 bucket configurations for unintended public access and review historical bucket access for potential breaches during the exploitability window.
+detectionMethods: |
+  Review Trusted Advisor S3 Bucket Permissions check for previously misreported buckets. Inspect bucket policies that deny GetBucketPublicAccessBlock, GetBucketPolicyStatus, or GetBucketAcl actions to the Trusted Advisor service. Monitor CloudTrail for denied permission checks that may indicate past evasion attempts.
+contributor: https://github.com/ramimac
+references:
+  - https://www.fogsecurity.io/blog/mistrusted-advisor-public-s3-buckets
+entryStatus: Stub (AI-Generated)
