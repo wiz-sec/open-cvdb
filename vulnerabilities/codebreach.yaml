@@ -1,0 +1,28 @@
+title: "CodeBreach: AWS CodeBuild Webhook Filter Bypass"
+slug: codebreach
+cves: []
+affectedPlatforms:
+  - aws
+affectedServices:
+  - AWS CodeBuild
+image: null
+severity: critical
+discoveredBy:
+  name: Yuval Avrahami, Nir Ohfeld, Sagi Tzadik, Ronen Shustin, Hillai Ben-Sasson
+  org: Wiz
+  domain: wiz.io
+  twitter: waborovsky
+publishedAt: 2026/01/15
+disclosedAt: 2025/08/25
+exploitabilityPeriod: Until 2025/08/27
+knownITWExploitation: false
+summary: |
+  A critical supply chain vulnerability in AWS CodeBuild's webhook filter validation allowed attackers to bypass build restrictions on AWS's own GitHub repositories, including the JavaScript SDK (aws-sdk-js-v3). The flaw stemmed from unanchored regex patterns in the ACTOR_ID filter, which used pipe-separated trusted user IDs without start and end anchors. Attackers could register new GitHub users with IDs containing trusted maintainer IDs as substrings, bypassing pull request restrictions to extract GitHub credentials from build memory. This would have enabled full repository admin access and the ability to inject malicious code into SDK releases, potentially compromising downstream users through NPM distribution. AWS remediated within 48 hours by anchoring the regex patterns, revoking compromised tokens, and implementing memory protections.
+manualRemediation: |
+  None required. AWS remediated server-side by anchoring vulnerable regex patterns, implementing memory protections for credential processes, and creating a new "Pull Request Comment Approval" build gate feature.
+detectionMethods: |
+  Review CodeBuild webhook configurations for ACTOR_ID filters using unanchored regex patterns.
+contributor: https://github.com/ramimac
+references:
+  - https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild
+entryStatus: Stub (AI-Generated)
