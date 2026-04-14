@@ -1,0 +1,28 @@
+title: Unauthenticated Cluster Takeover in AWS ROSA
+slug: aws-rosa-cluster-takeover
+cves: []
+affectedPlatforms:
+  - aws
+affectedServices:
+  - ROSA (Red Hat OpenShift Service on AWS)
+image: null
+severity: critical
+discoveredBy:
+  name: Ryan Gerstenkorn
+  org: null
+  domain: blog.ryanjarv.sh
+  twitter: Ryan_Jarv
+publishedAt: 2026/01/05
+disclosedAt: 2025/11/09
+exploitabilityPeriod: Until 2025/12/12
+knownITWExploitation: null
+summary: |
+  A missing authorization check in the AWS ROSA Classic cluster transfer endpoint allowed attackers to initiate ownership transfers of arbitrary clusters without verifying the requester owned the target cluster. Attackers could discover ROSA cluster console domains via Certificate Transparency logs and enumerate valid usernames through unauthenticated API endpoints. After accepting the fraudulent transfer via email link, attackers gained cluster-admin privileges and could pivot to the underlying AWS account using significant IAM permissions including iam:PassRole and ec2:RunInstances. Red Hat fixed the issue by implementing proper authorization verification before processing transfer requests.
+manualRemediation: |
+  None required. Red Hat remediated this server-side by implementing authorization verification to confirm cluster ownership before processing transfer requests.
+detectionMethods: |
+  Monitor emails from [email protected] for unexpected cluster transfer initiation notices. Configure email alerts for transfer requests, particularly during weekends or holidays when they may be overlooked.
+contributor: https://github.com/ramimac
+references:
+  - https://blog.ryanjarv.sh/2026/01/05/unauth-aws-rosa-cluster-takeover.html
+entryStatus: Stub (AI-Generated)
