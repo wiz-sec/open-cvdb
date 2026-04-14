@@ -1,0 +1,27 @@
+title: Google Cloud Looker Remote Command Execution via Git Configuration Hooks
+slug: gcp-looker-rce-git-hooks
+cves: []
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Looker
+image: null
+severity: critical
+discoveredBy:
+  name: RyotaK
+  org: GMO Flatt Security Inc.
+  domain: flatt.tech
+  twitter: ryotkak
+publishedAt: 2026/03/23
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A vulnerability in Google Cloud Looker's directory deletion feature allowed remote command execution. The flaw stemmed from improper validation that permitted deletion of the repository root directory. By exploiting a race condition during Git's post-order directory traversal, an attacker could delete the .git directory while keeping forged Git configuration files (containing malicious fsmonitor hooks) in the worktree. When Git operations were triggered during this window, the forged configurations would execute arbitrary commands on Looker servers. Additionally, a related privilege escalation vulnerability was found where the Looker Kubernetes service account had excessive permissions to update secrets in the shared looker namespace, potentially enabling access to other Looker instances in the same cluster. Google classified the privilege escalation as S0 severity and fixed both vulnerabilities.
+manualRemediation: |
+  None required
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+  - https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/
+entryStatus: Stub (AI-Generated)
