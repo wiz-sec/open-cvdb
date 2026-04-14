@@ -1,0 +1,28 @@
+title: GCP Observability Analytics SQL Query Execution Vulnerability
+slug: gcp-observability-analytics-sqli
+cves: []
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Google Cloud Observability
+image: null
+severity: high
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2026/02/13
+disclosedAt: null
+exploitabilityPeriod: Until 2026/01/01
+knownITWExploitation: null
+summary: |
+  A vulnerability in the Google Cloud Observability Analytics user interface allowed attackers to craft malicious query URLs that would automatically execute SQL queries when opened by authenticated users. Victims who clicked these links could inadvertently expose table contents or incur unexpected query costs. The vulnerability affected Observability Analytics UI versions prior to January 2026.
+manualRemediation: |
+  None required. Google addressed the vulnerability in the January 2026 release of Observability Analytics.
+detectionMethods: |
+  Review query logs for unexpected or unauthorized SQL query execution. Monitor for anomalous query costs.
+contributor: https://github.com/ramimac
+references:
+  - https://cloud.google.com/support/bulletins#gcp-2026-009
+entryStatus: Stub (AI-Generated)
