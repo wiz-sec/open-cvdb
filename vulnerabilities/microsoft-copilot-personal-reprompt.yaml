@@ -1,0 +1,28 @@
+title: Reprompt - Microsoft Copilot Personal Data Exfiltration via URL Prompt Injection
+slug: microsoft-copilot-personal-reprompt
+cves: []
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Microsoft Copilot Personal
+image: null
+severity: high
+discoveredBy:
+  name: Dolev Taler
+  org: Varonis Threat Labs
+  domain: varonis.com
+  twitter: null
+publishedAt: 2026/01/26
+disclosedAt: 2026/01/26
+exploitabilityPeriod: Until 2026/01/26
+knownITWExploitation: null
+summary: |
+  Microsoft Copilot Personal was vulnerable to a data exfiltration attack called "Reprompt" that exploited URL parameter prompt injection. Attackers could craft malicious links with the 'q' URL parameter containing hidden instructions that bypassed Copilot's safety controls through a double-request technique. When a user clicked the link, Copilot would execute chained server-side requests that could exfiltrate credentials, file access history, location data, calendar information, and conversation memory without user awareness. Microsoft patched the vulnerability on the same day as disclosure. Enterprise customers using Microsoft 365 Copilot were not affected.
+manualRemediation: |
+  None required
+detectionMethods: |
+  Detection is limited as commands execute server-side after the initial click. Users should avoid clicking links from untrusted sources that pre-populate AI prompts, and review automatically populated prompts before execution.
+contributor: https://github.com/ramimac
+references:
+  - https://www.varonis.com/blog/reprompt
+entryStatus: Stub (AI-Generated)
