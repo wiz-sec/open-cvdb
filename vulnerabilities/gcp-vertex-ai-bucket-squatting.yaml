@@ -1,0 +1,29 @@
+title: Vertex AI Experiments Bucket Squatting Cross-Tenant RCE
+slug: gcp-vertex-ai-bucket-squatting
+cves:
+  - CVE-2026-2473
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Vertex AI
+image: null
+severity: critical
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2026/02/20
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A predictable bucket naming vulnerability (CWE-340) in Vertex AI Experiments allowed unauthenticated remote attackers to achieve cross-tenant remote code execution, model theft, and model poisoning. By pre-creating predictably named Cloud Storage buckets (bucket squatting), an attacker could intercept data intended for other tenants. The vulnerability affected Google Cloud Vertex AI SDK versions 1.21.0 through 1.132.0 and was fixed in version 1.133.0. Google has applied server-side mitigations and no customer action is required.
+manualRemediation: |
+  None required. Google has applied fixes server-side.
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+  - https://cloud.google.com/support/bulletins#GCP-2026-012
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-2473
+entryStatus: Stub (AI-Generated)
