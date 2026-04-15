@@ -1,0 +1,29 @@
+title: Apigee Cross-Tenant Analytics Data Access
+slug: gcp-apigee-cross-tenant-access
+cves:
+  - CVE-2025-13292
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Apigee
+image: null
+severity: high
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2026/02/13
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A privilege escalation vulnerability (CWE-269) in Apigee-X allowed attackers to gain unauthorized read and write access to Apigee Analytics (AX) data and access logs belonging to other Apigee customer organizations. The vulnerability enabled cross-tenant data access through a sandboxing bypass. The issue was resolved in Apigee version 1-16-0-apigee-3.
+manualRemediation: |
+  None required. Google has applied fixes server-side.
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+  - https://cloud.google.com/support/bulletins#GCP-2026-010
+  - https://nvd.nist.gov/vuln/detail/CVE-2025-13292
+entryStatus: Stub (AI-Generated)
