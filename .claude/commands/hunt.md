@@ -107,6 +107,29 @@ Individual researchers with established credibility in cloud security.
 | Scott Piper | summitroute.com | AWS security, original CSP mistakes list |
 | Dirk-jan Mollema | dirkjanm.io | Azure AD/Entra ID |
 
+## Duplicate Prevention (CRITICAL)
+
+Before creating any PR or issue, check ALL of these:
+
+1. **Existing entries in repo** - grep for CVE ID, service name, vulnerability name
+   ```bash
+   grep -ri "CVE-2026-12345" vulnerabilities/
+   grep -ri "service-name" vulnerabilities/
+   ```
+
+2. **ALL open PRs** (not just your own - PRs may come from different accounts/forks):
+   ```bash
+   gh pr list --repo wiz-sec/open-cvdb --state open --json number,title --limit 50
+   ```
+   Search the titles for CVE IDs, service names, or vulnerability keywords.
+
+3. **Open issues** - may indicate work in progress:
+   ```bash
+   gh issue list --repo wiz-sec/open-cvdb --label addition --state open --json number,title
+   ```
+
+**Why this matters:** Fork accounts can change between sessions. A PR opened from `user-a/repo` won't show up when filtering by `--author user-b`. Always check ALL open PRs regardless of author.
+
 ## Process
 
 ### Mode 1: Check Sources (no argument)
@@ -119,7 +142,7 @@ When invoked without a URL:
    - AWS, Azure, GCP, GitHub, GitLab mentions
    - CVE assignments for cloud services
    - Terms: vulnerability, security issue, disclosure, cross-tenant, privilege escalation
-4. **Cross-reference with existing entries** - Check if already in CVDB
+4. **Cross-reference with existing entries AND open PRs** - Check if already in CVDB or pending
 5. **For each new finding**, run the vulnerability skill process
 
 ### Mode 2: Review URL (with argument)
@@ -181,9 +204,10 @@ If the finding is out of scope for CVDB:
 
 ### Already Exists → Skip
 
-If already in CVDB:
-- Note as "already tracked" in summary
+If already in CVDB **OR has an open PR/issue**:
+- Note as "already tracked" or "PR pending" in summary
 - Optionally flag if existing entry needs updates
+- Do NOT create duplicate PRs even if from different fork accounts
 
 ## Hunt Summary
 
