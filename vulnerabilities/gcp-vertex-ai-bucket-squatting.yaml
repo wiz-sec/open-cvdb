@@ -1,0 +1,31 @@
+title: Vertex AI Experiments Predictable Bucket Naming
+slug: gcp-vertex-ai-bucket-squatting
+cves:
+  - CVE-2026-2473
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Vertex AI
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/02/20
+disclosedAt: 2026/02/20
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Vertex AI Experiments versions 1.21.0 through 1.133.0 used predictable Cloud Storage bucket naming. An unauthenticated remote attacker could achieve cross-tenant remote code execution, model theft, and model poisoning by pre-creating predictably named buckets (bucket squatting).
+
+  The vulnerability allowed attackers to intercept training data and model artifacts by registering buckets before legitimate users, potentially compromising the integrity of machine learning pipelines.
+manualRemediation: |
+  No customer action is needed for mitigation. Mitigations have been applied to Vertex AI Experiments version 1.133.0 and later.
+detectionMethods: |
+  Check the version of google-cloud-aiplatform SDK in use. Versions 1.21.0 through 1.132.x are vulnerable.
+contributor: https://github.com/vanhoangkha
+references:
+  - https://cloud.google.com/support/bulletins#gcp-2026-012
+entryStatus: Finalized
