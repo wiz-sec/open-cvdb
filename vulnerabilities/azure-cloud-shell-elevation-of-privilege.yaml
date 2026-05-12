@@ -1,0 +1,28 @@
+title: Azure Cloud Shell Elevation of Privilege
+slug: azure-cloud-shell-elevation-of-privilege
+cves:
+  - CVE-2026-32169
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure Cloud Shell
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/03/18
+disclosedAt: 2026/03/18
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A privilege escalation vulnerability in Azure Cloud Shell allows an attacker to elevate privileges locally. Cloud Shell sits at the intersection of identity, browser-delivered admin workflows, and Azure control-plane access, meaning even a localized privilege issue can have outsized implications for tenants that use it for day-to-day operations.
+manualRemediation: |
+  No customer action is required. Microsoft has patched this vulnerability server-side.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-32169
+entryStatus: Finalized
