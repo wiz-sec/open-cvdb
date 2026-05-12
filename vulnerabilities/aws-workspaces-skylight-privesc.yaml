@@ -1,0 +1,34 @@
+title: Amazon WorkSpaces Skylight Agent Local Privilege Escalation
+slug: aws-workspaces-skylight-privesc
+cves:
+  - CVE-2026-7791
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Amazon WorkSpaces
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: Cymulate
+  domain: cymulate.com
+  twitter:
+publishedAt: 2026/05/04
+disclosedAt: 2026/05/04
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Amazon Skylight Workspace Config Service (slwsconfigservice) is a critical background service within Amazon WorkSpaces that manages system configuration, monitors health, and updates components.
+
+  A TOCTOU (Time-of-Check to Time-of-Use) race condition in the service's log file archival process allows a local non-admin authenticated user to escalate privileges to SYSTEM. The vulnerability impacts Windows WorkSpaces that have not opted-in to enable the "Local Administrator Setting" on their directory.
+
+  Affected versions: < 2.6.2034.0 of the Windows Amazon Skylight Workspace Config Service.
+manualRemediation: |
+  Upgrade to version 2.6.2034.0 or later of the Amazon Skylight Workspace Config Service. Affected customers can self-service the update by rebooting impacted WorkSpaces.
+detectionMethods: |
+  Check the version of slwsconfigservice on Windows WorkSpaces. Versions below 2.6.2034.0 are vulnerable.
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/rss/2026-025-aws/
+  - https://www.cve.org/cverecord?id=CVE-2026-7791
+entryStatus: Finalized
