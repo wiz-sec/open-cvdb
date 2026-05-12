@@ -1,0 +1,28 @@
+title: Azure Core Python Client Library Remote Code Execution
+slug: azure-core-python-deserialization-rce
+cves:
+  - CVE-2026-21226
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure SDK
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/02/06
+disclosedAt: 2026/02/06
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Deserialization of untrusted data in the Azure Core shared client library for Python allows an authorized attacker to execute code over a network. This affects applications using the Azure SDK for Python that process untrusted serialized data.
+manualRemediation: |
+  Update the azure-core Python package to the latest patched version.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-21226
+entryStatus: Finalized
