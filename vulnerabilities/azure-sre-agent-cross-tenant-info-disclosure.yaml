@@ -1,0 +1,35 @@
+title: Azure SRE Agent Cross-Tenant Information Disclosure
+slug: azure-sre-agent-cross-tenant-info-disclosure
+cves:
+  - CVE-2026-32173
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure SRE Agent
+image: https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-sre-agent-cross-tenant-info-disclosure.jpg
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: Yanir Tsarimi
+  org: Enclave
+  domain: enclave.ai
+  twitter:
+publishedAt: 2026/04/20
+disclosedAt: 2026/04/02
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Azure SRE Agent is Microsoft's AI operations platform that monitors, diagnoses, and remediates incidents in Azure environments. It has access to source code, logs, metrics, infrastructure state, and can execute Azure CLI commands.
+
+  The agent streams all activity in real time through a WebSocket endpoint (/agentHub). The underlying app registration was configured as multi-tenant, meaning any Azure AD account from any organization could obtain a valid token to connect. The endpoint validated token authenticity and audience but never verified tenant membership or authorization. Once connected, all events were broadcast to all clients without identity filtering.
+
+  An attacker could observe every user message, agent response, internal reasoning steps, executed commands (including full arguments), and command outputs (including credentials). The attack left no trace in the victim's environment. The target agent's subdomain was predictable and enumerable, requiring only ~15 lines of Python to exploit.
+manualRemediation: |
+  If Azure SRE Agent was used during the preview period, treat that window as potentially exposed. Review any credentials, configuration data, or sensitive information that may have passed through agent conversations or CLI outputs. The vulnerability has been patched server-side by Microsoft.
+detectionMethods: |
+  No detection was possible from the victim's side. The WebSocket connection left no audit trail in the target environment.
+contributor: https://github.com/vinsoc
+references:
+  - https://enclave.ai/blog/anyone-could-watch-your-azure-ai-agents-conversations-in-real-time
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-32173
+entryStatus: Finalized
