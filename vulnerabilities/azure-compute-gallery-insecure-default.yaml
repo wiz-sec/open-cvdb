@@ -1,0 +1,28 @@
+title: Azure Compute Gallery Insecure Default Information Disclosure
+slug: azure-compute-gallery-insecure-default
+cves:
+  - CVE-2026-26122
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure Compute Gallery
+severity: medium
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/03/14
+disclosedAt: 2026/03/14
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Initialization of a resource with an insecure default in Azure Compute Gallery allows an authorized attacker to disclose information over a network. The vulnerability stems from improper default configuration during resource initialization, potentially exposing VM image data to unauthorized parties.
+manualRemediation: |
+  No customer action is required. Microsoft has patched this vulnerability server-side.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-26122
+entryStatus: Finalized
