@@ -1,0 +1,28 @@
+title: Google BigQuery Materialized View Information Disclosure
+slug: gcp-bigquery-materialized-view-info-disclosure
+cves:
+  - CVE-2026-3259
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - BigQuery
+severity: medium
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/04/23
+disclosedAt: 2026/04/23
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A Generation of Error Message Containing Sensitive Information vulnerability (CWE-209) in the Materialized View Refresh mechanism in Google BigQuery allows an authenticated user to disclose sensitive data by crafting a materialized view that triggers a runtime error during the refresh process, causing the error message to expose information that should remain protected.
+manualRemediation: |
+  No customer action is required. Google has patched this vulnerability.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://www.sentinelone.com/vulnerability-database/cve-2026-3259/
+entryStatus: Finalized
