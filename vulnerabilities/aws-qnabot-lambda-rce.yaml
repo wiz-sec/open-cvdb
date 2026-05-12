@@ -1,0 +1,29 @@
+title: AWS QnABot Arbitrary Code Execution via Sandbox Bypass
+slug: aws-qnabot-lambda-rce
+cves:
+  - CVE-2026-7191
+affectedPlatforms:
+  - aws
+affectedServices:
+  - AWS Lambda
+  - QnABot on AWS
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/04/27
+disclosedAt: 2026/04/27
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Improper use of the static-eval npm package in QnABot on AWS may allow an authenticated administrator to execute arbitrary code within the fulfillment Lambda execution context via a sandbox bypass.
+manualRemediation: |
+  Update QnABot on AWS to the latest patched version.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/rss/2026-020-aws/
+entryStatus: Finalized
