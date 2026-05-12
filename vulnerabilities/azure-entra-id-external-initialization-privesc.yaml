@@ -1,0 +1,28 @@
+title: Azure Entra ID External Initialization Privilege Escalation
+slug: azure-entra-id-external-initialization-privesc
+cves:
+  - CVE-2026-26148
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Entra ID
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/03/11
+disclosedAt: 2026/03/11
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  External initialization of trusted variables or data stores in Azure Entra ID allows an unauthorized attacker to elevate privileges locally. This vulnerability stems from improper handling of external inputs during the initialization of trusted data stores within the identity platform.
+manualRemediation: |
+  No customer action is required. Microsoft has patched this vulnerability server-side.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-26148
+entryStatus: Finalized
