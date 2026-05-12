@@ -1,0 +1,28 @@
+title: AWS Ops Wheel Cognito User Pool Privilege Escalation
+slug: aws-cognito-attribute-privesc
+cves:
+  - CVE-2026-6912
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Amazon Cognito
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/04/27
+disclosedAt: 2026/04/27
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  In the v2 Cognito User Pool configuration of AWS Ops Wheel, attribute write permissions were insufficiently restricted. This allows an authenticated user to modify their own privilege attributes and gain elevated access within the application, including the ability to manage Cognito user accounts.
+manualRemediation: |
+  Update AWS Ops Wheel to the latest patched version. Review Cognito User Pool attribute write permissions.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/2026-018-aws/
+entryStatus: Finalized
