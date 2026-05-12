@@ -1,0 +1,28 @@
+title: Azure Data Factory Information Disclosure
+slug: azure-data-factory-info-disclosure
+cves:
+  - CVE-2026-23659
+affectedPlatforms:
+  - azure
+affectedServices:
+  - Azure Data Factory
+severity: medium
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/03/18
+disclosedAt: 2026/03/18
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An information disclosure vulnerability in Azure Data Factory allows an attacker to access sensitive information such as credentials, pipeline secrets, or operational metadata. In a managed cloud service, information disclosure bugs can enable attackers to chain findings into larger compromises.
+manualRemediation: |
+  No customer action is required. Microsoft has patched this vulnerability server-side.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://nvd.nist.gov/vuln/detail/CVE-2026-23659
+entryStatus: Finalized
