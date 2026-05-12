@@ -1,0 +1,34 @@
+title: AWS DirtyFrag Linux Kernel Privilege Escalation
+slug: aws-dirtyfrag-kernel-privesc
+cves:
+  - CVE-2026-43284
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Amazon Linux
+  - ECS
+  - EKS
+  - Fargate
+  - SageMaker
+severity: high
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/05/07
+disclosedAt: 2026/05/07
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  CVE-2026-43284, related to the original CVE-2026-31431 "DirtyFrag" vulnerability, affects loadable modules (xfrm_user/esp4/esp6) in the Linux kernel. The issues allow an unprivileged local attacker to write to the system page cache, potentially leading to local privilege escalation and container escape. Multiple AWS services are affected including Amazon Linux kernels 4.14-6.18, ECS, EKS, Fargate, EMR, SageMaker, and Deep Learning AMIs.
+manualRemediation: |
+  Apply the latest Amazon Linux kernel updates. For ECS on EC2, updates were available by 2026-05-07. For EKS, updated AMIs available by 2026-05-08. For Fargate, updates available by 2026-05-15. Customers should restart affected workloads to pick up patched kernels.
+detectionMethods: |
+  Check kernel version on Amazon Linux instances. Affected kernels: 4.14, 5.4, 5.10, 5.15, 6.1, 6.12, 6.18.
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/rss/2026-027-aws/
+  - https://aws.amazon.com/security/security-bulletins/2026-026-aws/
+entryStatus: Finalized
