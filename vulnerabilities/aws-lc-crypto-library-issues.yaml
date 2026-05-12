@@ -1,0 +1,30 @@
+title: AWS-LC Cryptographic Library Vulnerabilities
+slug: aws-lc-crypto-library-issues
+cves:
+  - CVE-2026-3336
+  - CVE-2026-3337
+  - CVE-2026-3338
+affectedPlatforms:
+  - aws
+affectedServices:
+  - AWS-LC
+severity: medium
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter:
+publishedAt: 2026/04/27
+disclosedAt: 2026/04/27
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  Multiple vulnerabilities were identified in AWS-LC, an open-source general-purpose cryptographic library maintained by AWS. The issues (CVE-2026-3336, CVE-2026-3337, CVE-2026-3338) affect the cryptographic operations provided by the library.
+manualRemediation: |
+  Update AWS-LC to the latest patched version.
+detectionMethods: null
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/2026-005-AWS/
+entryStatus: Finalized
