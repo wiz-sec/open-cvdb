@@ -1,0 +1,35 @@
+title: AWS Encryption SDK Key Commitment Policy Bypass
+slug: aws-esdk-key-commitment-bypass
+cves:
+  - CVE-2026-6550
+affectedPlatforms:
+  - aws
+affectedServices:
+  - AWS Encryption SDK
+severity: medium
+piercingIndexVector:
+discoveredBy:
+  name: null
+  org: 1seal.org
+  domain: 1seal.org
+  twitter:
+publishedAt: 2026/04/20
+disclosedAt: 2026/04/20
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  AWS Encryption SDK (ESDK) for Python is a client-side encryption library used to encrypt and decrypt data with envelope encryption.
+
+  A cryptographic algorithm downgrade vulnerability in the caching layer allows an authenticated local threat actor to bypass key commitment policy enforcement via a shared key cache. When multiple ESDK instances with differently configured key commitment policies share a cache, the policy can be bypassed, resulting in ciphertext that can be decrypted to multiple different plaintexts.
+
+  Affected versions: 2.0-2.5.1, 3.0-3.3.0, 4.0-4.0.4.
+manualRemediation: |
+  Upgrade AWS Encryption SDK for Python to version 3.3.1 or 4.0.5. If upgrading is not immediately possible, ensure that multiple ESDK instances with differently configured key commitment policies do not share a key cache.
+detectionMethods: |
+  Check the installed version of aws-encryption-sdk Python package. Versions 2.0-2.5.1, 3.0-3.3.0, and 4.0-4.0.4 are vulnerable.
+contributor: https://github.com/vanhoangkha
+references:
+  - https://aws.amazon.com/security/security-bulletins/rss/2026-017-aws/
+  - https://www.cve.org/cverecord?id=CVE-2026-6550
+  - https://github.com/aws/aws-encryption-sdk-python/security/advisories/GHSA-v638-38fc-rhfv
+entryStatus: Finalized
