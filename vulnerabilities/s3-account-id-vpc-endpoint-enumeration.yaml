@@ -1,0 +1,30 @@
+title: S3 Bucket Account ID Enumeration via VPC Endpoint Denials
+slug: s3-account-id-vpc-endpoint-enumeration
+cves: []
+affectedPlatforms:
+  - aws
+affectedServices:
+  - CloudTrail
+  - VPC Endpoints
+  - S3
+image: null
+severity: low
+discoveredBy:
+  name: Maya Parizer
+  org: Varonis Threat Labs
+  domain: varonis.com
+  twitter: null
+publishedAt: 2025/10/30
+disclosedAt: null
+exploitabilityPeriod: Until 2025/06/20
+knownITWExploitation: false
+summary: |
+  AWS account IDs of S3 bucket owners could be enumerated by configuring a VPC endpoint with a deny-all policy and observing CloudTrail Network Activity events. When an attacker made requests to known S3 buckets through the restricted VPC endpoint, the resulting VpcAccessDenied errors in CloudTrail exposed the bucket owner's account ID. Unlike prior account enumeration techniques, this method left no traces in the target account's logs. AWS addressed this by redacting the owner account ID from Network Activity events in this scenario.
+manualRemediation: |
+  None required
+detectionMethods: |
+  None
+contributor: https://github.com/ramimac
+references:
+  - https://www.varonis.com/blog/exploiting-vpc-endpoints-for-s3buckets
+entryStatus: Stub (AI-Generated)
