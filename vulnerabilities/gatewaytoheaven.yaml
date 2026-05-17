@@ -1,0 +1,30 @@
+title: GatewayToHeaven - Apigee Cross-Tenant Data Access
+slug: gatewaytoheaven
+cves:
+  - CVE-2025-13292
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Apigee
+image: null
+severity: high
+discoveredBy:
+  name: Omer Amiad
+  org: Focal Security
+  domain: focalsecurity.io
+  twitter: null
+publishedAt: 2026/01/28
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  A cross-tenant vulnerability in Google Cloud's Apigee allowed attackers to gain unauthorized read and write access to Apigee Analytics data and access logs belonging to other customer organizations. The attack chain involved accessing the Apigee service account token via the metadata endpoint, discovering a Dataflow pipeline with cross-tenant bucket permissions, and injecting malicious code into pipeline dependencies to exfiltrate credentials for accessing shared buckets. The vulnerability exposed sensitive data including user authentication tokens and IP addresses across all tenants. Google patched the issue before any known exploitation.
+manualRemediation: |
+  None required. Google remediated the vulnerability server-side. Customers using Apigee should ensure they are on version 1-16-0-apigee-3 or later.
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+  - https://focalsecurity.io/blog/gatewaytoheaven-gcp-cross-tenant-vulnerability/
+  - https://omeramiad.com/posts/gatewaytoheaven-gcp-cross-tenant-vulnerability/
+  - https://nvd.nist.gov/vuln/detail/CVE-2025-13292
+entryStatus: Stub (AI-Generated)
