@@ -1,0 +1,29 @@
+title: Bedrock AgentCore Starter Toolkit S3 Ownership Verification Bypass
+slug: bedrock-agentcore-s3-ownership
+cves:
+  - CVE-2026-4269
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Amazon Bedrock
+image: null
+severity: high
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2026/03/16
+disclosedAt: null
+exploitabilityPeriod: Until 2025/09/24
+knownITWExploitation: false
+summary: |
+  A missing S3 bucket ownership verification in the Bedrock AgentCore Starter Toolkit versions before v0.1.13 could allow remote code injection during the build process. Attackers could exploit this supply chain vulnerability to inject malicious code that would execute when users built the toolkit. The vulnerability only affected users who built the toolkit after September 24, 2025, when the vulnerable code path was introduced.
+manualRemediation: |
+  Update to Bedrock AgentCore Starter Toolkit version v0.1.13 or later.
+detectionMethods: |
+  Review build logs for unexpected S3 bucket interactions. Verify the integrity of any builds performed between September 24, 2025 and the patch date.
+contributor: https://github.com/ramimac
+references:
+  - https://aws.amazon.com/security/security-bulletins/AWS-2026-008/
+entryStatus: Stub (AI-Generated)
