@@ -1,0 +1,33 @@
+title: Azure APIM Cross-Tenant Signup Bypass
+slug: azure-apim-cross-tenant-signup-bypass
+cves: []
+affectedPlatforms:
+  - azure
+affectedServices:
+  - API Management
+image: null
+severity: high
+discoveredBy:
+  name: Mihalis Haatainen
+  org: Bountyy Oy
+  domain: bountyy.fi
+  twitter: null
+publishedAt: 2025/11/26
+disclosedAt: 2025/09/30
+exploitabilityPeriod: null
+knownITWExploitation: null
+summary: |
+  A security flaw in Azure API Management Developer Portal allows account registration on any APIM instance with Basic Authentication enabled, even when administrators disable signup through the UI. The vulnerability exploits a disconnect between UI-level restrictions and the underlying /signup API endpoint, which remains active and does not validate tenant boundaries. Attackers can manipulate the Host header in signup requests to create accounts on target APIM instances cross-tenant. Microsoft closed MSRC reports as "by design" and has not patched this issue. The vulnerability affects non-Consumption SKU APIM instances with Developer Portal enabled and Basic Authentication configured.
+manualRemediation: |
+  Completely remove the Basic Authentication identity provider in Azure Portal (UI disabling is insufficient). Navigate to API Management -> Developer Portal -> Identities and delete the "Username and password" identity provider entirely. Audit all Developer Portal user accounts for unauthorized signups and implement Azure AD authentication exclusively.
+detectionMethods: |
+  Check for Basic Auth identity provider via Azure CLI:
+  az apim identity-provider list --resource-group <rg-name> --service-name <apim-name> --query "[].name"
+
+  Review Developer Portal user accounts for unexpected registrations, particularly those created via API rather than UI flows.
+contributor: https://github.com/ramimac
+references:
+  - https://github.com/bountyyfi/Azure-APIM-Cross-Tenant-Signup-Bypass
+  - https://www.itewiki.fi/p/when-disabled-doesn-t-mean-disabled-azure-apim-cross-tenant-signup-bypass
+  - https://github.com/bountyyfi/Azure-APIM-Cross-Tenant-Signup-Bypass/security/advisories/GHSA-vcwf-73jp-r7mv
+entryStatus: Stub (AI-Generated)
