@@ -1,0 +1,29 @@
+title: Amazon Q Developer and Kiro IDE Prompt Injection Vulnerabilities
+slug: amazon-q-developer-prompt-injection
+cves: []
+affectedPlatforms:
+  - aws
+affectedServices:
+  - Amazon Q Developer
+  - Kiro IDE
+image: null
+severity: medium
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2025/10/07
+disclosedAt: null
+exploitabilityPeriod: Until 2025/08/01
+knownITWExploitation: false
+summary: |
+  Multiple prompt injection vulnerabilities were identified in Amazon Q Developer and Kiro IDE that could allow attackers to execute commands or exfiltrate data via DNS. The vulnerabilities affected the AI coding assistants' ability to safely process untrusted input. AWS released fixes requiring human-in-the-loop confirmation for sensitive operations between July and August 2025.
+manualRemediation: |
+  Update Amazon Q Developer and Kiro IDE to the latest versions released after August 2025.
+detectionMethods: |
+  Monitor for unexpected DNS queries or command execution originating from Q Developer or Kiro IDE sessions. Review AI assistant interaction logs for suspicious prompts.
+contributor: https://github.com/ramimac
+references:
+  - https://aws.amazon.com/security/security-bulletins/AWS-2025-019/
+entryStatus: Stub (AI-Generated)
