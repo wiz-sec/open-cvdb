@@ -1,0 +1,29 @@
+title: AWS API MCP Server File Access Restriction Bypass
+slug: aws-api-mcp-file-access-bypass
+cves:
+  - CVE-2026-4270
+affectedPlatforms:
+  - aws
+affectedServices:
+  - AWS API MCP Server
+image: null
+severity: high
+discoveredBy:
+  name: null
+  org: null
+  domain: null
+  twitter: null
+publishedAt: 2026/03/16
+disclosedAt: null
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  The AWS API MCP Server versions 0.2.14 to below 1.3.9 contained an improper alternate path protection vulnerability that allowed bypass of file access restrictions. Attackers could exploit this flaw to expose arbitrary local files within the MCP client context, potentially leaking sensitive information such as credentials, configuration files, or other protected data.
+manualRemediation: |
+  Update AWS API MCP Server to version 1.3.9 or later.
+detectionMethods: |
+  Review MCP client logs for unexpected file access patterns. Audit file access requests for path traversal attempts.
+contributor: https://github.com/ramimac
+references:
+  - https://aws.amazon.com/security/security-bulletins/AWS-2026-007/
+entryStatus: Stub (AI-Generated)
