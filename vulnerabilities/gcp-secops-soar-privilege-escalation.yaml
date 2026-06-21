@@ -1,0 +1,28 @@
+title: Google SecOps SOAR Privilege Escalation via Service Account Impersonation Chain
+slug: gcp-secops-soar-privilege-escalation
+cves: []
+affectedPlatforms:
+  - gcp
+affectedServices:
+  - Google SecOps SOAR
+image: null
+severity: high
+discoveredBy:
+  name: Jakub Domeracki
+  org: null
+  domain: jdsec.cloud
+  twitter: jdomeracki
+publishedAt: 2026/01/17
+disclosedAt: 2025/12/01
+exploitabilityPeriod: null
+knownITWExploitation: false
+summary: |
+  An authenticated attacker with Basic role permissions in Google SecOps SOAR could escalate to Administrator access through a multi-step attack chain. The vulnerability exploited RCE via Python IDE validation bypass to obtain GKE service account tokens, then leveraged overly permissive project-wide IAM bindings (iam.serviceAccountTokenCreator role) to impersonate the secops-auth service account and forge administrative JWTs. Google remediated by removing the overpermissive IAM binding and migrating to a per-customer Product Service Account (P4SA) model with granular permissions.
+manualRemediation: |
+  None required. Google remediated server-side by removing the project-wide Service Account Token Creator IAM binding and implementing a new per-customer P4SA model with granular, pre-defined permissions.
+detectionMethods: null
+contributor: https://github.com/ramimac
+references:
+  - https://jdsec.cloud/posts/2026-01-17-privilege-escalation-via-a-service-account-impersonation-chain/
+  - https://bughunters.google.com/blog/5364401980899328
+entryStatus: Stub (AI-Generated)
